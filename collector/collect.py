@@ -299,6 +299,12 @@ def main() -> int:
     OUTPUT_PATH.parent.mkdir(parents=True, exist_ok=True)
     OUTPUT_PATH.write_text(render(kept, statuses, now, feeds), encoding="utf-8")
     shutil.copytree(STATIC_DIR, OUTPUT_PATH.parent, dirs_exist_ok=True)
+    # ホーム画面のアプリが、新しいデータが出たことに気づいて読み込み直すための小さなファイル
+    curated = json.loads(CURATED_PATH.read_text(encoding="utf-8")) if CURATED_PATH.exists() else {}
+    (OUTPUT_PATH.parent / "version.json").write_text(
+        json.dumps({"updated": now.isoformat(timespec="seconds"), "curated": curated.get("generated")}),
+        encoding="utf-8",
+    )
 
     ok = sum(s["ok"] for s in statuses)
     print(f"\n{ok}/{len(statuses)} フィード成功、保存 {len(kept)}件 → {OUTPUT_PATH.relative_to(ROOT)}")

@@ -28,6 +28,9 @@ body { margin: 0; background: var(--bg); color: var(--text);
 header { position: sticky; top: 0; z-index: 1; background: var(--bg); border-bottom: 1px solid var(--line); }
 .wrap { max-width: 880px; margin: 0 auto; padding: 0 16px; }
 h1 { font-size: 20px; margin: 14px 0 2px; }
+.titlebar { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
+#reload { border: 1px solid var(--line); background: var(--card); color: var(--accent); border-radius: 999px;
+          padding: 4px 12px; font-size: 13px; cursor: pointer; margin-top: 10px; }
 .meta { color: var(--muted); font-size: 13px; }
 .controls { display: flex; flex-wrap: wrap; gap: 8px; padding: 10px 0 12px; }
 input[type=search] { flex: 1 1 220px; padding: 8px 10px; border: 1px solid var(--line); border-radius: 8px;
@@ -68,7 +71,7 @@ details li.ng { color: var(--new); }
 <body>
 <header>
   <div class="wrap">
-    <h1>AI情報まとめ</h1>
+    <div class="titlebar"><h1>AI情報まとめ</h1><button id="reload" type="button">更新</button></div>
     <div class="meta" id="meta"></div>
     <nav class="tabs" id="tabs">
       <button class="tab" data-tab="tech">技術の進歩</button>
@@ -233,7 +236,9 @@ function render() {
   }
 
   $("list").innerHTML = html || '<p class="empty">該当する記事はありません。</p>';
-  $("meta").textContent = `${count}件を表示 ・ 最終更新 ${DATA.updated ? new Date(DATA.updated).toLocaleString("ja-JP") : "—"}`;
+  const fmt = (s) => new Date(s).toLocaleString("ja-JP", { month: "numeric", day: "numeric", hour: "2-digit", minute: "2-digit" });
+  $("meta").textContent = `${count}件を表示 ・ 収集 ${DATA.updated ? fmt(DATA.updated) : "—"}` +
+    (DATA.curated && DATA.curated.generated ? ` ・ Claude選定 ${fmt(DATA.curated.generated)}` : "");
   $("intro").textContent = TABS[tab];
   $("intro").hidden = !TABS[tab];
   $("chips").hidden = tab !== "all";
@@ -265,6 +270,37 @@ $("tabs").addEventListener("click", (e) => {
 ["q", "lang", "range"].forEach((id) => $(id).addEventListener("input", render));
 
 renderChips(); render(); renderStatus();
+
+// ホーム画面のアプリは前に開いたページをそのまま見せることがあるため、
+// 開いたとき・画面に戻ったときに新しいデータがないか確かめ、あれば読み込み直す
+function reloadFresh() {
+  location.replace(`${location.pathname}?v=${Date.now()}`);
+}
+
+async function checkForUpdate() {
+  try {
+    const res = await fetch(`version.json?t=${Date.now()}`, { cache: "no-store" });
+    if (!res.ok) return;
+    const remote = await res.json();
+    const time = (s) => (s ? new Date(s).getTime() : 0);
+    const newer = time(remote.updated) > time(DATA.updated) ||
+      time(remote.curated) > time(DATA.curated && DATA.curated.generated);
+    // 配信側のキャッシュで古いページが返り続けたときに、読み込み直しを繰り返さないようにする
+    const target = `${remote.updated}|${remote.curated}`;
+    let tried = null;
+    try { tried = sessionStorage.getItem("reloadTarget"); } catch {}
+    if (newer && tried !== target) {
+      try { sessionStorage.setItem("reloadTarget", target); } catch {}
+      reloadFresh();
+    }
+  } catch {}
+}
+
+$("reload").addEventListener("click", reloadFresh);
+document.addEventListener("visibilitychange", () => { if (document.visibilityState === "visible") checkForUpdate(); });
+window.addEventListener("pageshow", (e) => { if (e.persisted) checkForUpdate(); });
+setInterval(checkForUpdate, 10 * 60 * 1000);
+checkForUpdate();
 </script>
 </body>
 </html>
