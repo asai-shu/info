@@ -3,6 +3,7 @@ name: AI情報を収集
 on:
   schedule:
     - cron: "17 */2 * * *" # 2時間ごと（UTC）
+    - cron: "0 15 * * *" # 毎日深夜0時（日本時間）
   workflow_dispatch: # Actions 画面から手動でも実行できる
   push:
     paths: [feeds.toml, collector/**, .github/workflows/collect.yml]

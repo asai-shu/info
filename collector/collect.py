@@ -275,7 +275,7 @@ def main() -> int:
 
     DATA_PATH.parent.mkdir(parents=True, exist_ok=True)
     DATA_PATH.write_text(
-        json.dumps({"updated": now.isoformat(timespec="seconds"), "items": kept}, ensure_ascii=False, indent=1),
+        json.dumps({"updated": now.isoformat(timespec="seconds"), "statuses": statuses, "items": kept}, ensure_ascii=False, indent=1),
         encoding="utf-8",
     )
     OUTPUT_PATH.parent.mkdir(parents=True, exist_ok=True)
