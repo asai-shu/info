@@ -1,18 +1,18 @@
 {
- "updated": "2026-10-24T07:12:59+00:00",
+ "updated": "2026-10-24T07:24:25+00:00",
  "statuses": [
   {
    "name": "Googleニュース（生成AI）",
    "ok": true,
    "count": 60,
-   "added": 1,
+   "added": 0,
    "error": null
   },
   {
    "name": "Googleニュース（ChatGPT・Claude・Gemini）",
    "ok": true,
    "count": 60,
-   "added": 1,
+   "added": 0,
    "error": null
   },
   {
@@ -53,7 +53,7 @@
   {
    "name": "はてなブックマーク IT新着",
    "ok": true,
-   "count": 8,
+   "count": 9,
    "added": 0,
    "error": null
   },
@@ -75,7 +75,7 @@
    "name": "Zenn（AI）",
    "ok": true,
    "count": 20,
-   "added": 0,
+   "added": 4,
    "error": null
   },
   {
@@ -96,14 +96,14 @@
    "name": "Qiita（LLM）",
    "ok": true,
    "count": 4,
-   "added": 1,
+   "added": 0,
    "error": null
   },
   {
    "name": "note（生成AI）",
    "ok": true,
    "count": 25,
-   "added": 25,
+   "added": 0,
    "error": null
   },
   {
@@ -187,7 +187,7 @@
    "name": "Google News（Generative AI）",
    "ok": true,
    "count": 60,
-   "added": 8,
+   "added": 0,
    "error": null
   },
   {
@@ -201,7 +201,7 @@
    "name": "Google News（AI Startups）",
    "ok": true,
    "count": 40,
-   "added": 3,
+   "added": 0,
    "error": null
   },
   {
@@ -299,7 +299,7 @@
    "name": "Latent Space",
    "ok": true,
    "count": 20,
-   "added": 0,
+   "added": 1,
    "error": null
   },
   {
@@ -354,7 +354,7 @@
   {
    "name": "Reddit r/MachineLearning",
    "ok": true,
-   "count": 9,
+   "count": 8,
    "added": 0,
    "error": null
   },
@@ -383,7 +383,7 @@
    "name": "Product Hunt",
    "ok": true,
    "count": 32,
-   "added": 10,
+   "added": 3,
    "error": null
   },
   {
@@ -418,21 +418,21 @@
    "name": "Google 뉴스（韓国・생성형 AI）",
    "ok": true,
    "count": 40,
-   "added": 0,
+   "added": 1,
    "error": null
   },
   {
    "name": "Google News（ドイツ・KI）",
    "ok": true,
    "count": 30,
-   "added": 0,
+   "added": 1,
    "error": null
   },
   {
    "name": "Google Actualités（フランス・IA）",
    "ok": true,
    "count": 30,
-   "added": 1,
+   "added": 0,
    "error": null
   },
   {
@@ -473,8 +473,8 @@
   {
    "name": "Googleニュース（AI副業）",
    "ok": true,
-   "count": 32,
-   "added": 0,
+   "count": 33,
+   "added": 1,
    "error": null
   },
   {
@@ -488,21 +488,21 @@
    "name": "note（AI副業）",
    "ok": true,
    "count": 25,
-   "added": 5,
+   "added": 0,
    "error": null
   },
   {
    "name": "Zenn（個人開発）",
    "ok": true,
-   "count": 11,
+   "count": 13,
    "added": 0,
    "error": null
   },
   {
    "name": "Qiita（個人開発）",
    "ok": true,
-   "count": 1,
-   "added": 0,
+   "count": 2,
+   "added": 1,
    "error": null
   },
   {
@@ -528,6 +528,28 @@
   }
  ],
  "items": [
+  {
+   "id": "9d1680d2e035e199",
+   "title": "AIに作らせたクイズを、答えを伏せた別のAIに解かせて点検しました。見つかったのは「答えが別の問題に書いてある」でした",
+   "link": "https://qiita.com/tarou_0818/items/f490c683f015cce98aa6",
+   "summary": "個人でWebサイトやアプリを作っています（屋号は sesebox です）。 いま、中学生向けの歴史クイズアプリを作っています（まだ開発中で、公開はしていません）。1つの単元ごとに「4択問題・年代のならべかえ・穴埋め・教科書の読み物」をそろえる形で、問題文はAI（Claude...",
+   "date": "2026-10-24T07:20:55+00:00",
+   "source": "Qiita（個人開発）",
+   "publisher": "",
+   "category": "収益化",
+   "lang": "ja"
+  },
+  {
+   "id": "4fe4a52829529134",
+   "title": "[AINews] Kimi 3.1 Pro 104BA-2.8T: Fable-5.1-Class Open Weights narrows Closed-AI lead to 1 month... and Pro Highspeed API with 2-3× speed",
+   "link": "https://latent.space/p/ainews-kimi-31/",
+   "summary": "We have Fable at home... or so we are being told by paid shills",
+   "date": "2026-10-24T07:18:29+00:00",
+   "source": "Latent Space",
+   "publisher": "",
+   "category": "専門家",
+   "lang": "en"
+  },
   {
    "id": "bb457c3cc1957663",
    "title": "AIでChrome拡張機能を作った。98行・権限3つ・動作確認3項目。コード全文と作り方のプロンプト",
@@ -582,6 +604,28 @@
    "publisher": "",
    "category": "技術記事",
    "lang": "ja"
+  },
+  {
+   "id": "ed7dcf8e91c5c67c",
+   "title": "best artificial intelligence companionship for beginners",
+   "link": "https://news.google.com/rss/articles/CBMirAJBVV95cUxPTnZVYVNsZm04UlowNjBRSTZaRFhLcHcyQ2VrYl9PdWFUMnBrbkgwSFNuTTVwOG9XQkNJdmFFMGIyZGo3dTdGcFpzamFWa2Z6cWtkaDhJQzRmbnUxUTY1ZVNvaGJ2QmdvS0RtRzM0RG1ta1pVeEZyRGY0ckhIdnM0ODFCTXhhUWRtME1yYmxtd1A5amNaTEM1c19nQUw4Y0EwdmR6NU1FbGFfNDFXcU5qNXlGaC1FN2sxc2l6cWdHZmt5NkdBVjkxc2xRMUdzVkhLOGk1LU1LZVVBeHV3T3lCMExiZ0c1dWN0RWRhTmlsMHpiNU1RZEtyV0VvY0pqdUF0R0JpV3NraENWNGdNZnVkMVhBVGh1ZkdDMGlWZjJBODFaY04wYXR5NGMxZUY?oc=5",
+   "summary": "",
+   "date": "2026-10-24T07:11:26+00:00",
+   "source": "Google News UK（AI）",
+   "publisher": "小豆島町",
+   "category": "ニュース",
+   "lang": "en"
+  },
+  {
+   "id": "af70a9a467fe430c",
+   "title": "Künstliche Intelligenz: OpenAI will leistungsstärkste KI-Modelle offline trainieren",
+   "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOaExTSUVrR1JXY254OTVaWWw1SmVvc29WS3AyMmFhMUdzM2pVaVhSLW1kTWR1enRlWW1kMUpMbEU3VlZlbTZBOEdiVTZCdnpCNnlkYm9CbUZsd1lPakUwZ1FkSW8yUVBydmxsVWYtTnZodWZWUDRBaUs1emFYRTNOSjRreXZYVFNIay1YbEF6eE1RQnluMHc?oc=5",
+   "summary": "",
+   "date": "2026-10-24T07:11:18+00:00",
+   "source": "Google News（ドイツ・KI）",
+   "publisher": "DIE ZEIT",
+   "category": "ニュース",
+   "lang": "de"
   },
   {
    "id": "7375f5ef93b981a9",
@@ -1429,6 +1473,17 @@
    "publisher": "",
    "category": "収益化",
    "lang": "ja"
+  },
+  {
+   "id": "232b9c012a408ec6",
+   "title": "Cutting-Edge AI Models Spark Security Concerns? OpenAI Vows to Train in Complete Internet Isolation",
+   "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOSGRVS3dwVVZCRUh4MXBWTkk4VUNUa21GNWpLTHNlVUNXVngyWFVhbzVpV01VSDJ4WGFrMTg5R3l5d05uRkxjamhicWRlVDFDZUNCZ0t1Q2VXbFJSQy1SdXphNjhsUlRBWkN0a0oxaTNuMGJuN0NsQWg2MkY0TWRzMjZRWEw5Nk01WmVTWl9IdkJwWWhOczhGNFlqLTAzYWRlV3I4Vy12OA?oc=5",
+   "summary": "",
+   "date": "2026-10-24T06:21:17+00:00",
+   "source": "Google News（OpenAI・Anthropic・Google）",
+   "publisher": "富途牛牛",
+   "category": "ニュース",
+   "lang": "en"
   },
   {
    "id": "de95c90df85a604b",
@@ -2883,6 +2938,28 @@
    "lang": "en"
   },
   {
+   "id": "a4089d96734006d1",
+   "title": "OKPN と OMPV をSW工学の原則に追加したい",
+   "link": "https://zenn.dev/good_relax/articles/a7342a5e7623ec",
+   "summary": "なぜ？ 今回はあえて不遜なタイトルにしてみた。 おっさんは名著『プリンシプル オブ プログラミング』を愛読してるんだが、困ったことが起きた。 とあるツールをAIに作らせてたら、ライトモードとダークモードのフォント色指定を { \"fontColor\": \"#c0504d/#b2423f\" } って感じにスラッシュで区切って、1 つの文字列に 2 つの値を詰めてしまった。 片方だけ仕様を変えたい、3 つ目のモードを足したい、となった瞬間に形ごと作り直し。 アンチパターンのど真ん中。 当たり前っちゃ当たり前なんだが、持ってる本を見返しても、これを一言で言う原則…",
+   "date": "2026-10-24T04:53:14+00:00",
+   "source": "Zenn（AI）",
+   "publisher": "",
+   "category": "技術記事",
+   "lang": "ja"
+  },
+  {
+   "id": "123532e48ce75dd5",
+   "title": "AI 時代こそ、デザインシステムは泥臭く育てる ― スタートアップで半年運用して見えたこと",
+   "link": "https://zenn.dev/kifr/articles/108c948b2c99df",
+   "summary": "はじめに この記事は、Findy Freelance からの依頼（アンバサダープログラム）を受けて投稿しています。 現在、Findy Freelance経由で参画している Web系のSaaS企業での一業務として、デザインシステムの運用を担当しています。 導入から約半年が経ち、嬉しいことにデザインシステムはエンジニアだけのものではなく、ビジネスサイドも利用する社内の共通資産になってきました。 ここのところ、AI の進歩が早すぎて「エンジニアってこれからどのように活躍していけばいいの？」と考える声も多くなってきているように思います。 Dev 系のイベントを見…",
+   "date": "2026-10-24T04:53:06+00:00",
+   "source": "Zenn（AI）",
+   "publisher": "",
+   "category": "技術記事",
+   "lang": "ja"
+  },
+  {
    "id": "1ad5b6c1fcc4b43f",
    "title": "La inteligencia artificial ya puede ayudarte a decidir qué comprar, pero hay algo que no deberías dejar en sus manos",
    "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQQmV5bDFlQWlQemY3R2d4YTBiYWFHX1lvUGJjTHkxaWxJVnJwZHhidkNseXRMc0ZuRGdjVVE5Ny1sODJUSjc0N1ZWemhlSWhKdFZZT0E1ZDZXU2VvTHp5Z1ppLUl1eVh0NXA1YlNqXzljSjF0XzRkQlZublZqUEhDSkl2UHpPM2NvbzdJQ2ZXbFFMbkpwV2piWFVLcHRqRnVHRmI1VVYtek9DRkIwSjFCOFVremlPbzdZRDVZYVFnQ1B3UGpqNDU0VzE5MkZRdUJDMjREM0N2dw?oc=5",
@@ -2960,12 +3037,23 @@
    "lang": "ja"
   },
   {
+   "id": "9344cadca6113d39",
+   "title": "AIで作ったゲームをswipla（swipla.co）で公開してXに流す手順【HTML1ファイル】🎮",
+   "link": "https://zenn.dev/penbool/articles/303b8de348df03",
+   "summary": "ClaudeやChatGPTに作ってもらったブラウザゲームを、HTML1ファイルを置くだけで公開し、Xで遊んでもらうまでの手順をまとめます。公開先は swipla（スワイプラ、https://swipla.co）です。 この記事でやること AIに「スマホ縦画面で遊べる1ファイルのHTMLゲーム」を作ってもらう swiplaに置いて公開する Xにポストして遊んでもらう ゲームオーバー時のスコアをXに流す仕組みを入れる プログラミングの知識がなくても進められます。 swiplaとは swiplaは、スワイプで次々遊べる小さなブラウザゲームの置き場です。AIで…",
+   "date": "2026-10-24T04:43:20+00:00",
+   "source": "Zenn（AI）",
+   "publisher": "",
+   "category": "技術記事",
+   "lang": "ja"
+  },
+  {
    "id": "f96bfb8f4a70bb98",
    "title": "Sarashina無償ベータを6モデル試す：翻訳と検索は堅実、組み込みには毎分6回の壁",
    "link": "https://zenn.dev/skrtk98/articles/sarashina-service-beta-review",
    "summary": "SB Intuitions は 2026 年 10 月 13 日、国産 LLM「Sarashina」を API とチャットで使える「Sarashinaサービス」の無償ベータ版を公開した。 事前申し込みは不要で、Google アカウントでログインすれば API キーを発行できる。 公開当日に、API で提供される 6 モデルへ合計約 410 回のリクエストを送り、応答の内容、速度、制限を確認した。 同じ入力の一部は OpenAI の gpt-6-luna と gpt-6.1-sol にも約 120 回送り、結果を並べた。 入力はすべて自作で、各条件の試行は…",
    "date": "2026-10-24T04:42:15+00:00",
-   "source": "Zenn（LLM）",
+   "source": "Zenn（AI）",
    "publisher": "",
    "category": "技術記事",
    "lang": "ja"
@@ -4764,6 +4852,17 @@
    "lang": "en"
   },
   {
+   "id": "031364ee9eba2156",
+   "title": "DEV20期 講義資料",
+   "link": "https://zenn.dev/cardital/books/dev20-lectures",
+   "summary": "講義資料",
+   "date": "2026-10-24T03:32:43+00:00",
+   "source": "Zenn（AI）",
+   "publisher": "",
+   "category": "技術記事",
+   "lang": "ja"
+  },
+  {
    "id": "372037af099202e2",
    "title": "実在の建物に、あなたの「秋」を。セレコーポレーションが第2回「My Style vintage 生成AIコンテスト」を開催",
    "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE5yQm1xTU5LTmRuLUw3STlzT3NYc29SdThKQS10bEowRzU1TFhfX2Fhc3ViQ2dlanA2dGw4Skx3VDBhVTFKdGs3dmVBbTBYRXphcU9ZMjJrbHlhNFBHX2NpeXJ3MlM3c3VaVENwekNsWXhlQQ?oc=5",
@@ -4923,9 +5022,9 @@
    "link": "https://zenn.dev/taka8823/articles/2df36d66844c15",
    "summary": "自分用のタスク管理アプリを、4ヶ月半ほど自律エージェントに開発させている。実装後の diff を別のモデルにレビューさせ、不合格なら差し戻す「敵対的差分レビュー」を入れていた。 その不合格率が、7月の51.1%から10月には13.4%まで下がっていた。ところがログを調べると、3モデルでレビューするはずが、10月は全209件で1モデルしか判定していなかった。 残りの2モデルは、すべて unknown（判定不能）。集計処理はそれを除外し、回答した1モデルだけで合否を決めていた。有効な判定が減っていることは、ゲートの異常として通知されていなかった。 指標として…",
    "date": "2026-10-24T02:50:01+00:00",
-   "source": "Zenn（個人開発）",
+   "source": "Zenn（LLM）",
    "publisher": "",
-   "category": "収益化",
+   "category": "技術記事",
    "lang": "ja"
   },
   {
@@ -5477,6 +5576,17 @@
    "publisher": "",
    "category": "技術記事",
    "lang": "ja"
+  },
+  {
+   "id": "020b4d4fa3b6e9a3",
+   "title": "China’s AI compute power set to double, but heavily reliant on US chips: report",
+   "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOZl9scE9GTE5xLXFiT29rTlRCUFA5YWJHUS1JR2hoU2RvUnE0UlZwZk9mTDJnUXdlRGdHcHlaMFYxQ004T04wcXBfTzdxcThlN2xkZW10d2dpNlpSZmpoXzk0Sl9FRUJwSUFQN1FQZjFEOUQ1VFZLa0xNSXluZ1lNYUV2dGpwMzMzZUNzWUpydmtzWXlteWppQjk5NzJQdnRvWmpuNFlWU25OQzF2bGVLYXRsMy1iMy12MjcwZEFrNXo3S2JfN1Ew0gHHAUFVX3lxTE5JTGpieDNTZldrd0REWk1vS2d3N2xZV2E3cDVQTWNMTU1fbHR6SXQ1WGRwQVVfWV9vSUNVd04yOGlsOTE0NlM2QTduUFd4dVRSejNmOUllSWg1bDl3Y29PVE1XRWk2bWNzRVVXeFpuMm5UUHpaNV8ydDRVRmVGR0JPV0tXMEV5eE9nRlpRZHcyc2h1Y3h6SmZoUkpUUk8zbUpLeGtZZmRkaHFiMjhocHI0YkdOTy11QzkyYTdfcUdIc19yTWpmbGM?oc=5",
+   "summary": "",
+   "date": "2026-10-24T01:00:11+00:00",
+   "source": "Google News UK（AI）",
+   "publisher": "South China Morning Post",
+   "category": "ニュース",
+   "lang": "en"
   },
   {
    "id": "dc3c03187672e0ab",
@@ -6392,6 +6502,17 @@
    "lang": "en"
   },
   {
+   "id": "4cd92be5000bc86f",
+   "title": "생성형AI 이미지",
+   "link": "https://news.google.com/rss/articles/CBMipARBVV95cUxNTFZXSUIxaVhkeUdxVjBBdjB6VWhoYk5MZ3RDQzY0d3RTbExzc3ExRGFVWlJ3eGNaYS1jS0hYZHhKOHlNSUs1bmhvRXZhZm83RnZyRXdGdzlIVW9kSUFFck14UlpGRE9zVDZVZUV1eV9IanVEVExSUmE3aUZJbURZQU5uQm5WUEQ2dHFtQVhOeG1TX05OQWg4dkxuZzJfTjhyQkkwRVdONzhrUjdqQUg1aURoWmd2UGw2cXhFVERWQy1CMG1LZEx5aVZyU1hpZWUtZEYzNFlvMWt3TWJKclk3NXVUTV9sZndEcnZUMkRfb25TZ0ZaaG0tREpEaVVrbG5kbEw1SmdzakFCbHgwRW5McW5IRFN6YTJGc1NQTlo0cDdPNFl0R0sxUjlHTlpoRlVwU1Z5THJTNUpKa2lldjB0WWJYVVBoVjM5QXExdTFKMjZTYXg0TnBaVjlZRHVsWlZKWmRidXdIdUQ3TUpBME1fZWpBZ0ZoOEZEOXNtSmlNeVI0UXg1RWJPOWIyU29DY1NaU0RmNDRsZTBnTzlYamtBLTQ4MGhEOXdiQjI2Njd6SHg2anhaRUlhV2NSNm9vQU5jRmZ5VFRxR0lJYUZjZVo1VzVYZUJKc3YyeW5JU2RiRGIwTmVaYzd1cUxtbE9OVmk3RXhoUFBtdTNkT2drS0p6eWQ0NUFKSUZNUGNVNTlSLWhPQnBaWFVmZldVVkktZHdnemFacA?oc=5",
+   "summary": "",
+   "date": "2026-10-23T22:03:34+00:00",
+   "source": "Google 뉴스（韓国・생성형 AI）",
+   "publisher": "전자신문",
+   "category": "ニュース",
+   "lang": "ko"
+  },
+  {
    "id": "69083a8aeb428991",
    "title": "AI × Docker：2018年の docker-compose×Heroku を2026年にやり直す",
    "link": "https://zenn.dev/fk2000/books/ai-docker-2018-to-2026",
@@ -6918,6 +7039,17 @@
    "publisher": "Politico",
    "category": "ニュース",
    "lang": "en"
+  },
+  {
+   "id": "f5703d30bd294358",
+   "title": "Summit Therapeutics與Lunit宣佈達成協議，將應用人工智能驅動的Sco",
+   "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQdUpmSjRPV2g4OWZiLWJENjZvWG5fRHJpSmZUaDN3SVhmVl9JMkJTNGEwRmV1ZHJrSEVFajZMc3JnTGlNVGJFdEgyZGRKVHpzSDREMC02MDd3UnhmMm1kZy1FbmU2bHZocVNnNkpYUWk1cW5HbmxZV0Q2VEJiLUhSSXR0amszVzlyejZtcWZwbDhWT1Znc1dNVWlIR0FxbW9sUFZkNDgwQ2xNOHEtS2xIc2NHVFVmdzNIakE?oc=5",
+   "summary": "",
+   "date": "2026-10-23T20:37:09+00:00",
+   "source": "Google新聞（台湾・生成式AI）",
+   "publisher": "Moomoo",
+   "category": "ニュース",
+   "lang": "zh"
   },
   {
    "id": "2ca822a2063c3a30",
@@ -7574,7 +7706,7 @@
    "link": "https://zenn.dev/neomaru/articles/cloudflare-security-audit-harness",
    "summary": "Cloudflareが公開したセキュリティ監査スキルを、自分のリポジトリに対して3回回しました。スキル自体はよくできています。検証まで含めて本物のバグが出ました。ただし、そのままでは動きませんでした。理由はスキルの不出来ではなく、スキルが前提にしている実行環境が自分の環境と違ったからです。 足したのは3つです。サブエージェントを起動できる実行系、対象コードを実行するためのOSレベルのサンドボックス、そして成果物を検証する親側の作業です。作業時間の大半はこの3つに消えました。同じところで止まる人が多そうなので、実際に動いた構成を残します。 なお本記事は英語…",
    "date": "2026-10-23T18:40:05+00:00",
-   "source": "Zenn（AI）",
+   "source": "Zenn（LLM）",
    "publisher": "",
    "category": "技術記事",
    "lang": "ja"
@@ -10088,6 +10220,17 @@
    "lang": "en"
   },
   {
+   "id": "013c54fc3d150065",
+   "title": "人工智能建設的高昂成本令Meta及其他熱門科技股承壓",
+   "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE4tUWNpT3lUeTF3VU9VZDdNN1BCaWFTRV9lVWpEOXp5X0xZc0NqOXRJSEJjZlJObnhRUXJ4SnVqVUgxdTJVUHotQm9DZGU3YXRDY2dKazBqX18zaHdjX3hTWW9GUFpnYU4xZ001UC1WVXhRSkEwUUFJ?oc=5",
+   "summary": "",
+   "date": "2026-10-23T12:22:25+00:00",
+   "source": "Google新聞（台湾・生成式AI）",
+   "publisher": "TradingView",
+   "category": "ニュース",
+   "lang": "zh"
+  },
+  {
    "id": "7537772a78ca762e",
    "title": "本番コードのAI生成率99％ ソニー銀行は「勘定系開発にClaude Code適用」をどう実現？",
    "link": "https://atmarkit.itmedia.co.jp/ait/articles/2610/22/news022.html",
@@ -10157,7 +10300,7 @@
    "id": "901dc42363c4ef10",
    "title": "Show HN: We had AI write a wiki from 45k Enron emails, every fact cited",
    "link": "https://www.thisandthat.chat/enron/",
-   "summary": "Article URL: https://www.thisandthat.chat/enron/ Comments URL: https://news.ycombinator.com/item?id=50207620 Points: 60 # Comments: 53",
+   "summary": "Article URL: https://www.thisandthat.chat/enron/ Comments URL: https://news.ycombinator.com/item?id=50207620 Points: 61 # Comments: 53",
    "date": "2026-10-23T12:02:53+00:00",
    "source": "Hacker News（Show HN）",
    "publisher": "",
@@ -10511,7 +10654,7 @@
    "link": "https://holdings.panasonic/jp/information/topics/20261023.html",
    "summary": "パナソニック オペレーショナルエクセレンス株式会社（以下、当社）は、子会社のパナソニック デジタル株式会社（以下、PD）と進める人事情報システム導入プロジェクトにおいて、プロジェクトメンバーが従業員、元従業員およびご家族の個人情報を含むデータを、当社が利用を禁止している外部の生成AIサービスにアップロ...",
    "date": "2026-10-23T11:20:47+00:00",
-   "source": "はてなブックマーク IT新着",
+   "source": "はてなブックマーク IT人気",
    "publisher": "",
    "category": "話題",
    "lang": "ja"
@@ -11617,6 +11760,17 @@
    "lang": "zh"
   },
   {
+   "id": "5c0014ceb47a0d23",
+   "title": "PCをAI監視カメラにする「LiveCapture4」が公開 ～検知の10秒前から録画／USB Webカメラ・ネットワークカメラに対応、映像の解析も録画もPC内で完結",
+   "link": "https://forest.watch.impress.co.jp/docs/news/2150760.html",
+   "summary": "",
+   "date": "2026-10-23T08:19:03+00:00",
+   "source": "はてなブックマーク IT新着",
+   "publisher": "",
+   "category": "話題",
+   "lang": "ja"
+  },
+  {
    "id": "6666950795187c28",
    "title": "Qwen3-0.6B model converted into MoE",
    "link": "https://www.reddit.com/r/LocalLLaMA/comments/1xd87wu/qwen306b_model_converted_into_moe/",
@@ -12315,9 +12469,9 @@
    "link": "https://zenn.dev/a_maru/articles/9772ee99aee3d1",
    "summary": "1. はじめに — AIは観点をどこまで拾えるか 前回は、テストが0本の自作アプリ（Spotify連携のプレイリスト作成アプリ）で、あるべきテストピラミッドを描きました（前回の記事：AI時代にテスト設計を学び直す #1）。 前回の最後に予告したとおり、今回は「AIは観点をどこまで拾えるのか」を試します。 今回やることは、「観点表をつくる → AIにテストを書かせる → 観点表で採点する」という流れです。 AIにテストを書かせたところ、テストは236件書けて、ほぼすべて通りました（235件成功、1件は想定どおりの失敗）。それなのに、観点表で採点すると、17…",
    "date": "2026-10-23T04:53:45+00:00",
-   "source": "Zenn（生成AI）",
+   "source": "Zenn（個人開発）",
    "publisher": "",
-   "category": "技術記事",
+   "category": "収益化",
    "lang": "ja"
   },
   {
@@ -17027,6 +17181,17 @@
    "publisher": "",
    "category": "ツール",
    "lang": "en"
+  },
+  {
+   "id": "a130b6a86cfa8b32",
+   "title": "【漫画】どうすればお金持ちになれるのか？【オルカン・インデックス投資】 Strickland (VQ3xlrFP6N)",
+   "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE0xRTUxMXBoMl9JWktEYkp6NnhOQkQ4WEdOdHdvZlExSGJsVG1Rd0ZWWHM1NzdYVUpNYlIwTjh0MkpxQjVfWVRPN0t6OEMwZGl5LXVGa0xNTVNTT21sTjQydFRfaDFJdw?oc=5",
+   "summary": "",
+   "date": "2026-10-19T19:32:24+00:00",
+   "source": "Googleニュース（AI副業）",
+   "publisher": "Unisba Media",
+   "category": "収益化",
+   "lang": "ja"
   },
   {
    "id": "fbbcdbe57addf83e",
