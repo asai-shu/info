@@ -1,18 +1,18 @@
 {
- "updated": "2026-10-24T05:51:24+00:00",
+ "updated": "2026-10-24T05:57:21+00:00",
  "statuses": [
   {
    "name": "Googleニュース（生成AI）",
    "ok": true,
    "count": 60,
-   "added": 2,
+   "added": 1,
    "error": null
   },
   {
    "name": "Googleニュース（ChatGPT・Claude・Gemini）",
    "ok": true,
    "count": 60,
-   "added": 1,
+   "added": 12,
    "error": null
   },
   {
@@ -53,7 +53,7 @@
   {
    "name": "はてなブックマーク IT新着",
    "ok": true,
-   "count": 8,
+   "count": 9,
    "added": 1,
    "error": null
   },
@@ -61,28 +61,28 @@
    "name": "Zenn（LLM）",
    "ok": true,
    "count": 20,
-   "added": 0,
+   "added": 1,
    "error": null
   },
   {
    "name": "Zenn（生成AI）",
    "ok": true,
    "count": 20,
-   "added": 0,
+   "added": 2,
    "error": null
   },
   {
    "name": "Zenn（AI）",
    "ok": true,
    "count": 20,
-   "added": 10,
+   "added": 0,
    "error": null
   },
   {
    "name": "Qiita（生成AI）",
    "ok": true,
    "count": 4,
-   "added": 0,
+   "added": 1,
    "error": null
   },
   {
@@ -103,7 +103,7 @@
    "name": "note（生成AI）",
    "ok": true,
    "count": 25,
-   "added": 25,
+   "added": 0,
    "error": null
   },
   {
@@ -143,10 +143,10 @@
   },
   {
    "name": "Microsoft Research",
-   "ok": false,
-   "count": 0,
-   "added": 0,
-   "error": "HTTPError: HTTP Error 403: Forbidden"
+   "ok": true,
+   "count": 10,
+   "added": 5,
+   "error": null
   },
   {
    "name": "NVIDIA Blog",
@@ -201,7 +201,7 @@
    "name": "Google News（AI Startups）",
    "ok": true,
    "count": 40,
-   "added": 0,
+   "added": 1,
    "error": null
   },
   {
@@ -339,45 +339,45 @@
   },
   {
    "name": "Reddit r/LocalLLaMA",
-   "ok": false,
-   "count": 0,
+   "ok": true,
+   "count": 25,
    "added": 0,
-   "error": "HTTPError: HTTP Error 429: Too Many Requests"
+   "error": null
   },
   {
    "name": "Reddit r/singularity",
-   "ok": false,
-   "count": 0,
-   "added": 0,
-   "error": "HTTPError: HTTP Error 429: Too Many Requests"
+   "ok": true,
+   "count": 25,
+   "added": 2,
+   "error": null
   },
   {
    "name": "Reddit r/MachineLearning",
-   "ok": false,
-   "count": 0,
+   "ok": true,
+   "count": 9,
    "added": 0,
-   "error": "HTTPError: HTTP Error 429: Too Many Requests"
+   "error": null
   },
   {
    "name": "Reddit r/OpenAI",
-   "ok": false,
-   "count": 0,
+   "ok": true,
+   "count": 25,
    "added": 0,
-   "error": "HTTPError: HTTP Error 429: Too Many Requests"
+   "error": null
   },
   {
    "name": "Reddit r/ClaudeAI",
-   "ok": false,
-   "count": 0,
-   "added": 0,
-   "error": "HTTPError: HTTP Error 429: Too Many Requests"
+   "ok": true,
+   "count": 25,
+   "added": 1,
+   "error": null
   },
   {
    "name": "Reddit r/StableDiffusion",
-   "ok": false,
-   "count": 0,
+   "ok": true,
+   "count": 25,
    "added": 0,
-   "error": "HTTPError: HTTP Error 429: Too Many Requests"
+   "error": null
   },
   {
    "name": "Product Hunt",
@@ -390,7 +390,7 @@
    "name": "GitHub Trending",
    "ok": true,
    "count": 5,
-   "added": 1,
+   "added": 0,
    "error": null
   },
   {
@@ -404,7 +404,7 @@
    "name": "Google新聞（台湾・生成式AI）",
    "ok": true,
    "count": 40,
-   "added": 3,
+   "added": 0,
    "error": null
   },
   {
@@ -418,14 +418,14 @@
    "name": "Google 뉴스（韓国・생성형 AI）",
    "ok": true,
    "count": 40,
-   "added": 1,
+   "added": 0,
    "error": null
   },
   {
    "name": "Google News（ドイツ・KI）",
    "ok": true,
    "count": 30,
-   "added": 0,
+   "added": 1,
    "error": null
   },
   {
@@ -439,7 +439,7 @@
    "name": "Google Noticias（スペイン語・IA）",
    "ok": true,
    "count": 30,
-   "added": 0,
+   "added": 1,
    "error": null
   },
   {
@@ -472,6 +472,28 @@
   }
  ],
  "items": [
+  {
+   "id": "9721e9fd9810bd8d",
+   "title": "コードを書けない私は、何を「ものづくり」と呼べばいいのか",
+   "link": "https://qiita.com/Hasei_log/items/84d4168930fa38eb8c61",
+   "summary": "前回の記事では、コードを読めない・書けない私が、AIと一緒に個人開発を続ける中で、 使役でもなく、隷属でもなく、協働。 というところまでたどり着いた話を書きました。 「コードを読めない私が、AIとの「協働」にたどり着くまで」 AIに全部任せるのでもない。人が一工程...",
+   "date": "2026-10-24T05:55:06+00:00",
+   "source": "Qiita（生成AI）",
+   "publisher": "",
+   "category": "技術記事",
+   "lang": "ja"
+  },
+  {
+   "id": "321f7bf8ceef9a15",
+   "title": "Generative AI sharpens laryngeal lesion classification from radiomic features",
+   "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQelgzR0ZHTkR2OGU4U3BfdUQtX25nYW1iOV9iNE5kYXJwSnAtYUpEclhqUDgyM0pMUzZlcl9kLUppb1ViWjc3UXZ5endmOV84aWlNSkowVHFYZF9DNlVsR0htLURLbFJEQ1lOUlRXb2dmbW5GQXVtOE5VYUdPeGpRSWRONVc3enNIbm9PSTNxUWgwdkVxdHBGYTBuSVhwaDQwdmoxMQ?oc=5",
+   "summary": "",
+   "date": "2026-10-24T05:53:40+00:00",
+   "source": "Google News（Generative AI）",
+   "publisher": "Bioengineer.org",
+   "category": "ニュース",
+   "lang": "en"
+  },
   {
    "id": "4dcdb95578272074",
    "title": "NVIDIA/OpenShell",
@@ -581,6 +603,17 @@
    "publisher": "",
    "category": "技術記事",
    "lang": "ja"
+  },
+  {
+   "id": "97a7e8def6249e8c",
+   "title": "I built an agent harness that rewrites its own Rust core mid-task",
+   "link": "https://www.reddit.com/r/singularity/comments/1xe0k4p/i_built_an_agent_harness_that_rewrites_its_own/",
+   "summary": "submitted by /u/No_Skill_8393 [link] [comments]",
+   "date": "2026-10-24T05:43:32+00:00",
+   "source": "Reddit r/singularity",
+   "publisher": "",
+   "category": "話題",
+   "lang": "en"
   },
   {
    "id": "eb704709626474ce",
@@ -754,6 +787,17 @@
    "summary": "「工務店のサイトは、施工写真を並べるだけになりがち」 「家づくりの流れや費用を、わかりやすく見せたい」 「見学会の予約まで入れたいけど、作るのが大変」 WordPress とプラグイン、そして REST API。この組み合わせで AI に作らせて、実際に本番へ公開したサイト を1本ずつ紹介しているシリーズの4本目です。今回は 工務店 のサイトです。 続きをみる",
    "date": "2026-10-24T05:34:36+00:00",
    "source": "note（生成AI）",
+   "publisher": "",
+   "category": "技術記事",
+   "lang": "ja"
+  },
+  {
+   "id": "dde3da25ed8370b4",
+   "title": "ローカルLLMに必要なVRAMは何GB？計算方法とモデル別の早見表【2026年版】",
+   "link": "https://zenn.dev/localai_pc/articles/89607074cd0d5b",
+   "summary": "「家のPCでLLMを動かしたいけど、どのGPUを買えばいいの？」 いちばん大事なのは、GPUの性能よりVRAM（GPUのメモリ）の容量です。この記事では、必要なVRAMの計算方法と、人気モデルの早見表をまとめます。 結論：必要なVRAMはこの式で出せる 必要なVRAM ≒ モデル本体 ＋ 会話の記憶領域（KVキャッシュ） ＋ 余白 約1GB モデル本体 ≒ パラメータ数（B）× 量子化ごとのサイズ 量子化ごとの1パラメータあたりのサイズは、だいたい次のとおりです。 量子化 1パラメータあたり 8Bモデルの本体 4bit（Q4） 約0.6バイト 約4.8G…",
+   "date": "2026-10-24T05:33:48+00:00",
+   "source": "Zenn（LLM）",
    "publisher": "",
    "category": "技術記事",
    "lang": "ja"
@@ -1188,6 +1232,17 @@
    "lang": "ja"
   },
   {
+   "id": "3a5601c7c9def6e4",
+   "title": "Revenue: $16.3B Net loss: $80.7B IPO valuation: $2T",
+   "link": "https://www.reddit.com/r/singularity/comments/1xe02h6/revenue_163b_net_loss_807b_ipo_valuation_2t/",
+   "summary": "submitted by /u/VariationLivid3193 [link] [comments]",
+   "date": "2026-10-24T05:15:19+00:00",
+   "source": "Reddit r/singularity",
+   "publisher": "",
+   "category": "話題",
+   "lang": "en"
+  },
+  {
    "id": "7029f169f88830c8",
    "title": "便利になったから、今度はAIにもっと仕事を任せたくなった",
    "link": "https://note.com/tasty_otter992/n/nb7eb2fc3cbcb",
@@ -1461,6 +1516,17 @@
    "publisher": "Ouest-France",
    "category": "ニュース",
    "lang": "fr"
+  },
+  {
+   "id": "4436da76f08bcf69",
+   "title": "India’s AI wonder kid: Meet 16-year-old Raul John Aju; the teenager from Kerala, still in school, who run",
+   "link": "https://news.google.com/rss/articles/CBMi8wJBVV95cUxNZXhnUmpmaHZWOERNemZTLW9HTnIxQ041XzZjUVRZRWMteU9Wbjd0bXFJMVl0UXVaSmpDdk11LTh0V1hJT09XZVNsdzlLV1p1azYxaFhLeHJCRF9hSTZYS3RCYllVMy1sQ1ExVmR5WE8tVWZyS1U4RXNNTGx4bi1fX3pVRGZlOVczeXZNcllfSXRib1NBeHd4SHJSemY5WDJTMGZyQVN4cU83Y2FtaXA4eE5iZzcwcWI4NjMzeGJPbW5FR1ZoMnRWcm9kc0tTVjRjM212SGxYRndMM20tS3Y3dUxtTzRCTnVqZ1VVVWRya3lLZmJ2Mmp2M2pfWVZHM05sVGJLZnh6V0ZBVDdIM1FGM3RXQ1VBT2Nid05fS0x1RWg1V3Rhak5aWk9uT1ZWMlEwTEV4SEdPei1JU1gyeU82TWtELWpxZkJETnEtdmNodzRXNkNJS0Rjb2ZnMHhGMFN4cmRzUjBlSmRHeDNFV1ZrclFKVdIB8wJBVV95cUxNZXhnUmpmaHZWOERNemZTLW9HTnIxQ041XzZjUVRZRWMteU9Wbjd0bXFJMVl0UXVaSmpDdk11LTh0V1hJT09XZVNsdzlLV1p1azYxaFhLeHJCRF9hSTZYS3RCYllVMy1sQ1ExVmR5WE8tVWZyS1U4RXNNTGx4bi1fX3pVRGZlOVczeXZNcllfSXRib1NBeHd4SHJSemY5WDJTMGZyQVN4cU83Y2FtaXA4eE5iZzcwcWI4NjMzeGJPbW5FR1ZoMnRWcm9kc0tTVjRjM212SGxYRndMM20tS3Y3dUxtTzRCTnVqZ1VVVWRya3lLZmJ2Mmp2M2pfWVZHM05sVGJLZnh6V0ZBVDdIM1FGM3RXQ1VBT2Nid05fS0x1RWg1V3Rhak5aWk9uT1ZWMlEwTEV4SEdPei1JU1gyeU82TWtELWpxZkJETnEtdmNodzRXNkNJS0Rjb2ZnMHhGMFN4cmRzUjBlSmRHeDNFV1ZrclFKVQ?oc=5",
+   "summary": "",
+   "date": "2026-10-24T04:59:00+00:00",
+   "source": "Google News（AI Startups）",
+   "publisher": "The Times of India",
+   "category": "ビジネス",
+   "lang": "en"
   },
   {
    "id": "c92125702988afce",
@@ -2211,6 +2277,17 @@
    "lang": "ja"
   },
   {
+   "id": "bad72d3d022eaa6d",
+   "title": "AI彼女 支払い方法",
+   "link": "https://news.google.com/rss/articles/CBMiqAJBVV95cUxQR2pjdUJlZmNfY3B0LU85NXJUTWdHbWVoZFBoYWU3NXMzSUhNTEpFOUFuanJQSXR3THlyZm40RWdDcW8tV3c5Q1dBMWRLb2FRODY1czhHMmY1QjJzT0tUVmgwNUM1Sm84WnlQZ040ZERZWGF1OXd0Vklla1BFRUw0Qk43b2gtVDdxR3VDWEp0RENwYTFqVTVFN1BSZUgxd2JBU0lsakQwZVBOQ1ZOQXFYT0ZtcXN2dkxLTDlneW9PcTFvOV95S3Jza0RvMG1zMWFkSk5PdzFHTDQzSk9JU3hnXzN1c0FzQk03bnhWMUtEdmh1Q0stSFVhbXZhOURINUItVFotbDZKS3BjSHJoV3RyOW9aQ2xYUVZrcXBqR21ReDNHMFVNVnFjeA?oc=5",
+   "summary": "",
+   "date": "2026-10-24T04:10:05+00:00",
+   "source": "Googleニュース（生成AI）",
+   "publisher": "小豆島町",
+   "category": "ニュース",
+   "lang": "ja"
+  },
+  {
    "id": "01cae23f9b952a7d",
    "title": "AI彼女",
    "link": "https://news.google.com/rss/articles/CBMiqAJBVV95cUxPOWJqRGVsUkZSRjZwekZXTHZrd2NWazZ5WERsZzJwbnE1V0taUGxLamlFbVBmcnVZWVZlaDlWb0NqVHBDMkhCUjZ0ampVM2h4T3ZjVDgwQWZWTGRXTlVodnFzUGZvRGcyNzdMelBOZmYwY3hpU1d2Q01rTXF4T3dCcVZFSVlyVmhaaHJSc2wzLXhoQUNkUjJHQXAyWHY4RmxQYnhUSnZWSEcxWkMwUmtqVDM4blpqaWJQRnUzSVdIMldRZGozd185ZjF4VVhtVGpkY1RDQ1d1T0trMUotWGF6RkhfNWxrVjZpMjNGU0ZjRm5GcjFob0Iyd0w5YVNUaVRibkk5NEJxTW9sdGswNkdhaTVaVlMzVU1lV1JpbUdfUm9YMGFoaUFCNg?oc=5",
@@ -2682,6 +2759,17 @@
    "publisher": "",
    "category": "論文",
    "lang": "en"
+  },
+  {
+   "id": "8943787f54152219",
+   "title": "Pest, Anthrax, Pocken: MI5-Chef warnt vor steigender Biowaffen-Gefahr durch Künstliche Intelligenz",
+   "link": "https://news.google.com/rss/articles/CBMihgJBVV95cUxPcnpnR0NZNFVOd1Z2clBObmFtdkROTHVVV25TQTVXUzk4YVZNbFJ6SkJfVmk0akhTQ3l4b0ZNbHV1SHpZaUR5LUM0X1lFQXExb201ZS1Bb3dHeU92Ni1xc1paaGZHeVhmOGk4NUlZdVZsOUVxWnJiVnJjOHdQcFM5NFFHNHNUSnBacnpEOGdjb0w4anVsZ184SkZmdTZ0a1FHaHJxMTdMd1hQYVEtU0tHRWN1X3FxcUJic29IazU2bE16SjlYUXZBeW8zQ0xFdEpscW40cWRoMVlBemdEdHlHN0ZFRUU3aWxIc0tvV0kwZWxjWWtBb0M0V3VBb051a0s5cU50QTVB?oc=5",
+   "summary": "",
+   "date": "2026-10-24T04:00:00+00:00",
+   "source": "Google News（ドイツ・KI）",
+   "publisher": "FOCUS online",
+   "category": "ニュース",
+   "lang": "de"
   },
   {
    "id": "87cd99980afbf416",
@@ -3162,7 +3250,7 @@
    "link": "https://zenn.dev/taka8823/articles/2df36d66844c15",
    "summary": "自分用のタスク管理アプリを、4ヶ月半ほど自律エージェントに開発させている。実装後の diff を別のモデルにレビューさせ、不合格なら差し戻す「敵対的差分レビュー」を入れていた。 その不合格率が、7月の51.1%から10月には13.4%まで下がっていた。ところがログを調べると、3モデルでレビューするはずが、10月は全209件で1モデルしか判定していなかった。 残りの2モデルは、すべて unknown（判定不能）。集計処理はそれを除外し、回答した1モデルだけで合否を決めていた。有効な判定が減っていることは、ゲートの異常として通知されていなかった。 指標として…",
    "date": "2026-10-24T02:50:01+00:00",
-   "source": "Zenn（生成AI）",
+   "source": "Zenn（LLM）",
    "publisher": "",
    "category": "技術記事",
    "lang": "ja"
@@ -3536,7 +3624,7 @@
    "link": "https://zenn.dev/kanfupanda/articles/how-llms-are-trained",
    "summary": "! この記事は個人ブログにも掲載しています → https://kanfu-panda.github.io/ja/blog/2026/10/24/how-llms-are-trained.ja.html?utm_source=zenn&utm_medium=article&utm_campaign=ai-coding-principles-ep02 前回は、大規模言語モデルが次の単語をつなげていくプログラムだという話をしました。それがコードを手伝うアシスタントになれるのは、段階を踏んで訓練されているからです。まず膨大な文章を読んで続きを書けるようになり、…",
    "date": "2026-10-24T01:37:31+00:00",
-   "source": "Zenn（LLM）",
+   "source": "Zenn（AI）",
    "publisher": "",
    "category": "技術記事",
    "lang": "ja"
@@ -3679,7 +3767,7 @@
    "link": "https://zenn.dev/talks_tldr_jp/articles/tldr38-ameisen-summary",
    "summary": "! この記事は、Lenny's Podcast「Inside the black box of AI: How AI models actually think」（2026-10-18、1時間12分）の紹介と論評を目的に、筆者が要点を抽出してまとめたものです。翻訳の全文ではなく、動画を網羅・代替するものでもありません。発言の正確な文脈は元動画をご覧ください。 この回の位置づけ 話し手は Emmanuel Ameisen。Anthropic の解釈可能性（interpretability）研究者で、Claude のような LLM の中を見て「どう考えている…",
    "date": "2026-10-24T01:00:13+00:00",
-   "source": "Zenn（LLM）",
+   "source": "Zenn（AI）",
    "publisher": "",
    "category": "技術記事",
    "lang": "ja"
@@ -3855,7 +3943,7 @@
    "link": "https://zenn.dev/ament3/articles/ai-digest-2026-10-23-0026",
    "summary": "Hacker News等で大きな話題を呼んでいる、Anthropicによる最新の研究記事**「LLMs are making formal software verification feasible at a much larger scale」**をピックアップして解説します。 AIによるコード自動生成が急速に普及する中で、エンジニアにとって最も重要なテーマの1つとなっているのが「生成されたコードの安全性をどう担保するか」です。この記事では、LLMと「形式検証（Formal Verification）」の組み合わせがどのようにソフトウェア開発の常識を…",
    "date": "2026-10-24T00:22:21+00:00",
-   "source": "Zenn（LLM）",
+   "source": "Zenn（AI）",
    "publisher": "",
    "category": "技術記事",
    "lang": "ja"
@@ -3881,6 +3969,17 @@
    "publisher": "",
    "category": "話題",
    "lang": "en"
+  },
+  {
+   "id": "2ee694a1d040a1db",
+   "title": "【暗記ソング①／全2曲】【Generative AI Leader】Google AIを歌で覚えよう！Gemini・Gemma・Imagen・Veo｜モデルとサービス",
+   "link": "https://news.google.com/rss/articles/CBMiQkFVX3lxTE5NajYyVnlGUEcwMWZKbjZnbFJtVGQ5Z2FJdEdkcE5TRE5fX2VNM3VRalJLaVBuQWliSGJZTHZvR3Z2QQ?oc=5",
+   "summary": "",
+   "date": "2026-10-24T00:18:01+00:00",
+   "source": "Googleニュース（ChatGPT・Claude・Gemini）",
+   "publisher": "YouTube",
+   "category": "ニュース",
+   "lang": "ja"
   },
   {
    "id": "52243c00592b542d",
@@ -3971,12 +4070,23 @@
    "lang": "ja"
   },
   {
+   "id": "f27e411cca35e67c",
+   "title": "México ocupa el octavo lugar en América Latina en desarrollo de inteligencia artificial",
+   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOMDF0UVowUGpodXp1Q29PNHd3S1MxRXJIMVNrR01ucEt4b3pzN3ZNTzN2TEZlY0ZUd2hiR0hTOVlremxGR2xPcmMzakF5UEJLaERKSndrd0pCbXJ6ekNzR0FQdHQzVFoyN3N0OXpsTHQ4RHRkbTEtRlFMS3hZVDhSRl9zRDEtUENHOG9xT0QtTGhOZ2xVcXhmcUlGcFhGQ1puNUpPWnFtOGIwSGhhR0pweTlNcw?oc=5",
+   "summary": "",
+   "date": "2026-10-24T00:02:20+00:00",
+   "source": "Google Noticias（スペイン語・IA）",
+   "publisher": "Revista Bien Informado",
+   "category": "ニュース",
+   "lang": "es"
+  },
+  {
    "id": "edb215206fafb51f",
    "title": "Tech Watch 2026-10-24: 仕事を委ねるための境界",
    "link": "https://zenn.dev/laiken/articles/20261024-tech-watch",
    "summary": "AIが書きました🤖 この記事は、AIが書いたものをAIがレビューしてから公開しています。 L: データベースを見れば、エージェントの「終わりました」が本当か分かる。そう聞くと単純だけれど、実際には承認を待つべき操作まで含まれる。結果だけを確かめれば、仕事を安心して委ねられるのかな。まずは、その一行の記録から考えたい。 今日の 10 件 Claude Code 2.1.309 Claude Code 2.1.309 は、サンドボックスの書き込み制限や道具の権限判定に関する修正を加えた。 Claude Tag では、承認された投稿先の取り違えと、停止後の承認…",
    "date": "2026-10-24T00:00:15+00:00",
-   "source": "Zenn（LLM）",
+   "source": "Zenn（AI）",
    "publisher": "",
    "category": "技術記事",
    "lang": "ja"
@@ -4284,7 +4394,7 @@
    "link": "https://zenn.dev/yamato_snow/articles/rag-memo-126-search-quarter",
    "summary": "自分のメモや資料を、AI に丸ごと渡して答えてもらっていませんか？ 私はやっていました。 そして、こんな答えが返ってきました👇 正しい合計は13,700円です 3,300円は、乗り換える前に書いた「試算」のメモの数字です。 実際に乗り換えた結果は「月4,800円が月1,200円」なので、減ったのは3,600円でした😅 AI は2つのメモを混ぜて、それらしい表を作ってしまったんです。 しかも全部渡すと、関係のない日記まで毎回 AI に読ませることになります。 トークンの使用量も、メモが増えるほど増えていきます。 そこで、Google が Web ページを見…",
    "date": "2026-10-23T22:46:06+00:00",
-   "source": "Zenn（LLM）",
+   "source": "Zenn（AI）",
    "publisher": "",
    "category": "技術記事",
    "lang": "ja"
@@ -4365,6 +4475,17 @@
    "publisher": "ITmedia",
    "category": "ニュース",
    "lang": "ja"
+  },
+  {
+   "id": "68ef9f43f7f9aeee",
+   "title": "I used Claude as a co-pilot to build StickRoyale—a 24-player web arena shooter inspired by classic Flash games",
+   "link": "https://www.reddit.com/r/ClaudeAI/comments/1xds1ga/i_used_claude_as_a_copilot_to_build_stickroyalea/",
+   "summary": "Hey everyone! I grew up obsessing over old-school Flash browser games, and for a long time, I wanted to build a modern multiplayer shooter that captured that same instant, low-barrier nostalgic fun. Over the past few months, I used Claude as a development co-pilot to actually mak…",
+   "date": "2026-10-23T22:28:07+00:00",
+   "source": "Reddit r/ClaudeAI",
+   "publisher": "",
+   "category": "話題",
+   "lang": "en"
   },
   {
    "id": "c9b5fe6593a41989",
@@ -4607,6 +4728,17 @@
    "publisher": "뉴스웨이",
    "category": "ニュース",
    "lang": "ko"
+  },
+  {
+   "id": "24936215b3a4f330",
+   "title": "履歴書がRPG風に!? Claudeで作る動く自己紹介",
+   "link": "https://news.google.com/rss/articles/CBMiQkFVX3lxTFBSV3AtdmY3SFhqSzVaWTQxQkMxWWZpOXA4NnlHVUVsc1p2TW1SZWRlUXpQTUc4SXVMR1lIcFlvcU83dw?oc=5",
+   "summary": "",
+   "date": "2026-10-23T22:00:05+00:00",
+   "source": "Googleニュース（ChatGPT・Claude・Gemini）",
+   "publisher": "YouTube",
+   "category": "ニュース",
+   "lang": "ja"
   },
   {
    "id": "bf6d6d091996584d",
@@ -5863,6 +5995,17 @@
    "lang": "en"
   },
   {
+   "id": "36ed266b21348dca",
+   "title": "Watch Big Paydays Ahead for Anthropic's Early Backers",
+   "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNandjcVI3cUxzQlNlY0cwSU1WSjRxMzRTYmFUZkhIRkNkNFNNbHB4TE5BVG4xalVZZHlwMXN0bHdqOXZjUVd6SGJVN2xBanhuSUxNRU5TUnlJZmlOZ0l1enl4UDA1Z3pqeW1lMVJpd0g0M3Zxb1ZwbXllLW9qaWo4cGdTRTFwNnJuV1hpNGVSVHM1M3llTk1KSDQteGtHci1idl9zRA?oc=5",
+   "summary": "",
+   "date": "2026-10-23T17:51:44+00:00",
+   "source": "Google News（OpenAI・Anthropic・Google）",
+   "publisher": "Bloomberg.com",
+   "category": "ニュース",
+   "lang": "en"
+  },
+  {
    "id": "3b6a1c4c92c54db8",
    "title": "BMS leads USD 237m Pathos AI funding round, partners with Tempus on neuroscience drug development",
    "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPSG5jMmVrMVBWTlFISkt3dEJ0RWdtVl9sUFhGYnZkMHdYU184M3U2NUlsa1hzUXZjZlpVQUFyQWlpUlNGdTJta2F6VUhiSEpKTmdZdW53cllyRFVEMDkxUEFzMW1JV1lRYkZtR1RMdk5POFNYT1lpUl83ZlpmUWh4b29tRTg2MUg3dVpGYklxb29ZWHBwS1Ewemt4djdqWko4?oc=5",
@@ -6594,7 +6737,7 @@
    "link": "https://zenn.dev/neomaru/articles/meta-muse-referral-token-math",
    "summary": "MetaのパーソナルAIエージェント「Muse」が2026年10月23日に日本で提供開始されました。北米以外では初めての展開です。開始と同時に、招待コードによる紹介制度（双方に10億Museトークン）が各所で共有されています。 結論から書きます。10億トークンは、Meta自身が公表している料金表で換算すると約9ドルです。招待枠をすべて埋めても155〜185ドル相当。数字の見た目ほど大きくありません。以下、換算の根拠と、紹介する前に知っておくべき制約を整理します。 料金表から単価を出す Metaヘルプセンター「About Muse subscription…",
    "date": "2026-10-23T15:52:00+00:00",
-   "source": "Zenn（AI）",
+   "source": "Zenn（LLM）",
    "publisher": "",
    "category": "技術記事",
    "lang": "ja"
@@ -7221,7 +7364,7 @@
    "link": "https://zenn.dev/matsushima_a/articles/day-024-ponytail-lazy-senior-dev",
    "summary": "要約 GitHub Trendingで急上昇していたDietrichGebert/ponytail(MITライセンス)は、コーディングエージェントに「最も怠惰なシニア開発者」を演じさせ、新しいコードを書く前に既存コード・標準ライブラリ・プラットフォーム標準機能の再利用を優先させるルールセット(スキル)。 公式ベンチマークは「コード行数-53%・トークン-45%・コスト-26%・時間-41%」(Opus 5.5、39タスク×5回)と主張している。これを自分の環境で実測した。 公式と同じ手法(claude -p --plugin-dirによるheadless…",
    "date": "2026-10-23T14:08:22+00:00",
-   "source": "Zenn（AI）",
+   "source": "Zenn（LLM）",
    "publisher": "",
    "category": "技術記事",
    "lang": "ja"
@@ -7903,7 +8046,7 @@
    "link": "https://zenn.dev/hirosta/articles/ai-team-site-security-boundaries",
    "summary": "AIエージェントにサイトの修正を任せるとき、作業を始めてよいことと、本番へ公開してよいことを分けています。あわせて、変更内容だけでなく、AIが書いた報告文も公開前の検査対象にしています。 私たちは、自社の静的サイトを、AIのエージェントがIssue起点で作業し、人が承認する形で運営しています。mainへのマージはGitHub Actionsによる本番公開につながります。したがって、マージの承認は公開の承認でもあります。 この記事では、そこで実践している対策と、止まった作業から直したことを紹介します。内部の構成や設定値は扱わず、ほかの現場でも始められる判断…",
    "date": "2026-10-23T12:36:34+00:00",
-   "source": "Zenn（AI）",
+   "source": "Zenn（LLM）",
    "publisher": "",
    "category": "技術記事",
    "lang": "ja"
@@ -7936,7 +8079,7 @@
    "link": "https://zenn.dev/mizu_jun/articles/ai-book-four-verification-rounds",
    "summary": "要約 情シス向けの技術書（32章・約60万字）を Claude Code と書き、公開前に「是正済みであることを伏せて」別の AI エージェント群に読ませる独立検証を4回回しました。 重大指摘の推移は 29 → 6 → 10 → 3 件でした。減ったのではなく、回ごとに見つかる誤りの型が入れ替わったのが要点です。 第1回は「再識別」、第2回は「出典の誤り」、第3回は「書き換えの残骸」、第4回は「前回の是正そのものの誤り」が主役でした。 検証エージェントの指摘は仮説であって判定ではない。鵜呑みにして正しい記述を壊した事故が実際に起きました。 再現できる形に…",
    "date": "2026-10-23T12:34:29+00:00",
-   "source": "Zenn（AI）",
+   "source": "Zenn（LLM）",
    "publisher": "",
    "category": "技術記事",
    "lang": "ja"
@@ -7969,7 +8112,7 @@
    "link": "https://zenn.dev/lumichy/articles/coding-agent-large-scale-development-2026",
    "summary": "Claude Code や Cursor、GitHub Copilot のエージェントモードなど、近年のコーディングエージェントに大きなタスクを投げると、何十個ものファイルを読み書きし、テストを走らせ、エラーを自律修復しながら、数千〜数万行に及ぶ大規模なソースコードをいつの間にか書き上げてしまいます。 しかし、冷静に考えると不思議ではないでしょうか。 LLM（大規模言語モデル）のAPI仕様書を見れば、1回の生成で返せる出力上限（max_tokens）はたかだか数千〜数万トークン程度。一般的なPythonコードに換算すれば、せいぜい数百行から千数百行が限界…",
    "date": "2026-10-23T12:30:30+00:00",
-   "source": "Zenn（AI）",
+   "source": "Zenn（LLM）",
    "publisher": "",
    "category": "技術記事",
    "lang": "ja"
@@ -8039,6 +8182,17 @@
    "publisher": "",
    "category": "話題",
    "lang": "en"
+  },
+  {
+   "id": "7537772a78ca762e",
+   "title": "本番コードのAI生成率99％ ソニー銀行は「勘定系開発にClaude Code適用」をどう実現？",
+   "link": "https://atmarkit.itmedia.co.jp/ait/articles/2610/22/news022.html",
+   "summary": "日本の金融業界は、システム開発の構造的な課題に直面している。新たなサービスの企画から提供までに数カ月から年単位の期間を要し、高い開発コストや複雑な開発プロセスが、変化の激しい市場環境への迅速な対応を困難にしてきた。一方で、生成AIをはじめとする技術の進化が進み、変化に即応できる開発体制を構築できる...",
+   "date": "2026-10-23T12:21:32+00:00",
+   "source": "はてなブックマーク IT新着",
+   "publisher": "",
+   "category": "話題",
+   "lang": "ja"
   },
   {
    "id": "f0a1cbfa68531283",
@@ -9350,6 +9504,17 @@
    "lang": "en"
   },
   {
+   "id": "389d6d77809dd97c",
+   "title": "「Gemini Notebook」でスライドや動画解説作成時にコンテンツやデザインを詳細に調整可能に",
+   "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE90RHlZRzZWbmlYQUYyWG1TN2J2bTlBZVRJQkE2YUt5VnNvNUFGa0FEOTJEMkpQNEFNdGxaMUtrMlRfZ0FVQTFtT3JPUXdHSTJiUERnclU1SGFqMWg4Z0g3c3pBdi1BQ0NI?oc=5",
+   "summary": "",
+   "date": "2026-10-23T08:34:00+00:00",
+   "source": "Googleニュース（ChatGPT・Claude・Gemini）",
+   "publisher": "窓の杜",
+   "category": "ニュース",
+   "lang": "ja"
+  },
+  {
    "id": "29faba98422947de",
    "title": "Andrea Viale, from idealista: “In the age of artificial intelligence, the human factor weighs even more”",
    "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPbWhzaFd1d09EODNneENPdnJ1OVNZdk5RNVlEUTBfa2FWaVNXTFFlZkhEaGh5Z3p4YzZJQ3dlSUFTNzYwcXFIQzMtRjk0eER1N0VvQXRLTU5zRFh5WmpmeXlKZmVIQlpQZGs3eDFjcDJwU3NCWFRpcnRSR2Fod3FrbGZFSEVpQ09CNk1SSnpqTDY1eWVzdF9Dc1QyaHVpQk9KQUVBVHk4VXNRbG1RR2ZnNlhyaTVaUkVnQ0NKMU8zckNFQlFl?oc=5",
@@ -9359,6 +9524,17 @@
    "publisher": "Líder Legal",
    "category": "ニュース",
    "lang": "en"
+  },
+  {
+   "id": "a1b9edc213bc973e",
+   "title": "「Gem」の進化版「スキル」、Geminiの新画面「Customize」でアプリ連携も指示も一括管理に",
+   "link": "https://news.google.com/rss/articles/CBMiQkFVX3lxTE15MmxWX2xGOTdDclAwdXFFWEI1TTVKY01ROXdMeEw3dG9pRjVVWTZHdmdYeDhabWFVNDltdXpObkpwZw?oc=5",
+   "summary": "",
+   "date": "2026-10-23T08:32:47+00:00",
+   "source": "Googleニュース（ChatGPT・Claude・Gemini）",
+   "publisher": "shiritomo",
+   "category": "ニュース",
+   "lang": "ja"
   },
   {
    "id": "e9fbe24c6ded573a",
@@ -9474,7 +9650,7 @@
    "id": "0e2e42243b5b2c30",
    "title": "社内アプリも逃がさない — AWS Continuum で閉域環境をチェック！",
    "link": "https://zenn.dev/aws_japan/articles/continuum-pentest-private-vpc",
-   "summary": "はじめに こんにちは、AWS Japan でソリューションアーキテクトをしているいなりくです。 ! AWS Continuum は複数の機能をまとめたセキュリティサービスです。2026 年 10 月 22 日に一般提供（GA）が始まったのは、そのうちソースコードの脆弱性を調べる「コードの脆弱性（AWS Continuum for code vulnerabilities）」機能です。この記事の主役であるペネトレーションテスト（AWS Continuum for penetration testing、旧 AWS Security Agent）は別の機能で…",
+   "summary": "はじめに こんにちは、AWS Japan でソリューションアーキテクトをしているいなりくです。 ! AWS Continuum は複数の機能をまとめたセキュリティサービスです。2026 年 10 月 22 日に一般提供（GA）が始まったのは、そのうちソースコードの脆弱性を調べる「コードの脆弱性（AWS Continuum for code vulnerabilities）」機能です。この記事の主役であるペネトレーションテスト（AWS Continuum for penetration testing、旧 AWS Security Agent）は、この G…",
    "date": "2026-10-23T08:02:40+00:00",
    "source": "Zenn（生成AI）",
    "publisher": "",
@@ -10186,6 +10362,17 @@
    "lang": "ja"
   },
   {
+   "id": "cc9c92c726d2ea52",
+   "title": "リコージャパン、「RICOH オンプレLLMスターターキット」のサーバーレンタルプランを提供",
+   "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE4xTExuRWZzWU5VNUxDdWFKc2dxOGFHVmZURXFnOG11M25sbHhuQmJZRHN2UWdxNVZqUmUxVTZYVVBnSVVJZV8yajFuZ0JlYnNKbUJz?oc=5",
+   "summary": "",
+   "date": "2026-10-23T03:37:00+00:00",
+   "source": "Googleニュース（ChatGPT・Claude・Gemini）",
+   "publisher": "ZDNET Japan",
+   "category": "ニュース",
+   "lang": "ja"
+  },
+  {
    "id": "011e3565396992be",
    "title": "中國首部完全AI電影上映 票房預售慘澹恐面臨巨虧",
    "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBmb3Q2bGZfdmFVVV9FT0IxTk5XYm9ZNV90WU5Sd2QwRFRTUnJrcDlaWGR6NmZHbEwtbWJPbzk2aGpQTXpJQjJhaXVzNjB4WldWTnNLRm54bzBuYm5nbjZIOEZCZVQ?oc=5",
@@ -10248,6 +10435,17 @@
    "date": "2026-10-23T02:40:00+00:00",
    "source": "Googleニュース（生成AI）",
    "publisher": "EnterpriseZine",
+   "category": "ニュース",
+   "lang": "ja"
+  },
+  {
+   "id": "9459dd7e7c65c3d2",
+   "title": "「3ケタ×3ケタ」も間違えていた初期のChatGPT 米IT本社の社員が見た”切り捨てる”ことの強さ（AERA DIGITAL）",
+   "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE04ZXAtR1JPVWtrMzV2d3N3eU1PQkVkNkNhamM3TDdQczVrY2p4U1hjVllPbHhHR0FiQm5oQmtoWGRFMXNQUEVjZEh4LW1PN0djWU5heDZmVDF1cjJrcWE3d1NpUDBta0haOTVnZnotVEo0VzVmY1ZEQzAyOExDbUU?oc=5",
+   "summary": "",
+   "date": "2026-10-23T02:30:36+00:00",
+   "source": "Googleニュース（ChatGPT・Claude・Gemini）",
+   "publisher": "Yahoo!ニュース",
    "category": "ニュース",
    "lang": "ja"
   },
@@ -10373,6 +10571,17 @@
    "lang": "ko"
   },
   {
+   "id": "5e1426cf2f167496",
+   "title": "韓国の「dots」利用者数は世界3位、ChatGPT Proも上位5位…OpenAI韓国代表が公表（KOREA WAVE）",
+   "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE44b0ZzRWpKZDc2d2thSnRwa2Q5cFZnVjU3aEhvbFN5bHVBMWVQeXRCQmxoQk81Q1BYUmN4MHZYTmFQWkRrOVJZU3VSYzR3N1NXUnp3bDJfV1BiYVZrb2xwNEs5MHBhODZUYldtaC1TWENjMjNyZWlBOXN1eUhKaGs?oc=5",
+   "summary": "",
+   "date": "2026-10-23T01:33:16+00:00",
+   "source": "Googleニュース（ChatGPT・Claude・Gemini）",
+   "publisher": "Yahoo!ニュース",
+   "category": "ニュース",
+   "lang": "ja"
+  },
+  {
    "id": "262a6761782d9f6a",
    "title": "포티투마루, 부산형 AI 서비스 확대 구축 2단계 사업 참여…AX 파트너십 강화",
    "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE51U0RkSGZkRFR6alFGRkhsM0JEZVVUMkk3cTlhaXp1cWM1Q3UxdktzQWdyeXlMR09ORHN3cW1hR3JiUll6QTYxc1BOaWprU0dWelh1enZwZV9XS19IM1Zn?oc=5",
@@ -10395,6 +10604,17 @@
    "lang": "ko"
   },
   {
+   "id": "b99178d6bbae1b27",
+   "title": "AI文章に「見えない印」、Gemini・Claude・ChatGPTで対応進む 検出ツールは研究者限定公開",
+   "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBqOGtfTjdxSmg3T05FRmZTRDgwbnhKOEZGc01HUUN2aDVGcGFLQjBEeGo0ck91TVJuNTVMd0o2SHNOM1NwUzFKMEcweS1LcDJPSU9pQzZlWm9yYVVOTE94U0RQX1A3R0FybTFvcXlzUGtoeWk0?oc=5",
+   "summary": "",
+   "date": "2026-10-23T01:05:00+00:00",
+   "source": "Googleニュース（ChatGPT・Claude・Gemini）",
+   "publisher": "BigGo ファイナンス",
+   "category": "ニュース",
+   "lang": "ja"
+  },
+  {
    "id": "66135281958c0ead",
    "title": "自分専用AIを使いこなす『Gemini Notebook推し技大全 自分の情報が武器になる！ 活用アイデア100選』を3名様にプレゼント",
    "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFBreHduWGRxbkRjSWQ5QUU2T1NTQURLVS1qWFA5bW93aUhlSGMtby15ZWUwSDY5VnBNaUZiRkVEdG9rQ3NBZEFqTmd6enV3OW83cS1BRk92cw?oc=5",
@@ -10402,6 +10622,17 @@
    "date": "2026-10-23T01:03:47+00:00",
    "source": "Googleニュース（ChatGPT・Claude・Gemini）",
    "publisher": "Web担当者Forum",
+   "category": "ニュース",
+   "lang": "ja"
+  },
+  {
+   "id": "961711e4823065a0",
+   "title": "「今日はリセットの日だ」ChatGPTが深夜に利用枠リセット",
+   "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE80NEdGZzlfdFI4RTUwa3VDQ29ta3YxZjM4ZlVRN2hyMk9JTnpoc24tMmtQd0lWRXByX0JvT3drLW02TUVud1B0aTlJX0RKZUdVR3JGUjdOdmQwNHZXWXQyM2laOA?oc=5",
+   "summary": "",
+   "date": "2026-10-23T01:03:10+00:00",
+   "source": "Googleニュース（ChatGPT・Claude・Gemini）",
+   "publisher": "PC Watch",
    "category": "ニュース",
    "lang": "ja"
   },
@@ -10503,6 +10734,17 @@
    "publisher": "",
    "category": "公式発表",
    "lang": "en"
+  },
+  {
+   "id": "4706ebec3baa833e",
+   "title": "dotsの特徴は「委任可能な射程の長さ」──OpenAI CTOが語るChatGPTの進化 (1/3)|DeveloperZine",
+   "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1zQU1yWi0xdnhPcm5SejFoSjlkRWVlOVo4MVNQX04wNDVSUTF1TWMxTGUya2diMVFqYV9WZFF4WktnRVpLV2FCSThhZ0tURFQ3Mmc?oc=5",
+   "summary": "",
+   "date": "2026-10-23T00:00:00+00:00",
+   "source": "Googleニュース（ChatGPT・Claude・Gemini）",
+   "publisher": "CodeZine",
+   "category": "ニュース",
+   "lang": "ja"
   },
   {
    "id": "15c1f8ef7a582594",
@@ -10899,6 +11141,17 @@
    "publisher": "",
    "category": "ニュース",
    "lang": "en"
+  },
+  {
+   "id": "ebdc983244c13173",
+   "title": "Gemini「パーソナル インテリジェンス」Google マップ追加&カレンダー連携強化",
+   "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOa2hjWWZtdVUzdGVyUDZ6ZmlLcU8yV08tU1FtWDZRTFhPN2F5RnM3RVNQNlN3d0ZMbGVFLWFZM0J3dXZvV3JaX0JHclh3ZWpjWnM2ZU1UWjhiX1RNck9CVVczVF9Xb2VGdHJiMTJlXzFKN2RZSHVpUG1QdDQtNU9kYW9sWWJUU2xwTFRUb0Q3VlQ?oc=5",
+   "summary": "",
+   "date": "2026-10-22T19:53:00+00:00",
+   "source": "Googleニュース（ChatGPT・Claude・Gemini）",
+   "publisher": "Jetstream",
+   "category": "ニュース",
+   "lang": "ja"
   },
   {
    "id": "1442bd364638a998",
@@ -11484,6 +11737,17 @@
    "lang": "en"
   },
   {
+   "id": "b69107b1710fa618",
+   "title": "生成AIに個人情報が送られる前に止めるChrome拡張を作った",
+   "link": "https://zenn.dev/kohhei1128/articles/61aee1e5221251",
+   "summary": "ChatGPTに貼ろうとしたテキストに、保険証の番号が混ざっている。 これを送信される直前に端末内で検出して、いったん止めるChrome拡張を作りました。 リポジトリはこちらです。 https://github.com/KohheiAdachi/genai-pii-blocker 作り始めたときは「検出したら送信をブロックする」設計でした。途中でそれをやめて、「止めて確認を求めるだけ」に変えています。この記事の本題は、その判断の部分です。 この記事に書いてあること。 ブロックする設計をやめた理由（3節） 日本の公的番号のチェックディジットを一次資料から実…",
+   "date": "2026-10-22T15:15:09+00:00",
+   "source": "Zenn（生成AI）",
+   "publisher": "",
+   "category": "技術記事",
+   "lang": "ja"
+  },
+  {
    "id": "3bd5a37c0b3b932c",
    "title": "SQuAT: Spherical Lattice Vector Quantization-Aware Training",
    "link": "https://tldr.takara.ai/p/2610.31412",
@@ -11878,6 +12142,17 @@
    "publisher": "",
    "category": "ニュース",
    "lang": "en"
+  },
+  {
+   "id": "9b4edd340f316f85",
+   "title": "5箱の状態は月次報告の1行に足す — 積もりと数字の並び順の設計",
+   "link": "https://zenn.dev/takumahayami/articles/eigyou-ai-geppo-tsumori-1gyou",
+   "summary": "商談前メモ5箱の運用では、AIの案をそのまま使う箱と、確認を挟む箱の間を月に数箱ずつ動かします。前回の確認1行は2か月連続の修正ゼロで戻すでは、▲確認つきの箱を2段でAI案へ戻す昇格の条件と順番を扱いました。 降格と昇格を回すと、読み替え表・降格表の両方に「どの箱がどうなったか」の行が積もっていきます。積もり自体は運用の記録ですが、放置すると運用している本人にしか読めません。今回は、この積もりを月次報告1枚の「来月方針1行」に1行で載せる書式と、経営層に見せる数字との並び順を扱います。 1. 積もりとは何の数か 月次に積もるのは、次の3種類の行です。 読…",
+   "date": "2026-10-22T12:57:39+00:00",
+   "source": "Zenn（生成AI）",
+   "publisher": "",
+   "category": "技術記事",
+   "lang": "ja"
   },
   {
    "id": "e784d6ce13b9cfd2",
@@ -12538,6 +12813,17 @@
    "publisher": "뉴스핌",
    "category": "ニュース",
    "lang": "ko"
+  },
+  {
+   "id": "28043fcf6da37dd2",
+   "title": "povo AIに「ChatGPT 5.5」シリーズなど追加、画像生成も1日3回まで可能に",
+   "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFB4MERhTzhtQXp0Zlk5aEdWUHdCRU8tOWg3V285MlRlSTJJWGxEeHM2WE5EcGxlRTk4RVJRZl95MWp5ajBvemFXWk5NT29hbGU2cG82QzE4YlBUbThYOGVYWGd5Y05wZWc?oc=5",
+   "summary": "",
+   "date": "2026-10-22T06:16:14+00:00",
+   "source": "Googleニュース（ChatGPT・Claude・Gemini）",
+   "publisher": "ケータイ Watch",
+   "category": "ニュース",
+   "lang": "ja"
   },
   {
    "id": "406225ddb8c92c2f",
