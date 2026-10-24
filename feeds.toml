@@ -1,0 +1,169 @@
+# 収集するフィード（RSS / Atom）の一覧です。
+# 追加したいときは [[feeds]] のかたまりをコピーして書き換えてください。
+#
+#   name     : 画面に表示する名前
+#   url      : RSS / Atom の URL
+#   category : 分類（画面の絞り込みに使います）
+#   lang     : "ja"（日本語）または "en"（英語）
+#   filter   : true にすると、AI関連のキーワードを含む記事だけ残します（AI専門でないサイト向け）
+#   limit    : 1回の収集で取り込む最大件数（大量に流れるフィード向け。省略すると全件）
+
+[settings]
+keep_days = 14       # 何日前までの記事を残すか
+max_items = 3000     # 保存する最大件数
+
+# ---------- 日本語ニュース ----------
+
+[[feeds]]
+name = "ITmedia AI+"
+url = "https://rss.itmedia.co.jp/rss/2.0/aiplus.xml"
+category = "ニュース"
+lang = "ja"
+
+[[feeds]]
+name = "GIGAZINE"
+url = "https://gigazine.net/news/rss_2.0/"
+category = "ニュース"
+lang = "ja"
+filter = true
+
+[[feeds]]
+name = "Publickey"
+url = "https://www.publickey1.jp/atom.xml"
+category = "ニュース"
+lang = "ja"
+filter = true
+
+[[feeds]]
+name = "はてなブックマーク IT人気"
+url = "https://b.hatena.ne.jp/hotentry/it.rss"
+category = "話題"
+lang = "ja"
+filter = true
+
+# ---------- 日本語の技術記事・活用ノウハウ ----------
+
+[[feeds]]
+name = "Zenn（LLM）"
+url = "https://zenn.dev/topics/llm/feed"
+category = "技術記事"
+lang = "ja"
+
+[[feeds]]
+name = "Zenn（生成AI）"
+url = "https://zenn.dev/topics/生成ai/feed"
+category = "技術記事"
+lang = "ja"
+
+[[feeds]]
+name = "Qiita（生成AI）"
+url = "https://qiita.com/tags/生成ai/feed"
+category = "技術記事"
+lang = "ja"
+
+[[feeds]]
+name = "Qiita（ChatGPT）"
+url = "https://qiita.com/tags/chatgpt/feed"
+category = "技術記事"
+lang = "ja"
+
+# ---------- AI企業の公式発表 ----------
+
+[[feeds]]
+name = "OpenAI"
+url = "https://openai.com/news/rss.xml"
+category = "公式発表"
+lang = "en"
+
+[[feeds]]
+name = "Google AI Blog"
+url = "https://blog.google/technology/ai/rss/"
+category = "公式発表"
+lang = "en"
+
+[[feeds]]
+name = "Google DeepMind"
+url = "https://deepmind.google/blog/rss.xml"
+category = "公式発表"
+lang = "en"
+
+[[feeds]]
+name = "Hugging Face Blog"
+url = "https://huggingface.co/blog/feed.xml"
+category = "公式発表"
+lang = "en"
+
+[[feeds]]
+name = "Microsoft AI Blog"
+url = "https://blogs.microsoft.com/ai/feed/"
+category = "公式発表"
+lang = "en"
+
+# ---------- 英語ニュース ----------
+
+[[feeds]]
+name = "TechCrunch AI"
+url = "https://techcrunch.com/category/artificial-intelligence/feed/"
+category = "ニュース"
+lang = "en"
+
+[[feeds]]
+name = "The Verge AI"
+url = "https://www.theverge.com/rss/ai-artificial-intelligence/index.xml"
+category = "ニュース"
+lang = "en"
+
+[[feeds]]
+name = "VentureBeat AI"
+url = "https://venturebeat.com/category/ai/feed/"
+category = "ニュース"
+lang = "en"
+
+[[feeds]]
+name = "MIT Technology Review AI"
+url = "https://www.technologyreview.com/topic/artificial-intelligence/feed"
+category = "ニュース"
+lang = "en"
+
+[[feeds]]
+name = "Simon Willison"
+url = "https://simonwillison.net/atom/everything/"
+category = "技術記事"
+lang = "en"
+
+# ---------- 英語コミュニティ（話題になっているもの） ----------
+
+[[feeds]]
+name = "Hacker News（100pt以上）"
+url = "https://hnrss.org/newest?points=100"
+category = "話題"
+lang = "en"
+filter = true
+
+[[feeds]]
+name = "Reddit r/LocalLLaMA"
+url = "https://www.reddit.com/r/LocalLLaMA/top/.rss?t=day"
+category = "話題"
+lang = "en"
+
+[[feeds]]
+name = "Reddit r/singularity"
+url = "https://www.reddit.com/r/singularity/top/.rss?t=day"
+category = "話題"
+lang = "en"
+
+# ---------- 研究論文 ----------
+
+[[feeds]]
+name = "arXiv cs.AI"
+url = "https://rss.arxiv.org/rss/cs.AI"
+category = "論文"
+lang = "en"
+limit = 40
+
+[[feeds]]
+name = "arXiv cs.CL（言語モデル）"
+url = "https://rss.arxiv.org/rss/cs.CL"
+category = "論文"
+lang = "en"
+limit = 40

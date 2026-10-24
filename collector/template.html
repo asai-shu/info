@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI情報まとめ</title>
+<style>
+:root {
+  --bg: #f6f7f9; --card: #ffffff; --text: #1d2129; --muted: #6b7280;
+  --line: #e3e6ea; --accent: #2563eb; --accent-bg: #e8efff; --new: #dc2626;
+}
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #111317; --card: #1b1e24; --text: #e6e8eb; --muted: #9aa1ab;
+          --line: #2c3038; --accent: #7aa2ff; --accent-bg: #1f2a44; --new: #f87171; }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--text);
+       font: 15px/1.6 system-ui, -apple-system, "Hiragino Sans", "Noto Sans JP", sans-serif; }
+header { position: sticky; top: 0; z-index: 1; background: var(--bg); border-bottom: 1px solid var(--line); }
+.wrap { max-width: 880px; margin: 0 auto; padding: 0 16px; }
+h1 { font-size: 20px; margin: 14px 0 2px; }
+.meta { color: var(--muted); font-size: 13px; }
+.controls { display: flex; flex-wrap: wrap; gap: 8px; padding: 10px 0 12px; }
+input[type=search] { flex: 1 1 220px; padding: 8px 10px; border: 1px solid var(--line); border-radius: 8px;
+                     background: var(--card); color: var(--text); font-size: 15px; }
+select { padding: 8px; border: 1px solid var(--line); border-radius: 8px; background: var(--card); color: var(--text); }
+.chips { display: flex; flex-wrap: wrap; gap: 6px; padding-bottom: 10px; }
+.chip { border: 1px solid var(--line); background: var(--card); color: var(--text); border-radius: 999px;
+        padding: 3px 12px; font-size: 13px; cursor: pointer; }
+.chip.on { background: var(--accent-bg); border-color: var(--accent); color: var(--accent); }
+h2 { font-size: 14px; color: var(--muted); margin: 22px 0 8px; }
+article { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 12px 14px; margin-bottom: 8px; }
+article a.title { color: var(--text); text-decoration: none; font-weight: 600; }
+article a.title:hover { color: var(--accent); text-decoration: underline; }
+article p { margin: 4px 0 0; color: var(--muted); font-size: 13.5px; overflow-wrap: anywhere; }
+.tags { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-top: 6px; font-size: 12px; color: var(--muted); }
+.tags a { color: var(--accent); }
+.badge { color: var(--new); font-weight: 700; }
+.empty { text-align: center; color: var(--muted); padding: 40px 0; }
+details { margin: 24px 0 40px; color: var(--muted); font-size: 13px; }
+details li.ng { color: var(--new); }
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <h1>AI情報まとめ</h1>
+    <div class="meta" id="meta"></div>
+    <div class="controls">
+      <input type="search" id="q" placeholder="キーワードで検索（例: Claude、画像生成）">
+      <select id="lang">
+        <option value="">すべての言語</option>
+        <option value="ja">日本語のみ</option>
+        <option value="en">英語のみ</option>
+      </select>
+      <select id="range">
+        <option value="0">全期間</option>
+        <option value="1">24時間以内</option>
+        <option value="3">3日以内</option>
+        <option value="7">7日以内</option>
+      </select>
+    </div>
+    <div class="chips" id="chips"></div>
+  </div>
+</header>
+<main class="wrap" id="list"></main>
+<div class="wrap"><details id="status"></details></div>
+
+<script id="data" type="application/json">/*__DATA__*/null</script>
+<script>
+const DATA = JSON.parse(document.getElementById("data").textContent) || { items: [], statuses: [] };
+const $ = (id) => document.getElementById(id);
+const store = {
+  get(k) { try { return localStorage.getItem(k); } catch { return null; } },
+  set(k, v) { try { localStorage.setItem(k, v); } catch {} },
+};
+
+// 前回ページを開いた時刻より新しい記事に「NEW」を付ける
+const lastVisit = store.get("lastVisit");
+store.set("lastVisit", new Date().toISOString());
+
+const categories = [...new Set(DATA.items.map((i) => i.category))];
+let activeCategory = "";
+
+function esc(s) {
+  return s.replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c]);
+}
+
+function dayLabel(d) {
+  const today = new Date(); today.setHours(0, 0, 0, 0);
+  const diff = Math.round((today - new Date(d.getFullYear(), d.getMonth(), d.getDate())) / 86400000);
+  const base = `${d.getMonth() + 1}月${d.getDate()}日（${"日月火水木金土"[d.getDay()]}）`;
+  return diff === 0 ? `今日 ${base}` : diff === 1 ? `昨日 ${base}` : base;
+}
+
+function renderChips() {
+  const counts = {};
+  DATA.items.forEach((i) => (counts[i.category] = (counts[i.category] || 0) + 1));
+  $("chips").innerHTML = [["", `すべて ${DATA.items.length}`], ...categories.map((c) => [c, `${c} ${counts[c]}`])]
+    .map(([c, label]) => `<button class="chip${c === activeCategory ? " on" : ""}" data-c="${esc(c)}">${esc(label)}</button>`)
+    .join("");
+}
+
+function render() {
+  const words = $("q").value.trim().toLowerCase().split(/\s+/).filter(Boolean);
+  const lang = $("lang").value;
+  const days = Number($("range").value);
+  const since = days ? Date.now() - days * 86400000 : 0;
+
+  const shown = DATA.items.filter((i) =>
+    (!activeCategory || i.category === activeCategory) &&
+    (!lang || i.lang === lang) &&
+    new Date(i.date).getTime() >= since &&
+    words.every((w) => `${i.title} ${i.summary} ${i.source}`.toLowerCase().includes(w))
+  );
+
+  let html = "", currentDay = "";
+  for (const i of shown) {
+    const d = new Date(i.date);
+    const label = dayLabel(d);
+    if (label !== currentDay) { html += `<h2>${label}</h2>`; currentDay = label; }
+    const isNew = lastVisit && i.date > lastVisit;
+    const time = `${String(d.getHours()).padStart(2, "0")}:${String(d.getMinutes()).padStart(2, "0")}`;
+    const translate = i.lang === "en"
+      ? `<a href="https://translate.google.com/translate?sl=auto&tl=ja&u=${encodeURIComponent(i.link)}" target="_blank" rel="noopener">日本語に翻訳して読む</a>`
+      : "";
+    html += `<article>
+      <a class="title" href="${esc(i.link)}" target="_blank" rel="noopener">${esc(i.title)}</a>
+      ${i.summary ? `<p>${esc(i.summary)}</p>` : ""}
+      <div class="tags">${isNew ? '<span class="badge">NEW</span>' : ""}
+        <span>${time}</span><span>${esc(i.source)}</span><span>${esc(i.category)}</span>${translate}</div>
+    </article>`;
+  }
+  $("list").innerHTML = html || '<p class="empty">該当する記事はありません。</p>';
+  $("meta").textContent = `${shown.length}件を表示 ・ 最終更新 ${DATA.updated ? new Date(DATA.updated).toLocaleString("ja-JP") : "—"}`;
+}
+
+function renderStatus() {
+  const s = DATA.statuses || [];
+  const ng = s.filter((x) => !x.ok).length;
+  $("status").innerHTML = `<summary>取得元 ${s.length}件（失敗 ${ng}件）</summary><ul>` +
+    s.map((x) => `<li class="${x.ok ? "" : "ng"}">${esc(x.name)}：${x.ok ? `${x.count}件取得・新規${x.added}件` : `取得失敗（${esc(x.error || "")}）`}</li>`).join("") +
+    "</ul>";
+}
+
+$("chips").addEventListener("click", (e) => {
+  const b = e.target.closest(".chip");
+  if (!b) return;
+  activeCategory = b.dataset.c;
+  renderChips(); render();
+});
+["q", "lang", "range"].forEach((id) => $(id).addEventListener("input", render));
+
+renderChips(); render(); renderStatus();
+</script>
+</body>
+</html>
