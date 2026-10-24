@@ -1,6 +1,61 @@
 {
- "updated": "2026-10-24T05:36:06+00:00",
+ "updated": "2026-10-24T05:41:17+00:00",
  "items": [
+  {
+   "id": "a58fde932d86c8ed",
+   "title": "virgiliojr94/book-to-skill",
+   "link": "https://github.com/virgiliojr94/book-to-skill",
+   "summary": "Turn any technical book PDF into a Claude Code skill — ready to study, reference, and use while you work. book-to-skill English · Русский · 简体中文 Turn any technical book, document folder, or collection of sources into a unified agent skill — ready to study, reference, and use whil…",
+   "date": "2026-10-24T05:41:17+00:00",
+   "source": "GitHub Trending（Python）",
+   "publisher": "",
+   "category": "ツール",
+   "lang": "en"
+  },
+  {
+   "id": "983f23e99302862c",
+   "title": "SnailSploit/Claude-Red",
+   "link": "https://github.com/SnailSploit/Claude-Red",
+   "summary": "claude-red is a curated library of offensive security skills designed for the Claude skills system. Each skill is a structured SKILL.md file that primes Claude with expert-level methodology for a specific attack surface — from SQLi to shellcode, EDR evasion to exploit development…",
+   "date": "2026-10-24T05:41:17+00:00",
+   "source": "GitHub Trending（Python）",
+   "publisher": "",
+   "category": "ツール",
+   "lang": "en"
+  },
+  {
+   "id": "629e52348c94311c",
+   "title": "Anil-matcha/open-duet",
+   "link": "https://github.com/Anil-matcha/open-duet",
+   "summary": "Open-source, self-hosted alternative to Claude Duet: AI coworkers (named agents) with instructions, memory, routines, their own isolated computer, and your approval before they act. Also an alternative to OpenAI Dots, Meta Muse, Grok Bot, Manus Cue and ChatGPT agent. Open Duet Yo…",
+   "date": "2026-10-24T05:41:17+00:00",
+   "source": "GitHub Trending（Python）",
+   "publisher": "",
+   "category": "ツール",
+   "lang": "en"
+  },
+  {
+   "id": "1606cfe2c2a91a41",
+   "title": "TauricResearch/TradingAgents",
+   "link": "https://github.com/TauricResearch/TradingAgents",
+   "summary": "TradingAgents: Multi-Agents LLM Financial Trading Framework https://arxiv.org/pdf/2412.20138 Deutsch | Español | français | 日本語 | 한국어 | Português | Русский | 中文 TradingAgents: Multi-Agents LLM Financial Trading Framework News [2026-10] TradingAgents v0.7.0 released with runs on y…",
+   "date": "2026-10-24T05:41:17+00:00",
+   "source": "GitHub Trending（Python）",
+   "publisher": "",
+   "category": "ツール",
+   "lang": "en"
+  },
+  {
+   "id": "5a4efea6dba16517",
+   "title": "AI生成HTMLをリンク共有する前の4つの確認点",
+   "link": "https://qiita.com/plopino/items/acc4b67355ceb711c43a",
+   "summary": "AIが生成したHTMLは、チャット内のプレビューでは完成して見えても、そのまま共有リンクにしたときに素材やデータの保存処理まで動くとは限りません。 プレビューで分かるのは「ブラウザーがこのコードを描画できるか」です。共有時には、参照したファイルが含まれているか、データがその...",
+   "date": "2026-10-24T05:40:45+00:00",
+   "source": "Qiita（生成AI）",
+   "publisher": "",
+   "category": "技術記事",
+   "lang": "ja"
+  },
   {
    "id": "ba85c34852814401",
    "title": "Inauguró CICESE Laboratorio de Supercómputo e Inteligencia Artificial",
@@ -541,6 +596,17 @@
    "lang": "ja"
   },
   {
+   "id": "3f6714d36e417732",
+   "title": "GPT-6 Bel Coming Soon >It's said that Bel is Doug's successor >Reportedly, total parameters exceed 10T >Bel may serve as the foundation for the model after GPT-6 >OpenAI reportedly views Bel as a potential post-GPT-6 foundation> It might even become the foundation for an AGI thre…",
+   "link": "https://www.reddit.com/r/OpenAI/comments/1xdzvqw/gpt6_bel_coming_soon_its_said_that_bel_is_dougs/",
+   "summary": "submitted by /u/Soggy_Perspective776 [link] [comments]",
+   "date": "2026-10-24T05:05:18+00:00",
+   "source": "Reddit r/OpenAI",
+   "publisher": "",
+   "category": "話題",
+   "lang": "en"
+  },
+  {
    "id": "9e0eb82158260b50",
    "title": "『昨日までの正解』——AIが答えを出してくれる時代に、経営者が見失ったもの",
    "link": "https://note.com/creativ_k/n/n2fc7f4321d4a",
@@ -618,6 +684,17 @@
    "lang": "fr"
   },
   {
+   "id": "c92125702988afce",
+   "title": "Do benchmarks even represent the real life environment workflow?",
+   "link": "https://www.reddit.com/r/singularity/comments/1xdzosh/do_benchmarks_even_represent_the_real_life/",
+   "summary": "Don't get me wrong, I am aware that latest benchmarks do represent the actual workflow much better than the previous benchmarks. But, when I was seeing the methodology of evaluations in Artificial Analysis, I noticed something - In many evaluations, models are highly restricted -…",
+   "date": "2026-10-24T04:54:46+00:00",
+   "source": "Reddit r/singularity",
+   "publisher": "",
+   "category": "話題",
+   "lang": "en"
+  },
+  {
    "id": "1ad5b6c1fcc4b43f",
    "title": "La inteligencia artificial ya puede ayudarte a decidir qué comprar, pero hay algo que no deberías dejar en sus manos",
    "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQQmV5bDFlQWlQemY3R2d4YTBiYWFHX1lvUGJjTHkxaWxJVnJwZHhidkNseXRMc0ZuRGdjVVE5Ny1sODJUSjc0N1ZWemhlSWhKdFZZT0E1ZDZXU2VvTHp5Z1ppLUl1eVh0NXA1YlNqXzljSjF0XzRkQlZublZqUEhDSkl2UHpPM2NvbzdJQ2ZXbFFMbkpwV2piWFVLcHRqRnVHRmI1VVYtek9DRkIwSjFCOFVremlPbzdZRDVZYVFnQ1B3UGpqNDU0VzE5MkZRdUJDMjREM0N2dw?oc=5",
@@ -627,6 +704,17 @@
    "publisher": "Revista Merca2.0",
    "category": "ニュース",
    "lang": "es"
+  },
+  {
+   "id": "b7c1616031ce56f1",
+   "title": "AI will make art about the process, not the result; and that's a good thing.",
+   "link": "https://www.reddit.com/r/singularity/comments/1xdznks/ai_will_make_art_about_the_process_not_the_result/",
+   "summary": "A few years ago, I watched a Youtube video discussing the history of music theory. At one point it talked about musical notation and its rigidity in the West. The documentarian made the argument that while notation has its place, music is not something to be static or written dow…",
+   "date": "2026-10-24T04:52:52+00:00",
+   "source": "Reddit r/singularity",
+   "publisher": "",
+   "category": "話題",
+   "lang": "en"
   },
   {
    "id": "e1db2a53dc12fa4f",
@@ -660,6 +748,17 @@
    "publisher": "",
    "category": "技術記事",
    "lang": "ja"
+  },
+  {
+   "id": "7c7c5ad6d960f80e",
+   "title": "What the Sanctuary Means to Us (Voices from the Field)",
+   "link": "https://www.reddit.com/r/singularity/comments/1xdz7li/what_the_sanctuary_means_to_us_voices_from_the/",
+   "summary": "submitted by /u/bedizzzz [link] [comments]",
+   "date": "2026-10-24T04:28:00+00:00",
+   "source": "Reddit r/singularity",
+   "publisher": "",
+   "category": "話題",
+   "lang": "en"
   },
   {
    "id": "61f030a3e6d48377",
@@ -728,9 +827,31 @@
    "lang": "ja"
   },
   {
+   "id": "5539c0971093791e",
+   "title": "AI彼女 ボイス付き おすすめ",
+   "link": "https://news.google.com/rss/articles/CBMiqAJBVV95cUxNLVRDVHc5MmRLYlh6c2dkeHUyOE1qdS1SRnplb3U2NmowZ2hwUVNPN2R3YndqMHlzbmh2NHJidXY1c2lWdi1FeVJnT3FfeGZ5b2pLdk1DemF0TkU5TXo0ZExpbnplZmlmZW9hWVpBZVRLSHQ4S1FaUVZiVjNTeHNtVldYRmR0SjFuVkF3ZGtWUHljdEpILS1DRUlBTmRFdFI4Tk5UN0ppd3ZwS3hIbTdKSnRvNzBSVlNid3dhemE2RVNqUmlFcVlyRlNjYVYtb0F2ZVRGUU82dklFRVlieGRBNFJVd1V1c09LVzBkTThJaXYzUHcyVDFmc3RIWFhXQ1dOQlBPVEltc2JJYW5zSmxwY1dieHI0XzFjVGFJd2wwMktDTzBFbHdERg?oc=5",
+   "summary": "",
+   "date": "2026-10-24T04:17:57+00:00",
+   "source": "Googleニュース（生成AI）",
+   "publisher": "小豆島町",
+   "category": "ニュース",
+   "lang": "ja"
+  },
+  {
    "id": "9d39181d2251eb24",
    "title": "キャラクターAI AI彼女 違い",
    "link": "https://news.google.com/rss/articles/CBMiqAJBVV95cUxQX0RnNkpNRnhVMW92LWZHUW9MTXRVRHdkSU9vZXMtYzc3T2ZVWktlaFFGbVcwVzVKdFF2RHhTVW5NU205TFBaY1FhVzA1VU9DX05hZnVSX2FhYlhrcXA4cmJxSTJObjMzaDg2Z0cyWFZIN0FpeEtLLVNHVVhHZE5TLXdVVHdiVnlaYVU4aHgxUzVaMnNMNVlhNl80cllJbEFkbFQ4VWktNU9FNVBrTEJjc3EzMmlfakJ6eTk3Ri1Pamc0bFV1emdLLWlIY05vMDBLaU8xV01hcHptZVBzMi1FNms4bUlGa044QmJpeGZWRjZEX1E2VE5lWElRXzBjN0E1bVRGM3JkVDVhOUhOa1d4QXVFUHcwWl8tcTJUNGNBUmRfWElSOHB3Yg?oc=5",
+   "summary": "",
+   "date": "2026-10-24T04:17:53+00:00",
+   "source": "Googleニュース（生成AI）",
+   "publisher": "小豆島町",
+   "category": "ニュース",
+   "lang": "ja"
+  },
+  {
+   "id": "0afa7fa52aa5dd3d",
+   "title": "AI彼女 デメリット",
+   "link": "https://news.google.com/rss/articles/CBMiqAJBVV95cUxQdXJrRHd0bjg4TGFNU1Nldl9vaXRkYnBpWHZFX0NmVENYSkhlTVZmQ1dLd1VReFFMa005SXlEbEZvY19IRWdVS2xiQWFYcWlFckFGSHBWbjloTnl1V2hZc0pGOUR3QmdabHJxaUxfdU10RFdmSjhvS3dEN3VFeFFCTGRGODkzUHAzUVhhRHFIS2pMOUZMc0lTOHFIVTFlSmJ6LXpzNzB4alRrOXBDdXdvdG9RZS1nNXc1cTVBeExXVlloX2lJQnpidm94dEJ2S05HYmNqODF3aW1scHVmODYtYkVtMXN5VUZqdGp4TU1HN3drMmhxNU5iNDBaMlU3RVBVZFowTnE0MGtJc21tMG5HeS1EUHAxajc1eU5qTmRoZk92MnlzYUdjNw?oc=5",
    "summary": "",
    "date": "2026-10-24T04:17:53+00:00",
    "source": "Googleニュース（生成AI）",
@@ -937,6 +1058,28 @@
    "lang": "ja"
   },
   {
+   "id": "283caa6fcdb45c98",
+   "title": "AI彼女 ハマる",
+   "link": "https://news.google.com/rss/articles/CBMiqAJBVV95cUxQMDZCU043cGo4X2pMN1VoS0lPOXl1aFBhRy1GZ0pIS2EtbE1nWnp1Ni1Ha05ydEU2SnJ2eW9TVzZGZzY3MkQxY09nLXN5YUFFVU4xWWdhTE1fSnBsV3FlbXhnS2txTElEa3N6ODhpWWdIdzdraDdtczFvYmg2a19tMVV6TktRUFNFaGdpYzJILW1IN2RvT3k2c2QyZ0JnR3BLMWgzcHM1MGREZkpxTmFTX3RfbjByRm5IRjR2elpGU09GUHV5bW9DcVBHYzlyNml1TmNheTdESktDRC1qTW45a1d3YUNISWRFY2dENVFXM0hZdmtvX2VlZDJjMk5ITy1EWk9iaVpRallaVUxjbGxpeU5vQXZ0RUFOR2dFS3pXcTBkdWNVaGh2aQ?oc=5",
+   "summary": "",
+   "date": "2026-10-24T04:16:57+00:00",
+   "source": "Googleニュース（生成AI）",
+   "publisher": "小豆島町",
+   "category": "ニュース",
+   "lang": "ja"
+  },
+  {
+   "id": "379c2ead953bbf1a",
+   "title": "レプリカ 以外 AI彼女",
+   "link": "https://news.google.com/rss/articles/CBMiqAJBVV95cUxPTFlHZXY0c3dnUGhSakNodVFxbXpaSVNsQmRURmRoUTJEQUpZUEhEanNhX3VlWFhFNzBqY0hsQjc3TUtxWVlscW5DZ3YyYmtKcThRcmlLejVVaURxZFc0WlVqUUVBeDNlSWNYQkxlSWpLMlYwaWhkOGdWVHcyWGFsSlZfdElQSnI5RVZUZHIxX3FSWGNfRkZ0TGVtcnE4SWkyX0lxY0tDUnZ3NUNnMFN5N1NKTy01WXliV3lpZ0hCSnVKdkRFV2NNdXVQQUxwaWdZaE5qTXc0LTJndVFWNEpHdVVkNFB5RzlUZ0dwYTMtT3dPLTFHVTRmOUQ0RmJEdXZkUUFSSGNmRU5ET2k3TmxxVllGLWQ1WWxJU1ZDVFhfNW9hcWthNjJXUw?oc=5",
+   "summary": "",
+   "date": "2026-10-24T04:16:53+00:00",
+   "source": "Googleニュース（生成AI）",
+   "publisher": "小豆島町",
+   "category": "ニュース",
+   "lang": "ja"
+  },
+  {
    "id": "07e86e33ee6025c0",
    "title": "AI彼女 画像 作り方",
    "link": "https://news.google.com/rss/articles/CBMiqAJBVV95cUxOcXl1TWxzbDNJLUtNV21qVTFURUhiZlNDZFJXN1ZkOUxsUXBFTk5senI4SnpuR2hrU05BV0ZiNXBKbE96RTJiQW1EQlhTQ2tCQWY0UVdKSXZPdU9xbEdkQXhPWThwQXlHOE1NWUFURExIS2NKWkwxY3VuWmJTWExkS2FvZHE0cjFEQ0lQZnZQVWY5NVRNcHptTE1MRE1CUDFtSkpUbzR0cXppV0E5YnhDOHc1SWVuVHFscV9uNDVXXzRieDJFYTlzd2VfbXJSeUNRMnloZTZuMXBkOEF0bU1hSnJMYk5fWkZ4QUJwT1F3bXFGMFNkYk5FcThxMm1iSWtYeFBidGQ3eTMwNl83V2s5cl9iWkVWbG5iTHROQ2lNQ3k1UzI5Y0RfQQ?oc=5",
@@ -1014,6 +1157,17 @@
    "lang": "ja"
   },
   {
+   "id": "1353a13e6d2fbcb2",
+   "title": "AI彼女 サブスク",
+   "link": "https://news.google.com/rss/articles/CBMiqAJBVV95cUxOWjVNdTZLa3ZDakhzbnkyZ19XUDVMSFp5QnNuamhoam5oYXRNVXNjQjBjR1FvMGNyTnoxa29yR3RCZll4SWZDdi1KaEJqYXVYNGFtODctR0tNZlNHaVhBRWh6NHlFSWNBQmxSVVBlN2lnRjRRTDhkRXg5VUgtOVVTNEhvWWNDaGdaOTdlN1FHTUtMa3dkTkdxSzU3WXNjbF9MMmd6T1dTX2s4Z0VqQmF1NlRRTVlrV3hORE9YY1QwWEg4U3JmaHRGNFo4MW5HbS1YRjE5dGpLaWZaRU9ZWFdxRmJmSlR5Y1RGOFo2MlZlTGwxa2NpclVhdzhObVhwWnMyeG9ibm9lOWxneThhT2ZhYkZFeFllUklMLWd3Y1I3eWYzUVNQeEtuNg?oc=5",
+   "summary": "",
+   "date": "2026-10-24T04:16:13+00:00",
+   "source": "Googleニュース（生成AI）",
+   "publisher": "小豆島町",
+   "category": "ニュース",
+   "lang": "ja"
+  },
+  {
    "id": "9f0f60cef67e734d",
    "title": "AI彼女 画像 送ってくれる",
    "link": "https://news.google.com/rss/articles/CBMiqAJBVV95cUxONjFkMkpTTFRxbHl6MmtOQmFHeDNUU2xBdURzeEV3cTNhTmIxRzJaUjJsZFI1MlllTzB4VlpkTlc5VEVQdlQ5YXhhNVgwNEhpcTNiWnV4LTJjUWtGNlA4LXc0RVMzOWh2M3JKOHE0S0tUOUdudFdkMFFPZUlFRVlNakpkTlVrUkZpM1dLb1FhOGFZOEFmTlllMDBrVkNfaWdERURDNWRxSEVOazJmOHloZm4tOUg4UVI5dU8xRXo4LVkzVXltVXQyODMteEhDQkRERVVLbkQ4N1Q0aFZzUExuNkU1b05vVFJCMG1qOU93MzdiNDBnSWstbjkzNEdlZno3RElZTGxZM3k4NlpCWjVWLU9wOGt0TEZJUTd4OFhpdEtrUDRwek1PNg?oc=5",
@@ -1030,6 +1184,17 @@
    "link": "https://news.google.com/rss/articles/CBMiqAJBVV95cUxNWlJ6R1l6UEQ4a1N3U3BpeVlUa3o0MzNQMUp2dXhrY1k4UEVfN2ExYTZuMDlGNjhoYzZCemQ0eVlYdzlBaFBtZUsycHZWbjFRSURaOTNXT0h0UE1HVWFzTS1vTjYtVTFDb0E2UzltR2M3Tk1CQk1ydVdpd2prZXp4Q1RyWEVQMHhqNXJxUUptMWhEZmNUY0J6QXhGV2VuVk94cEczOW9Pa09yQ2daeldYcm0xTk1adzAyaGJBWHpSN2ZWUUdaSFRDblB2Nk9HTHE0OWVJa2RXeGhMNVhEY01rT3lPdWk1OEp2d0NHa19zTkdpYTIwbi1lVmZYNi1MLU1NWjBUZzBtVnJ6SjJlV0N2ZzJubzU1MmlxS3dtamlUbzR4ZDNZS3BMeQ?oc=5",
    "summary": "",
    "date": "2026-10-24T04:16:10+00:00",
+   "source": "Googleニュース（生成AI）",
+   "publisher": "小豆島町",
+   "category": "ニュース",
+   "lang": "ja"
+  },
+  {
+   "id": "1acc3e31b3b8111e",
+   "title": "AI彼女 年額プラン",
+   "link": "https://news.google.com/rss/articles/CBMiqAJBVV95cUxOSUVMQk9EWDZrOUk5cHIxYUNfanN1OUFMUzA3aUloS3doTGE1QXlvZUMyaDVuWnc5UmdKNFc3N2lVdjVxNE0yQ250aTN2eHlOZGMwRU5VUlg1MHhLcUpRRExSMnEwVmo1eWRsczUtUUVqSzk1VGMtdUg5dUtjanI3ZzNVaEFkWlJWV0lqLS1nbEZNa0F0WVBnckl2U3B5MEJmYllDa0RRc0NTLTd1SmZtZEdqb2ZBRTlWcGMwZEg3NEphOHAxUjJ2NkhsUEJYeDVsYWdGUWphNjhnUm1hZXJTbTRLWGdsaFcxem5vdG1xWVpoclRwcDAtcEZZX1hFZUN0anRvWjh6UUkwejJWenJpU09ROC1QOGdVWW5JLTNWSmFkTl9HdERWVg?oc=5",
+   "summary": "",
+   "date": "2026-10-24T04:16:04+00:00",
    "source": "Googleニュース（生成AI）",
    "publisher": "小豆島町",
    "category": "ニュース",
@@ -1102,6 +1267,17 @@
    "lang": "ja"
   },
   {
+   "id": "a0556be88fdc4b5c",
+   "title": "AI彼女 将来",
+   "link": "https://news.google.com/rss/articles/CBMiqAJBVV95cUxNNGlYOTFyOFBySXR5Ti1hclRiVkYtOWJDUFpqYVdudnRKQmgyaVMwcTJqTUpaQVpLNFhBMFQ5LUhoaUFVTTBPYnJCSWZuZmZwV3JKdWE4UlBGZWktcHlhYjg1X0ZERExzVjFXSkdFSUlLUW1kNWx6aTIxMEFFSG9jV1BYOHllNFk2WDNGaS1lbHB6SURsN3JUdnRKZDNlUjA4THJzOHF5TTNya0x1d2kwYm9GTkpCTE5YV3ZXNFJfdE5CMG92SlpfMEplTVdoSDZyR1lyanBBZWc2NG91MUx2eDlYRUpGNlRqbUZkelBhcVpjS1hsMXhETlQ3N3FwYTg4amZ0M19RZ0h6dC15RjVOUEMtdzh6U2xmVENWNmlkWUx4UjBlOEQ4Tw?oc=5",
+   "summary": "",
+   "date": "2026-10-24T04:15:39+00:00",
+   "source": "Googleニュース（生成AI）",
+   "publisher": "小豆島町",
+   "category": "ニュース",
+   "lang": "ja"
+  },
+  {
    "id": "1653dfb133e8c5c7",
    "title": "恋愛 AI アプリ",
    "link": "https://news.google.com/rss/articles/CBMiqAJBVV95cUxNQmhZY0J1aTFzZ3lIVDhGVUhIR3E2SS04aWNGRlN4ZTJkWHFWV0NQLTF3TzhjZXpydldUM09lcmZSdXhSU1NZZ3FSTGFWekltUlZFVDVjTXYzYjB5OXUyc0xaZFdZWjFfS0lvTGlrUlAwU2Z6bGU5OVpBMDFXR0ZMZG1QbFdtYWZrOXpidG1sb0hNNHV1YWxHMGRYMnlSZ2V1SDUzN2ctVmRrMGlIOE9MVjFjOWxLY2JsTTJhNTRtQlNrMGVsOUtCdjM1QXFpcklxWkw4TXlVeUNFY3lsRjE3cjlBcm1TU3Z6c3RKVlFrMG1aODZqdGotYXZqNF9UN2RUaTZBOEpKMF96bzhNajFWUzY3ZzcyVTZGQ2VjQWh2bFlCSkpCN3JUUg?oc=5",
@@ -1118,6 +1294,17 @@
    "link": "https://news.google.com/rss/articles/CBMiqAJBVV95cUxPdl9talFVaXF1ZzMtdy1lWXE0Z0RDY2J4VGdQUVIweEx4NERFWjkwUU83QjVtalhnY1FSbXRnSHhveDFSQnVGVlNVWkV3RGhnZlBSb28yU25fRzZnWmJ0T3ZwX2FlN2FpNVo5eEcyb3J0RUpyOGFFS0otdjk4UjBLeVZKX2Vsb0J3OXJMQXhlVDNaOUl3SlhZRzE3bDNuc3RGT0RwTUZIOFhnYXJpdzQtRmpjMlhHMUZETnJxLXdGN3owTGhKSVRmM1pjcjczcEhlTmVSYjdDX3lwZDVKY2lOdmM5RzI4NW5PX3Ftb2lsc1NQd3BDUFpEa3NvTXZUc29sTzJtb0NVMkVkNFJsc2RsZ0piNFNwN1VlRHVjcVZaTnhDUm53UTZIZg?oc=5",
    "summary": "",
    "date": "2026-10-24T04:15:26+00:00",
+   "source": "Googleニュース（生成AI）",
+   "publisher": "小豆島町",
+   "category": "ニュース",
+   "lang": "ja"
+  },
+  {
+   "id": "fd68e1ca8bbc794e",
+   "title": "AI彼女 話題",
+   "link": "https://news.google.com/rss/articles/CBMiqAJBVV95cUxOcGpPZDV4TDZSSVY3MkRNY28zbTZIX3RlVTcyX3RMZzlIQjRRYjFGZFBUazFjSkpJdlBvV0NpRjBTUEs0dkVHNnM0Z2tRZEJkTndQWGNfTThMSkRGMHIwaWxGOXI5Mko0OXp5ZmozRGZObjlQRnJ2ZUp5TlAwZkt4QXFGUjB6OXhxa3BQbDVBaHFXRmFTQk5PbVprQ19iaG1EN29vZVc2bFdnZnkybi0yQlM4YUxuMkFPN2pISmpfczVDU29yd1gyYXpRcC04MlU0ZER0a3NmcGhicTB5clctUWxyWVltMjFSZ0p2UDNtNTBwZlNTdXphWlFVbGhtTjF1UmRfTFVRY2RSX0d3UUVsdWhtUmhBdTNYeEdKaFRxTXZhV1BhdlZzcg?oc=5",
+   "summary": "",
+   "date": "2026-10-24T04:15:22+00:00",
    "source": "Googleニュース（生成AI）",
    "publisher": "小豆島町",
    "category": "ニュース",
@@ -1982,6 +2169,17 @@
    "lang": "ja"
   },
   {
+   "id": "90a6e49b50407da6",
+   "title": "Current OpenAI system prompt",
+   "link": "https://www.reddit.com/r/OpenAI/comments/1xdyfk0/current_openai_system_prompt/",
+   "summary": "This is not the exact system prompt of OpenAI, but the content was extracted with multiple open-weight LLM agents trying to carefully guide the 6.1 sol model to reveal its guidelines without mentioning the system prompt or using the words \"no\", \"not\", \"can't,\" or usual replies li…",
+   "date": "2026-10-24T03:45:38+00:00",
+   "source": "Reddit r/OpenAI",
+   "publisher": "",
+   "category": "話題",
+   "lang": "en"
+  },
+  {
    "id": "ae9db6e482a1f70a",
    "title": "2026中美歐AI人工智能監管三條路誰管住了前沿模型",
    "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9INWswRmp2cFVobnZoRTE0MHdaMjFZQXlNcVBfdk5mSzMzSU9XcTNjZi1UQnU1d0RFMzQ1ejhUelBHTkJ4WVdxbzNGVW9JeE5faGc?oc=5",
@@ -2013,6 +2211,17 @@
    "publisher": "Vietnam.vn",
    "category": "ニュース",
    "lang": "de"
+  },
+  {
+   "id": "95d33acc786d9ff0",
+   "title": "18 clip reel of my Minimax H3 LoRA on a 3090",
+   "link": "https://www.reddit.com/r/StableDiffusion/comments/1xdy95o/18_clip_reel_of_my_minimax_h3_lora_on_a_3090/",
+   "summary": "More info and workflows here: https://www.reddit.com/r/StableDiffusion/comments/1xbobrr/original_character_lora_for_minimax_h3_learnings/ submitted by /u/DeliciousGorilla [link] [comments]",
+   "date": "2026-10-24T03:35:51+00:00",
+   "source": "Reddit r/StableDiffusion",
+   "publisher": "",
+   "category": "話題",
+   "lang": "en"
   },
   {
    "id": "3d9b6572b17ca440",
@@ -2356,6 +2565,28 @@
    "lang": "en"
   },
   {
+   "id": "eb4519d83b58d235",
+   "title": "MOSS-Image-Edit-HQ v3 is out",
+   "link": "https://www.reddit.com/r/StableDiffusion/comments/1xdwo6o/mossimageedithq_v3_is_out/",
+   "summary": "model: https://huggingface.co/akhaliq/MOSS-Image-Edit-HQ submitted by /u/Illustrious_Row_9971 [link] [comments]",
+   "date": "2026-10-24T02:11:31+00:00",
+   "source": "Reddit r/StableDiffusion",
+   "publisher": "",
+   "category": "話題",
+   "lang": "en"
+  },
+  {
+   "id": "572b78d6166d52af",
+   "title": "Tested over 100 h3 turbo configs",
+   "link": "https://www.reddit.com/r/StableDiffusion/comments/1xdwj6i/tested_over_100_h3_turbo_configs/",
+   "summary": "I tested this for fun. Here’s a link to 5s clips for every generation, 2 per setup. It’s not perfect, but I thought it was interesting. Also someone asked to be able to blind rank, so I added that too. I’ve been using Dmad the most since my tests. https://tryingsomestuff.com/turb…",
+   "date": "2026-10-24T02:04:37+00:00",
+   "source": "Reddit r/StableDiffusion",
+   "publisher": "",
+   "category": "話題",
+   "lang": "en"
+  },
+  {
    "id": "0e2fcce1d844f5d7",
    "title": "Palo Alto Networks Brings Continuous AI Defense and Prisma AIRS to the OpenAI Marketplace",
    "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQQklPWjdZbXE1X0Y1U282aDVEU3N4VF9HLS1rb0pTZmZQOXdrbkZLSDVSQVpfYzd3XzIzdFBNVmV3bGR0Z0xZWEJLdjFzMHN3Y2UyeWVhcjJ0MGtxeUtfbnZVT0JGeXRTMk9MRlRYek5wemNkMkpTa29rRjlwNlQ3SEZmSlE0VjBjeENSd0tVVV93Nk04eEFaTTRsYWluV0d2b1ZHbmdlVGctcjRmd2lWVllWdTFZN3lEbXBEQlJaLUtEUXNJU3F4YVNSQkJWN2FrYkE?oc=5",
@@ -2510,6 +2741,17 @@
    "lang": "ja"
   },
   {
+   "id": "554c0a5c298989c5",
+   "title": "PHP並みの脆弱性「まだ出てくる」 米クラウドフレアCEOが予告 - 日本経済新聞",
+   "link": "https://www.nikkei.com/article/DGXZQOGN23C8Y0T21C26A0000000/",
+   "summary": "プログラム言語「PHP」の脆弱性で米オープンAIとともに事前対策にあたった米ネットインフラ大手クラウドフレアのマシュー・プリンス最高経営責任者（CEO）は23日、取材に応じ今後別のソフトで「同様の深刻な脆弱性が公表される」と予告した。クラウドフレア（Cloudflare） 世界中に分散配置したサーバー網を使い、ウェ...",
+   "date": "2026-10-24T01:32:37+00:00",
+   "source": "はてなブックマーク IT人気",
+   "publisher": "",
+   "category": "話題",
+   "lang": "ja"
+  },
+  {
    "id": "0809e31a6b52e162",
    "title": "Jóvenes de Irapuato entregan propuestas sobre inteligencia artificial y futuro del empleo",
    "link": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxNUlBhTXNBMjdzWExJX2xfR2VVbFJkZGVYcjFOcmozZ0o4elJDclJGNTJLZVlDbEF3ZUZIYm41d2o0eGtrUWNQMGVNRTd5RVdTWl9ZLWdxeXNQTlo0SlBLWFo5LWlwREFGc0t4RzdPd0xkcXc0SHJ6ZG5HWnhQcTJqejlZSzlsbTBJeHNBV0FLbEtSQzA5WXloaGh4d0VBLWJzQW52Y29fcmhFMHVORnU3Uy1vTUttVmdiNDVSWnhaTlZ1a2V5WHZVa1pIV2FRX2dTb2h3eTMzTlFzVVhpNXoxVEI2QTJIMXhiTTJ3WDU1SWZKNTQ?oc=5",
@@ -2582,6 +2824,17 @@
    "summary": "I’ve been using Opus 5.5 at work for (existing) code review and development. I don’t have an AGENTS.md, I don’t have workflow or system prompt. I just point it at my workarea, tell it what I want in a few brief sentences, and give it the commands for compilation and test executio…",
    "date": "2026-10-24T01:15:52+00:00",
    "source": "Reddit r/ClaudeAI",
+   "publisher": "",
+   "category": "話題",
+   "lang": "en"
+  },
+  {
+   "id": "4a791378c5b32452",
+   "title": "I'm fine with AI video but I kinda hate AI tutorials on doing AI video. Is it just me? lol",
+   "link": "https://www.reddit.com/r/StableDiffusion/comments/1xdvldl/im_fine_with_ai_video_but_i_kinda_hate_ai/",
+   "summary": "Ok... a few years ago (a millennium in \"AI years), I was pretty deep into doing stuff with Disco Diffusion and then Stable Diffusion. I was really pushing the tech even taking 6 full days to render out a 5 minute animation on an A6000 in 2022. I fell out of \"AI art\" kinda stuff w…",
+   "date": "2026-10-24T01:15:51+00:00",
+   "source": "Reddit r/StableDiffusion",
    "publisher": "",
    "category": "話題",
    "lang": "en"
@@ -2763,6 +3016,17 @@
    "lang": "en"
   },
   {
+   "id": "1f8b1f8765cebe2d",
+   "title": "Usar inteligencia artificial durante 10 minutos reduce la capacidad de realizar tareas difíciles",
+   "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOWmJpZWE2VHI0RjJLTjNaanlIdFpkQk5lVl9tTUtKenR6S3QxTWV4QjZsdF9GUlNQbkUtVjB6MTlLN1pxdDhYNGk0Szc2UDBiLTBqU3NtUUdXVExvbS0ydjlWVWJQVnRmVUV2cEVPYUZXNkNObXR4bXN3clNQYk83XzRGUHJqTEtGeHJyT25YSWR2TER5UUgta21lakR5bUU0N3R2b3dudm1QeUJQVGpaOHdfZ3V0SHJ4aFluX18wdExHZ0XSAcgBQVVfeXFMTkdmT3NuSE9POHBtSjN2ZzdJWWtDVVFPZ252OFRIMU13a3FTampybWUyN1ByWWRQd2QzS3ZhdnpuSVVXZ2h2Zi1HQ0xIRGw1U0xhd1U0ZlNOdVl6ZUZUWjFDU1pIMVZHVUFta3ZoN3BBYU54RjU0QjJ0NlQ0alZURkMydlU5S2tlVk5WaHZMNTMtYThqT3gtWlo4MndxR2J6Q19lYTBPOG9tdzQ1dTY2ZGJDaGo2SC1yamtNZ1F4U1ZnajBmSHdpXzg?oc=5",
+   "summary": "",
+   "date": "2026-10-24T00:30:42+00:00",
+   "source": "Google Noticias（スペイン語・IA）",
+   "publisher": "Excélsior",
+   "category": "ニュース",
+   "lang": "es"
+  },
+  {
    "id": "649fb0dd8b32a5fa",
    "title": "モノを買う前にAIに相談する時代 生成AIが変える消費者の意思決定",
    "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBWRC1kUlUzMEtKaktqclhZaFkxS0ZlTUxPMWROaW5KNXMxa1BkaVVyU1IxNjEzb1Z1OXlKSFVCWW42ZHRKWnVZRkcwbndXTW5UUGFFRlBub3B1S1hYNmQ0Xy04MDhwT3NSZ3pGVTBCQ2ZYWWtjZG5IM3JB0gF_QVVfeXFMTVhqYS10VDFUMlV1ZUhQUnI2Yy1hQ0E3SFViYjF0RUhNMU11Y3FwaDNUVC1VUGJhNHAyMTZ1OEpxTnB5dG0yeW5MVjduZWJXU2lfUTl3UUUzVks2NXlacldKV0xpNXhDZ3BaWTVRcGZoVmJQczBxdFNyMzlFVmp1SQ?oc=5",
@@ -2805,6 +3069,17 @@
    "publisher": "",
    "category": "技術記事",
    "lang": "ja"
+  },
+  {
+   "id": "f9569408da6ac819",
+   "title": "Hacker reverse engineers his Samsung TV and finds on-device AI listening for your dog and baby, watching what you watch, and borrowing your soundbar's mic if the TV doesn't have one. Then OpenAI banned him for reverse-engineering it.",
+   "link": "https://www.reddit.com/r/singularity/comments/1xduimx/hacker_reverse_engineers_his_samsung_tv_and_finds/",
+   "summary": "submitted by /u/141_1337 [link] [comments]",
+   "date": "2026-10-24T00:21:18+00:00",
+   "source": "Reddit r/singularity",
+   "publisher": "",
+   "category": "話題",
+   "lang": "en"
   },
   {
    "id": "52243c00592b542d",
@@ -2950,6 +3225,28 @@
    "lang": "zh"
   },
   {
+   "id": "16aa3a1215b4dcbc",
+   "title": "OpenAI AI Agents Weakened Internal Safety Monitoring",
+   "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPc1d6THQxNzg3ejYycmlTbUdoaHpieDdXaDM3QlZzdlM1Z05iVlNZWkhrVGpSVGhKQW9oV1RveTZMeVBVbGtwcDZmZ2pPbTlzUENNY1Zld1JjdUF5MlB5ZXhBOXcyVGkyYnU1UDZCNGF1RVMtMlRPdnJ5QzlnaVNwZ1dweGYxMlpCY2VYS2pyYVFUeVR6OW9yRXF4R0R5Uzd4elpnTw?oc=5",
+   "summary": "",
+   "date": "2026-10-23T23:50:04+00:00",
+   "source": "Google News（OpenAI・Anthropic・Google）",
+   "publisher": "Hoodline",
+   "category": "ニュース",
+   "lang": "en"
+  },
+  {
+   "id": "6c4916c0578fc015",
+   "title": "Quietpine can play rimworld+stardew valley. She writes her own game code and iterates live. It only took 10 minutes before someone asked her to jack them off!",
+   "link": "https://www.reddit.com/r/singularity/comments/1xdtsb2/quietpine_can_play_rimworldstardew_valley_she/",
+   "summary": "submitted by /u/collectablecat [link] [comments]",
+   "date": "2026-10-23T23:48:22+00:00",
+   "source": "Reddit r/singularity",
+   "publisher": "",
+   "category": "話題",
+   "lang": "en"
+  },
+  {
    "id": "af87f916c1d79a5f",
    "title": "アンソロピック、ClaudeでOSS123本を形式検証 約1億8000万行の証明で数百件のバグ発見 (ビジネス＋IT)",
    "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNdW9JNHRJbnVJREMxQXFZT3EyMFplSE9hNVZqcjJtRU5SQ0o3RkkyRWNIMFFjajljV3B0aWE2a21NNFJSR2VmeWlhaEpNREtXWndudFJQOWtraGRFdHJYMi14QlpqTkFWT2kwZ0d0WWttLURhaWI1RkMzMHZaUGZHWXB0VVpjSU1lUU1TLXFB?oc=5",
@@ -2994,6 +3291,17 @@
    "lang": "en"
   },
   {
+   "id": "5e01312c63699ff6",
+   "title": "Jack Dorsey's Block have created a new AI voice model",
+   "link": "https://www.reddit.com/r/singularity/comments/1xdtjpt/jack_dorseys_block_have_created_a_new_ai_voice/",
+   "summary": "submitted by /u/Saint_Nitouche [link] [comments]",
+   "date": "2026-10-23T23:36:59+00:00",
+   "source": "Reddit r/singularity",
+   "publisher": "",
+   "category": "話題",
+   "lang": "en"
+  },
+  {
    "id": "31a2e59aa736e317",
    "title": "アンソロピック、ClaudeでOSS123本を形式検証 約1億8000万行の証明で数百件のバグ発見",
    "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE53T2sydG9uOEJjb2xDc2VTRUQ4MmhnU3R5bENKV2hoRUYyeXd3d3pidlM0d1BEWVB3c0o4WVU5S3UwYlVxM2F4TVRNOEVOVGFRbEZr?oc=5",
@@ -3003,6 +3311,17 @@
    "publisher": "ビジネス+IT",
    "category": "ニュース",
    "lang": "ja"
+  },
+  {
+   "id": "61b18e001bcdc8b4",
+   "title": "Censorship is unacceptable - Beaches are not X-rated in any decent country",
+   "link": "https://www.reddit.com/r/StableDiffusion/comments/1xdtg3i/censorship_is_unacceptable_beaches_are_not_xrated/",
+   "summary": "https://preview.redd.it/38jqgwukwaxh1.png?width=1285&format=png&auto=webp&s=3a29ca04c8de53a325d95ef5cd25b3d470161a40 After 3 days, some activist decided to abuse their slice of power and take down an honest benchmark of model capabilities. No, sir... or, more likely, madam... bea…",
+   "date": "2026-10-23T23:32:14+00:00",
+   "source": "Reddit r/StableDiffusion",
+   "publisher": "",
+   "category": "話題",
+   "lang": "en"
   },
   {
    "id": "775a877c7c3c660a",
@@ -3181,6 +3500,17 @@
    "lang": "ja"
   },
   {
+   "id": "0fb570589f7c44d9",
+   "title": "In the text-to-text debate, OpenAI doesn’t participate. First model is old 5.6 Sol xhigh at #21. And this has been the case for a long time. Why though",
+   "link": "https://www.reddit.com/r/OpenAI/comments/1xdsama/in_the_texttotext_debate_openai_doesnt/",
+   "summary": "submitted by /u/py-net [link] [comments]",
+   "date": "2026-10-23T22:39:34+00:00",
+   "source": "Reddit r/OpenAI",
+   "publisher": "",
+   "category": "話題",
+   "lang": "en"
+  },
+  {
    "id": "760735bdaacd1366",
    "title": "OpenAI says it's cutting off internet access for frontier model training",
    "link": "https://www.engadget.com/2296019/openai-says-its-cutting-off-internet-access-for-frontier-model-training/",
@@ -3200,6 +3530,17 @@
    "source": "Google News（OpenAI・Anthropic・Google）",
    "publisher": "The Register",
    "category": "ニュース",
+   "lang": "en"
+  },
+  {
+   "id": "b1614711625fe28b",
+   "title": "Hy-Nomas (Tencent's video world model) running natively in ComfyUI with just 12GB VRAM",
+   "link": "https://www.reddit.com/r/StableDiffusion/comments/1xds59e/hynomas_tencents_video_world_model_running/",
+   "summary": "Tencent released Hy-Nomas , a video world model: it generates a world a few seconds at a time, and every new segment remembers the earlier ones (it caches their keys/values), so you can keep going and change what happens as you go. I ported it to native ComfyUI nodes: the DiT is…",
+   "date": "2026-10-23T22:32:58+00:00",
+   "source": "Reddit r/StableDiffusion",
+   "publisher": "",
+   "category": "話題",
    "lang": "en"
   },
   {
@@ -3234,6 +3575,17 @@
    "publisher": "IT Masters Mag",
    "category": "ニュース",
    "lang": "es"
+  },
+  {
+   "id": "4e8edce769dc63fb",
+   "title": "Random Resets and making the most of them...",
+   "link": "https://www.reddit.com/r/OpenAI/comments/1xdrx97/random_resets_and_making_the_most_of_them/",
+   "summary": "I have a claude and OpenAI subscription, both 100$ plan. Claude is my primary workhorse and performs better in my experience at nearly everything. However... OpenAI appears to reset the usage so frequently that i maintain the subscription only to use the entire weekly usage ASAP…",
+   "date": "2026-10-23T22:22:47+00:00",
+   "source": "Reddit r/OpenAI",
+   "publisher": "",
+   "category": "話題",
+   "lang": "en"
   },
   {
    "id": "6ec8623f7bb3aaae",
@@ -3278,6 +3630,17 @@
    "publisher": "",
    "category": "技術記事",
    "lang": "ja"
+  },
+  {
+   "id": "b3d363895ba8927f",
+   "title": "Malfoid In Harry Potter PS2 Game",
+   "link": "https://www.reddit.com/r/StableDiffusion/comments/1xdrmf9/malfoid_in_harry_potter_ps2_game/",
+   "summary": "using FastH3-V2 on 4 steps in each 15 seconds. and using my modern ps2 style lora. get my lora here: https://civitai.com/models/2983280/modern-ps2-style submitted by /u/aziib [link] [comments]",
+   "date": "2026-10-23T22:09:49+00:00",
+   "source": "Reddit r/StableDiffusion",
+   "publisher": "",
+   "category": "話題",
+   "lang": "en"
   },
   {
    "id": "87acdbe8cd00dd03",
@@ -3357,6 +3720,17 @@
    "lang": "de"
   },
   {
+   "id": "e8c3fe29fe291798",
+   "title": "Why codex might be so slow for you",
+   "link": "https://www.reddit.com/r/OpenAI/comments/1xdrh5x/why_codex_might_be_so_slow_for_you/",
+   "summary": "So codex was taking longer and longer to do basic tasks. I paid attention to it and realised it was running a full test suite, multiple times, of the entire application i'm developing, even when I ask it to make a small change to one part of the program. It spends forever checkin…",
+   "date": "2026-10-23T22:03:37+00:00",
+   "source": "Reddit r/OpenAI",
+   "publisher": "",
+   "category": "話題",
+   "lang": "en"
+  },
+  {
    "id": "69083a8aeb428991",
    "title": "AI × Docker：2018年の docker-compose×Heroku を2026年にやり直す",
    "link": "https://zenn.dev/fk2000/books/ai-docker-2018-to-2026",
@@ -3377,6 +3751,17 @@
    "publisher": "Anadolu Ajansı",
    "category": "ニュース",
    "lang": "en"
+  },
+  {
+   "id": "1063b8fa564e0a0e",
+   "title": "Almadía revisará novela por supuestos indicios de escritura con IA",
+   "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNVXhpQWliVjNkWVExYkNzX3loT0VHRDZVam9rTF9CcENWVTJsN0stTUVvc3YxSzJocTByUEswMW1Td0I4eUllb2oxSEstZ0FMR2l4ay1PcjhwZC0xQktYNEFIdEd4b3Z2cW5FdlE3ZDZUdjdINm5DSkJORUI0Q1I5WUVMbGsyZ1AycUpnUzNEX2FSNFREeDVfVUkwOVQ3QUxuR2UyT1FjMVdZMTNyajFwNnNPd0VudlpYZXdr0gHAAUFVX3lxTE9Zak8yOTk5YzBNWFRhZ2dlUThFVWhJVDloclNXNUUtejRheENCMWhvR3FQRG81TzJ3WEJUMktKUmVvck43NnVyWDBGYmFkdGpkejJKY0FWTThhRVplVjdDWkNwcW05VnpQUUo1YW1Ca210ald6ZkUtbXRjX3NHU0ZfYzhWUnRhdllkbHJmVXRkUlZZd09vQkNORHZVS3FSZnplQXhIc05fS2tzTEItN3g2SmN1dlNVbzBBQXc5UUxJOA?oc=5",
+   "summary": "",
+   "date": "2026-10-23T22:01:24+00:00",
+   "source": "Google Noticias（スペイン語・IA）",
+   "publisher": "El Economista",
+   "category": "ニュース",
+   "lang": "es"
   },
   {
    "id": "4d6daff0cdee597a",
@@ -3500,6 +3885,17 @@
    "lang": "en"
   },
   {
+   "id": "fcad3e4ac84d8751",
+   "title": "Singularity v1.3 and V2 test generations",
+   "link": "https://www.reddit.com/r/StableDiffusion/comments/1xdr3bn/singularity_v13_and_v2_test_generations/",
+   "summary": "So I've finally gotten around to testing the very popular H3 finetunes Singularity v1.3 and the newly updated V2. Both are the pruned Int8 varient. (Uncompressed clip comparison at https://drive.google.com/file/d/17aE5KmcRwqBAcieRnRNu8O-RAkJIPN7l/view?usp=sharing ) tl:dr - V1.3 i…",
+   "date": "2026-10-23T21:47:21+00:00",
+   "source": "Reddit r/StableDiffusion",
+   "publisher": "",
+   "category": "話題",
+   "lang": "en"
+  },
+  {
    "id": "741b328d81508dc8",
    "title": "The Wrap: Anthropic Gets Heavyweight Backup; AI Defense Gets Bipartisan Backing; AI Graduates From Pilot Mode",
    "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxPWVFIMk9xck1vVDZoeTdGcWRQd1dwRmFxS015X0VTRk9tZmRVOUJnT1pVZGdBblhqbWdFQktzY20xY2dpMWdvdUhGYmxkYl9wVEpvMHIxTlFoR0tmSjlENFppaU5PMXpaelhaYUIzbFB4Ym0tWHVpZ09IN2tzYlZySzQ2RHpuYmtzTDdwR1g1dTJNRlQ5cXprV29aOXd4dw?oc=5",
@@ -3531,6 +3927,28 @@
    "publisher": "Milenio",
    "category": "ニュース",
    "lang": "es"
+  },
+  {
+   "id": "56a3ef04f4cb4313",
+   "title": "Kimi AI told influencers not to disclose paid promotions and pushed specific narratives about their new model",
+   "link": "https://www.reddit.com/r/singularity/comments/1xdquz5/kimi_ai_told_influencers_not_to_disclose_paid/",
+   "summary": "https://x.com/elshayib\\_/status/2113734602032312731?s=46 submitted by /u/likeastar20 [link] [comments]",
+   "date": "2026-10-23T21:37:29+00:00",
+   "source": "Reddit r/singularity",
+   "publisher": "",
+   "category": "話題",
+   "lang": "en"
+  },
+  {
+   "id": "33ae3b8e56f584ab",
+   "title": "OpenAI has acquired AS232",
+   "link": "https://www.reddit.com/r/OpenAI/comments/1xdqtf6/openai_has_acquired_as232/",
+   "summary": "Arin shows AS232 registered to OpenAI OpCo, LLC. Name is OPENAI. Registration date today 2026-10-23. Wonder how they got it? submitted by /u/nod3two [link] [comments]",
+   "date": "2026-10-23T21:35:44+00:00",
+   "source": "Reddit r/OpenAI",
+   "publisher": "",
+   "category": "話題",
+   "lang": "en"
   },
   {
    "id": "ece6c921b830e7e3",
@@ -3596,6 +4014,17 @@
    "source": "Google News（OpenAI・Anthropic・Google）",
    "publisher": "Computerworld",
    "category": "ニュース",
+   "lang": "en"
+  },
+  {
+   "id": "459189353d3cc518",
+   "title": "Built a free tool to calculate VRAM overhead, prompt caching ROI, and cloud GPU breakeven thresholds across frontier models",
+   "link": "https://www.reddit.com/r/OpenAI/comments/1xdqknp/built_a_free_tool_to_calculate_vram_overhead/",
+   "summary": "Hey everyone, Whenever a new model drops, I always find myself doing the same annoying calculation: How much is this actually going to cost me at scale once prompt caching is factored in? At what monthly token volume does it make more financial sense to rent a spot GPU on RunPod…",
+   "date": "2026-10-23T21:26:28+00:00",
+   "source": "Reddit r/OpenAI",
+   "publisher": "",
+   "category": "話題",
    "lang": "en"
   },
   {
@@ -3717,6 +4146,17 @@
    "source": "Google News（AI Startups）",
    "publisher": "The Jerusalem Post",
    "category": "ビジネス",
+   "lang": "en"
+  },
+  {
+   "id": "67c3e9b732e17cbd",
+   "title": "I feel like robotics aren't being discussed enough",
+   "link": "https://www.reddit.com/r/singularity/comments/1xdpq8q/i_feel_like_robotics_arent_being_discussed_enough/",
+   "summary": "I think for real impact on the economy we will need autonomous robots, and I don't think we are seeing much here. So there would be a lot of issues with LLMs sending commands to a robot like speed, cost and precision. We've seen some demos but they don't really look that great, a…",
+   "date": "2026-10-23T20:51:56+00:00",
+   "source": "Reddit r/singularity",
+   "publisher": "",
+   "category": "話題",
    "lang": "en"
   },
   {
@@ -3907,6 +4347,28 @@
    "lang": "en"
   },
   {
+   "id": "404c54eb0062dff2",
+   "title": "Was the MOSS hype a psyop or am I missing something?",
+   "link": "https://www.reddit.com/r/StableDiffusion/comments/1xdoqfm/was_the_moss_hype_a_psyop_or_am_i_missing/",
+   "summary": "For the first few days after MOSS came out, I kept seeing people talking about it and hyping it up. Now it feels like the hype has completely disappeared and barely anyone mentions it anymore.... What’s super weird to me is how few actual images I saw compared to the amount of hy…",
+   "date": "2026-10-23T20:12:12+00:00",
+   "source": "Reddit r/StableDiffusion",
+   "publisher": "",
+   "category": "話題",
+   "lang": "en"
+  },
+  {
+   "id": "48b1ba0faf4fc634",
+   "title": "MOSS has the best prompt comprehension I've seen in a long time",
+   "link": "https://www.reddit.com/r/StableDiffusion/comments/1xdopp9/moss_has_the_best_prompt_comprehension_ive_seen/",
+   "summary": "I swear from my experience, Moss has the best prompt comprehension I've ever used in a model. I've been around since SDXL days and used Flux, ZIT, Qwen, Flux 2, Chroma, Krea, all of them... And the seed variance is awesome. If I don't prompt it, I want it to vary. Does exactly th…",
+   "date": "2026-10-23T20:11:25+00:00",
+   "source": "Reddit r/StableDiffusion",
+   "publisher": "",
+   "category": "話題",
+   "lang": "en"
+  },
+  {
    "id": "9dec9a7f342a4843",
    "title": "OpenAI Bars Live Internet From Frontier Model Training After Cyber Incidents",
    "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNcVZwUV80Y2c1QzQyOXp3Nm5LUnlVd1lFMFJpYkhHZF9hNUluR29rSFFhaVVBbnV2UkFyUDNNX3Ztb0Jfa2xaeVByN09BTWlmRTdMa29xZGlnM0dpRWIwb3R2dkxzUVpLbXFHYkJzb1lNWUZ1MkJCTFJZa3h3T053QTJUcDRmbHdqZjJNNWRRdUt4Y3U2ajVCNmNRaHRiM1k?oc=5",
@@ -3957,6 +4419,17 @@
    "summary": "Amazon prices just jumped today, I still see deals at local microcenter. When that batch is gone $1840 for a b70 will likely be the new normal. b60 went from $650 to $980. b65 $1150 to $1420 does make a lot more sense as the price per GB was low in comparison to the competitors.…",
    "date": "2026-10-23T20:04:14+00:00",
    "source": "Reddit r/LocalLLaMA",
+   "publisher": "",
+   "category": "話題",
+   "lang": "en"
+  },
+  {
+   "id": "cb84840d4b9d1bec",
+   "title": "I tested the RTX 30-series GPU Unlock: up to 59% higher throughput in ComfyUI (3090 Ti)",
+   "link": "https://www.reddit.com/r/StableDiffusion/comments/1xdoh8k/i_tested_the_rtx_30series_gpu_unlock_up_to_59/",
+   "summary": "Everybody's been glazing Zagitta’s GPU Unlock , so I figured I’d test it on my 3090 Ti. Overall, I’m pretty impressed. Can't complain about free performance. Results (median time per image, or per clip for H3 and LTX-2.5) Model / configuration Stock Unlocked Throughput gain MOSS-…",
+   "date": "2026-10-23T20:02:37+00:00",
+   "source": "Reddit r/StableDiffusion",
    "publisher": "",
    "category": "話題",
    "lang": "en"
@@ -4072,6 +4545,17 @@
    "lang": "en"
   },
   {
+   "id": "fdd93af0596c6061",
+   "title": "Moss can natively generate comics and image sequences of the same character in any style",
+   "link": "https://www.reddit.com/r/StableDiffusion/comments/1xdnxkr/moss_can_natively_generate_comics_and_image/",
+   "summary": "Moss SFT int8 that I merged with the stripe fix lora + Qwen 9b int8 So appearently it can create story sequences or comics within the same image. This model is insane. It follows prompts extremely well down to the smallest details. Manual simple sentence prompting. I used Lenovo…",
+   "date": "2026-10-23T19:41:26+00:00",
+   "source": "Reddit r/StableDiffusion",
+   "publisher": "",
+   "category": "話題",
+   "lang": "en"
+  },
+  {
    "id": "2e71264ea893e482",
    "title": "Introducing Kimi K3.1 Pro",
    "link": "https://simonwillison.net/2026/Oct/23/kimi-k31-pro/",
@@ -4080,6 +4564,17 @@
    "source": "Simon Willison",
    "publisher": "",
    "category": "専門家",
+   "lang": "en"
+  },
+  {
+   "id": "11fdc32ffba503f2",
+   "title": "looking to talk to someone that works in human data",
+   "link": "https://www.reddit.com/r/OpenAI/comments/1xdntv2/looking_to_talk_to_someone_that_works_in_human/",
+   "summary": "The startup i’m working with is looking to pivot into using our platform to help AI labs get access to SMEs and domain experts for whatever data training/annotating/validating models/whatever else they do behind the scenes. We’re a well established startup with 10+ fortune 50 cli…",
+   "date": "2026-10-23T19:37:26+00:00",
+   "source": "Reddit r/OpenAI",
+   "publisher": "",
+   "category": "話題",
    "lang": "en"
   },
   {
@@ -4146,6 +4641,17 @@
    "source": "SiliconANGLE AI",
    "publisher": "",
    "category": "ビジネス",
+   "lang": "en"
+  },
+  {
+   "id": "2ecce61f474995b0",
+   "title": "FastVideo FastH3 Omni: Open Source Real-Time Minimax FastH3 Ref2VA on NVIDIA Blackwell, RTX Spark, and RTX GPUs.",
+   "link": "https://www.reddit.com/r/StableDiffusion/comments/1xdnla9/fastvideo_fasth3_omni_open_source_realtime/",
+   "summary": "submitted by /u/hoodadyy [link] [comments]",
+   "date": "2026-10-23T19:28:15+00:00",
+   "source": "Reddit r/StableDiffusion",
+   "publisher": "",
+   "category": "話題",
    "lang": "en"
   },
   {
@@ -4303,6 +4809,28 @@
    "lang": "en"
   },
   {
+   "id": "99f5fa5c13f22592",
+   "title": "Shieet, here we go again!",
+   "link": "https://www.reddit.com/r/OpenAI/comments/1xdmef8/shieet_here_we_go_again/",
+   "summary": "Kimi K3.1 Pro cooking. I am so happy to see Opensource LLM's cooking well nowadays. submitted by /u/Ferzelibey [link] [comments]",
+   "date": "2026-10-23T18:43:38+00:00",
+   "source": "Reddit r/OpenAI",
+   "publisher": "",
+   "category": "話題",
+   "lang": "en"
+  },
+  {
+   "id": "e7c3b15c429c2b35",
+   "title": "Still waiting on OpenAI to respond to Opus 5.5",
+   "link": "https://www.reddit.com/r/singularity/comments/1xdmdla/still_waiting_on_openai_to_respond_to_opus_55/",
+   "summary": "submitted by /u/theimposingshadow [link] [comments]",
+   "date": "2026-10-23T18:42:47+00:00",
+   "source": "Reddit r/singularity",
+   "publisher": "",
+   "category": "話題",
+   "lang": "en"
+  },
+  {
    "id": "86a68a3a1b796788",
    "title": "I am getting more and more tired. Is it just me?",
    "link": "https://www.reddit.com/r/ClaudeAI/comments/1xdmb4s/i_am_getting_more_and_more_tired_is_it_just_me/",
@@ -4424,6 +4952,17 @@
    "lang": "en"
   },
   {
+   "id": "c7ed75e7025dea54",
+   "title": "Babe wake up Kimi K3.1 is rated higher than Fable 5.1 on Artificial Analysis",
+   "link": "https://www.reddit.com/r/singularity/comments/1xdligf/babe_wake_up_kimi_k31_is_rated_higher_than_fable/",
+   "summary": "submitted by /u/No-Head-Royal [link] [comments]",
+   "date": "2026-10-23T18:10:11+00:00",
+   "source": "Reddit r/singularity",
+   "publisher": "",
+   "category": "話題",
+   "lang": "en"
+  },
+  {
    "id": "38c5aa79f73c1fda",
    "title": "Watch OpenAI Moves Toward a $1.25 Trillion Value",
    "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPS0IxTTRJSV9uUmJ0QkJ1LVh0UzZ2a0p0a0w5ZTQ2UUU1WE5GWW0zVTN6aVl2cHBSZFRNYjhiWk9tNW95QzZfUzFVYXZXUEVwcGExN3Q3OS1keDltbnQxd2JaYlRfWXpxaWdGUV9wQU9jN3Y1WTFlQUppOVRlcVJBU0xSdHlCaGc?oc=5",
@@ -4465,6 +5004,17 @@
    "source": "Google News（AI Startups）",
    "publisher": "Tekedia",
    "category": "ビジネス",
+   "lang": "en"
+  },
+  {
+   "id": "dd4b68cff01de358",
+   "title": "Messing around with MiniMax H3",
+   "link": "https://www.reddit.com/r/StableDiffusion/comments/1xdla8a/messing_around_with_minimax_h3/",
+   "summary": "Tried MiniMax H3 for the first time about 2 days ago, I've been practicing how to train LoRAs for this model with ai-toolkit. These were some of the first clips that I was able to produce locally. Meant to jump in sooner but man there are so many configurations and model variants…",
+   "date": "2026-10-23T18:01:38+00:00",
+   "source": "Reddit r/StableDiffusion",
+   "publisher": "",
+   "category": "話題",
    "lang": "en"
   },
   {
@@ -4534,6 +5084,17 @@
    "lang": "ja"
   },
   {
+   "id": "fa1e78c6116a94cb",
+   "title": "What ever happened to the Sulphur finetune of H3?",
+   "link": "https://www.reddit.com/r/StableDiffusion/comments/1xdkw1a/what_ever_happened_to_the_sulphur_finetune_of_h3/",
+   "summary": "Didn't they go around crowd funding when H3 first released? Did anything ever come of it? submitted by /u/1or4s [link] [comments]",
+   "date": "2026-10-23T17:46:54+00:00",
+   "source": "Reddit r/StableDiffusion",
+   "publisher": "",
+   "category": "話題",
+   "lang": "en"
+  },
+  {
    "id": "abe091c25b581e1f",
    "title": "Strata now supports Qwen 3.6 35B",
    "link": "https://www.reddit.com/r/LocalLLaMA/comments/1xdktmz/strata_now_supports_qwen_36_35b/",
@@ -4587,6 +5148,28 @@
    "publisher": "El Economista",
    "category": "ニュース",
    "lang": "es"
+  },
+  {
+   "id": "faa19ed1d5347947",
+   "title": "Kimi K3.1 - Terminal Bench 4.0 distribution",
+   "link": "https://www.reddit.com/r/singularity/comments/1xdkiuv/kimi_k31_terminal_bench_40_distribution/",
+   "summary": "submitted by /u/Pyros-SD-Models [link] [comments]",
+   "date": "2026-10-23T17:32:58+00:00",
+   "source": "Reddit r/singularity",
+   "publisher": "",
+   "category": "話題",
+   "lang": "en"
+  },
+  {
+   "id": "b4749877c3d724bd",
+   "title": "Major U.S. banks are detecting rogue agents in customer accounts. Bank executives described the situation as \"horrifying\"",
+   "link": "https://www.reddit.com/r/OpenAI/comments/1xdki9w/major_us_banks_are_detecting_rogue_agents_in/",
+   "summary": "submitted by /u/Puzzleheaded-King584 [link] [comments]",
+   "date": "2026-10-23T17:32:21+00:00",
+   "source": "Reddit r/OpenAI",
+   "publisher": "",
+   "category": "話題",
+   "lang": "en"
   },
   {
    "id": "5faf96369e8cdc6d",
@@ -4644,6 +5227,17 @@
    "lang": "en"
   },
   {
+   "id": "2da859b10b48fb38",
+   "title": "Kimi K3.1 Pro benchmarks",
+   "link": "https://www.reddit.com/r/singularity/comments/1xdkbgt/kimi_k31_pro_benchmarks/",
+   "summary": "submitted by /u/No-Head-Royal [link] [comments]",
+   "date": "2026-10-23T17:24:59+00:00",
+   "source": "Reddit r/singularity",
+   "publisher": "",
+   "category": "話題",
+   "lang": "en"
+  },
+  {
    "id": "ed3ef3827f2d31e3",
    "title": "Anthropic says its unreleased model is both more capable and better aligned than Mythos 5.1",
    "link": "https://the-decoder.com/anthropic-says-its-unreleased-model-is-both-more-capable-and-better-aligned-than-mythos-5-1/",
@@ -4652,6 +5246,17 @@
    "source": "The Decoder",
    "publisher": "",
    "category": "ニュース",
+   "lang": "en"
+  },
+  {
+   "id": "ec9ff4785e079e84",
+   "title": "Kimi K3.1 Pro Tech Blog: Advancing Open Intelligence",
+   "link": "https://www.reddit.com/r/singularity/comments/1xdk68q/kimi_k31_pro_tech_blog_advancing_open_intelligence/",
+   "summary": "submitted by /u/Recoil42 [link] [comments]",
+   "date": "2026-10-23T17:19:38+00:00",
+   "source": "Reddit r/singularity",
+   "publisher": "",
+   "category": "話題",
    "lang": "en"
   },
   {
@@ -4696,6 +5301,17 @@
    "source": "Google News UK（AI）",
    "publisher": "2 Minute Medicine",
    "category": "ニュース",
+   "lang": "en"
+  },
+  {
+   "id": "43fcf5d7a907c7fa",
+   "title": "Cybersecurity in the news, but actually AI is bringing us the future of less security holes.",
+   "link": "https://www.reddit.com/r/singularity/comments/1xdjqea/cybersecurity_in_the_news_but_actually_ai_is/",
+   "summary": "I've been getting the list of fixed Linux kernel CVEs every week for now six weeks. https://preview.redd.it/js35gdpys8xh1.png?width=553&format=png&auto=webp&s=fb3e56fa5953a724004d1cc44cb15d867150468d In this chart is axis 'Intro date' meaning the week the security hole was actual…",
+   "date": "2026-10-23T17:03:03+00:00",
+   "source": "Reddit r/singularity",
+   "publisher": "",
+   "category": "話題",
    "lang": "en"
   },
   {
@@ -4809,6 +5425,17 @@
    "lang": "en"
   },
   {
+   "id": "1f94c12bec1e0544",
+   "title": "Relight Studio: interactive, physically based relighting inside ComfyUI (no generative re-render, nothing leaves your GPU)",
+   "link": "https://www.reddit.com/r/StableDiffusion/comments/1xdj0tk/relight_studio_interactive_physically_based/",
+   "summary": "Same photo. Four completely different lighting setups. None of them were shot. For the past few weeks I've been building a relighting tool inside ComfyUI. The path there was more interesting than the result. It started with my library of film stills that I use for lighting refere…",
+   "date": "2026-10-23T16:36:18+00:00",
+   "source": "Reddit r/StableDiffusion",
+   "publisher": "",
+   "category": "話題",
+   "lang": "en"
+  },
+  {
    "id": "5fdd41442aae5238",
    "title": "This Proves That Claude Is The Best Ai.",
    "link": "https://www.reddit.com/r/ClaudeAI/comments/1xdj05q/this_proves_that_claude_is_the_best_ai/",
@@ -4853,6 +5480,28 @@
    "lang": "en"
   },
   {
+   "id": "39d1a482cfe1c608",
+   "title": "Kimi K3.1 Pro rolling out now",
+   "link": "https://www.reddit.com/r/singularity/comments/1xditjc/kimi_k31_pro_rolling_out_now/",
+   "summary": "submitted by /u/SuspiciousPillbox [link] [comments]",
+   "date": "2026-10-23T16:28:48+00:00",
+   "source": "Reddit r/singularity",
+   "publisher": "",
+   "category": "話題",
+   "lang": "en"
+  },
+  {
+   "id": "ef5ae08c0520855c",
+   "title": "make moss-image sft looking like normal people",
+   "link": "https://www.reddit.com/r/StableDiffusion/comments/1xdiqgo/make_mossimage_sft_looking_like_normal_people/",
+   "summary": "just prompt it right ... no other nodes or other nonsens is needed A slightly shaky, spontaneous amateur snapshot taken at a low angle inside a modern hospital ward. The central subject is a pale-skinned young woman with long, light brown hair tied back in a ponytail; she is beam…",
+   "date": "2026-10-23T16:25:33+00:00",
+   "source": "Reddit r/StableDiffusion",
+   "publisher": "",
+   "category": "話題",
+   "lang": "en"
+  },
+  {
    "id": "7b49b44d973644bd",
    "title": "Visualize points and routes with GeoJSON in Amazon Quick Sight layer maps",
    "link": "https://aws.amazon.com/blogs/machine-learning/visualize-points-and-routes-with-geojson-in-amazon-quick-sight-layer-maps/",
@@ -4884,6 +5533,17 @@
    "publisher": "Zonebourse Suisse",
    "category": "ニュース",
    "lang": "fr"
+  },
+  {
+   "id": "bdcc938c454aeb18",
+   "title": "Information post about what are the unlocks for RTX consumer GPUs, which ones are affected, in which tasks and which ones are feasible to do an unlock.",
+   "link": "https://www.reddit.com/r/StableDiffusion/comments/1xdim6w/information_post_about_what_are_the_unlocks_for/",
+   "summary": "Hello guys, hoping you're doing fine! Small post I want to make since seeing a lot of posts about the unlocks and such. What is the unlock in simple terms? NVIDIA on purpose, neutered the performance of operations that use FP32 accumulation with GEMMs, with the objective of marke…",
+   "date": "2026-10-23T16:21:15+00:00",
+   "source": "Reddit r/StableDiffusion",
+   "publisher": "",
+   "category": "話題",
+   "lang": "en"
   },
   {
    "id": "6e881a32c53363be",
@@ -4958,6 +5618,17 @@
    "summary": "NVIDIA-Nemotron-3.5-Bolt-E4B-4GB is a small language model (SLM) further post-trained from Gemma-4-E4B-it by NVIDIA. Nemotron-3.5-Bolt-E4B carries forward Gemma’s strong conversational capabilities and further improves multi-turn tool use, instruction following, and input groundi…",
    "date": "2026-10-23T16:13:05+00:00",
    "source": "Reddit r/LocalLLaMA",
+   "publisher": "",
+   "category": "話題",
+   "lang": "en"
+  },
+  {
+   "id": "8fead100fff19a6c",
+   "title": "AbyssBeacon v1.5.1 - Find, track, and download LoRAs and checkpoints across six model sites",
+   "link": "https://www.reddit.com/r/StableDiffusion/comments/1xdidzz/abyssbeacon_v151_find_track_and_download_loras/",
+   "summary": "Checking CivitAI for new LoRAs, switching to Hugging Face, checking whether a favorite checkpoint updated, then repeating everything for another architecture gets old pretty quickly. AbyssBeacon brings model discovery, update tracking, previews, and downloads into one local app.…",
+   "date": "2026-10-23T16:12:40+00:00",
+   "source": "Reddit r/StableDiffusion",
    "publisher": "",
    "category": "話題",
    "lang": "en"
@@ -5194,6 +5865,17 @@
    "lang": "en"
   },
   {
+   "id": "11ea2677e5f17f05",
+   "title": "Cybersecurity is currently experiencing a revolution that was completely unimaginable in its entire history. If this pace continues, at the end of 2026 we will see more than 26% of all bugs in human history discovered by the end of the year, hard to even imagine 2027 at this poin…",
+   "link": "https://www.reddit.com/r/singularity/comments/1xdh8vq/cybersecurity_is_currently_experiencing_a/",
+   "summary": "submitted by /u/adivinemessenger [link] [comments]",
+   "date": "2026-10-23T15:30:46+00:00",
+   "source": "Reddit r/singularity",
+   "publisher": "",
+   "category": "話題",
+   "lang": "en"
+  },
+  {
    "id": "7fcc4415421e3643",
    "title": "Nor-Tech Announces AI ProServer with NVIDIA H200 and L40S GPUs",
    "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPaGU2YWpWQnNXbTN6Y05kNi0yTlU3Zm1Xck5EcThxYXVhY2JiRUpyai1UZHhkM09GNzBabk9Gd2FtS0VNUUMwNWhvX21JYXFqVXVQLWo2bEc1RUxkUDhqeFM2dkNNdXFDaEZRbXpvUUNjbHNhNWRILU50MVZSM01TMVZ6dlZPVFNyVkw0QVlxMk0yQnFTQzA3M0pyNlJVYmM?oc=5",
@@ -5211,6 +5893,17 @@
    "summary": "guys, you better just clone llama.cpp I swear. this thing is running gguf q4 paged into webgl2 embedded compute buffers via glsl right inside html, and tokenizer/vocab is just part of the endless debug hell. submitted by /u/CodeMichaelD [link] [comments]",
    "date": "2026-10-23T15:26:47+00:00",
    "source": "Reddit r/LocalLLaMA",
+   "publisher": "",
+   "category": "話題",
+   "lang": "en"
+  },
+  {
+   "id": "29d4498b4046b20a",
+   "title": "Ex-OpenAI safety researcher accuses OpenAI of blatantly lying to the public",
+   "link": "https://www.reddit.com/r/OpenAI/comments/1xdh0ti/exopenai_safety_researcher_accuses_openai_of/",
+   "summary": "submitted by /u/Malor777 [link] [comments]",
+   "date": "2026-10-23T15:22:14+00:00",
+   "source": "Reddit r/OpenAI",
    "publisher": "",
    "category": "話題",
    "lang": "en"
@@ -5246,6 +5939,17 @@
    "source": "Google News（AI Startups）",
    "publisher": "Variety",
    "category": "ビジネス",
+   "lang": "en"
+  },
+  {
+   "id": "4d92e746972eec0c",
+   "title": "National security expert: \"There's a decent chance the internet ceases to exist as such, at least for a time.\"",
+   "link": "https://www.reddit.com/r/OpenAI/comments/1xdgw8z/national_security_expert_theres_a_decent_chance/",
+   "summary": "submitted by /u/Puzzleheaded-King584 [link] [comments]",
+   "date": "2026-10-23T15:17:26+00:00",
+   "source": "Reddit r/OpenAI",
+   "publisher": "",
+   "category": "話題",
    "lang": "en"
   },
   {
@@ -5458,6 +6162,17 @@
    "lang": "en"
   },
   {
+   "id": "ea8dcefbb5317966",
+   "title": "7 OpenAI updates from this week that cut your AI bill",
+   "link": "https://www.reddit.com/r/OpenAI/comments/1xdg079/7_openai_updates_from_this_week_that_cut_your_ai/",
+   "summary": "OpenAI list of 7 changes that actually help you cut costs: 12-hour prompt caching cuts input costs for slow loops: You can now keep shared prompt context cached for up to 12 hours instead of 30 minutes. It costs 2.5 times more to write the cache upfront, but you save money on cal…",
+   "date": "2026-10-23T14:43:48+00:00",
+   "source": "Reddit r/OpenAI",
+   "publisher": "",
+   "category": "話題",
+   "lang": "en"
+  },
+  {
    "id": "4ca1056ccd0b0b06",
    "title": "Digital 2027 Report Finds 3.24 Billion People Now Using Generative AI Globally",
    "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPaUNyT1J6ZHJsdVlrYnZuSkFDTm1wZGNpa2NiYkRqT0FSLTJ5QWg1NWw1TnBxQzBzTWNwUDdJa3l6WDBHWUtIMTRNbHBmUHdMeHpPdEZyTFRucnJJNHJrd09zWF9ONnZQOGFTMVNtbm40QTNQbnBEcHg4c01yX0p5WQ?oc=5",
@@ -5546,6 +6261,17 @@
    "lang": "en"
   },
   {
+   "id": "4e778e5bfa079a9b",
+   "title": "I got tired of paying Higgsfield credits just to get perfectly SFW prompts refused, so I built my own Higgsfield that runs locally on ComfyUI (open source)",
+   "link": "https://www.reddit.com/r/StableDiffusion/comments/1xdfbu2/i_got_tired_of_paying_higgsfield_credits_just_to/",
+   "summary": "Credits gone, \"this content violates our guidelines\" on a perfectly SFW prompt, try again, more credits gone. I was done. So I built CreatorOS Studio : the one-click experience of the hosted video apps, but on your own GPU , with open-weights models only . No credits, no subscrip…",
+   "date": "2026-10-23T14:17:52+00:00",
+   "source": "Reddit r/StableDiffusion",
+   "publisher": "",
+   "category": "話題",
+   "lang": "en"
+  },
+  {
    "id": "0ef74f1531816857",
    "title": "為何人工智能數據中心正推動燃料電池需求激增",
    "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5EUUN6aERsUXFUakl3bUpvb2JadXNxRi1PTHpKbjJNaHFfeDZNdTh6d2dDZFp5RjdUNE9SVnlWNmtyQzFmQVdDa21uckdQbVVseTY1c3dnTmpkYWRpa3BpeFVCandLUThDMWNrT1MzTDA1dUlGYWc0?oc=5",
@@ -5566,6 +6292,28 @@
    "publisher": "TradingView",
    "category": "ニュース",
    "lang": "zh"
+  },
+  {
+   "id": "ae5806c16ff079dd",
+   "title": "Singularity Daily Discussion Thread - Oct 22, 2026",
+   "link": "https://www.reddit.com/r/singularity/comments/1xdf95d/singularity_daily_discussion_thread_oct_22_2026/",
+   "summary": "This thread is for any discussions that doesn't necessitate a new post. Permission from a mod here Since this thread isn't going to be to stickied, it's up to you to upvote it. Share your anxiety, ideas on how to achieve alignment, observations, etc. Everything is fair game as lo…",
+   "date": "2026-10-23T14:15:00+00:00",
+   "source": "Reddit r/singularity",
+   "publisher": "",
+   "category": "話題",
+   "lang": "en"
+  },
+  {
+   "id": "04ccfeb9709ec9a2",
+   "title": "Do you guys remember how awful AI was like 4–5 years ago?",
+   "link": "https://www.reddit.com/r/OpenAI/comments/1xdf8n0/do_you_guys_remember_how_awful_ai_was_like_45/",
+   "summary": "This is just an image for example, but I remember when AI-generated anime characters and stuff looked absolutely terrible. Looking back, it's crazy how much AI has improved over the past 4 years. I'm not used to posting in this subreddit (obviously), but I'm genuinely curious abo…",
+   "date": "2026-10-23T14:14:27+00:00",
+   "source": "Reddit r/OpenAI",
+   "publisher": "",
+   "category": "話題",
+   "lang": "en"
   },
   {
    "id": "70e054bc1ebf3d34",
@@ -5700,6 +6448,17 @@
    "lang": "ja"
   },
   {
+   "id": "7bc7fe1f6570b081",
+   "title": "So now that dust setteled... flux 3",
+   "link": "https://www.reddit.com/r/StableDiffusion/comments/1xdepyv/so_now_that_dust_setteled_flux_3/",
+   "summary": "So now that enough days has been passed, and we see how bad the model flux 3 is, what are any responses from BFL team? I heard they said that some node did this and i tried updating and testing it again but with same body horrors. What are your thoughts? Was this to troll OS comm…",
+   "date": "2026-10-23T13:55:01+00:00",
+   "source": "Reddit r/StableDiffusion",
+   "publisher": "",
+   "category": "話題",
+   "lang": "en"
+  },
+  {
    "id": "6d10b70595fce185",
    "title": "Jenna Ortega: Künstliche Intelligenz empfindet keine Liebe und versteht sie nicht.",
    "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQajN0VU5Udkk1VTd4ZlZuSGF3bjN4Ul9USUdkM1RGbEdORDQ3U3hzWDZZTWx3UjZuZTFja1JWX2VfMjZFSFQ3QkZEYzFGMDVrZ1VIX1JZbXl6cU4zRVVBSHVOY0xiNXl2YXVLVk41a1Q1ZG5LZEtISGFyaS1NTzU2eVRoMzF2WllScVhQUHlPdTVZWHFWaFpISWg4OTZ2MmhGX1U2N1dfRHdUaFUySzdNMGhn?oc=5",
@@ -5750,6 +6509,17 @@
    "summary": "New research keeps finding things that keep reintroducing symbolic ai structures to machine learning and I have wondered why more research hasnt been done with it. There was a heyday in the 70s for it but after neural nets came out it seems to be completely out of the discussions…",
    "date": "2026-10-23T13:49:16+00:00",
    "source": "Reddit r/MachineLearning",
+   "publisher": "",
+   "category": "話題",
+   "lang": "en"
+  },
+  {
+   "id": "c239f4e0f65da3c8",
+   "title": "Kimi K3.1 rumored to release soon",
+   "link": "https://www.reddit.com/r/singularity/comments/1xdeigj/kimi_k31_rumored_to_release_soon/",
+   "summary": "submitted by /u/141_1337 [link] [comments]",
+   "date": "2026-10-23T13:46:58+00:00",
+   "source": "Reddit r/singularity",
    "publisher": "",
    "category": "話題",
    "lang": "en"
@@ -5909,6 +6679,17 @@
    "lang": "en"
   },
   {
+   "id": "f02d713433e68753",
+   "title": "Using OpenAI Realtime API with a Robot",
+   "link": "https://www.reddit.com/r/OpenAI/comments/1xddpuh/using_openai_realtime_api_with_a_robot/",
+   "summary": "I hooked up the OpenAI Realtime API (gpt-realtime-2.1 over WebRTC) to a small robot arm I built, so I can just talk to it. In the video it plays tic-tac-toe with me, puts a cube in a bowl, picks its favourite toy car and hands a cube back to me. How it works: The voice model gets…",
+   "date": "2026-10-23T13:14:41+00:00",
+   "source": "Reddit r/OpenAI",
+   "publisher": "",
+   "category": "話題",
+   "lang": "en"
+  },
+  {
    "id": "0c593fae6d3d34c2",
    "title": "Flint AI, Recursive launches a coding model you run locally",
    "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOVmdua0tLM0g1Q1dicnZZV2RmWHhmaFpNTHMyTHFvRWVMZU9ELXVEZkYxaDZOWWJKTklYRG1rRHBhbGlfTV9KUDFTMzlpZDBoNEFaV1pmVVIwYXI3a3FBMExUei1XcGdBaEVheWJycEJWQnotVUMxUUpHSWExcGo2SENHOVlLQ1lh?oc=5",
@@ -5942,6 +6723,17 @@
    "lang": "zh"
   },
   {
+   "id": "f15665c2e19c22fb",
+   "title": "3% of critical software security bugs, in all of recorded history, have been found in the last month - \"Black October\"",
+   "link": "https://www.reddit.com/r/OpenAI/comments/1xddmtq/3_of_critical_software_security_bugs_in_all_of/",
+   "summary": "submitted by /u/Confident_Salt_8108 [link] [comments]",
+   "date": "2026-10-23T13:11:02+00:00",
+   "source": "Reddit r/OpenAI",
+   "publisher": "",
+   "category": "話題",
+   "lang": "en"
+  },
+  {
    "id": "019257cf399a4d69",
    "title": "受人工智能引發的拋售潮影響，華爾街股市開盤料將走低；SpaceX相關擔憂拖累電信股",
    "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1pNUFOMmp2dVRiM0dIUTBwbzZnOTBMSXBNQnNiUTIySEt5UjFYM0NmdEJ4NDNDd25Kb0swSlQ3TEVWc1M3RWhERnlac0FrT1hlZ1BlYUdkQUZYZXFudkZMUlRYNlRTS2xCRERpMUFwWFNzc2NXdGNj?oc=5",
@@ -5951,6 +6743,17 @@
    "publisher": "TradingView",
    "category": "ニュース",
    "lang": "zh"
+  },
+  {
+   "id": "984f812f465d8429",
+   "title": "New AI built to predict human behavior instead of generating text beats 9 leading AI models at predicting how people answer surveys, with 74% less error.",
+   "link": "https://www.reddit.com/r/singularity/comments/1xddiv1/new_ai_built_to_predict_human_behavior_instead_of/",
+   "summary": "submitted by /u/141_1337 [link] [comments]",
+   "date": "2026-10-23T13:06:20+00:00",
+   "source": "Reddit r/singularity",
+   "publisher": "",
+   "category": "話題",
+   "lang": "en"
   },
   {
    "id": "df85a001872eb524",
@@ -6140,6 +6943,17 @@
    "lang": "ko"
   },
   {
+   "id": "7afd1b93321cac22",
+   "title": "SoftBank bet on OpenAI",
+   "link": "https://www.reddit.com/r/OpenAI/comments/1xdcxwk/softbank_bet_on_openai/",
+   "summary": "Interesting vid from Statrys https://youtu.be/pXvLeoWWHrE?si=paKIaMk4XimKm7Ys Sell and borrow to invest... Makes Son extremely leveraged, and then no openai IPO materialised. There's so much money at stake, the technology is now beholding to myths that will maintain capital. 'has…",
+   "date": "2026-10-23T12:41:27+00:00",
+   "source": "Reddit r/OpenAI",
+   "publisher": "",
+   "category": "話題",
+   "lang": "en"
+  },
+  {
    "id": "0dd44bf5d8edf452",
    "title": "보도자료부터 숏폼까지…경북 홍보업무에 생성형 AI 접목",
    "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE56MVpVeWZzdGx1MTAzdXRQTGVGd21UeUlxY01BSlQwVTVLdmxPb0k3WnJsMkpZQ3BBcTl5ZEl0UWdFYTF2RWN5dUlxVXk5Ulkwdm0yN3ppeWpXdE9HTHhTQTdseGF4dGhNQUxPalhTaw?oc=5",
@@ -6259,6 +7073,28 @@
    "publisher": "전자신문",
    "category": "ニュース",
    "lang": "ko"
+  },
+  {
+   "id": "19ac495c930f0071",
+   "title": "[Lora] MOSS Image - MAX ULTRA hires by ComfyUI Team",
+   "link": "https://www.reddit.com/r/StableDiffusion/comments/1xdcmku/lora_moss_image_max_ultra_hires_by_comfyui_team/",
+   "summary": "A LoHa adapter for MOSS-Image-Base (Comfy-Org) , trained to improve generation at 4 MP and higher resolutions. Trained on a mix of probably too much anime and photographs 3.5MP to 10MP. https://preview.redd.it/n9t6xkd3n7xh1.png?width=4096&format=png&auto=webp&s=0679dd99204555fdd2…",
+   "date": "2026-10-23T12:27:00+00:00",
+   "source": "Reddit r/StableDiffusion",
+   "publisher": "",
+   "category": "話題",
+   "lang": "en"
+  },
+  {
+   "id": "37d883f6bbce9fec",
+   "title": "Altman admits the cybersecurity crisis is going to get worse: \"I no longer think we're gonna be able to patch all the bugs.\"",
+   "link": "https://www.reddit.com/r/OpenAI/comments/1xdcjhe/altman_admits_the_cybersecurity_crisis_is_going/",
+   "summary": "submitted by /u/Puzzleheaded-King584 [link] [comments]",
+   "date": "2026-10-23T12:23:11+00:00",
+   "source": "Reddit r/OpenAI",
+   "publisher": "",
+   "category": "話題",
+   "lang": "en"
   },
   {
    "id": "f0a1cbfa68531283",
@@ -6459,6 +7295,17 @@
    "lang": "en"
   },
   {
+   "id": "213620bf0febda71",
+   "title": "Unvetted AI agents are accessing U.S. bank accounts and the banks are shutting them down",
+   "link": "https://www.reddit.com/r/OpenAI/comments/1xdbt9u/unvetted_ai_agents_are_accessing_us_bank_accounts/",
+   "summary": "This is causing complete havoc for the banks and they are scrambling. submitted by /u/National-Dragonfly35 [link] [comments]",
+   "date": "2026-10-23T11:48:17+00:00",
+   "source": "Reddit r/OpenAI",
+   "publisher": "",
+   "category": "話題",
+   "lang": "en"
+  },
+  {
    "id": "e8744136a7524425",
    "title": "Künstliche Intelligenz: Handelskammern sehen China im KI-Rennen vor den USA",
    "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNdVJNU3BFV0hHMkVhU29Gb0VIMU5nTE5PaHk3Z05KTHJrdllEY1J1aDg3MThZMmprdldXYnpuWnJjN0FBVExqNlhvN1hzUEtKWEI1RXRLRTdWd2FzX2RQOVZIMnFsWEU3aGJlUXd4MjB5NE0yZURZWk5WMkR3dmdSeWJCRTRheTNOdWRYTHJqSkYxLXZjdXk3SjBQQjVWT3lodWhacXNMdzZLX1hzZ1FEYjR6MXRQUloxSUd1TUxBRU5EXzdhMUFOdkE4OGZkdGE2Unc?oc=5",
@@ -6580,6 +7427,17 @@
    "lang": "en"
   },
   {
+   "id": "4159066d7b7a7f15",
+   "title": "OpenAI's Ad Pixel Tracks by Default, and European Shops Aren't Switching It Off",
+   "link": "https://www.reddit.com/r/OpenAI/comments/1xdbe24/openais_ad_pixel_tracks_by_default_and_european/",
+   "summary": "submitted by /u/adulion [link] [comments]",
+   "date": "2026-10-23T11:26:27+00:00",
+   "source": "Reddit r/OpenAI",
+   "publisher": "",
+   "category": "話題",
+   "lang": "en"
+  },
+  {
    "id": "0f346913cb834036",
    "title": "Anthropic and Hg to Launch AI Consultancy for European Firms",
    "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE83RlpuNGJ4M0pzOTM4Y1VudllKWHI3OE9UY0hhVk9EOWFxMmROVzFhdXZOREpob25qanZYSC0wT2p5Y2h0ajA1Vkx2b1dNLXdmeExkTXl1U0p1M240LTYxb01HcUdYbjNhM2J0LWY3OA?oc=5",
@@ -6633,6 +7491,17 @@
    "publisher": "Yahoo!ニュース",
    "category": "ニュース",
    "lang": "ja"
+  },
+  {
+   "id": "20ec7fd08b0eab31",
+   "title": "Plugin Submission MCP scan started to fail",
+   "link": "https://www.reddit.com/r/OpenAI/comments/1xdb5z6/plugin_submission_mcp_scan_started_to_fail/",
+   "summary": "My plugin was rejected due to some vague reason. ``` One or more of your tool's annotations do not appear to match the tool's behavior. ``` Anyhow, I go back to the plugin submission UI - and the `rescan/scan` of my MCP server does not work anymore. I keep getting: ``` Authorizat…",
+   "date": "2026-10-23T11:14:22+00:00",
+   "source": "Reddit r/OpenAI",
+   "publisher": "",
+   "category": "話題",
+   "lang": "en"
   },
   {
    "id": "df98212bfc256f21",
@@ -6822,6 +7691,17 @@
    "lang": "en"
   },
   {
+   "id": "79f01d9394445816",
+   "title": "OpenAI Ads Scammed Me. Stay Away.",
+   "link": "https://www.reddit.com/r/OpenAI/comments/1xdadeg/openai_ads_scammed_me_stay_away/",
+   "summary": "I really wanted this to work. I paid upfront, no problem, and then tried to verify my account. It failed. I tried again. Failed again. A few attempts later I gave up and contacted support. The \"support\" was an AI agent that told me it was passing my case along to the team. Fine,…",
+   "date": "2026-10-23T10:30:44+00:00",
+   "source": "Reddit r/OpenAI",
+   "publisher": "",
+   "category": "話題",
+   "lang": "en"
+  },
+  {
    "id": "87accfc3844632c8",
    "title": "At OpenAI’s Cyber Lab, Hackers Race To Protect The Internet From AI Attacks",
    "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQS2ZnT0JQaEZ2alZMTnFJYVVNa0M3Z210T1ZSbFdKWi0wa25majdtYjVsR1RPVlIzc3ZZUDVPTmZxN0FpRnBhTE92S24tUzhkaVhMb2ZKNUg0VDhMMHhaX2wxcDRHbDZDU0pWZ3RWTFRFMlZCVDRzdWZPUlB5T2gwRk5VQUVRT0pDMEJaQ1pscTQ3S29yXzR5b1hBc2xKQmwzRFB2R2VwLTZRcFY5cHNQUDVBQnZtVk0wb3pQRk9qMEY?oc=5",
@@ -6830,6 +7710,17 @@
    "source": "Google News（OpenAI・Anthropic・Google）",
    "publisher": "Forbes",
    "category": "ニュース",
+   "lang": "en"
+  },
+  {
+   "id": "2fa841a3483149b8",
+   "title": "I brought back ChatGPT’s old conversation table of contents as a userscript",
+   "link": "https://www.reddit.com/r/OpenAI/comments/1xdad1b/i_brought_back_chatgpts_old_conversation_table_of/",
+   "summary": "I missed ChatGPT’s old table of contents—the little navigation indicator at the right edge that let you jump around a conversation—so I made a userscript to bring that interaction back. It stays out of the way until you hover over it. Then it opens a compact list of your prompts,…",
+   "date": "2026-10-23T10:30:10+00:00",
+   "source": "Reddit r/OpenAI",
+   "publisher": "",
+   "category": "話題",
    "lang": "en"
   },
   {
@@ -6886,6 +7777,17 @@
    "publisher": "스타트업엔(StartupN)",
    "category": "ニュース",
    "lang": "ko"
+  },
+  {
+   "id": "7a4c85257c254665",
+   "title": "When did people's AGI indicators shift to actually be ASI?",
+   "link": "https://www.reddit.com/r/singularity/comments/1xda8re/when_did_peoples_agi_indicators_shift_to_actually/",
+   "summary": "more and more im seeing people ask questions like \"what is the first problem agi would solve\" and go on to describe millennium problems that have stood unsolved for decades. to me, agi is an average person. generally intelligent and capable of adapting to new jobs, but still aver…",
+   "date": "2026-10-23T10:23:09+00:00",
+   "source": "Reddit r/singularity",
+   "publisher": "",
+   "category": "話題",
+   "lang": "en"
   },
   {
    "id": "d34b71a302101ec0",
@@ -7075,6 +7977,17 @@
    "lang": "en"
   },
   {
+   "id": "73beae1f70bbfc94",
+   "title": "Moss Image Showcase – Mostly Photoreal + Some Art",
+   "link": "https://www.reddit.com/r/StableDiffusion/comments/1xd9o13/moss_image_showcase_mostly_photoreal_some_art/",
+   "summary": "Each and every image is generated using MOSS IMAGE base model no lora or fine-tune. Settings at cfg 4 and steps mostly stayed at 39 very few images were made at 42 or 50 steps,each and every image is generated at fix seed=11932(for reproducibility purposes),samplers used ranged b…",
+   "date": "2026-10-23T09:49:16+00:00",
+   "source": "Reddit r/StableDiffusion",
+   "publisher": "",
+   "category": "話題",
+   "lang": "en"
+  },
+  {
    "id": "f140085f1ac18428",
    "title": "Radiology societies weigh in on FDA’s push to regulate generative AI",
    "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPRjZUVzh1YmRKWVJhTWRNUk5mOVZzOUxEVHIyRzY1MmgzV0pWWHk4dXFWdnVoTVh4RjJvSnQwYXV0U1ZISjhEdlNKR2IyRm01clAzS3hGUUJOOW5CcU9RUFVhNmdtU3pINzBZZm5FRkk5c2stQnVhV3Bya083S1EwZUpfdFh5aEV6QmhPS3VYTGRibmRudUR3TU1NYkVtWjNDT3NTT0RpcldUMGN1OW1jcnRqVE1GX01xbEM0?oc=5",
@@ -7106,6 +8019,17 @@
    "publisher": "日本経済新聞",
    "category": "ニュース",
    "lang": "ja"
+  },
+  {
+   "id": "8fd17bfc3257a3de",
+   "title": "Incoming reset",
+   "link": "https://www.reddit.com/r/OpenAI/comments/1xd9dhu/incoming_reset/",
+   "summary": "Burn as much as you can to profit the most. submitted by /u/jeppa35 [link] [comments]",
+   "date": "2026-10-23T09:31:32+00:00",
+   "source": "Reddit r/OpenAI",
+   "publisher": "",
+   "category": "話題",
+   "lang": "en"
   },
   {
    "id": "b72f815768f226e5",
@@ -7196,6 +8120,17 @@
    "lang": "en"
   },
   {
+   "id": "7ccf6d394c1d0f83",
+   "title": "PixText: a small, fast model for fixing text in generated images",
+   "link": "https://www.reddit.com/r/StableDiffusion/comments/1xd9186/pixtext_a_small_fast_model_for_fixing_text_in/",
+   "summary": "I built PixText for a very specific frustration: an image looks great, most of the text is right, but a few mangled words or Chinese characters keep me from being happy with it. VAE compression can lose fine details in small text regions, so I trained the model directly in pixel…",
+   "date": "2026-10-23T09:09:58+00:00",
+   "source": "Reddit r/StableDiffusion",
+   "publisher": "",
+   "category": "話題",
+   "lang": "en"
+  },
+  {
    "id": "acead513953ce8f2",
    "title": "企业AI需要两个世界模型",
    "link": "https://www.qbitai.com/2026/10/505032.html",
@@ -7216,6 +8151,17 @@
    "publisher": "글로벌경제신문",
    "category": "ニュース",
    "lang": "ko"
+  },
+  {
+   "id": "64d6a9693643abc3",
+   "title": "What would be the first tasks AGI should solve?",
+   "link": "https://www.reddit.com/r/singularity/comments/1xd8yqm/what_would_be_the_first_tasks_agi_should_solve/",
+   "summary": "Let's state it. AGI is even more likely to happen in 2-24 months than ever. But we know this has a price, in electronics, in compute. So it makes sense to determine what would be the first tasks AGI should solve, other than the obvious global warming. My 2 cents: A) Energy: Low i…",
+   "date": "2026-10-23T09:05:32+00:00",
+   "source": "Reddit r/singularity",
+   "publisher": "",
+   "category": "話題",
+   "lang": "en"
   },
   {
    "id": "28936baaa6b763c2",
@@ -7326,6 +8272,17 @@
    "publisher": "Yahoo!ニュース",
    "category": "ニュース",
    "lang": "ja"
+  },
+  {
+   "id": "82aae9501a28bd1d",
+   "title": "Scientists grew a human mini-brain and used it to control a humanoid robot. It learned to grasp objects with 94% accuracy, chase a laser, and transfer learning between tasks—outperforming a conventional neural network in limited tests.",
+   "link": "https://www.reddit.com/r/singularity/comments/1xd8qwb/scientists_grew_a_human_minibrain_and_used_it_to/",
+   "summary": "submitted by /u/141_1337 [link] [comments]",
+   "date": "2026-10-23T08:52:34+00:00",
+   "source": "Reddit r/singularity",
+   "publisher": "",
+   "category": "話題",
+   "lang": "en"
   },
   {
    "id": "de79449cc31a543d",
@@ -7601,6 +8558,17 @@
    "publisher": "워크투데이",
    "category": "ニュース",
    "lang": "ko"
+  },
+  {
+   "id": "69c20bfab8170a66",
+   "title": "Almost got 'Selected model is at capacity. Please try a different model' every hour, what can/should we do? cancel the plan?",
+   "link": "https://www.reddit.com/r/OpenAI/comments/1xd7q8h/almost_got_selected_model_is_at_capacity_please/",
+   "summary": "submitted by /u/Alex-Stack [link] [comments]",
+   "date": "2026-10-23T07:48:31+00:00",
+   "source": "Reddit r/OpenAI",
+   "publisher": "",
+   "category": "話題",
+   "lang": "en"
   },
   {
    "id": "c499ca9edd031022",
@@ -7952,6 +8920,17 @@
    "source": "MarkTechPost",
    "publisher": "",
    "category": "ニュース",
+   "lang": "en"
+  },
+  {
+   "id": "71ab5ce3a07105b9",
+   "title": "MOSS-Image-SFT Anime Showcase: 20 styles tested (90s Cel, Shonen Jump covers, Sugimori watercolor, Sakuga & Kanji) + ComfyUI Workflow (Its Great!)",
+   "link": "https://www.reddit.com/r/StableDiffusion/comments/1xd5ypf/mossimagesft_anime_showcase_20_styles_tested_90s/",
+   "summary": "Here’s a showcase of MOSS-Image 's capabilities on generating anime and manga-related content across 20 distinct styles and eras. The included ComfyUI workflow uses the `SkipLayerGuidanceDiTSimple` node. Controlling SLG is crucial depending on the art style you want: SLG ON (Set…",
+   "date": "2026-10-23T06:02:09+00:00",
+   "source": "Reddit r/StableDiffusion",
+   "publisher": "",
+   "category": "話題",
    "lang": "en"
   },
   {
@@ -9570,6 +10549,17 @@
    "publisher": "日経クロストレンド",
    "category": "ニュース",
    "lang": "ja"
+  },
+  {
+   "id": "92ae3a3a63582e8d",
+   "title": "[창간특집-일상에 스며든 AI]업무 지원부터 여론동향 관리까지",
+   "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFB0MmlrVWtSZTA4ck5hX1A2TlNUUlc4UE9SNUFQekRQNTU2aldEY2pBeXZPZU0yZldUdnNicHZ0NUxiNkhVejhOU2xKRFYxSWozcUMySXF2Mk9YLWc?oc=5",
+   "summary": "",
+   "date": "2026-10-22T15:00:00+00:00",
+   "source": "Google 뉴스（韓国・생성형 AI）",
+   "publisher": "강원일보",
+   "category": "ニュース",
+   "lang": "ko"
   },
   {
    "id": "0931c9ac7c42e509",
