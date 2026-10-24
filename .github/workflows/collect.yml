@@ -6,7 +6,8 @@ on:
     - cron: "0 15 * * *" # 毎日深夜0時（日本時間）
   workflow_dispatch: # Actions 画面から手動でも実行できる
   push:
-    paths: [feeds.toml, collector/**, .github/workflows/collect.yml]
+    # data/curated.json は Claude Code（/curate）が更新したときにページを作り直すため
+    paths: [feeds.toml, collector/**, data/curated.json, .github/workflows/collect.yml]
 
 permissions:
   contents: write

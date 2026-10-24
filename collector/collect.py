@@ -30,6 +30,7 @@ import themes
 ROOT = Path(__file__).resolve().parent.parent
 CONFIG_PATH = ROOT / "feeds.toml"
 DATA_PATH = ROOT / "data" / "items.json"
+CURATED_PATH = ROOT / "data" / "curated.json"  # Claude Code（/curate）が選んで日本語で要約した注目記事
 TEMPLATE_PATH = ROOT / "collector" / "template.html"
 OUTPUT_PATH = ROOT / "docs" / "index.html"
 STATIC_DIR = ROOT / "collector" / "static"  # アイコンなど、ページと一緒に公開するファイル
@@ -218,11 +219,25 @@ def load_existing() -> dict[str, dict]:
     return {item["id"]: item for item in data["items"]}
 
 
+def load_curated(items: list[dict]) -> dict | None:
+    """注目記事に、元の記事のリンクや取得元を付けて返す。保存期間を過ぎて消えた記事は除く。"""
+    if not CURATED_PATH.exists():
+        return None
+    curated = json.loads(CURATED_PATH.read_text(encoding="utf-8"))
+    by_id = {i["id"]: i for i in items}
+    for theme in ("tech", "money"):
+        curated[theme] = [
+            {**by_id[e["id"]], **e} for e in curated.get(theme, []) if e.get("id") in by_id
+        ]
+    return curated
+
+
 def render(items: list[dict], statuses: list[dict], updated: datetime, feeds: list[dict]) -> str:
     feed_themes = {f["name"]: f["theme"] for f in feeds if f.get("theme")}
     payload = {
         "updated": updated.isoformat(timespec="seconds"),
         "items": [themes.annotate(i, feed_themes) for i in items],
+        "curated": load_curated(items),
         "statuses": statuses,
     }
     blob = json.dumps(payload, ensure_ascii=False).replace("</", "<\\/")

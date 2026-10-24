@@ -54,6 +54,13 @@ article p { margin: 4px 0 0; color: var(--muted); font-size: 13.5px; overflow-wr
 .reasons { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 6px; }
 .reason { background: var(--accent-bg); color: var(--accent); border-radius: 4px; padding: 0 6px; font-size: 11.5px; }
 article p.digest { color: var(--text); }
+article.curated { border-color: var(--accent); }
+.original { color: var(--muted); font-size: 12px; margin-top: 2px; overflow-wrap: anywhere; }
+.point { background: var(--accent-bg); border-radius: 6px; padding: 6px 8px; margin-top: 8px !important; color: var(--text) !important; }
+.point b, .overview b { color: var(--accent); margin-right: 6px; }
+.overview { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 12px 14px; margin-bottom: 10px; font-size: 14px; }
+.notice { background: var(--card); border: 1px dashed var(--line); border-radius: 10px; padding: 12px 14px; font-size: 13.5px; color: var(--muted); }
+h2 .sub { font-weight: 400; font-size: 12px; margin-left: 6px; }
 details { margin: 24px 0 40px; color: var(--muted); font-size: 13px; }
 details li.ng { color: var(--new); }
 </style>
@@ -151,48 +158,86 @@ function renderChips() {
     .join("");
 }
 
-function render() {
-  const words = $("q").value.trim().toLowerCase().split(/\s+/).filter(Boolean);
-  const lang = $("lang").value;
-  const days = Number($("range").value);
-  const since = days ? Date.now() - days * 86400000 : 0;
-
-  const filtered = DATA.items.filter((i) =>
-    (tab !== "all" || !activeCategory || i.category === activeCategory) &&
+function matches(i, { words, lang, since, useCategory }) {
+  const text = `${i.title} ${i.summary} ${i.source} ${i.publisher || ""} ${i.title_ja || ""} ${i.summary_ja || ""}`;
+  return (!useCategory || !activeCategory || i.category === activeCategory) &&
     (!lang || i.lang === lang || (lang === "foreign" && i.lang !== "ja")) &&
     new Date(i.date).getTime() >= since &&
-    words.every((w) => `${i.title} ${i.summary} ${i.source} ${i.publisher || ""}`.toLowerCase().includes(w))
-  );
-  const shown = tab === "all" ? filtered : pickTheme(filtered);
+    words.every((w) => text.toLowerCase().includes(w));
+}
 
-  let html = "", currentDay = "";
-  for (const i of shown) {
-    const d = new Date(i.date);
-    const label = dayLabel(d);
-    if (tab === "all" && label !== currentDay) { html += `<h2>${label}</h2>`; currentDay = label; }
-    const isNew = lastVisit && i.date > lastVisit;
-    const hm = `${String(d.getHours()).padStart(2, "0")}:${String(d.getMinutes()).padStart(2, "0")}`;
-    const time = tab === "all" ? hm : `${d.getMonth() + 1}/${d.getDate()} ${hm}`;
-    const theme = tab !== "all" && i.themes[tab];
-    const translate = i.lang !== "ja"
-      ? `<a href="https://translate.google.com/translate?sl=auto&tl=ja&u=${encodeURIComponent(i.link)}" target="_blank" rel="noopener">日本語に翻訳して読む</a>`
-      : "";
-    html += `<article>
-      <a class="title" href="${esc(i.link)}" target="_blank" rel="noopener">${esc(i.title)}</a>
-      ${theme
-        ? (i.digest ? `<p class="digest">${esc(i.digest)}</p>` : "") +
-          `<div class="reasons">${theme.reasons.map((r) => `<span class="reason">${esc(r)}</span>`).join("")}</div>`
-        : i.summary ? `<p>${esc(i.summary)}</p>` : ""}
-      <div class="tags">${isNew ? '<span class="badge">NEW</span>' : ""}
-        <span>${time}</span><span>${esc(i.publisher ? `${i.publisher}（${i.source}）` : i.source)}</span><span>${esc(i.category)}</span>${translate}</div>
-    </article>`;
+// mode: "all"（すべての記事）/ "theme"（キーワードで選んだ記事）/ "curated"（Claude が選んだ記事）
+function card(i, mode) {
+  const d = new Date(i.date);
+  const hm = `${String(d.getHours()).padStart(2, "0")}:${String(d.getMinutes()).padStart(2, "0")}`;
+  const time = mode === "all" ? hm : `${d.getMonth() + 1}/${d.getDate()} ${hm}`;
+  const isNew = lastVisit && i.date > lastVisit;
+  const translate = i.lang !== "ja"
+    ? `<a href="https://translate.google.com/translate?sl=auto&tl=ja&u=${encodeURIComponent(i.link)}" target="_blank" rel="noopener">日本語に翻訳して読む</a>`
+    : "";
+  let body;
+  if (mode === "curated") {
+    body = `<a class="title" href="${esc(i.link)}" target="_blank" rel="noopener">${esc(i.title_ja)}</a>
+      ${i.title_ja !== i.title ? `<div class="original">${esc(i.title)}</div>` : ""}
+      <p class="digest">${esc(i.summary_ja)}</p>
+      <p class="point"><b>${tab === "money" ? "活かし方" : "ポイント"}</b>${esc(i.point)}</p>`;
+  } else if (mode === "theme") {
+    body = `<a class="title" href="${esc(i.link)}" target="_blank" rel="noopener">${esc(i.title)}</a>
+      ${i.digest ? `<p class="digest">${esc(i.digest)}</p>` : ""}
+      <div class="reasons">${i.themes[tab].reasons.map((r) => `<span class="reason">${esc(r)}</span>`).join("")}</div>`;
+  } else {
+    body = `<a class="title" href="${esc(i.link)}" target="_blank" rel="noopener">${esc(i.title)}</a>
+      ${i.summary ? `<p>${esc(i.summary)}</p>` : ""}`;
   }
+  return `<article${mode === "curated" ? ' class="curated"' : ""}>${body}
+    <div class="tags">${isNew ? '<span class="badge">NEW</span>' : ""}
+      <span>${time}</span><span>${esc(i.publisher ? `${i.publisher}（${i.source}）` : i.source)}</span><span>${esc(i.category)}</span>${translate}</div>
+  </article>`;
+}
+
+function render() {
+  const days = Number($("range").value);
+  const opts = {
+    words: $("q").value.trim().toLowerCase().split(/\s+/).filter(Boolean),
+    lang: $("lang").value,
+    since: days ? Date.now() - days * 86400000 : 0,
+    useCategory: tab === "all",
+  };
+  const filtered = DATA.items.filter((i) => matches(i, opts));
+  let html = "", count = 0;
+
+  if (tab === "all") {
+    let currentDay = "";
+    for (const i of filtered) {
+      const label = dayLabel(new Date(i.date));
+      if (label !== currentDay) { html += `<h2>${label}</h2>`; currentDay = label; }
+      html += card(i, "all");
+    }
+    count = filtered.length;
+  } else {
+    const curated = DATA.curated && DATA.curated[tab] ? DATA.curated[tab] : [];
+    const picks = curated.filter((i) => matches(i, opts));
+    if (curated.length) {
+      const gen = new Date(DATA.curated.generated);
+      const ago = Math.floor((Date.now() - gen) / 86400000);
+      html += `<h2>Claudeが選んだ注目記事 <span class="sub">${gen.toLocaleString("ja-JP", { month: "numeric", day: "numeric", hour: "2-digit", minute: "2-digit" })} 選定${ago >= 2 ? `（${ago}日前）` : ""}</span></h2>`;
+      if (DATA.curated.overview && !opts.words.length) html += `<div class="overview"><b>今日のまとめ</b>${esc(DATA.curated.overview)}</div>`;
+      html += picks.map((i) => card(i, "curated")).join("") || '<p class="empty">条件に合う注目記事はありません。</p>';
+    } else {
+      html += '<p class="notice">Claudeによる選定・日本語要約はまだありません。デスクトップ版の Claude Code でこのリポジトリを開き、<code>/curate</code> と入力すると表示されます。</p>';
+    }
+    const pickedIds = new Set(curated.map((i) => i.id));
+    const rest = pickTheme(filtered.filter((i) => !pickedIds.has(i.id)));
+    html += `<h2>キーワードで選んだその他の記事</h2>` + rest.map((i) => card(i, "theme")).join("");
+    count = picks.length + rest.length;
+  }
+
   $("list").innerHTML = html || '<p class="empty">該当する記事はありません。</p>';
+  $("meta").textContent = `${count}件を表示 ・ 最終更新 ${DATA.updated ? new Date(DATA.updated).toLocaleString("ja-JP") : "—"}`;
   $("intro").textContent = TABS[tab];
   $("intro").hidden = !TABS[tab];
   $("chips").hidden = tab !== "all";
   document.querySelectorAll(".tab").forEach((b) => b.classList.toggle("on", b.dataset.tab === tab));
-  $("meta").textContent = `${shown.length}件を表示 ・ 最終更新 ${DATA.updated ? new Date(DATA.updated).toLocaleString("ja-JP") : "—"}`;
 }
 
 function renderStatus() {
