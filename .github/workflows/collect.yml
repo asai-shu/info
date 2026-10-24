@@ -21,7 +21,10 @@ jobs:
   collect:
     runs-on: ubuntu-latest
     steps:
+      # 順番待ちの間に別の実行がデータを更新していることがあるため、常にブランチの最新を使う
       - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
 
       - uses: actions/setup-python@v5
         with:
@@ -29,6 +32,10 @@ jobs:
 
       - name: フィードを収集してページを作る
         run: python collector/collect.py
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs
 
       - name: 収集データを保存する
         run: |
@@ -40,14 +47,12 @@ jobs:
           git pull --rebase
           git push
 
-      - uses: actions/upload-pages-artifact@v3
-        with:
-          path: docs
-
   # Settings → Pages の Source を「GitHub Actions」にすると、ここでページが公開される。
   # 未設定でも収集は止まらないよう、このジョブの失敗は無視する。
+  # 収集データの保存に失敗しても、ページは公開する。
   deploy:
     needs: collect
+    if: ${{ !cancelled() }}
     runs-on: ubuntu-latest
     continue-on-error: true
     environment:
