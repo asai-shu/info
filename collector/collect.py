@@ -36,6 +36,9 @@ USER_AGENT = (
     "(KHTML, like Gecko) Chrome/130.0 Safari/537.36 ai-info-collector/1.0"
 )
 SUMMARY_LENGTH = 280
+# 同じサイトへ続けて取りに行くときの間隔（秒）。Reddit は短い間隔だと拒否される
+HOST_DELAY = {"www.reddit.com": 30}
+DEFAULT_DELAY = 6
 
 # filter = true のフィードで、これらのどれかを含む記事だけを残す
 KEYWORDS = [
@@ -227,21 +230,21 @@ def main() -> int:
     feeds = config["feeds"]
     now = datetime.now(timezone.utc)
 
-    # 同じサイトへは6秒の間隔を空けて1件ずつ取りに行き、サイトどうしは並行して取得する
+    # 同じサイトへは間隔を空けて1件ずつ取りに行き、サイトどうしは並行して取得する
     by_host = defaultdict(list)
     for index, feed in enumerate(feeds):
         by_host[urllib.parse.urlsplit(feed["url"]).hostname].append(index)
 
     results: list = [None] * len(feeds)
 
-    def collect_host(indexes: list[int]) -> None:
+    def collect_host(host: str, indexes: list[int]) -> None:
         for n, index in enumerate(indexes):
             if n:
-                time.sleep(6)
+                time.sleep(HOST_DELAY.get(host, DEFAULT_DELAY))
             results[index] = collect_feed(feeds[index], now)
 
     with ThreadPoolExecutor(max_workers=12) as pool:
-        list(pool.map(collect_host, by_host.values()))
+        list(pool.map(collect_host, by_host.keys(), by_host.values()))
 
     items = load_existing()
     # 別の取得元から同じ記事が入るのを防ぐため、タイトルでも重複を判定する

@@ -175,12 +175,6 @@ category = "公式発表"
 lang = "en"
 
 [[feeds]]
-name = "LangChain Blog"
-url = "https://blog.langchain.com/rss/"
-category = "公式発表"
-lang = "en"
-
-[[feeds]]
 name = "Berkeley AI Research"
 url = "https://bair.berkeley.edu/blog/feed.xml"
 category = "公式発表"
