@@ -25,6 +25,8 @@ from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
+import themes
+
 ROOT = Path(__file__).resolve().parent.parent
 CONFIG_PATH = ROOT / "feeds.toml"
 DATA_PATH = ROOT / "data" / "items.json"
@@ -216,10 +218,11 @@ def load_existing() -> dict[str, dict]:
     return {item["id"]: item for item in data["items"]}
 
 
-def render(items: list[dict], statuses: list[dict], updated: datetime) -> str:
+def render(items: list[dict], statuses: list[dict], updated: datetime, feeds: list[dict]) -> str:
+    feed_themes = {f["name"]: f["theme"] for f in feeds if f.get("theme")}
     payload = {
         "updated": updated.isoformat(timespec="seconds"),
-        "items": items,
+        "items": [themes.annotate(i, feed_themes) for i in items],
         "statuses": statuses,
     }
     blob = json.dumps(payload, ensure_ascii=False).replace("</", "<\\/")
@@ -279,7 +282,7 @@ def main() -> int:
         encoding="utf-8",
     )
     OUTPUT_PATH.parent.mkdir(parents=True, exist_ok=True)
-    OUTPUT_PATH.write_text(render(kept, statuses, now), encoding="utf-8")
+    OUTPUT_PATH.write_text(render(kept, statuses, now, feeds), encoding="utf-8")
     shutil.copytree(STATIC_DIR, OUTPUT_PATH.parent, dirs_exist_ok=True)
 
     ok = sum(s["ok"] for s in statuses)

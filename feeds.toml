@@ -7,6 +7,7 @@
 #   lang     : 言語（ja / en / zh / ko / de / fr / es）
 #   filter   : true にすると、AI関連のキーワードを含む記事だけ残します（AI専門でないサイト向け）
 #   limit    : 1回の収集で取り込む最大件数（大量に流れるフィード向け。省略すると全件）
+#   theme    : "tech"（技術の進歩）/ "money"（収益化のヒント）。そのテーマのページに載りやすくなる
 
 [settings]
 keep_days = 14       # 何日前までの記事を残すか
@@ -454,3 +455,68 @@ url = "https://rss.arxiv.org/rss/cs.CV"
 category = "論文"
 lang = "en"
 limit = 30
+
+# ================= 収益化のヒント（theme = "money" は「収益化のヒント」に載りやすくなる） =================
+
+[[feeds]]
+name = "Googleニュース（AI副業）"
+url = "https://news.google.com/rss/search?q=AI+副業+OR+生成AI+稼ぐ+OR+ChatGPT+副業+when:7d&hl=ja&gl=JP&ceid=JP:ja"
+category = "収益化"
+lang = "ja"
+theme = "money"
+limit = 40
+
+[[feeds]]
+name = "Googleニュース（学生・ハッカソン）"
+url = "https://news.google.com/rss/search?q=生成AI+(学生+OR+大学生)+(ハッカソン+OR+コンテスト+OR+賞金+OR+起業)+when:14d&hl=ja&gl=JP&ceid=JP:ja"
+category = "収益化"
+lang = "ja"
+theme = "money"
+limit = 30
+
+[[feeds]]
+name = "note（AI副業）"
+url = "https://note.com/hashtag/AI副業/rss"
+category = "収益化"
+lang = "ja"
+theme = "money"
+
+[[feeds]]
+name = "Zenn（個人開発）"
+url = "https://zenn.dev/topics/個人開発/feed"
+category = "収益化"
+lang = "ja"
+theme = "money"
+filter = true
+
+[[feeds]]
+name = "Qiita（個人開発）"
+url = "https://qiita.com/tags/個人開発/feed"
+category = "収益化"
+lang = "ja"
+theme = "money"
+filter = true
+
+[[feeds]]
+name = "Google News（AI Side Hustle）"
+url = "https://news.google.com/rss/search?q=%22AI+side+hustle%22+OR+%22make+money+with+AI%22+OR+%22AI+freelance%22+when:7d&hl=en-US&gl=US&ceid=US:en"
+category = "収益化"
+lang = "en"
+theme = "money"
+limit = 30
+
+[[feeds]]
+name = "Hacker News（Show HN）"
+url = "https://hnrss.org/show?points=30"
+category = "収益化"
+lang = "en"
+theme = "money"
+filter = true
+
+[[feeds]]
+name = "Reddit r/SideProject"
+url = "https://www.reddit.com/r/SideProject/top/.rss?t=day"
+category = "収益化"
+lang = "en"
+theme = "money"
+filter = true
