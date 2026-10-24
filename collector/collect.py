@@ -12,6 +12,7 @@ import hashlib
 import html
 import json
 import re
+import shutil
 import sys
 import time
 import tomllib
@@ -29,6 +30,7 @@ CONFIG_PATH = ROOT / "feeds.toml"
 DATA_PATH = ROOT / "data" / "items.json"
 TEMPLATE_PATH = ROOT / "collector" / "template.html"
 OUTPUT_PATH = ROOT / "docs" / "index.html"
+STATIC_DIR = ROOT / "collector" / "static"  # アイコンなど、ページと一緒に公開するファイル
 
 # 一部のサイトはブラウザ以外からのアクセスを拒否するため、一般的なブラウザ名を名乗る
 USER_AGENT = (
@@ -278,6 +280,7 @@ def main() -> int:
     )
     OUTPUT_PATH.parent.mkdir(parents=True, exist_ok=True)
     OUTPUT_PATH.write_text(render(kept, statuses, now), encoding="utf-8")
+    shutil.copytree(STATIC_DIR, OUTPUT_PATH.parent, dirs_exist_ok=True)
 
     ok = sum(s["ok"] for s in statuses)
     print(f"\n{ok}/{len(statuses)} フィード成功、保存 {len(kept)}件 → {OUTPUT_PATH.relative_to(ROOT)}")
