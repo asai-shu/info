@@ -12,6 +12,7 @@ import html
 import json
 import re
 import sys
+import time
 import tomllib
 import urllib.parse
 import urllib.request
@@ -26,7 +27,11 @@ DATA_PATH = ROOT / "data" / "items.json"
 TEMPLATE_PATH = ROOT / "collector" / "template.html"
 OUTPUT_PATH = ROOT / "docs" / "index.html"
 
-USER_AGENT = "Mozilla/5.0 (compatible; ai-info-collector/1.0; +https://github.com/asai-shu/info)"
+# 一部のサイトはブラウザ以外からのアクセスを拒否するため、一般的なブラウザ名を名乗る
+USER_AGENT = (
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+    "(KHTML, like Gecko) Chrome/130.0 Safari/537.36 ai-info-collector/1.0"
+)
 SUMMARY_LENGTH = 280
 
 # filter = true のフィードで、これらのどれかを含む記事だけを残す
@@ -114,7 +119,13 @@ def parse_feed(xml_bytes: bytes) -> list[dict]:
             continue
         summary = clean_text(child_text(e, "description", "summary", "content", "encoded"))
         date = parse_date(child_text(e, "pubDate", "published", "updated", "date"))
-        results.append({"title": title, "link": link, "summary": summary, "date": date})
+        # Google ニュースなどは <source> に元の媒体名が入り、タイトル末尾にも " - 媒体名" が付く
+        publisher = clean_text(child_text(e, "source"))
+        if publisher and title.endswith(f" - {publisher}"):
+            title = title[: -len(publisher) - 3]
+        if publisher and summary.startswith(title):
+            summary = ""
+        results.append({"title": title, "link": link, "summary": summary, "date": date, "publisher": publisher})
     return results
 
 
@@ -123,10 +134,23 @@ def is_ai_related(item: dict) -> bool:
     return bool(KEYWORD_RE.search(text) or AI_WORD_RE.search(text))
 
 
+def title_key(title: str) -> str:
+    return re.sub(r"\W+", "", title).lower()
+
+
 def fetch(url: str) -> bytes:
-    req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
-    with urllib.request.urlopen(req, timeout=30) as res:
-        return res.read()
+    req = urllib.request.Request(url, headers={
+        "User-Agent": USER_AGENT,
+        "Accept": "application/rss+xml, application/atom+xml, application/xml, text/xml, */*",
+    })
+    for attempt in range(2):
+        try:
+            with urllib.request.urlopen(req, timeout=30) as res:
+                return res.read()
+        except Exception:
+            if attempt == 1:
+                raise
+            time.sleep(3)
 
 
 def collect_feed(feed: dict, now: datetime) -> tuple[list[dict], str | None]:
@@ -150,6 +174,7 @@ def collect_feed(feed: dict, now: datetime) -> tuple[list[dict], str | None]:
             "summary": e["summary"],
             "date": (e["date"] or now).isoformat(timespec="seconds"),
             "source": feed["name"],
+            "publisher": e["publisher"],
             "category": feed["category"],
             "lang": feed["lang"],
         })
@@ -183,10 +208,15 @@ def main() -> int:
         results = list(pool.map(lambda f: collect_feed(f, now), feeds))
 
     items = load_existing()
+    # 別の取得元から同じ記事が入るのを防ぐため、タイトルでも重複を判定する
+    seen_titles = {title_key(i["title"]): i["id"] for i in items.values()}
     statuses = []
     for feed, (new_items, error) in zip(feeds, results):
         added = 0
         for item in new_items:
+            key = title_key(item["title"])
+            if seen_titles.setdefault(key, item["id"]) != item["id"]:
+                continue
             if item["id"] in items:
                 # 既に取得済みなら、最初に見つけた日時を保ったまま内容だけ更新する
                 item["date"] = items[item["id"]]["date"]

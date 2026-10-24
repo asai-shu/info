@@ -50,8 +50,6 @@ details li.ng { color: var(--new); }
       <input type="search" id="q" placeholder="キーワードで検索（例: Claude、画像生成）">
       <select id="lang">
         <option value="">すべての言語</option>
-        <option value="ja">日本語のみ</option>
-        <option value="en">英語のみ</option>
       </select>
       <select id="range">
         <option value="0">全期間</option>
@@ -80,6 +78,11 @@ const lastVisit = store.get("lastVisit");
 store.set("lastVisit", new Date().toISOString());
 
 const categories = [...new Set(DATA.items.map((i) => i.category))];
+const LANGS = { ja: "日本語", en: "英語", zh: "中国語", ko: "韓国語", de: "ドイツ語", fr: "フランス語", es: "スペイン語" };
+const foreign = [...new Set(DATA.items.map((i) => i.lang))].filter((l) => l !== "ja");
+$("lang").insertAdjacentHTML("beforeend",
+  `<option value="ja">日本語のみ</option><option value="foreign">海外（日本語以外）</option>` +
+  foreign.map((l) => `<option value="${esc(l)}">${esc(LANGS[l] || l)}のみ</option>`).join(""));
 let activeCategory = "";
 
 function esc(s) {
@@ -109,9 +112,9 @@ function render() {
 
   const shown = DATA.items.filter((i) =>
     (!activeCategory || i.category === activeCategory) &&
-    (!lang || i.lang === lang) &&
+    (!lang || i.lang === lang || (lang === "foreign" && i.lang !== "ja")) &&
     new Date(i.date).getTime() >= since &&
-    words.every((w) => `${i.title} ${i.summary} ${i.source}`.toLowerCase().includes(w))
+    words.every((w) => `${i.title} ${i.summary} ${i.source} ${i.publisher || ""}`.toLowerCase().includes(w))
   );
 
   let html = "", currentDay = "";
@@ -121,14 +124,14 @@ function render() {
     if (label !== currentDay) { html += `<h2>${label}</h2>`; currentDay = label; }
     const isNew = lastVisit && i.date > lastVisit;
     const time = `${String(d.getHours()).padStart(2, "0")}:${String(d.getMinutes()).padStart(2, "0")}`;
-    const translate = i.lang === "en"
+    const translate = i.lang !== "ja"
       ? `<a href="https://translate.google.com/translate?sl=auto&tl=ja&u=${encodeURIComponent(i.link)}" target="_blank" rel="noopener">日本語に翻訳して読む</a>`
       : "";
     html += `<article>
       <a class="title" href="${esc(i.link)}" target="_blank" rel="noopener">${esc(i.title)}</a>
       ${i.summary ? `<p>${esc(i.summary)}</p>` : ""}
       <div class="tags">${isNew ? '<span class="badge">NEW</span>' : ""}
-        <span>${time}</span><span>${esc(i.source)}</span><span>${esc(i.category)}</span>${translate}</div>
+        <span>${time}</span><span>${esc(i.publisher ? `${i.publisher}（${i.source}）` : i.source)}</span><span>${esc(i.category)}</span>${translate}</div>
     </article>`;
   }
   $("list").innerHTML = html || '<p class="empty">該当する記事はありません。</p>';

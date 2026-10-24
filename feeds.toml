@@ -4,15 +4,29 @@
 #   name     : 画面に表示する名前
 #   url      : RSS / Atom の URL
 #   category : 分類（画面の絞り込みに使います）
-#   lang     : "ja"（日本語）または "en"（英語）
+#   lang     : 言語（ja / en / zh / ko / de / fr / es）
 #   filter   : true にすると、AI関連のキーワードを含む記事だけ残します（AI専門でないサイト向け）
 #   limit    : 1回の収集で取り込む最大件数（大量に流れるフィード向け。省略すると全件）
 
 [settings]
 keep_days = 14       # 何日前までの記事を残すか
-max_items = 3000     # 保存する最大件数
+max_items = 5000     # 保存する最大件数
 
-# ---------- 日本語ニュース ----------
+# ================= 日本 =================
+
+[[feeds]]
+name = "Googleニュース（生成AI）"
+url = "https://news.google.com/rss/search?q=生成AI+when:2d&hl=ja&gl=JP&ceid=JP:ja"
+category = "ニュース"
+lang = "ja"
+limit = 60
+
+[[feeds]]
+name = "Googleニュース（ChatGPT・Claude・Gemini）"
+url = "https://news.google.com/rss/search?q=ChatGPT+OR+Claude+OR+Gemini+OR+LLM+when:2d&hl=ja&gl=JP&ceid=JP:ja"
+category = "ニュース"
+lang = "ja"
+limit = 60
 
 [[feeds]]
 name = "ITmedia AI+"
@@ -35,13 +49,24 @@ lang = "ja"
 filter = true
 
 [[feeds]]
+name = "AINOW"
+url = "https://ainow.ai/feed/"
+category = "ニュース"
+lang = "ja"
+
+[[feeds]]
 name = "はてなブックマーク IT人気"
 url = "https://b.hatena.ne.jp/hotentry/it.rss"
 category = "話題"
 lang = "ja"
 filter = true
 
-# ---------- 日本語の技術記事・活用ノウハウ ----------
+[[feeds]]
+name = "はてなブックマーク IT新着"
+url = "https://b.hatena.ne.jp/entrylist/it.rss"
+category = "話題"
+lang = "ja"
+filter = true
 
 [[feeds]]
 name = "Zenn（LLM）"
@@ -52,6 +77,12 @@ lang = "ja"
 [[feeds]]
 name = "Zenn（生成AI）"
 url = "https://zenn.dev/topics/生成ai/feed"
+category = "技術記事"
+lang = "ja"
+
+[[feeds]]
+name = "Zenn（AI）"
+url = "https://zenn.dev/topics/ai/feed"
 category = "技術記事"
 lang = "ja"
 
@@ -67,7 +98,19 @@ url = "https://qiita.com/tags/chatgpt/feed"
 category = "技術記事"
 lang = "ja"
 
-# ---------- AI企業の公式発表 ----------
+[[feeds]]
+name = "Qiita（LLM）"
+url = "https://qiita.com/tags/llm/feed"
+category = "技術記事"
+lang = "ja"
+
+[[feeds]]
+name = "note（生成AI）"
+url = "https://note.com/hashtag/生成AI/rss"
+category = "技術記事"
+lang = "ja"
+
+# ================= AI企業・研究機関の公式発表 =================
 
 [[feeds]]
 name = "OpenAI"
@@ -88,8 +131,8 @@ category = "公式発表"
 lang = "en"
 
 [[feeds]]
-name = "Hugging Face Blog"
-url = "https://huggingface.co/blog/feed.xml"
+name = "Google Research"
+url = "https://research.google/blog/rss/"
 category = "公式発表"
 lang = "en"
 
@@ -99,7 +142,79 @@ url = "https://blogs.microsoft.com/ai/feed/"
 category = "公式発表"
 lang = "en"
 
-# ---------- 英語ニュース ----------
+[[feeds]]
+name = "Microsoft Research"
+url = "https://www.microsoft.com/en-us/research/feed/"
+category = "公式発表"
+lang = "en"
+
+[[feeds]]
+name = "NVIDIA Blog"
+url = "https://blogs.nvidia.com/feed/"
+category = "公式発表"
+lang = "en"
+filter = true
+
+[[feeds]]
+name = "AWS Machine Learning Blog"
+url = "https://aws.amazon.com/blogs/machine-learning/feed/"
+category = "公式発表"
+lang = "en"
+limit = 20
+
+[[feeds]]
+name = "Apple Machine Learning Research"
+url = "https://machinelearning.apple.com/rss.xml"
+category = "公式発表"
+lang = "en"
+
+[[feeds]]
+name = "Hugging Face Blog"
+url = "https://huggingface.co/blog/feed.xml"
+category = "公式発表"
+lang = "en"
+
+[[feeds]]
+name = "LangChain Blog"
+url = "https://blog.langchain.dev/rss/"
+category = "公式発表"
+lang = "en"
+
+[[feeds]]
+name = "Berkeley AI Research"
+url = "https://bair.berkeley.edu/blog/feed.xml"
+category = "公式発表"
+lang = "en"
+
+# ================= 海外ニュース（英語） =================
+
+[[feeds]]
+name = "Google News（Generative AI）"
+url = "https://news.google.com/rss/search?q=%22generative+AI%22+OR+LLM+OR+%22AI+model%22+when:1d&hl=en-US&gl=US&ceid=US:en"
+category = "ニュース"
+lang = "en"
+limit = 60
+
+[[feeds]]
+name = "Google News（OpenAI・Anthropic・Google）"
+url = "https://news.google.com/rss/search?q=OpenAI+OR+Anthropic+OR+%22Google+Gemini%22+OR+%22Meta+AI%22+when:1d&hl=en-US&gl=US&ceid=US:en"
+category = "ニュース"
+lang = "en"
+limit = 60
+
+[[feeds]]
+name = "Google News（AI Startups）"
+url = "https://news.google.com/rss/search?q=%22AI+startup%22+OR+%22AI+funding%22+when:2d&hl=en-US&gl=US&ceid=US:en"
+category = "ビジネス"
+lang = "en"
+limit = 40
+
+[[feeds]]
+name = "Google News UK（AI）"
+url = "https://news.google.com/rss/search?q=%22artificial+intelligence%22+when:1d&hl=en-GB&gl=GB&ceid=GB:en"
+category = "ニュース"
+lang = "en"
+limit = 40
 
 [[feeds]]
 name = "TechCrunch AI"
@@ -126,12 +241,93 @@ category = "ニュース"
 lang = "en"
 
 [[feeds]]
-name = "Simon Willison"
-url = "https://simonwillison.net/atom/everything/"
-category = "技術記事"
+name = "Ars Technica AI"
+url = "https://arstechnica.com/ai/feed/"
+category = "ニュース"
 lang = "en"
 
-# ---------- 英語コミュニティ（話題になっているもの） ----------
+[[feeds]]
+name = "WIRED AI"
+url = "https://www.wired.com/feed/tag/ai/latest/rss"
+category = "ニュース"
+lang = "en"
+
+[[feeds]]
+name = "Engadget"
+url = "https://www.engadget.com/rss.xml"
+category = "ニュース"
+lang = "en"
+filter = true
+
+[[feeds]]
+name = "The Decoder"
+url = "https://the-decoder.com/feed/"
+category = "ニュース"
+lang = "en"
+
+[[feeds]]
+name = "MarkTechPost"
+url = "https://www.marktechpost.com/feed/"
+category = "ニュース"
+lang = "en"
+
+[[feeds]]
+name = "AI News"
+url = "https://www.artificialintelligence-news.com/feed/"
+category = "ニュース"
+lang = "en"
+
+[[feeds]]
+name = "SiliconANGLE AI"
+url = "https://siliconangle.com/category/ai/feed/"
+category = "ビジネス"
+lang = "en"
+
+# ================= 海外の専門家ブログ・ニュースレター =================
+
+[[feeds]]
+name = "Simon Willison"
+url = "https://simonwillison.net/atom/everything/"
+category = "専門家"
+lang = "en"
+
+[[feeds]]
+name = "Import AI（Jack Clark）"
+url = "https://importai.substack.com/feed"
+category = "専門家"
+lang = "en"
+
+[[feeds]]
+name = "One Useful Thing（Ethan Mollick）"
+url = "https://www.oneusefulthing.org/feed"
+category = "専門家"
+lang = "en"
+
+[[feeds]]
+name = "Latent Space"
+url = "https://www.latent.space/feed"
+category = "専門家"
+lang = "en"
+
+[[feeds]]
+name = "Interconnects（Nathan Lambert）"
+url = "https://www.interconnects.ai/feed"
+category = "専門家"
+lang = "en"
+
+[[feeds]]
+name = "Ahead of AI（Sebastian Raschka）"
+url = "https://magazine.sebastianraschka.com/feed"
+category = "専門家"
+lang = "en"
+
+[[feeds]]
+name = "Ben's Bites"
+url = "https://www.bensbites.com/feed"
+category = "専門家"
+lang = "en"
+
+# ================= 海外コミュニティ（話題になっているもの） =================
 
 [[feeds]]
 name = "Hacker News（100pt以上）"
@@ -139,6 +335,12 @@ url = "https://hnrss.org/newest?points=100"
 category = "話題"
 lang = "en"
 filter = true
+
+[[feeds]]
+name = "Lobsters（AI）"
+url = "https://lobste.rs/t/ai.rss"
+category = "話題"
+lang = "en"
 
 [[feeds]]
 name = "Reddit r/LocalLLaMA"
@@ -152,7 +354,129 @@ url = "https://www.reddit.com/r/singularity/top/.rss?t=day"
 category = "話題"
 lang = "en"
 
-# ---------- 研究論文 ----------
+[[feeds]]
+name = "Reddit r/MachineLearning"
+url = "https://www.reddit.com/r/MachineLearning/top/.rss?t=day"
+category = "話題"
+lang = "en"
+
+[[feeds]]
+name = "Reddit r/OpenAI"
+url = "https://www.reddit.com/r/OpenAI/top/.rss?t=day"
+category = "話題"
+lang = "en"
+
+[[feeds]]
+name = "Reddit r/ClaudeAI"
+url = "https://www.reddit.com/r/ClaudeAI/top/.rss?t=day"
+category = "話題"
+lang = "en"
+
+[[feeds]]
+name = "Reddit r/StableDiffusion"
+url = "https://www.reddit.com/r/StableDiffusion/top/.rss?t=day"
+category = "話題"
+lang = "en"
+
+# ================= 新しいツール・サービス =================
+
+[[feeds]]
+name = "Product Hunt"
+url = "https://www.producthunt.com/feed"
+category = "ツール"
+lang = "en"
+filter = true
+
+[[feeds]]
+name = "GitHub Trending"
+url = "https://mshibanami.github.io/GitHubTrendingRSS/daily/all.xml"
+category = "ツール"
+lang = "en"
+filter = true
+
+[[feeds]]
+name = "GitHub Trending（Python）"
+url = "https://mshibanami.github.io/GitHubTrendingRSS/daily/python.xml"
+category = "ツール"
+lang = "en"
+filter = true
+
+# ================= 動画（YouTube） =================
+
+[[feeds]]
+name = "YouTube: Two Minute Papers"
+url = "https://www.youtube.com/feeds/videos.xml?channel_id=UCbfYPyITQ-7l4upoX8nvctg"
+category = "動画"
+lang = "en"
+
+[[feeds]]
+name = "YouTube: AI Explained"
+url = "https://www.youtube.com/feeds/videos.xml?channel_id=UCNJ1Ymd5yFuUPtn21xtRbbw"
+category = "動画"
+lang = "en"
+
+[[feeds]]
+name = "YouTube: Matthew Berman"
+url = "https://www.youtube.com/feeds/videos.xml?channel_id=UCawZsQWqfGSbCI5yjkdVkTA"
+category = "動画"
+lang = "en"
+
+[[feeds]]
+name = "YouTube: Yannic Kilcher"
+url = "https://www.youtube.com/feeds/videos.xml?channel_id=UCZHmQk67mSJgfCCTn7xBfew"
+category = "動画"
+lang = "en"
+
+# ================= その他の国・地域 =================
+
+[[feeds]]
+name = "Google新聞（台湾・生成式AI）"
+url = "https://news.google.com/rss/search?q=生成式AI+OR+人工智慧+when:2d&hl=zh-TW&gl=TW&ceid=TW:zh-Hant"
+category = "ニュース"
+lang = "zh"
+limit = 40
+
+[[feeds]]
+name = "量子位（中国）"
+url = "https://www.qbitai.com/feed"
+category = "ニュース"
+lang = "zh"
+
+[[feeds]]
+name = "Google 뉴스（韓国・생성형 AI）"
+url = "https://news.google.com/rss/search?q=생성형+AI+OR+인공지능+when:2d&hl=ko&gl=KR&ceid=KR:ko"
+category = "ニュース"
+lang = "ko"
+limit = 40
+
+[[feeds]]
+name = "Google News（ドイツ・KI）"
+url = "https://news.google.com/rss/search?q=%22K%C3%BCnstliche+Intelligenz%22+OR+%22generative+KI%22+when:2d&hl=de&gl=DE&ceid=DE:de"
+category = "ニュース"
+lang = "de"
+limit = 30
+
+[[feeds]]
+name = "Google Actualités（フランス・IA）"
+url = "https://news.google.com/rss/search?q=%22intelligence+artificielle%22+OR+%22IA+g%C3%A9n%C3%A9rative%22+when:2d&hl=fr&gl=FR&ceid=FR:fr"
+category = "ニュース"
+lang = "fr"
+limit = 30
+
+[[feeds]]
+name = "Google Noticias（スペイン語・IA）"
+url = "https://news.google.com/rss/search?q=%22inteligencia+artificial%22+when:2d&hl=es-419&gl=MX&ceid=MX:es-419"
+category = "ニュース"
+lang = "es"
+limit = 30
+
+# ================= 研究論文 =================
+
+[[feeds]]
+name = "Hugging Face Daily Papers"
+url = "https://papers.takara.ai/api/feed"
+category = "論文"
+lang = "en"
 
 [[feeds]]
 name = "arXiv cs.AI"
@@ -167,3 +491,10 @@ url = "https://rss.arxiv.org/rss/cs.CL"
 category = "論文"
 lang = "en"
 limit = 40
+
+[[feeds]]
+name = "arXiv cs.CV（画像）"
+url = "https://rss.arxiv.org/rss/cs.CV"
+category = "論文"
+lang = "en"
+limit = 30
