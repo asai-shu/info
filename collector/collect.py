@@ -227,7 +227,7 @@ def main() -> int:
     feeds = config["feeds"]
     now = datetime.now(timezone.utc)
 
-    # 同じサイトへは間隔を空けて1件ずつ取りに行き、サイトどうしは並行して取得する
+    # 同じサイトへは6秒の間隔を空けて1件ずつ取りに行き、サイトどうしは並行して取得する
     by_host = defaultdict(list)
     for index, feed in enumerate(feeds):
         by_host[urllib.parse.urlsplit(feed["url"]).hostname].append(index)
@@ -237,7 +237,7 @@ def main() -> int:
     def collect_host(indexes: list[int]) -> None:
         for n, index in enumerate(indexes):
             if n:
-                time.sleep(3)
+                time.sleep(6)
             results[index] = collect_feed(feeds[index], now)
 
     with ThreadPoolExecutor(max_workers=12) as pool:

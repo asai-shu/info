@@ -176,7 +176,7 @@ lang = "en"
 
 [[feeds]]
 name = "LangChain Blog"
-url = "https://blog.langchain.dev/rss/"
+url = "https://blog.langchain.com/rss/"
 category = "公式発表"
 lang = "en"
 
@@ -229,12 +229,6 @@ category = "ニュース"
 lang = "en"
 
 [[feeds]]
-name = "VentureBeat AI"
-url = "https://venturebeat.com/category/ai/feed/"
-category = "ニュース"
-lang = "en"
-
-[[feeds]]
 name = "MIT Technology Review AI"
 url = "https://www.technologyreview.com/topic/artificial-intelligence/feed"
 category = "ニュース"
@@ -268,12 +262,6 @@ lang = "en"
 [[feeds]]
 name = "MarkTechPost"
 url = "https://www.marktechpost.com/feed/"
-category = "ニュース"
-lang = "en"
-
-[[feeds]]
-name = "AI News"
-url = "https://www.artificialintelligence-news.com/feed/"
 category = "ニュース"
 lang = "en"
 
@@ -400,32 +388,6 @@ url = "https://mshibanami.github.io/GitHubTrendingRSS/daily/python.xml"
 category = "ツール"
 lang = "en"
 filter = true
-
-# ================= 動画（YouTube） =================
-
-[[feeds]]
-name = "YouTube: Two Minute Papers"
-url = "https://www.youtube.com/feeds/videos.xml?channel_id=UCbfYPyITQ-7l4upoX8nvctg"
-category = "動画"
-lang = "en"
-
-[[feeds]]
-name = "YouTube: AI Explained"
-url = "https://www.youtube.com/feeds/videos.xml?channel_id=UCNJ1Ymd5yFuUPtn21xtRbbw"
-category = "動画"
-lang = "en"
-
-[[feeds]]
-name = "YouTube: Matthew Berman"
-url = "https://www.youtube.com/feeds/videos.xml?channel_id=UCawZsQWqfGSbCI5yjkdVkTA"
-category = "動画"
-lang = "en"
-
-[[feeds]]
-name = "YouTube: Yannic Kilcher"
-url = "https://www.youtube.com/feeds/videos.xml?channel_id=UCZHmQk67mSJgfCCTn7xBfew"
-category = "動画"
-lang = "en"
 
 # ================= その他の国・地域 =================
 

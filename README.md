@@ -1,50 +1,52 @@
 # AI情報まとめ
 
-AI関連の最新情報を、ニュースサイト・企業の公式ブログ・技術記事サイト・コミュニティ・論文サイトから自動で集めて、1枚のWebページにまとめるツールです。
+AIに関する最新情報を、日本と海外の約70か所から自動で集めて、1枚のWebページにまとめるツールです。
 
-- **APIは使いません。** 各サイトが公開している RSS / Atom フィードだけを読み込みます。
-- **2時間ごとに自動更新**されます（GitHub Actions）。
-- 外部ライブラリ不要で、Python の標準機能だけで動きます。
+- **2時間ごとに自動で更新**されます。パソコンを起動しておく必要はありません（GitHub が代わりに動かします）。
+- AIのAPIなど、料金のかかるサービスは使っていません。各サイトが公開している「RSS」（新着記事の一覧）を読み込むだけです。
 
-## ページでできること
+## 集めている情報
 
-- キーワード検索（スペース区切りで AND 検索）
-- カテゴリ（ニュース / 公式発表 / 技術記事 / 話題 / 論文）での絞り込み
-- 日本語のみ・英語のみの切り替え、期間（24時間 / 3日 / 7日）の絞り込み
-- 前回ページを開いてから増えた記事に **NEW** を表示
-- 英語の記事には「日本語に翻訳して読む」リンク（Google 翻訳のページを開くだけで、APIは使いません）
-- ページ下部で、どの取得元が成功・失敗したかを確認できます
+| 分類 | 主な取得元 |
+| --- | --- |
+| ニュース（日本） | Googleニュース、ITmedia AI+、GIGAZINE、Publickey、AINOW |
+| ニュース（海外） | Google News（米国・英国）、TechCrunch、The Verge、WIRED、Ars Technica、MIT Technology Review など |
+| ニュース（その他の国） | 台湾、中国、韓国、ドイツ、フランス、中南米のニュース |
+| 公式発表 | OpenAI、Google、DeepMind、Microsoft、NVIDIA、AWS、Apple、Hugging Face |
+| 専門家 | Simon Willison、Ethan Mollick、Latent Space、Import AI など |
+| 技術記事 | Zenn、Qiita、note |
+| 話題 | はてなブックマーク、Hacker News、Reddit、Lobsters |
+| ビジネス | AIスタートアップ・資金調達のニュース |
+| ツール | Product Hunt、GitHub で人気のプロジェクト |
+| 論文 | arXiv、Hugging Face Daily Papers |
 
-## 最初の設定（1回だけ）
+## ページの見方
 
-1. このリポジトリを GitHub の **Settings → Pages** を開き、**Source** を **GitHub Actions** にする
-   - 無料プランの場合、GitHub Pages は**公開リポジトリ**でのみ使えます
-2. **Actions** タブ →「AI情報を収集」→ **Run workflow** で初回を実行する
-3. 数分後、Settings → Pages に表示される URL（`https://<ユーザー名>.github.io/info/`）を開く
+- **検索**：上の入力欄にキーワードを入れると絞り込めます（例：`画像生成`、`Claude`）
+- **分類ボタン**：「ニュース」「公式発表」などで絞り込めます
+- **言語**：「日本語のみ」「海外（日本語以外）」などに切り替えられます
+- **NEW**：前回ページを開いてから増えた記事に付きます
+- **日本語に翻訳して読む**：海外の記事は、このリンクから Google 翻訳で日本語にして読めます
 
-以降は2時間ごとに自動で更新されます。
+## ページを公開する設定（最初に1回だけ）
 
-> 自動実行は `main` ブランチで動きます。このコードを `main` に取り込んでから設定してください。
+1. https://github.com/asai-shu/info/settings/pages を開く
+2. 「Build and deployment」の **Source** を「**GitHub Actions**」に変える
+3. https://github.com/asai-shu/info/actions を開き、左の「AI情報を収集」→ 右の **Run workflow** ボタン →緑の **Run workflow** を押す
+4. 3〜5分ほど待ってから **https://asai-shu.github.io/info/** を開く
+
+あとは2時間ごとに自動で新しい記事が追加されます。スマホのホーム画面に追加しておくと便利です。
 
 ## 取得元を増やす・減らす
 
-`feeds.toml` を編集するだけです。書き方はファイル先頭に説明があります。
-AI専門ではないサイトを追加するときは `filter = true` にすると、AI関連の記事だけが残ります。
-絞り込みに使うキーワードは `collector/collect.py` の `KEYWORDS` にあります。
+`feeds.toml` を編集します（GitHub の画面上で鉛筆マークを押せば編集できます）。書き方はファイルの先頭に書いてあります。
 
-## 手元で動かす
+---
 
-```sh
-python3 collector/collect.py   # Python 3.11 以上
-# → docs/index.html ができるのでブラウザで開く
-```
+### 開発者向けメモ
 
-## ファイル構成
-
-| ファイル | 役割 |
-| --- | --- |
-| `feeds.toml` | 取得元の一覧と設定 |
-| `collector/collect.py` | フィードを集めてページを作るプログラム |
-| `collector/template.html` | ページのデザイン |
-| `data/items.json` | 集めた記事の保存データ（直近14日分） |
-| `.github/workflows/collect.yml` | 2時間ごとの自動実行の設定 |
+- `collector/collect.py`：収集プログラム（Python 3.11 以上、標準ライブラリのみ）。`python3 collector/collect.py` で `docs/index.html` が生成されます
+- `collector/template.html`：ページのデザイン
+- `data/items.json`：集めた記事（直近14日分）。自動実行のたびに更新されてコミットされます
+- `.github/workflows/collect.yml`：2時間ごとの自動実行。Pages が未設定でも収集・保存は成功します
+- 同じサイトへは6秒間隔で取得し、429・5xx のときだけ再試行します
