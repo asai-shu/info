@@ -7,6 +7,7 @@
 from __future__ import annotations
 
 import email.utils
+import gzip
 import hashlib
 import html
 import json
@@ -14,9 +15,11 @@ import re
 import sys
 import time
 import tomllib
+import urllib.error
 import urllib.parse
 import urllib.request
 import xml.etree.ElementTree as ET
+from collections import defaultdict
 from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
@@ -108,8 +111,22 @@ def entry_link(entry: ET.Element) -> str:
     return ""
 
 
+def parse_xml(xml_bytes: bytes) -> ET.Element:
+    if xml_bytes[:2] == b"\x1f\x8b":
+        xml_bytes = gzip.decompress(xml_bytes)
+    try:
+        return ET.fromstring(xml_bytes)
+    except ET.ParseError:
+        # 書式が少し崩れたフィード（エスケープされていない & や制御文字など）を補正して読み直す
+        text = xml_bytes.decode("utf-8", errors="replace").lstrip("\ufeff \t\r\n")
+        text = re.sub(r"[\x00-\x08\x0b\x0c\x0e-\x1f]", "", text)
+        text = re.sub(r"&(?!(?:amp|lt|gt|quot|apos|#\d+|#x[0-9a-fA-F]+);)", "&amp;", text)
+        text = re.sub(r"^<\?xml[^>]*\?>", "", text)
+        return ET.fromstring(text)
+
+
 def parse_feed(xml_bytes: bytes) -> list[dict]:
-    root = ET.fromstring(xml_bytes)
+    root = parse_xml(xml_bytes)
     entries = [e for e in root.iter() if local(e.tag) in ("item", "entry")]
     results = []
     for e in entries:
@@ -143,18 +160,24 @@ def fetch(url: str) -> bytes:
         "User-Agent": USER_AGENT,
         "Accept": "application/rss+xml, application/atom+xml, application/xml, text/xml, */*",
     })
-    for attempt in range(2):
+    for attempt in range(3):
         try:
             with urllib.request.urlopen(req, timeout=30) as res:
                 return res.read()
-        except Exception:
-            if attempt == 1:
+        except urllib.error.HTTPError as exc:
+            # 404 などは何度試しても同じなので、混雑（429）とサーバー側の一時的な不調（5xx）だけやり直す
+            if attempt == 2 or not (exc.code == 429 or exc.code >= 500):
                 raise
-            time.sleep(3)
+            wait = exc.headers.get("Retry-After", "")
+            time.sleep(min(int(wait), 30) if wait.isdigit() else 10 * (attempt + 1))
+        except Exception:
+            if attempt == 2:
+                raise
+            time.sleep(5)
 
 
 def collect_feed(feed: dict, now: datetime) -> tuple[list[dict], str | None]:
-    url = urllib.parse.quote(feed["url"], safe=":/?&=%")
+    url = urllib.parse.quote(feed["url"], safe=":/?&=%+")
     try:
         entries = parse_feed(fetch(url))
     except Exception as exc:  # 1つのフィードが失敗しても全体は止めない
@@ -204,8 +227,21 @@ def main() -> int:
     feeds = config["feeds"]
     now = datetime.now(timezone.utc)
 
-    with ThreadPoolExecutor(max_workers=8) as pool:
-        results = list(pool.map(lambda f: collect_feed(f, now), feeds))
+    # 同じサイトへは間隔を空けて1件ずつ取りに行き、サイトどうしは並行して取得する
+    by_host = defaultdict(list)
+    for index, feed in enumerate(feeds):
+        by_host[urllib.parse.urlsplit(feed["url"]).hostname].append(index)
+
+    results: list = [None] * len(feeds)
+
+    def collect_host(indexes: list[int]) -> None:
+        for n, index in enumerate(indexes):
+            if n:
+                time.sleep(3)
+            results[index] = collect_feed(feeds[index], now)
+
+    with ThreadPoolExecutor(max_workers=12) as pool:
+        list(pool.map(collect_host, by_host.values()))
 
     items = load_existing()
     # 別の取得元から同じ記事が入るのを防ぐため、タイトルでも重複を判定する

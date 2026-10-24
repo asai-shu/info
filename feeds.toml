@@ -137,8 +137,8 @@ category = "公式発表"
 lang = "en"
 
 [[feeds]]
-name = "Microsoft AI Blog"
-url = "https://blogs.microsoft.com/ai/feed/"
+name = "Microsoft Source（AI）"
+url = "https://news.microsoft.com/source/topics/ai/feed/"
 category = "公式発表"
 lang = "en"
 
@@ -293,7 +293,7 @@ lang = "en"
 
 [[feeds]]
 name = "Import AI（Jack Clark）"
-url = "https://importai.substack.com/feed"
+url = "https://jack-clark.net/feed/"
 category = "専門家"
 lang = "en"
 
