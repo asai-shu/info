@@ -30,7 +30,7 @@ def load_items() -> list[dict]:
     return json.loads(DATA_PATH.read_text(encoding="utf-8"))["items"]
 
 
-def candidates(hours: int, limit: int) -> list[dict]:
+def candidates(hours: int, limit: int, per_source: int) -> list[dict]:
     feeds = tomllib.loads(CONFIG_PATH.read_text(encoding="utf-8"))["feeds"]
     feed_themes = {f["name"]: f["theme"] for f in feeds if f.get("theme")}
     since = datetime.now(timezone.utc) - timedelta(hours=hours)
@@ -49,10 +49,20 @@ def candidates(hours: int, limit: int) -> list[dict]:
             "lang": item["lang"],
             "date": item["date"][:16],
             "keyword_scores": scores,
+            "feed": item["source"],
         })
     # キーワードの点数が高い記事を優先する
     picked.sort(key=lambda c: (max(c["keyword_scores"].values(), default=0), c["date"]), reverse=True)
-    return picked[:limit]
+    # 似た記事が大量に流れる取得元（note の副業記事など）で候補が埋まらないよう、取得元ごとの件数を制限する
+    per_feed: dict[str, int] = {}
+    result = []
+    for c in picked:
+        per_feed[c["feed"]] = per_feed.get(c["feed"], 0) + 1
+        if per_feed[c["feed"]] <= per_source:
+            result.append(c)
+    for c in result:
+        del c["feed"]
+    return result[:limit]
 
 
 def check() -> list[str]:
@@ -87,11 +97,12 @@ def main() -> int:
     cand = sub.add_parser("candidates")
     cand.add_argument("--hours", type=int, default=36, help="何時間前までの記事を候補にするか")
     cand.add_argument("--limit", type=int, default=180, help="候補の最大件数")
+    cand.add_argument("--per-source", type=int, default=8, help="1つの取得元から候補にする最大件数")
     sub.add_parser("check")
     args = parser.parse_args()
 
     if args.command == "candidates":
-        for c in candidates(args.hours, args.limit):
+        for c in candidates(args.hours, args.limit, args.per_source):
             print(json.dumps(c, ensure_ascii=False))
         return 0
 

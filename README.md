@@ -63,6 +63,6 @@ AIに関する最新情報を、日本と海外の約70か所から自動で集�
 - `collector/collect.py`：収集プログラム（Python 3.11 以上、標準ライブラリのみ）。`python3 collector/collect.py` で `docs/index.html` が生成されます
 - `collector/template.html`：ページのデザイン
 - `data/items.json`：集めた記事（直近14日分）。自動実行のたびに更新されてコミットされます
-- `data/curated.json`：Claude Code（`/curate`）が選んだ注目記事と日本語要約。`collector/curation.py` で候補の一覧化と書式チェックを行います
+- `data/curated.json`：Claude Code（`/curate`）が選んだ注目記事と日本語要約。`collector/curation.py` で候補の一覧化（1つの取得元から最大8件）と書式チェックを行います
 - `.github/workflows/collect.yml`：2時間ごとの自動実行。Pages が未設定でも収集・保存は成功します
 - 同じサイトへは6秒（Redditは30秒）間隔で取得し、429・5xx のときだけ再試行します
