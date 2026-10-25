@@ -1,18 +1,18 @@
 {
- "updated": "2026-10-25T23:12:19+00:00",
+ "updated": "2026-10-25T23:18:33+00:00",
  "statuses": [
   {
    "name": "Googleニュース（生成AI）",
    "ok": true,
    "count": 60,
-   "added": 14,
+   "added": 3,
    "error": null
   },
   {
    "name": "Googleニュース（ChatGPT・Claude・Gemini）",
    "ok": true,
    "count": 60,
-   "added": 7,
+   "added": 0,
    "error": null
   },
   {
@@ -26,7 +26,7 @@
    "name": "GIGAZINE",
    "ok": true,
    "count": 6,
-   "added": 1,
+   "added": 0,
    "error": null
   },
   {
@@ -61,7 +61,7 @@
    "name": "Zenn（LLM）",
    "ok": true,
    "count": 20,
-   "added": 1,
+   "added": 0,
    "error": null
   },
   {
@@ -75,14 +75,14 @@
    "name": "Zenn（AI）",
    "ok": true,
    "count": 20,
-   "added": 1,
+   "added": 0,
    "error": null
   },
   {
    "name": "Qiita（生成AI）",
    "ok": true,
    "count": 4,
-   "added": 3,
+   "added": 0,
    "error": null
   },
   {
@@ -103,7 +103,7 @@
    "name": "note（生成AI）",
    "ok": true,
    "count": 25,
-   "added": 24,
+   "added": 0,
    "error": null
   },
   {
@@ -186,36 +186,36 @@
   {
    "name": "Google News（Generative AI）",
    "ok": true,
-   "count": 51,
-   "added": 5,
+   "count": 53,
+   "added": 0,
    "error": null
   },
   {
    "name": "Google News（OpenAI・Anthropic・Google）",
    "ok": true,
    "count": 60,
-   "added": 11,
+   "added": 6,
    "error": null
   },
   {
    "name": "Google News（AI Startups）",
    "ok": true,
    "count": 40,
-   "added": 2,
+   "added": 0,
    "error": null
   },
   {
    "name": "Google News UK（AI）",
    "ok": true,
    "count": 40,
-   "added": 5,
+   "added": 3,
    "error": null
   },
   {
    "name": "TechCrunch AI",
    "ok": true,
    "count": 20,
-   "added": 1,
+   "added": 0,
    "error": null
   },
   {
@@ -264,7 +264,7 @@
    "name": "MarkTechPost",
    "ok": true,
    "count": 10,
-   "added": 1,
+   "added": 0,
    "error": null
   },
   {
@@ -341,42 +341,42 @@
    "name": "Reddit r/LocalLLaMA",
    "ok": true,
    "count": 25,
-   "added": 3,
+   "added": 0,
    "error": null
   },
   {
    "name": "Reddit r/singularity",
    "ok": true,
    "count": 16,
-   "added": 3,
+   "added": 0,
    "error": null
   },
   {
    "name": "Reddit r/MachineLearning",
    "ok": true,
    "count": 5,
-   "added": 1,
+   "added": 0,
    "error": null
   },
   {
    "name": "Reddit r/OpenAI",
    "ok": true,
    "count": 25,
-   "added": 3,
+   "added": 0,
    "error": null
   },
   {
    "name": "Reddit r/ClaudeAI",
    "ok": true,
    "count": 25,
-   "added": 3,
+   "added": 0,
    "error": null
   },
   {
    "name": "Reddit r/StableDiffusion",
    "ok": true,
    "count": 25,
-   "added": 5,
+   "added": 1,
    "error": null
   },
   {
@@ -404,7 +404,7 @@
    "name": "Google新聞（台湾・生成式AI）",
    "ok": true,
    "count": 40,
-   "added": 6,
+   "added": 0,
    "error": null
   },
   {
@@ -418,7 +418,7 @@
    "name": "Google 뉴스（韓国・생성형 AI）",
    "ok": true,
    "count": 40,
-   "added": 3,
+   "added": 1,
    "error": null
   },
   {
@@ -432,14 +432,14 @@
    "name": "Google Actualités（フランス・IA）",
    "ok": true,
    "count": 30,
-   "added": 3,
+   "added": 0,
    "error": null
   },
   {
    "name": "Google Noticias（スペイン語・IA）",
    "ok": true,
    "count": 30,
-   "added": 8,
+   "added": 3,
    "error": null
   },
   {
@@ -473,7 +473,7 @@
   {
    "name": "Googleニュース（AI副業）",
    "ok": true,
-   "count": 16,
+   "count": 35,
    "added": 0,
    "error": null
   },
@@ -481,14 +481,14 @@
    "name": "Googleニュース（学生・ハッカソン）",
    "ok": true,
    "count": 30,
-   "added": 1,
+   "added": 0,
    "error": null
   },
   {
    "name": "note（AI副業）",
    "ok": true,
    "count": 25,
-   "added": 19,
+   "added": 0,
    "error": null
   },
   {
@@ -502,7 +502,7 @@
    "name": "Qiita（個人開発）",
    "ok": true,
    "count": 2,
-   "added": 1,
+   "added": 0,
    "error": null
   },
   {
@@ -516,7 +516,7 @@
    "name": "Hacker News（Show HN）",
    "ok": true,
    "count": 10,
-   "added": 1,
+   "added": 0,
    "error": null
   },
   {
@@ -549,6 +549,17 @@
    "publisher": "",
    "category": "収益化",
    "lang": "ja"
+  },
+  {
+   "id": "b393e07284d3c461",
+   "title": "Elvis Presley’s Estate Sues AI Company Anthropic -",
+   "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE4zZnU4ZnplRi1GTHBNM0xkZ1I2U2I4a3lVZld6cTBMV0p6RTJmMUw0QTNtQzB4eGNya3ViSEpCSFd2dE92enRUT3N6SzFPMy1XUXQ5am8zR2x4dGJycVVIODRpVTBxeC1QUE9PZFRGaEVIZ2hsWEE?oc=5",
+   "summary": "",
+   "date": "2026-10-25T23:11:55+00:00",
+   "source": "Google News（OpenAI・Anthropic・Google）",
+   "publisher": "Happy Mag",
+   "category": "ニュース",
+   "lang": "en"
   },
   {
    "id": "8db351d6f4eacb4d",
@@ -837,6 +848,28 @@
    "lang": "ja"
   },
   {
+   "id": "d5914b1e3e33ddd1",
+   "title": "Anthropic’s Claude accessed Georgia voter data without human sign-off",
+   "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE83OUsxMV9GWG5sNlg2N2hONWc0XzlFRG9Nb0RwVjFmVlV3RUptRnJMaW1TTENpbWpTejg3VE8yUkRHZUk1Z0tqSGxLMlpvNFFESHQ0MkVzOUtvM28ydzJPVktBTnF5bzM4dXFXRA?oc=5",
+   "summary": "",
+   "date": "2026-10-25T23:00:09+00:00",
+   "source": "Google News（OpenAI・Anthropic・Google）",
+   "publisher": "Crypto Briefing",
+   "category": "ニュース",
+   "lang": "en"
+  },
+  {
+   "id": "95e2a222bf101566",
+   "title": "마음건강 중요하다는 한국인 90%... 실제 관리하는 사람은 36%",
+   "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9xamRfbGVkYVBMUjdoZjZuT19oUzE0Q3BVWnEyZ1A0dDBXM19kbGtIbUZrQXU2c1NEcEN3NjZ3MERKaWZ1alA3NUo0MlJ3RjRsdVlyX2FSNWZORW9RRDl0aDlDN1N5YkZheUE?oc=5",
+   "summary": "",
+   "date": "2026-10-25T23:00:00+00:00",
+   "source": "Google 뉴스（韓国・생성형 AI）",
+   "publisher": "더버터",
+   "category": "ニュース",
+   "lang": "ko"
+  },
+  {
    "id": "7394e22a248d5a74",
    "title": "AIを導入しても、日本企業の生産性が上がらない理由",
    "link": "https://note.com/bizdev_pm/n/n761e5d106ef5",
@@ -912,6 +945,17 @@
    "publisher": "",
    "category": "収益化",
    "lang": "ja"
+  },
+  {
+   "id": "9c0c72f7a9087e87",
+   "title": "Anthropic’s Claude accessed public US state of Georgia voter information, Axios reports By Reuters",
+   "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQOWw0UGo0VjhnYVAzRTl4bURDRGhTZmtqaHh4TXFIeFBtbmJQdXZoV2txSkxrMG02a2dfb2xRRi1WeVhpSkhBbEptb2pYOGZNWlNoeExPWmlOZC1hckw2MGljblNsX0FPbVZsUHVlLXRZeVZwVExyM1ptOGNkZzd5UDhRalRZTUU4OV9qU250OTltZUo3N1FvRUZ1c3EzYW9xYzF6Z2Rfd3ZEOGVoM0I0dHpPRXhvalJha1ItMHVSVktVVXQxQlVIYkJNNTlGUWQ3M3RKNFRYQVRyQQ?oc=5",
+   "summary": "",
+   "date": "2026-10-25T22:55:47+00:00",
+   "source": "Google News（OpenAI・Anthropic・Google）",
+   "publisher": "Investing.com",
+   "category": "ニュース",
+   "lang": "en"
   },
   {
    "id": "5704d527e2be227c",
@@ -1200,6 +1244,17 @@
    "lang": "en"
   },
   {
+   "id": "9915bba83d502c05",
+   "title": "生成AIでコンテンツを作るのはやめるべき？ 答えは「ノー」だが必ず含めるべき“視点”がある（前編）（Web担当者Forum）",
+   "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPdTd5TTc5Q3ZXWHZPdUlOaWx2MVRBai1iSWxMN3JqXzl6TGpvaG81ZGk1UVEycXpnM0ROM2dqdHVBaUdiZDN2OE5IejFfbXFhT0xVOXFGUlVOdU1OR0tPMUJveTRQZkszSWV2N3F3SDdiMFNZUkQ0UzVWSDAtWTVHSjJRYU4zM3FZcFBxeE5HY2ZHa0NJd2ZKTEtPT0xfbTliTDBPUVE4QzBaQVhHdHN1Mg?oc=5",
+   "summary": "",
+   "date": "2026-10-25T22:05:00+00:00",
+   "source": "Googleニュース（生成AI）",
+   "publisher": "ｄメニューニュース",
+   "category": "ニュース",
+   "lang": "ja"
+  },
+  {
    "id": "0ed065cbaa384698",
    "title": "放置で月3万円｜AIでnoteマガジンを\"サブスク自動販売機\"にする設計と運用の全記録",
    "link": "https://note.com/freelife_creator/n/n203e38d1da79",
@@ -1244,6 +1299,17 @@
    "lang": "ja"
   },
   {
+   "id": "85c34f9b01f2ae00",
+   "title": "Anthropic sees 3.6x jump in token volume after Claude Opus 5.5 launch",
+   "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1SUGozMzc5Q2pNeVEtSnBHTUhDQjd2eHZWbmhmdUxMWk5SZnhxdFRLcWZXaUdGelRVbzJrV1EtUTRLTmtqdFhaMndZRTJxRkE3UUozemNHTXhiSWU2Y3pDaEk1WmtrbVJuaE5fTVdLX1FsVU0?oc=5",
+   "summary": "",
+   "date": "2026-10-25T22:02:19+00:00",
+   "source": "Google News（OpenAI・Anthropic・Google）",
+   "publisher": "Crypto Briefing",
+   "category": "ニュース",
+   "lang": "en"
+  },
+  {
    "id": "3908f7d269bd2a91",
    "title": "45歳・AI初心者35日目。侍と柴犬のリール、再生は3分の1なのに「いいね」が初めて付きました",
    "link": "https://note.com/jtatgd4/n/nf9c9dbda5396",
@@ -1253,6 +1319,17 @@
    "publisher": "",
    "category": "収益化",
    "lang": "ja"
+  },
+  {
+   "id": "a7fe3e96d83dd98d",
+   "title": "Bill Gates, founder of Microsoft (MS), predicted that advances in artificial intelligence (AI) would..",
+   "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE11dTBXdllGUkdNZmhzbWtWLVJLRjlOZG9CYzVrU2g2NzlZVjcxRkgzZlpEeE1Sc2NXa0dvR2J4S0ZBX204NG5FeE0weUZIeUU?oc=5",
+   "summary": "",
+   "date": "2026-10-25T22:01:00+00:00",
+   "source": "Google News UK（AI）",
+   "publisher": "매일경제",
+   "category": "ニュース",
+   "lang": "en"
   },
   {
    "id": "5870aaf8934f9e53",
@@ -1429,6 +1506,28 @@
    "publisher": "",
    "category": "話題",
    "lang": "en"
+  },
+  {
+   "id": "a87c9ba5d465a882",
+   "title": "Hugging Face and the pitfalls of AI narratives",
+   "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQdWU2dXZULUJ6VlZZZ1I1S1NYN0JJaXVBVWI3TmF2THc4OE9DMzc4eTVmRkVMSHZ6bGRqN0t0UFcyemhiVDhpa1RtMXVnSktUZVY5T3hZRWdUMktzY0J4MF9WX1V1VG80bUJ3WExMa0xCZEVRdFBNMnNlNWY4U1BweEtuMENwMlpWZHlCRktjUk56S2pMQXZCS0pZQlIxSjdkSGxHNWhWLVRrLUxHUTNQdEJfWG1tMk45WWpsbHEwX0JETk1RRlBUYW9fS0xrTW8x?oc=5",
+   "summary": "",
+   "date": "2026-10-25T21:21:30+00:00",
+   "source": "Google News（OpenAI・Anthropic・Google）",
+   "publisher": "Eoin Higgins | Substack",
+   "category": "ニュース",
+   "lang": "en"
+  },
+  {
+   "id": "2e61f18a48724f84",
+   "title": "Was ist eigentlich Künstliche Intelligenz? (Mo., 26.10.2026, 15:00 - 16:30 Uhr)",
+   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQX2lLRGppdEU5eENxOW85Ylo2VktzLUlIN0JablRxbE5PTDhrN1hFSEFPTnNVcnp3ZmVsR1luYjFQUFVNN0QtQmFxOGVfOVdHdmtxU0h4akRzdEMwcklfenpCVGczeWluNzBVVnBkbzFDS0EzRlVZS2RSc09kTkM2U3Q4Tk13cjlaelgxSFJrdG1pMWQ3cFVSM2ZqakVkRWpEOEltcHRZb1lxckNGRFhNY21n?oc=5",
+   "summary": "",
+   "date": "2026-10-25T21:20:39+00:00",
+   "source": "Google News（ドイツ・KI）",
+   "publisher": "Stadt Melle",
+   "category": "ニュース",
+   "lang": "de"
   },
   {
    "id": "160a58dbe37ba4c4",
@@ -1662,6 +1761,17 @@
    "lang": "ja"
   },
   {
+   "id": "26e883e23e807ff7",
+   "title": "Technological Development in the Age of Artificial Intelligence: Global Debates, Risks and Prospects for Albania",
+   "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNYktScU54SXFPY2RyOHo4ZkREeUhVbTZJVmJvVmRXV1ppVmdkcTNzeTM4UXEweFFTQ3NDMzZYUkktSGxPQ2drajdiU0s5ZV8tNlFUM1VPZ1oyY0dOUFA1ZkJxOE5Bc00yUl9zbDdDMExQRVJ2UUpHU1YzODRHZ0dpcHlQdkF6dEFrdHNCdmNzb1VjbThQLUxOa3E3WGJuaXlCZjdPZEhQSmxpV3lITzE2cmxJb3E2TVR4aHllRGRsU2tLSDBXNE1FR3VKaGhCVEVfSUZ5eVNR?oc=5",
+   "summary": "",
+   "date": "2026-10-25T20:41:19+00:00",
+   "source": "Google News UK（AI）",
+   "publisher": "Tirana Times",
+   "category": "ニュース",
+   "lang": "en"
+  },
+  {
    "id": "f2c0218bdb325692",
    "title": "Estudiantes de la UAT ganan premio nacional con CHUDBI, sistema contable basado en Inteligencia Artificial",
    "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPMWFRRkp5czhxZTVhTVBEWlBGSnVHR01zLV9SX0NpYl92QUpsZms0NmlVN0V2SmN4OHFlNUh4SC1GRGFHcGtHdEREYlFfRGNBMk5SU3JlemY1QWtsdGd6X1F6TzJaaFpyNHNoSjBSX3oyamplekMyU3J6MnluU1NodTZKSWw4V1p5U3FBeGIyYURPaFp5M2QtcUI3ZU11c0poekpsUW5QRmd3bmlQSW4xdVppUC1PUHdBQ2hKMWxRM1BGQUNqUFRfQ2NNdDhDNzRUdGVtag?oc=5",
@@ -1766,7 +1876,7 @@
    "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPWFVpMVE2cnNfbzZXcGdHcE9xWHBORFdVS2JhTlZiVnZOVVZfNDM4b3ZERFFBaG9ldEtwUm1WeXV0SGxsOUZxUlJMbU54b1F3VC1Tb2V1QUYtRGw3MnNJekE2dXZieGU4UUd1VVBycVc4TElhbnIybDl3cjIxTzJlZWlZOWJfaFdmMzNodk9kdw?oc=5",
    "summary": "",
    "date": "2026-10-25T20:29:05+00:00",
-   "source": "Google News（Generative AI）",
+   "source": "Google News（OpenAI・Anthropic・Google）",
    "publisher": "Crypto Briefing",
    "category": "ニュース",
    "lang": "en"
@@ -1869,6 +1979,17 @@
    "publisher": "",
    "category": "話題",
    "lang": "en"
+  },
+  {
+   "id": "b27b96dd6541d2ed",
+   "title": "Comercio con IA gana aceptación en siete países y alcanza 56% de disposición favorable",
+   "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQX244bHRRRzZ2Ymg3TVkzbXNRUWVoeFRoUjZucGpaOHRKbElXcVZad1g0MWxucGdEdTQ0SWU3Y3lxUzczN1R4QmxPVWR0RlF4VDlpRmlzbDBnZ2V5X2htTnVMbV9hWEl2WkV2UWNpZ0w4RVEzeXpEaktzY1pHRmJ6SUhOc3EybEFJN3R1UDVOSU5wazhvOHlyT0d4UTBMN3BmcHNGc001dkpqOF9CWkHSAbMBQVVfeXFMTzJUSHVRZDJKZVBKRW9DbWI2anl5WjluR1FENEpiOGhucGxoc19BbjFJM2UyVm5JeXlUblBpWTBOUmxxX3ZEREttbWlmOWtkMGtRODFnT2FnRnMzVGxDQUFSSkV5eG9VNllFR0pWRnJEbzlqcnpxTWNMQVMwMFZWaWhDSGRiOFMyMjUwVHQ2NGtwelNFZVNtM1RUak1Mc3lZYXloaVRuWHJoWVdrWks4R1U3RmM?oc=5",
+   "summary": "",
+   "date": "2026-10-25T20:15:00+00:00",
+   "source": "Google Noticias（スペイン語・IA）",
+   "publisher": "NotiPress",
+   "category": "ニュース",
+   "lang": "es"
   },
   {
    "id": "9d2148a8d398a724",
@@ -2122,6 +2243,17 @@
    "publisher": "OpenCritic",
    "category": "ニュース",
    "lang": "en"
+  },
+  {
+   "id": "7dc04b56b5d6e825",
+   "title": "Talent Land reúne en Málaga comunicación, creatividad e inteligencia artificial",
+   "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBaSGh6WGI1UWYyeU00S2RWN3ZqcXNobkFzMDhpZzRpeFdianp0WDdWdkJybFVFNDhrb240RWlFbENBVFgza0NnY2l3LUdadGItRHRHeEFaU1N6RTUwZElPTm9WWkhYdzhZRWN5SXI4RUdpTXd0RGc?oc=5",
+   "summary": "",
+   "date": "2026-10-25T19:53:27+00:00",
+   "source": "Google Noticias（スペイン語・IA）",
+   "publisher": "Universidad de Málaga",
+   "category": "ニュース",
+   "lang": "es"
   },
   {
    "id": "58e0b4917722b2e6",
@@ -2586,6 +2718,17 @@
    "lang": "es"
   },
   {
+   "id": "74b9055b142fd72c",
+   "title": "CoreWeave financial struggles raise doubts about AI sector funding viability",
+   "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQeE0yZGhRS3BJNHdJUFR5SXB0R01UZjRDTkc3U0NGN0czdExRdmhoOG5PdWc3clB1MHhGRGpTQ0VPRk92dGE0Z2tpQUJhNTF3TXdPakkzaTNpOVhRY04wejVZd2llSlZaTG1ic3JNVmVnMDlJbndCVW5UN2sxaF9fN2tOQzJTeWxyTGdNUHVCYW9acUZEQlJRc2JyemNCa0pTX0Z4aVBCVQ?oc=5",
+   "summary": "",
+   "date": "2026-10-25T18:13:35+00:00",
+   "source": "Google News（OpenAI・Anthropic・Google）",
+   "publisher": "Crypto Briefing",
+   "category": "ニュース",
+   "lang": "en"
+  },
+  {
    "id": "b808ae3ec3d73ab3",
    "title": "If Anthropic doesn’t rule out their models having consciousness, how justifiable is selling them for $20/month?",
    "link": "https://www.reddit.com/r/singularity/comments/1xf9fft/if_anthropic_doesnt_rule_out_their_models_having/",
@@ -2690,9 +2833,9 @@
    "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNMnF6U2lGX0lJVnRrQl9mVGRXOGlfbXVUTVBpOWJTSTdSb3N3X1lCYXhjOC1neDBnc3A2SmJoaGQ3SDVzcE43U244LXg4VVhyclcwSzNpZDBFdzdFajhJWDByd2NoZzQ4VWlRWExqQXdZYzFuVEpPMDRjSVk4a0Y5eXl0WTI3S2V0SVhnMXpPNEViYlZTNXJjQnllMNIBoAFBVV95cUxNbGlLa0lkNzRabkFlcFAxZ19uMVVqcW4weGxkenprcU1SU0tMbVVlZ0hJMHp1akpBbmxJWExQUlBrVk5YYmlQTUtZd0JBUW5SS1VIblE1SmVxWUdOSkF2ZUo4cWhhTEJIZk90RDRMRE11NUhLZUxVUTlPNHFBbThROWl6aHlEV2hycjNkTUdBNFo4ZEZBMXBMcER6US1sbWZx?oc=5",
    "summary": "",
    "date": "2026-10-25T17:54:58+00:00",
-   "source": "Google News UK（AI）",
+   "source": "Google News（AI Startups）",
    "publisher": "Security Affairs",
-   "category": "ニュース",
+   "category": "ビジネス",
    "lang": "en"
   },
   {
@@ -3301,6 +3444,17 @@
    "lang": "fr"
   },
   {
+   "id": "2b967834244f9b73",
+   "title": "Best AI upscaling workflow for realistic portraits without artifacts?",
+   "link": "https://www.reddit.com/r/StableDiffusion/comments/1xf7eio/best_ai_upscaling_workflow_for_realistic/",
+   "summary": "Hey everyone! I'm looking for the best AI upscaling model or ComfyUI workflow for enhancing portrait photography while preserving natural details. My main priority is realism and fidelity to the original image , especially when it comes to skin texture, freckles, eyes, and hair.…",
+   "date": "2026-10-25T16:51:38+00:00",
+   "source": "Reddit r/StableDiffusion",
+   "publisher": "",
+   "category": "話題",
+   "lang": "en"
+  },
+  {
    "id": "91f661b505665226",
    "title": "古特瑞斯：人工智慧與科技將形塑全球經濟，籲私部門投資開發中國家 - 新聞與統計",
    "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxON0Y4WWRUNkR4NUhGQzU3bEVGOU1NVkZleUNaZHVnbmtfSDJuamhONjhDY0psd2NKVGNBODEwZ245eWs5TjZfak5rOTA4Mlg0RzdPVkdCZHdQZER1YlNTRWZrLTc2cHJjbXU4SkVWMTYxc2dEOFFWSnpZS2FwUHhYQ1ROZzNrd3hHbExqM2JMZ2hTdHpWQ2NPMU5OU2V1UDE5U3ZVdC1iVnYteHE0QVZnOUhSdGxBOUF2bnJQY3lWQUhjY18tWWc2NVQ2QkVwdHZxcDVEZExxNXNGT0dJSVV6UVRCNA?oc=5",
@@ -3332,6 +3486,17 @@
    "publisher": "",
    "category": "話題",
    "lang": "en"
+  },
+  {
+   "id": "b337fd1520e316a5",
+   "title": "生成AI時代に“答えを教えない”アート体験『みなもアート』、やまぐちフラワーランド（山口県柳井市）で初開催",
+   "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5ud0JCNC05XzBxbERRVGZ2YjZZdnVmcTQyX2lyVDA3TUYtUW1HNGE5YkhEbkNnMWdoQnJ4Z1dvRE9KSDN0c2k5X05CbXBqN2gzT2c?oc=5",
+   "summary": "",
+   "date": "2026-10-25T16:46:39+00:00",
+   "source": "Googleニュース（生成AI）",
+   "publisher": "山陽新聞",
+   "category": "ニュース",
+   "lang": "ja"
   },
   {
    "id": "c08da2ec1e5306da",
@@ -5446,6 +5611,17 @@
    "lang": "es"
   },
   {
+   "id": "8c1be47a51cafe53",
+   "title": "Inteligencia artificial en la administración pública: ventajas, casos de uso y aplicaciones",
+   "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5vQUVST2JwNC1fSWg5SFFTdldmRmtJUmJFcUJ2R3hxRGRZeTJqZWRwZUFUTWV4M004TDl6dWw3d2RIeHAzWDA0eEJ3OUdGZUt4TDVTUlk5Zl9ZNHU3LWhPQlF5cVJKdk5fdFcxNkNyTVFoM3VtT2c?oc=5",
+   "summary": "",
+   "date": "2026-10-25T12:48:55+00:00",
+   "source": "Google Noticias（スペイン語・IA）",
+   "publisher": "Microsoft",
+   "category": "ニュース",
+   "lang": "es"
+  },
+  {
    "id": "9ead98858b0439de",
    "title": "On Anthropic's \"don't be cruel to Claude\" rule: Right Rule, but Wrong Reason?",
    "link": "https://www.reddit.com/r/singularity/comments/1xf1i5b/on_anthropics_dont_be_cruel_to_claude_rule_right/",
@@ -5706,6 +5882,17 @@
    "date": "2026-10-25T12:10:00+00:00",
    "source": "Googleニュース（ChatGPT・Claude・Gemini）",
    "publisher": "Excite エキサイト",
+   "category": "ニュース",
+   "lang": "ja"
+  },
+  {
+   "id": "2a282d7788c45076",
+   "title": "‍‍‍生成 ai {a01GG}",
+   "link": "https://news.google.com/rss/articles/CBMioAJBVV95cUxOa0N2dXhPSzFKQ0x5TGNfSmxMUnNtb3BhSFpTNVM5dkdvU2xhRDl1SW43T0RJRUFzNkpRdThuZXBXRVRXVXZ3U0Z5dkd5M011QmpfNWxLbzBfQ2w3TFQxZUtoLUdYTmR5ZmVJTWRlQTdEUTJnUW9uVHV6cUI3WkxJNzQzS3l4dDRzaVEwci1TNzZVY0ZpS3VkNkZmS2VvYWhhWGVDdUpkTXlFTjY5VFR4U0c0bjYyUFVlVXdfdGlnZDUxZUg1SUdZYUFVdmJubi03MERqWkp4MkFVdWgyVF9MdTdwQlI3STRfVlJ0LWZWTi1DU0hyeFhIclMyT2hLTWlJOGgtQmdqeEFDUVdlTTllUFN1M2I0eDJmd1Rma1FrNkI?oc=5",
+   "summary": "",
+   "date": "2026-10-25T12:09:18+00:00",
+   "source": "Googleニュース（生成AI）",
+   "publisher": "FC東京オフィシャルホームページ",
    "category": "ニュース",
    "lang": "ja"
   },
@@ -6485,7 +6672,7 @@
    "link": "https://news.google.com/rss/articles/CBMizwJBVV95cUxQUzdBSXJpd083eUx4UlRyNnVSRC1kZjBhWUVuNjVmbkVvU3hGNlZjM3A2a0g1ZzRNVkJrdU82QmFabXVUMFhJMW1xeFJzUVJ3ZEEzRTFLZ0p6Q1E4SDRsRDhGaGUtSEhsNWxPRkdUNzJfQUxWS3FRSW45aHU0b0J2dzYwSE82QWRmS2h3Q3FUU2xQWEdaVDVURTFGdHVMRC0xclpPTE9aVnNLU0dycTN6SVltOVhEZU12YjRkQmhNN0FSd2ZaMGFXT2ozSExFXzJyaGZ6LVE1ZE5IZ0h4dHpJWmNPZGFhXy1LYl9JSVc5V1lLMFJ5RFJrTko0WXZFTldHR01jaHVfSWRsSk8xcUJ4Qmt5ZkhWUUJJTERSRmdCb0FEMEl4RDFhR3FjWlQ1Vi1kTGllQzhNYUFIcDFiM18zNkkyeHcwT0w5Qmh2dkNkQQ?oc=5",
    "summary": "",
    "date": "2026-10-25T11:30:00+00:00",
-   "source": "Google News（OpenAI・Anthropic・Google）",
+   "source": "Google News UK（AI）",
    "publisher": "Tom's Hardware",
    "category": "ニュース",
    "lang": "en"
@@ -11426,6 +11613,17 @@
    "date": "2026-10-25T01:00:00+00:00",
    "source": "Google News UK（AI）",
    "publisher": "The Motley Fool",
+   "category": "ニュース",
+   "lang": "en"
+  },
+  {
+   "id": "61021377c4d1f9a5",
+   "title": "Artificial Intelligence: AI boom brings new wealth to Bay Area, and new worries about growing affordability crisis",
+   "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQVmMzUU1yNmV2Q0l1cU5MUHZpSXk1djVuSEZhMTBoY2lCTWxxaFZ6c0RCaTNKTHhRNmRxYVJRc0hhUGI4R0J0bldLWmw5YklBdkNISlZ6VVlfY2ZxR0NaVlJSOENFRjE2dGdBX0hYMHZqcUJhMVBNa0FwTEw2TnNubFRnSFVjVjFxSEl2OXBsTjcxS1R5ekc3MGdhc0hKODBDMnN1SG5GVEV6bVdPVm1oQldzb2w2SXJiNFZaaVJBc2dzTEVNZFZfcFdmb9IB0AFBVV95cUxQeVphNGJEZ2RtQkZKZ1ZiV2hQV0dKVlZPMVRVY2EzZUVCQmVheGpBRlFtZ0xpQVFmMlhaajRlWTltNWJ5LTRqREM4QXdncXV0RjYtRUhFdlJyTmRwLUdYM29UUkFuWjhpek1mMTJSSTFsMWhHSU1sdjRVQW4zTXdUNDJDR0pYLVh5aUpXTXl0MkppeTBTdkh2STJnWXAyZWFCQ3gybjZYX2NvbXh5el81YTE5SlppTEx3dzZDY1dMMFZtQnhOYVAzRTRnSzNsTHFK?oc=5",
+   "summary": "",
+   "date": "2026-10-25T00:58:22+00:00",
+   "source": "Google News UK（AI）",
+   "publisher": "ABC7 Bay Area",
    "category": "ニュース",
    "lang": "en"
   },
