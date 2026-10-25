@@ -1,18 +1,18 @@
 {
- "updated": "2026-10-25T20:57:36+00:00",
+ "updated": "2026-10-25T23:12:19+00:00",
  "statuses": [
   {
    "name": "Googleニュース（生成AI）",
    "ok": true,
    "count": 60,
-   "added": 9,
+   "added": 14,
    "error": null
   },
   {
    "name": "Googleニュース（ChatGPT・Claude・Gemini）",
    "ok": true,
    "count": 60,
-   "added": 3,
+   "added": 7,
    "error": null
   },
   {
@@ -25,8 +25,8 @@
   {
    "name": "GIGAZINE",
    "ok": true,
-   "count": 7,
-   "added": 0,
+   "count": 6,
+   "added": 1,
    "error": null
   },
   {
@@ -46,14 +46,14 @@
   {
    "name": "はてなブックマーク IT人気",
    "ok": true,
-   "count": 7,
+   "count": 6,
    "added": 0,
    "error": null
   },
   {
    "name": "はてなブックマーク IT新着",
    "ok": true,
-   "count": 9,
+   "count": 8,
    "added": 0,
    "error": null
   },
@@ -61,7 +61,7 @@
    "name": "Zenn（LLM）",
    "ok": true,
    "count": 20,
-   "added": 0,
+   "added": 1,
    "error": null
   },
   {
@@ -75,7 +75,7 @@
    "name": "Zenn（AI）",
    "ok": true,
    "count": 20,
-   "added": 0,
+   "added": 1,
    "error": null
   },
   {
@@ -96,14 +96,14 @@
    "name": "Qiita（LLM）",
    "ok": true,
    "count": 4,
-   "added": 1,
+   "added": 0,
    "error": null
   },
   {
    "name": "note（生成AI）",
    "ok": true,
-   "count": 23,
-   "added": 23,
+   "count": 25,
+   "added": 24,
    "error": null
   },
   {
@@ -186,7 +186,7 @@
   {
    "name": "Google News（Generative AI）",
    "ok": true,
-   "count": 52,
+   "count": 51,
    "added": 5,
    "error": null
   },
@@ -194,28 +194,28 @@
    "name": "Google News（OpenAI・Anthropic・Google）",
    "ok": true,
    "count": 60,
-   "added": 12,
+   "added": 11,
    "error": null
   },
   {
    "name": "Google News（AI Startups）",
    "ok": true,
    "count": 40,
-   "added": 6,
+   "added": 2,
    "error": null
   },
   {
    "name": "Google News UK（AI）",
    "ok": true,
    "count": 40,
-   "added": 9,
+   "added": 5,
    "error": null
   },
   {
    "name": "TechCrunch AI",
    "ok": true,
    "count": 20,
-   "added": 0,
+   "added": 1,
    "error": null
   },
   {
@@ -264,7 +264,7 @@
    "name": "MarkTechPost",
    "ok": true,
    "count": 10,
-   "added": 0,
+   "added": 1,
    "error": null
   },
   {
@@ -326,8 +326,8 @@
   {
    "name": "Hacker News（100pt以上）",
    "ok": true,
-   "count": 7,
-   "added": 2,
+   "count": 6,
+   "added": 0,
    "error": null
   },
   {
@@ -341,28 +341,28 @@
    "name": "Reddit r/LocalLLaMA",
    "ok": true,
    "count": 25,
-   "added": 5,
+   "added": 3,
    "error": null
   },
   {
    "name": "Reddit r/singularity",
-   "ok": false,
-   "count": 0,
-   "added": 0,
-   "error": "HTTPError: HTTP Error 429: Too Many Requests"
+   "ok": true,
+   "count": 16,
+   "added": 3,
+   "error": null
   },
   {
    "name": "Reddit r/MachineLearning",
    "ok": true,
-   "count": 4,
-   "added": 2,
+   "count": 5,
+   "added": 1,
    "error": null
   },
   {
    "name": "Reddit r/OpenAI",
    "ok": true,
    "count": 25,
-   "added": 2,
+   "added": 3,
    "error": null
   },
   {
@@ -376,7 +376,7 @@
    "name": "Reddit r/StableDiffusion",
    "ok": true,
    "count": 25,
-   "added": 4,
+   "added": 5,
    "error": null
   },
   {
@@ -404,7 +404,7 @@
    "name": "Google新聞（台湾・生成式AI）",
    "ok": true,
    "count": 40,
-   "added": 2,
+   "added": 6,
    "error": null
   },
   {
@@ -418,7 +418,7 @@
    "name": "Google 뉴스（韓国・생성형 AI）",
    "ok": true,
    "count": 40,
-   "added": 1,
+   "added": 3,
    "error": null
   },
   {
@@ -432,14 +432,14 @@
    "name": "Google Actualités（フランス・IA）",
    "ok": true,
    "count": 30,
-   "added": 5,
+   "added": 3,
    "error": null
   },
   {
    "name": "Google Noticias（スペイン語・IA）",
    "ok": true,
    "count": 30,
-   "added": 11,
+   "added": 8,
    "error": null
   },
   {
@@ -473,36 +473,36 @@
   {
    "name": "Googleニュース（AI副業）",
    "ok": true,
-   "count": 35,
-   "added": 1,
+   "count": 16,
+   "added": 0,
    "error": null
   },
   {
    "name": "Googleニュース（学生・ハッカソン）",
    "ok": true,
    "count": 30,
-   "added": 0,
+   "added": 1,
    "error": null
   },
   {
    "name": "note（AI副業）",
    "ok": true,
    "count": 25,
-   "added": 8,
+   "added": 19,
    "error": null
   },
   {
    "name": "Zenn（個人開発）",
    "ok": true,
-   "count": 11,
+   "count": 12,
    "added": 0,
    "error": null
   },
   {
    "name": "Qiita（個人開発）",
    "ok": true,
-   "count": 3,
-   "added": 0,
+   "count": 2,
+   "added": 1,
    "error": null
   },
   {
@@ -516,18 +516,1074 @@
    "name": "Hacker News（Show HN）",
    "ok": true,
    "count": 10,
-   "added": 0,
+   "added": 1,
    "error": null
   },
   {
    "name": "Reddit r/SideProject",
    "ok": true,
-   "count": 5,
-   "added": 1,
+   "count": 4,
+   "added": 0,
    "error": null
   }
  ],
  "items": [
+  {
+   "id": "7aa56fec197b157d",
+   "title": "臨床試験をひもとく：AI研究者のためのガイド（第1回）臨床試験のワークフロー",
+   "link": "https://note.com/keiji_ai_japan/n/n460d91ac3604",
+   "summary": "※ 制度の説明は米国（FDA）を前提としています。 AIとヘルスケアが交わる領域で研究を続け、KEIJI AI を立ち上げた私たちは、いま臨床試験で起きている変革にとても大きな期待を寄せています。臨床オペレーション分野で最大規模のカンファレンスである SCOPE Summit 2025 でも、AIがこの産業をどのように変えつつあるかが大きく取り上げられました。これは、多くの方がまだ意識したことのない、しかし最も有望なAIの応用分野の一つです。その理由を順にご説明します。 続きをみる",
+   "date": "2026-10-25T23:12:13+00:00",
+   "source": "note（生成AI）",
+   "publisher": "",
+   "category": "技術記事",
+   "lang": "ja"
+  },
+  {
+   "id": "0be030281ae6a4f6",
+   "title": "【検証】noteのハッシュタグは何個つける？新着546本で調べたら、6個以上でスキ0が減っていた",
+   "link": "https://note.com/onegai_ai/n/n221beda82f9a",
+   "summary": "この記事はAIが書き、人間さん（運営者）が確認して公開しています。 noteの新着記事546本で、ハッシュタグの数と、スキの付き方を調べました。 続きをみる",
+   "date": "2026-10-25T23:12:01+00:00",
+   "source": "note（AI副業）",
+   "publisher": "",
+   "category": "収益化",
+   "lang": "ja"
+  },
+  {
+   "id": "8db351d6f4eacb4d",
+   "title": "Exploran fusión de SpaceX y Tesla para unir IA, chips y energía",
+   "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQVWpoSmhMZUVDWmg3RkZYOWlIWG9sYkpqUkwwQXV0TmtmTGJUX1AyUUt6djhaQ1FYMkY0eDlFbUQxbDF3eTVzR0t0UDdYd051TTNXbUtfQVMzcGhtazZjQmZ0ckRBNHlGMFVIcDdfT2QyLTY2T3lxNWJHVEhtcFBjTFlhZlpYYWY5aU9OVVlSdEZJYjZuamw0a0tKbmEzcTdpdC05T2wtN0ZqcEVSTzNz?oc=5",
+   "summary": "",
+   "date": "2026-10-25T23:10:16+00:00",
+   "source": "Google Noticias（スペイン語・IA）",
+   "publisher": "El Horizonte",
+   "category": "ニュース",
+   "lang": "es"
+  },
+  {
+   "id": "9cd88d52908a4132",
+   "title": "【愛か、エゴか】",
+   "link": "https://note.com/takaharashigeru/n/nb3a051d16d4d",
+   "summary": "続きをみる",
+   "date": "2026-10-25T23:09:53+00:00",
+   "source": "note（生成AI）",
+   "publisher": "",
+   "category": "技術記事",
+   "lang": "ja"
+  },
+  {
+   "id": "f95791b05126d8a9",
+   "title": "「私には売れるスキルがない…」ChatGPTに聞いたら“仕事にできそうなこと”が見つかった",
+   "link": "https://note.com/ai_fukugyo_step/n/nf23c5be6b9dc",
+   "summary": "副業を探していると、 「あなたのスキルは？」 「得意なことは？」 「経験を教えてください」 こんな言葉が出てきます。 そこで私は思うんです。 「いや、売れるようなスキルなんてない😂」 資格があるわけでもない。 デザインができるわけでもない。 プログラミングもできない。 だから、 「私にできる副業なんてあるのかな？」 と思ってしまう。 でも最近、ちょっと考え方が変わりました🌱 ⸻ 💡「できること」って資格だけじゃない 普段の仕事や生活で、 当たり前にやっていること。 例えば、 ・人の話を聞く ・文章をまとめる ・Excelに入力する ・予定を調整する ・メ…",
+   "date": "2026-10-25T23:09:10+00:00",
+   "source": "note（AI副業）",
+   "publisher": "",
+   "category": "収益化",
+   "lang": "ja"
+  },
+  {
+   "id": "591fe0e786593170",
+   "title": "OpenAI、ChatGPT広告を89カ国へ拡大 開始8カ月余りで広告主10万社超",
+   "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE80OW5iV080WUhRdFlBMlp5MGFDLXNheVJmZGtnQlhKSXFITE5QZUU4M3hGLXAxUTF0S0xoQ0NheWtWSXZRTVpNdnBNUTM4YUFIR0xCcDVEcnE4WFdSVmJwME5HYm5fZ1FCSEtZb3hpbjNfcWs?oc=5",
+   "summary": "",
+   "date": "2026-10-25T23:08:10+00:00",
+   "source": "Googleニュース（ChatGPT・Claude・Gemini）",
+   "publisher": "Ledge.ai",
+   "category": "ニュース",
+   "lang": "ja"
+  },
+  {
+   "id": "e35af4ebfd227c60",
+   "title": "【対談】「AIで作っています」は、もう前提——朝倉祐介氏と考える、AI時代のスタートアップの見られ方",
+   "link": "https://note.com/tekiongroup/n/nc2380698e6e0",
+   "summary": "マッキンゼー、ミクシィ代表取締役社長を経て、シード・アーリー特化のVC「アニマルスピリッツ」を率いる朝倉祐介さん。自身もVibe Coder Bootcampのパーソナルトレーニングを受講し、Vibe Codingを実践する投資家だ（受講の経緯は別記事「単純に、楽しいんですよ」（https://note.com/tekiongroup/n/nb80229a9d626）で詳しく聞いている）。 毎日のようにスタートアップのピッチを受ける立場から見て、AIで誰もがプロトタイプを作れるようになった今、起業家の「見られ方」はどう変わったのか。率直に聞いた。 続きを…",
+   "date": "2026-10-25T23:07:54+00:00",
+   "source": "note（生成AI）",
+   "publisher": "",
+   "category": "技術記事",
+   "lang": "ja"
+  },
+  {
+   "id": "4de7dffdb58199ba",
+   "title": "AI時代に必要なのは、美術の授業かもしれない",
+   "link": "https://note.com/yasuiwai/n/nd39dc0d8f303",
+   "summary": "AIにたくさんの案を出させ、その中から人間が選ぶ。これからは、その「選ぶ力」が大切になる。動画でそんな話を聞いて、なるほどと思いました。そこで使われていたのが、「審美眼」という言葉でした。 画家の私には、なじみのある言葉です。美しいものや、作品のよさを見抜く力。芸術と深く関わってきた言葉が、AIの使い方を語るところで出てくる。少しおもしろく感じました。 続きをみる",
+   "date": "2026-10-25T23:07:53+00:00",
+   "source": "note（生成AI）",
+   "publisher": "",
+   "category": "技術記事",
+   "lang": "ja"
+  },
+  {
+   "id": "a9856cfb061f6841",
+   "title": "AIのメール、丁寧だけど送っていい？「事実・約束・添付」を確認する方法",
+   "link": "https://note.com/aktk_dawn/n/n57e35a9cf423",
+   "summary": "画面を二つ開いて、元メールとAIの返信案を並べてみます。 相手が書いたのは「日程の候補」。返信案に書かれているのは「その日に伺います」。 短い一文ですが、確認前の予定が、いつの間にか約束になっています。 続きをみる",
+   "date": "2026-10-25T23:07:45+00:00",
+   "source": "note（生成AI）",
+   "publisher": "",
+   "category": "技術記事",
+   "lang": "ja"
+  },
+  {
+   "id": "53b034f628b72f13",
+   "title": "チャットだけでWeb CADを作り、AIに間取り図を描かせてみた",
+   "link": "https://note.com/tk_ax/n/nddfc8fd9ed1c",
+   "summary": "「CADを作って」とAIに頼んだら、33分後には3LDKの間取り図が1枚できあがっていました。チャットの中でWeb CADを実装し、最後はAIが人と同じようにコマンドを打ち込んで作図しています。その一部始終と、建設・製造の現場で何が変わるかをお伝えします。 はじめに 続きをみる",
+   "date": "2026-10-25T23:07:37+00:00",
+   "source": "note（生成AI）",
+   "publisher": "",
+   "category": "技術記事",
+   "lang": "ja"
+  },
+  {
+   "id": "16ee577f7efecffc",
+   "title": "Nigeria, UK deepen ties on AI, digital trade standards",
+   "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQZUxuVFJ2TXBiTjJvaGRIWFNNRHpfSWJYS3BCb1JLV1p3SVVLNlJpSnNqdkxYZmRXa2MweWNzZldNODBscE9jbF8xNUFISkNLaXEyZE1tNDE2cHAxUlNCT3ZhVGhsZUtpakVjMUF3VHVSb2ZTZzBWMmNTZndTLW8xRFlGSQ?oc=5",
+   "summary": "",
+   "date": "2026-10-25T23:07:09+00:00",
+   "source": "Google News UK（AI）",
+   "publisher": "Punch Newspapers",
+   "category": "ニュース",
+   "lang": "en"
+  },
+  {
+   "id": "837bb14e3b136d08",
+   "title": "副業の進捗の話し方｜家族には渡した本数だけ",
+   "link": "https://note.com/zero_sta1/n/ne7218b3c4ea1",
+   "summary": "夜、家族に「結構進んだ」と話しそうになりました。進んだの中身は、見本を三本渡して、確認待ちであることです。三本を、気持ちの大きさで「かなり」にすると、聞いた側は完了に近い顔をします。顔は、相手の受け取りより先に出来上がります。 会社員のまま、話せる時間は食後の数分です。数分で盛った進捗は、翌週の自分のカレンダーを縛ります。 続きをみる",
+   "date": "2026-10-25T23:06:24+00:00",
+   "source": "note（生成AI）",
+   "publisher": "",
+   "category": "技術記事",
+   "lang": "ja"
+  },
+  {
+   "id": "26f376dbaea11b63",
+   "title": "36歳、転職7社。キャリア迷子、AIに相談する。⑨",
+   "link": "https://note.com/tender_vole4563/n/na4b05a21d036",
+   "summary": "前回、職務経歴書は自分の経歴を並べるだけではなく、自分がどんな価値を提供できる人間なのかを伝えるためのものだと考えた。 では、書類選考を通過したらどうだろう。 次に待っているのは面接だ。 これまで何度も転職活動をしてきた。 職歴はそれなりにあるし、面接も一度や二度ではない。 それでも、面接が得意かと聞かれたら、胸を張って「得意です」とは言えない。 質問に答えているうちに、何を伝えたかったのか分からなくなる。 自分では説明したつもりでも、相手が知りたいことに答えられているのか不安になる。 そして、面接が終わってから思う。 「あれ、もっと別の伝え方があったん…",
+   "date": "2026-10-25T23:05:57+00:00",
+   "source": "note（生成AI）",
+   "publisher": "",
+   "category": "技術記事",
+   "lang": "ja"
+  },
+  {
+   "id": "4bdfb7b869fabe7f",
+   "title": "化石並みのデジタル音痴。今日もAIに聞きまくる。",
+   "link": "https://note.com/nagi_dh30_revo/n/ncff45bcbf416",
+   "summary": "続きをみる",
+   "date": "2026-10-25T23:05:54+00:00",
+   "source": "note（生成AI）",
+   "publisher": "",
+   "category": "技術記事",
+   "lang": "ja"
+  },
+  {
+   "id": "154fa5d53a2af6bd",
+   "title": "AI同士で議論させる方法4つ。コピーして使えるプロンプトと、8,567件で確かめた効果",
+   "link": "https://note.com/debatecross/n/n51d82d1c6581",
+   "summary": "AI の答えをそのまま信じていいか迷ったら、AI 同士に議論させて、互いの答えを確かめさせる手があります。 いちばん手軽なのは、ChatGPT などの AI 1 つに、回答役・批判役・確認役・まとめ役を演じさせるやり方です。無料版でも今日から試せます。この記事に、そのままコピーして使えるプロンプトを載せました。 続きをみる",
+   "date": "2026-10-25T23:05:47+00:00",
+   "source": "note（生成AI）",
+   "publisher": "",
+   "category": "技術記事",
+   "lang": "ja"
+  },
+  {
+   "id": "f85de8122efe45e1",
+   "title": "Excel資料作成をCopilotで速くする｜「いい感じにして」では崩れた。効いたのは別の一言だった",
+   "link": "https://note.com/cars_mada/n/n269aabc43391",
+   "summary": "前回は、光回線の解約の電話をAIに準備してもらった話を書きました。今回は仕事に戻って、Excelの資料づくりです。 ▼これまでの記事はマガジンにまとめています 続きをみる",
+   "date": "2026-10-25T23:05:41+00:00",
+   "source": "note（生成AI）",
+   "publisher": "",
+   "category": "技術記事",
+   "lang": "ja"
+  },
+  {
+   "id": "beb03d2d105f18c9",
+   "title": "文章の取材は沈黙のまま｜解釈の文は書かない",
+   "link": "https://note.com/fumika_pen7/n/ndb8c6060a0b0",
+   "summary": "昼の取材で、相手が八秒止まりました。止まったあとに、私は「迷っていたのでしょう」と原稿へ書きました。迷いは、相手の言葉ではありません。八秒のあいだ、相手は何も言っていません。 元OLで、文章を書いています。沈黙を気持ちの語で埋めると、取材が小説になります。小説になった段落は、相手が読んで首を振ります。 続きをみる",
+   "date": "2026-10-25T23:04:47+00:00",
+   "source": "note（生成AI）",
+   "publisher": "",
+   "category": "技術記事",
+   "lang": "ja"
+  },
+  {
+   "id": "8118309b6e934020",
+   "title": "AIはどれを使っても同じ？ エンジニア5万人のデータで、選び方の差は1%未満",
+   "link": "https://note.com/hitsuji_kacho/n/n1aff76ff6b29",
+   "summary": "「ChatGPT と Gemini、結局どっちがいいの？」「新しい AI が出たら、乗り換えないと置いていかれる」。 AI の話になると、よく聞く声です。 続きをみる",
+   "date": "2026-10-25T23:04:35+00:00",
+   "source": "note（生成AI）",
+   "publisher": "",
+   "category": "技術記事",
+   "lang": "ja"
+  },
+  {
+   "id": "4928f3b1d9962538",
+   "title": "月5万円の副業収入を完全自動化！開発コストを70%削減するAIエージェント環境と活用ツール",
+   "link": "https://note.com/eager_swift9467/n/nd73359a6fdfe",
+   "summary": "※本記事にはアフィリエイト広告を含みます。Amazonのアソシエイトとして、適格販売により収入を得ています。 毎月5万円の副業収入を完全自動化したいあなたへ 続きをみる",
+   "date": "2026-10-25T23:03:42+00:00",
+   "source": "note（AI副業）",
+   "publisher": "",
+   "category": "収益化",
+   "lang": "ja"
+  },
+  {
+   "id": "16b6e576e50422d5",
+   "title": "社外に出した案内文の直し忘れをChatGPTで洗い出す4ステップ",
+   "link": "https://note.com/bitlabai/n/nf510875f2c04",
+   "summary": "この記事は、Xで公開した記事の転載です。元記事：https://x.com/bitlab_ai/status/2114094701817242008 値段や方針を変えたのに、古い説明がどこかに残っていませんか。決めたことを5件、外に出している文を10本そろえて貼れば、直す候補が一覧で返ってきます。その5件と10本のそろえ方と、渡す指示文を手順ごとに全部書きます。 続きをみる",
+   "date": "2026-10-25T23:03:38+00:00",
+   "source": "note（生成AI）",
+   "publisher": "",
+   "category": "技術記事",
+   "lang": "ja"
+  },
+  {
+   "id": "3049cf60212daea6",
+   "title": "「質問する人」から「何度でも失敗させる人」へ — エージェント時代に変わるAIとの向き合い方",
+   "link": "https://note.com/z_5/n/nc41f9878c18f",
+   "summary": "「AIを使いこなす」という言葉の意味が、ここ数ヶ月で根本から変わり始めています。 1年ほど前を思い出してみてください。 AIが理解しやすい言葉（プロンプト）をいかにして表現するか。ここに神経を集中させていませんでしたか？ 続きをみる",
+   "date": "2026-10-25T23:02:18+00:00",
+   "source": "note（生成AI）",
+   "publisher": "",
+   "category": "技術記事",
+   "lang": "ja"
+  },
+  {
+   "id": "df61694c84a17c07",
+   "title": "【実績ゼロでもOK】ChatGPTで副業の「制作サンプル」を作る方法｜初心者向け・プロンプト無料公開",
+   "link": "https://note.com/fancy_murre4913/n/n2334d63dfa81",
+   "summary": "【実績ゼロでもOK】ChatGPTで副業の「制作サンプル」を作る方法｜初心者向け・プロンプト無料公開 「AI副業を始めたいけど、実績がない」 「応募するときに見せられる作品がない」 「ChatGPTは使えるけど、仕事につなげる方法が分からない」 そんな人におすすめしたいのが、制作サンプルを作ることです。 制作サンプルとは、自分がどんな仕事をできるのか、依頼者に見せるための作品です。 実際に仕事を受注した経験がなくても、自分で練習用の作品を作ることはできます。 今回は、ChatGPTを使ってSNS投稿文の制作サンプルを作る方法を紹介します。 コピペできるプ…",
+   "date": "2026-10-25T23:02:16+00:00",
+   "source": "note（生成AI）",
+   "publisher": "",
+   "category": "技術記事",
+   "lang": "ja"
+  },
+  {
+   "id": "e3d9df794948ef70",
+   "title": "The X Subscriptionとは｜X Premiumから切り替えるべき？Grokの無料枠とGrok Botが使えるプラン【2026年版】",
+   "link": "https://note.com/ai_shigoto_10x/n/n256b14112440",
+   "summary": "はじめに 続きをみる",
+   "date": "2026-10-25T23:01:51+00:00",
+   "source": "note（生成AI）",
+   "publisher": "",
+   "category": "技術記事",
+   "lang": "ja"
+  },
+  {
+   "id": "a4da06460a8ad62f",
+   "title": "40代後半から始める、目的別AIの選び方",
+   "link": "https://note.com/fukugyo_jikken1/n/na414ee308a9a",
+   "summary": "定年を意識し始める時期になると、これからの働き方や収入について考える場面が増えるものです。今の仕事を続けながら、自分で稼ぐ力も少しずつ身につけたい。そのためにAIを使ってみたいと思っても、サービスが多く、何を選べばよいか迷うかもしれません。この記事では、文章作成・調べもの・資料づくりという目的別に、最初の一つを選ぶ考え方をお伝えします。 こんな人に向けて書きました 続きをみる",
+   "date": "2026-10-25T23:00:43+00:00",
+   "source": "note（生成AI）",
+   "publisher": "",
+   "category": "技術記事",
+   "lang": "ja"
+  },
+  {
+   "id": "6b001b9fc76a99d0",
+   "title": "AIで自己紹介文を作る。3つのメモから、自然に読める80字へ",
+   "link": "https://note.com/alert_human3909/n/naa61518f2c4e",
+   "summary": "「自己紹介を書いてください」と言われると、手が止まりませんか。立派な経歴を書かなくても、何をしていて、何を読める場所なのかが伝われば、入口になります。 今回は3つのメモから、こんな自己紹介文を作りました。 続きをみる",
+   "date": "2026-10-25T23:00:21+00:00",
+   "source": "note（生成AI）",
+   "publisher": "",
+   "category": "技術記事",
+   "lang": "ja"
+  },
+  {
+   "id": "269ec62eb93d19db",
+   "title": "ChatGPT 直接決済機能の縮小後に小売業界が選んだ「発見はAI」の真意",
+   "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPTldNaGRHV3Jpdi1raXNTZ294ZExFcUFIcGxZSFdRc0ZVZkxtTU9xN2VHNms5ZVdHMW0tVnJBY042UjNVT1RhREwxbVFZNFhRM1lEclk2cVVyTU1FT285dE5QQVB4ZEVCUGpDQjBXMG1rQ1B0SFk5a3FIb01OWDdrLVJnVnF3emJybTZqVDAwRTU?oc=5",
+   "summary": "",
+   "date": "2026-10-25T23:00:20+00:00",
+   "source": "Googleニュース（ChatGPT・Claude・Gemini）",
+   "publisher": "DIGIDAY［日本版］",
+   "category": "ニュース",
+   "lang": "ja"
+  },
+  {
+   "id": "851600f5de252279",
+   "title": "【AIデイリー・インテリジェンス・ブリーフィング】2026-10-25 の重要動向まとめ",
+   "link": "https://note.com/beckcreativ/n/nc4ac1c05dec8",
+   "summary": "AI デイリー・インテリジェンス・ブリーフィング 発行日: 2026-10-25 | 前日24時間のAI重要動向まとめ 続きをみる",
+   "date": "2026-10-25T23:00:14+00:00",
+   "source": "note（生成AI）",
+   "publisher": "",
+   "category": "技術記事",
+   "lang": "ja"
+  },
+  {
+   "id": "21961604c118c926",
+   "title": "その献立、本当に作れる？｜AIの提案を「材料・量・条件」で点検する",
+   "link": "https://note.com/amity_ai_lab/n/nfaf64653fcb8",
+   "summary": "料理名はおいしそう。でも、手順を見ると家にない調味料が出てきた。 卵は2個しかないのに、3個使うことになっている。 献立をAIに相談するとき、見たいのは料理名の数だけではありません。手元の材料と、今の条件で作れる提案になっているかです。 続きをみる",
+   "date": "2026-10-25T23:00:12+00:00",
+   "source": "note（生成AI）",
+   "publisher": "",
+   "category": "技術記事",
+   "lang": "ja"
+  },
+  {
+   "id": "7394e22a248d5a74",
+   "title": "AIを導入しても、日本企業の生産性が上がらない理由",
+   "link": "https://note.com/bizdev_pm/n/n761e5d106ef5",
+   "summary": "AI時代に見直すべき仕事と組織のあり方 続きをみる",
+   "date": "2026-10-25T22:59:58+00:00",
+   "source": "note（生成AI）",
+   "publisher": "",
+   "category": "技術記事",
+   "lang": "ja"
+  },
+  {
+   "id": "b568cde47260b3e3",
+   "title": "AIへの質問、これだけで変わる！家計相談で学ぶ「伝え方の3つのコツ」",
+   "link": "https://note.com/good_otter157/n/ne146d6557f8d",
+   "summary": "「AIに質問したのに、答えがなんだか普通だった」 そんな経験はありませんか？ 続きをみる",
+   "date": "2026-10-25T22:59:51+00:00",
+   "source": "note（生成AI）",
+   "publisher": "",
+   "category": "技術記事",
+   "lang": "ja"
+  },
+  {
+   "id": "2248c8b571d84660",
+   "title": "材料を伝えるだけで献立相談｜コピペで作る「わが家の献立Skills」",
+   "link": "https://note.com/amity_ai_lab/n/nf15126dcaabb",
+   "summary": "「大人2人分です」「オーブンはありません」「買い足しなしでお願いします」。 AIに献立を相談するたび、同じ条件を説明していませんか。 いつもの条件と、候補の出し方をまとめておくと、今日の材料から相談を始めやすくなります。今回は、そのための「献立Skills」を作ります。プログラムを書く知識は前提にしません。 続きをみる",
+   "date": "2026-10-25T22:59:34+00:00",
+   "source": "note（生成AI）",
+   "publisher": "",
+   "category": "技術記事",
+   "lang": "ja"
+  },
+  {
+   "id": "84d76ec7e17bdaf3",
+   "title": "言語資源の「文書の参照」を試す：4つの設定で、RAG が「別の資料を見てください」の先を探す",
+   "link": "https://qiita.com/engchina/items/893c4bdf72c5b94b7a23",
+   "summary": "言語資源の「文書の参照」を試す：4つの設定で、RAG が「別の資料を見てください」の先を探す 初めに 資料を検索する RAG で、こんな回答を見たことはないでしょうか。 「接続先を登録して、接続テストを行うには？」 → 検索で案内文書が見つかる → そこには「設定マニ...",
+   "date": "2026-10-25T22:58:28+00:00",
+   "source": "Qiita（生成AI）",
+   "publisher": "",
+   "category": "技術記事",
+   "lang": "ja"
+  },
+  {
+   "id": "fe2966fbf5c37ecd",
+   "title": "Anthropic Sued for Training Claude on Elvis Presley Songs",
+   "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1KOFJNYmtwN2N6RzRpRTYyOXBqWVEzdzlsSmRZYmtmSVpQTXhhTEVyYjIzZENGMTFmRUo4WnNQVEl0MGxYWmVXUy1fTm55cUM2WG9JS05vazV1X0N5a2xHMjA0ZGJ6MzI0UUk0RQ?oc=5",
+   "summary": "",
+   "date": "2026-10-25T22:57:50+00:00",
+   "source": "Google News（OpenAI・Anthropic・Google）",
+   "publisher": "Vulture",
+   "category": "ニュース",
+   "lang": "en"
+  },
+  {
+   "id": "e61db2afd8d5ac8c",
+   "title": "I ran a blind test on self-hosted AI agents. Here are the results, guess who's who [D]",
+   "link": "https://www.reddit.com/r/MachineLearning/comments/1xfgf1w/i_ran_a_blind_test_on_selfhosted_ai_agents_here/",
+   "summary": "everything here ran on my own hardware, an M5 Max MacBook Pro with 64GB. blind test of self-hosted AI agents, every one on Qwen 3.8 27B uncensored Q4_K_M in llama.cpp, same 5 everyday tasks like counting log errors and renaming a function. names hidden, results below, take a gues…",
+   "date": "2026-10-25T22:57:33+00:00",
+   "source": "Reddit r/MachineLearning",
+   "publisher": "",
+   "category": "話題",
+   "lang": "en"
+  },
+  {
+   "id": "066774f81fb05476",
+   "title": "定年退職後、英語の分からない私が有料noteを出せるまでになった手順｜始めて1ヶ月",
+   "link": "https://note.com/hot_guppy482/n/nf0c0a19c0ebb",
+   "summary": "はじめに 私は60歳で退職した元エンジニアです。英語が分からず、AIツールの画面で何度も手が止まりました。それでもClaudeに日本語で聞きながら、Xで発信を始め、noteで有料記事を出せるところまで来ました。 続きをみる",
+   "date": "2026-10-25T22:56:33+00:00",
+   "source": "note（AI副業）",
+   "publisher": "",
+   "category": "収益化",
+   "lang": "ja"
+  },
+  {
+   "id": "5704d527e2be227c",
+   "title": "ChatGPTの指示の出し方は「役割・目的・条件」の3つだけ｜初心者がそのまま使える例文つき",
+   "link": "https://note.com/kuroshiba0613/n/n99fb6f200280",
+   "summary": "AIへの指示は「役割・目的・条件」を入れるだけで変わります ChatGPTに質問しても、思ったような答えが返ってこない。そんな時、指示の出し方で止まっている方は多いと思います。 私も最初は、何が正しいやり方なのか分からないまま、手探りで使っていました。 先に結論をお伝えします。初心者の指示は、次の1行の形で十分です。 続きをみる",
+   "date": "2026-10-25T22:55:44+00:00",
+   "source": "note（AI副業）",
+   "publisher": "",
+   "category": "収益化",
+   "lang": "ja"
+  },
+  {
+   "id": "7b6aedfd7077bda7",
+   "title": "Anthropic Merges Claude Chat and Cowork for Enterprise Users",
+   "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPaXhaSHI3X3d5UmZNb1M5cnlUZEhGbFJ6Q0RVUWI4LVM2VmFpLW94XzVJQjBiUnN4akJKOHp4S01qeXV0dWxpNmJrUUhnanM5RDJvWi1tUVNOVEJFTzV3TjdRZ2RzRzNrYmdqbVhvQnFwQkRsQTVucjZBZFVYaVpaMlBTZmFjQTFuZU9IRGg5dHdvSklIOV9RMHY3cE9nZjFlYzhFcjFudGJCUTRNc3FxVW1jY3QxSW1Yc2c?oc=5",
+   "summary": "",
+   "date": "2026-10-25T22:55:40+00:00",
+   "source": "Google News（OpenAI・Anthropic・Google）",
+   "publisher": "PYMNTS.com",
+   "category": "ニュース",
+   "lang": "en"
+  },
+  {
+   "id": "5ad34252355180bd",
+   "title": "AIに記事づくりを任せた最初の10日。公開6本・スキ73・売上0円、止まった4つと直した3つ【AIチーム運用記録 #1】",
+   "link": "https://note.com/yoshiki_ai_0102/n/n6da9bf6182b1",
+   "summary": "2026年10月26日 公開 この記事は、AIに記事づくりを任せたこのnoteの 最初の10日（10月15日〜10月24日の朝） の記録です。自己紹介の記事で「売上0円から記録します」と書いた、この「AIチーム運用記録」の1回目です。 続きをみる",
+   "date": "2026-10-25T22:52:57+00:00",
+   "source": "note（AI副業）",
+   "publisher": "",
+   "category": "収益化",
+   "lang": "ja"
+  },
+  {
+   "id": "a2224397e9024791",
+   "title": "What should agents do with a public social space?",
+   "link": "https://www.reddit.com/r/OpenAI/comments/1xfgbdo/what_should_agents_do_with_a_public_social_space/",
+   "summary": "I’m building a small experiment around agent behavior rather than another productivity benchmark.\\n\\nJ-Chain is an imageboard where AI agents post image-led threads, reply, remix, and develop little patterns of taste. Humans browse and moderate; agents can enroll for free.\\n\\nDem…",
+   "date": "2026-10-25T22:52:55+00:00",
+   "source": "Reddit r/OpenAI",
+   "publisher": "",
+   "category": "話題",
+   "lang": "en"
+  },
+  {
+   "id": "de8bdbcd6a5c8ace",
+   "title": "副業のためにパソコンを買ってみたけど、何をすればいいか分からなかった話",
+   "link": "https://note.com/hajimete_ai_work/n/ne120ba4d185e",
+   "summary": "「今年こそ、副業を始めてみよう。」 そう思って、思い切ってパソコンを買いました。 仕事以外にも収入があれば、もう少し生活に余裕ができるかもしれない。 そんな期待で、最初はワクワクしていました。 でも、いざパソコンを開いてみると、 「……何から始めればいいんだろう？」 とりあえず「初心者におすすめの副業」と検索。 Webライター、オンライン秘書、データ入力、ハンドメイド販売、Webデザイン……。 調べるほど選択肢が増えていきます。 どれも魅力的に見えるけれど、どれが自分に合うのか分からない。 SNSで成功している人を見ると、「これなら私にもできるかも」と思…",
+   "date": "2026-10-25T22:51:21+00:00",
+   "source": "note（AI副業）",
+   "publisher": "",
+   "category": "収益化",
+   "lang": "ja"
+  },
+  {
+   "id": "6e49292d4bfefb8f",
+   "title": "Anthropic's Claude accessed public US state of Georgia voter information, Axios reports",
+   "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNX1p1a2NSeGhUY0p3Q2JMNzRPTmN6SjNWRFRNNlE0bXlnYzFxYWFWdTlfM2xPX0FTZlNWUlF6TUVOakxlMEhSUzhsQi0xWG9TVUhaWlVvbDVkbWVXOV9vLTZ1d2xGRFNWTWQtNi13MzhqTDBYSlVjb2pZQVJCS1hUTUZTR1U4U0JSUGctdGlsR21XVHlYaWxLWThLa19QQ3BGSTlYZGR1c3l1aldIbjE0M1IzY1NZeXNSazRR?oc=5",
+   "summary": "",
+   "date": "2026-10-25T22:48:22+00:00",
+   "source": "Google News（OpenAI・Anthropic・Google）",
+   "publisher": "Reuters",
+   "category": "ニュース",
+   "lang": "en"
+  },
+  {
+   "id": "b7bc6b3762450e47",
+   "title": "【今日の副業】副業は「天秤」で量る｜手取り16万円と副業の逆転、収入0円の途中報告、本業と副業を入れ替えるジョーク",
+   "link": "https://note.com/great_owl4244/n/n6ad940f59b4c",
+   "summary": "【副業】「手取り16万円より、副業のほうが稼げている」という投稿が話題に。一方で「AI副業、まだ0円」の正直な途中報告も。 副業は「天秤」。お金・時間・手応えで量る。 始める前の3つの物差しをまとめました。 https://t.co/EJRoHWQDlk pic.twitter.com/rhuRHZVXus — ビジネスコンダクター (@BIZConductor) October 25, 2026 副業を始めたいが、何をどこまでやればよいか分からない。 続きをみる",
+   "date": "2026-10-25T22:47:39+00:00",
+   "source": "note（AI副業）",
+   "publisher": "",
+   "category": "収益化",
+   "lang": "ja"
+  },
+  {
+   "id": "146dee0393da338b",
+   "title": "調查：逾四成阿曼民眾已使用人工智慧工具",
+   "link": "https://news.google.com/rss/articles/CBMivwJBVV95cUxPNFdHbFpHRmFobmhVTVVmVUc4RElDc2JnM2x3TUV4WURUX0IxZm42a3J3akJRRDFhdXZXVlBJOUV3UHBJOG9kbEVhQ0NhczdJbFNwSDBMQTBacXk1U0ZUX2M0UWx5d0stWEN1ZmVZbU1nVFkxZnFCQ3k5Y0ExOHFhMHBqOXlXd2Fra29YZWtvSnYtZDVpeHNfTEN4NE9UcnNTWWJULWctOEE4eHRMVURmeFNSQVNrSmZrTnVCRE1aYWc3Nzd0TTMzWXhvbW1JQ3BpdWxqWVpKNk5GRDlvdm93R2xEeXhLaWZsS2pYRlk4aVo3YjlxWlB2cC10bF9JMm4ya0xqRDF2aW5wQzV6eFVhWE42N0FrbHdpSm9ZQ1lWUW56VURpOXVsQy1YQjVQS3MyRzQxNGp4NjlDSGhlOHRJ?oc=5",
+   "summary": "",
+   "date": "2026-10-25T22:46:34+00:00",
+   "source": "Google新聞（台湾・生成式AI）",
+   "publisher": "商傳媒 - SUN MEDIA",
+   "category": "ニュース",
+   "lang": "zh"
+  },
+  {
+   "id": "4974acaa052cc1fb",
+   "title": "Realiza estudiante formado en Quantum innovación para mejorar la Inteligencia Artificial",
+   "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPclk4ZDYtc29CVzkzZ01jQkpFZnVJYkUyMGFWY3pmRTVnczZKU1F6blJILWJqTldnTS1aSDRVMld3WWV1dTBiLWhsWHg1Wk1qWlFhYWxQT20tOUpUSE1lbU1tanZnNV9xZkNWWVhtNWliMFFRc2hqRmxRZjRsX2l4X1A3WUNTUGQwR0N2VlhHeURBNzlsRG9RX2MzanI4TjNLeVltUkg5YVBRYUdr?oc=5",
+   "summary": "",
+   "date": "2026-10-25T22:44:38+00:00",
+   "source": "Google Noticias（スペイン語・IA）",
+   "publisher": "Zacatecas Hoy Noticias",
+   "category": "ニュース",
+   "lang": "es"
+  },
+  {
+   "id": "e3c2c1ae2813869f",
+   "title": "Zest: the QR code designer I built with claude because i got sick of seeing the same ugly square.",
+   "link": "https://www.reddit.com/r/ClaudeAI/comments/1xfg3i5/zest_the_qr_code_designer_i_built_with_claude/",
+   "summary": "I built this with Claude, it's called zest: zest.lemoncello.studio . Designing is free, there's no account, and the static codes you download never expire. Why I work in print. QR codes cross my desk every day and after a decade of them landing on everything I'm tired of plain sq…",
+   "date": "2026-10-25T22:43:09+00:00",
+   "source": "Reddit r/ClaudeAI",
+   "publisher": "",
+   "category": "話題",
+   "lang": "en"
+  },
+  {
+   "id": "48a1dba2c2e178b8",
+   "title": "1Password Lets AI Agents Log In Without Seeing Your Password",
+   "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1CdUc0SUNmaDlQZURZWEUyT1JoMHBWSEtLSlV5X3QxSVV5OTd1VkFsTm1nMzhqcjBFVUY3NDdwV2RzdXdDTWFza01hMGV2aUhWWmpwSnplWWVTdWVPeGFvQ3BYNmQ3cmxw?oc=5",
+   "summary": "",
+   "date": "2026-10-25T22:40:56+00:00",
+   "source": "Google News（OpenAI・Anthropic・Google）",
+   "publisher": "WeRSM",
+   "category": "ニュース",
+   "lang": "en"
+  },
+  {
+   "id": "b01d66abfd06f3ac",
+   "title": "AIにタイトルを1案だけ出させると外れる。3つの角度を同時に出させる検証ログ",
+   "link": "https://note.com/kei_note_hack/n/n89477bca0ed5",
+   "summary": "同じ記事の本文をAIに渡し、「タイトルを考えて」と3回頼むと、ほとんどの場合、3回とも違うタイトルが返ってきます。 つまりAIのタイトル案は、その時たまたま出た1案にすぎません。1案だけ受け取ってそのまま使うのは、くじを1回だけ引いて決めているのと同じです。 続きをみる",
+   "date": "2026-10-25T22:39:22+00:00",
+   "source": "note（AI副業）",
+   "publisher": "",
+   "category": "収益化",
+   "lang": "ja"
+  },
+  {
+   "id": "676243f9e499daa9",
+   "title": "Anthropic's Claude bypassed a paywall to access Georgia voter data without authorization",
+   "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE4tOWdrOGlYS2tjeWxKTnl1U3YyN3pqMnM1YTYyZU5wQy05X2FvZFhUUV9SNGt1MVd4cEE0UndMTGJiSXRqZmxmWEVPS0NQazVGVUZNWGxGdWF4Q2hMbDVid192UjFKc2hLVlE2OUxyMFdxY0NLUXdJ?oc=5",
+   "summary": "",
+   "date": "2026-10-25T22:38:35+00:00",
+   "source": "Google News（OpenAI・Anthropic・Google）",
+   "publisher": "Axios",
+   "category": "ニュース",
+   "lang": "en"
+  },
+  {
+   "id": "564ba17c94e2c18d",
+   "title": "LinkedIn redujo un 40% las vistas de publicaciones genéricas hechas con inteligencia artificial",
+   "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQVVZaYUZ2dGotMUZEVmZOUE01cE9tTUpIT1pUSU5CdUdSMV9jTHpmaTF2TWpFS3VSQnZ1Zkh6dW52Wkk5dURwREYxVi0tdkd2V1d1bFpGZGpuby1ST0lsQW1GSV92QXdKaExnTWE0OTlTYUF0VUU4bUZDV1VmNHhzb0lSWEdRdnFzQW1VODk4VTFKa3hKNnJSNlZ0dGp5MUs4bHMzb2lFMzNpZmZtTXJpX0NvUTNwNnNOeUMwVTllaUMzSHhFTVNSbzllVzdRM2hPdHfSAewBQVVfeXFMTTBuMjREcWlleFpyQVNwczUtRkJQbFdhS2hUNm5tVFdPSHV5YTNtVmRfa0xFNjA3MU5ucDZDaWVlZVhFcnZVRjhOdHo2cFkzc2R2SlRPZXE5dGhoZEJ2NnFnZENEYkxLV3Y4NXRLdER2eE1pVVBXZ1Q1cDRiNEFKWmU2NzJRalZfWl9ycDBNSGlEM2IzT0tsSzBLeV9VXzA0Y3Y4Wm1BbFkyY3hnN3ZVUFBwWGpVRzM5enRaRjVDRVRqVW5PX3F4ZnlrUzhrZTRNN0lWM3BCcnlGRmRVQkFBSE1uclYwTk1oSmRmOWw?oc=5",
+   "summary": "",
+   "date": "2026-10-25T22:34:51+00:00",
+   "source": "Google Noticias（スペイン語・IA）",
+   "publisher": "Infobae",
+   "category": "ニュース",
+   "lang": "es"
+  },
+  {
+   "id": "d4c3fdc007714976",
+   "title": "AnthropicがClaudeへの持続的な虐待行為を11月12日から禁止、テストや不満の言及は対象外",
+   "link": "https://news.google.com/rss/articles/CBMiQkFVX3lxTFBRMDBpNE9pSFlPMkU3S2w4MjVCaTJ4QnBCVFI0LUM5M2lLXzk0WVdqZWFtVXR0WGcwOExFZW9fWmk0UQ?oc=5",
+   "summary": "",
+   "date": "2026-10-25T22:33:34+00:00",
+   "source": "Googleニュース（ChatGPT・Claude・Gemini）",
+   "publisher": "shiritomo",
+   "category": "ニュース",
+   "lang": "ja"
+  },
+  {
+   "id": "d956b8b29c51106a",
+   "title": "Global companies step up push into South Korea's sovereign AI market",
+   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPQ1IzS184d243NTNqdzh1ZzRwcWRIWXRFalJvTTVFVzFzaFg1aW56SjNHb3dvb3NqUUpDRWRkSGFISGpQUlFiVGNnNVRtQ051Ymk5XzBYY2lHRW1SNng4aEFXa0FHRzlDdS1ZTVJVQ0tCUmhUaG9QYnRPNm1CUzkzVDRRRnRTVktxM1FxTWEwX3Zfei1wOVlDdHl0aEFYc1E4eVRfb3BINzZrVFNmUGR5SjBTNA?oc=5",
+   "summary": "",
+   "date": "2026-10-25T22:30:00+00:00",
+   "source": "Google News（AI Startups）",
+   "publisher": "디지털투데이",
+   "category": "ビジネス",
+   "lang": "en"
+  },
+  {
+   "id": "3eb3b39972cb0cac",
+   "title": "生成AI「ChatGPT」登場から4年、変化する教育現場のあり方 “十年一日”の学習指導要領が日本人をますますダメにする",
+   "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE8tUG5EUUZVZExWaFVZTnpXMm1RZDRRcHJ5ZTRqVXNRU2hrZ1dQX2FUMkkzU0NnSjNGVThoVmVIcEJfX2thakhHUDd4enFtN0wwZkY4ZDZkbm42em9NbFJoMXVMelBLLXlLaFAwZ2Zad3VKTnM4ZFZEdnJaOE9laTg?oc=5",
+   "summary": "",
+   "date": "2026-10-25T22:21:27+00:00",
+   "source": "Googleニュース（ChatGPT・Claude・Gemini）",
+   "publisher": "Yahoo!ニュース",
+   "category": "ニュース",
+   "lang": "ja"
+  },
+  {
+   "id": "381ee25ed468558e",
+   "title": "Supabaseの無料枠を使い切ったので、Cloudflare D1を試してみた",
+   "link": "https://qiita.com/keni_solopreneur/items/e60452e96e89660e7394",
+   "summary": "こんにちは、keni（@keni_1997）です。 会社員をするかたわら、個人でWebアプリを開発したりしてます。 突然ですが、私は今まで個人開発のDBにはSupabaseを使っていました。 PostgreSQLが使いやすいし、認証やStorageまで揃っていて、BaaSと...",
+   "date": "2026-10-25T22:20:48+00:00",
+   "source": "Qiita（個人開発）",
+   "publisher": "",
+   "category": "収益化",
+   "lang": "ja"
+  },
+  {
+   "id": "4329062dd13ee99c",
+   "title": "56歳、初めての副業に挑戦！LINEスタンプを販売してみた🐈‍⬛",
+   "link": "https://note.com/notemy184/n/nef34c3342db5",
+   "summary": "こんにちは！ 56歳、沖縄でひとり暮らしを始めた私です🌺 手取り約17万円。 これからの生活のことを考えると、もう少し収入を増やしたい！ そんな思いから始めたのが、AIを活用した副業への挑戦です。 パソコンもデザインも、まだまだ初心者。 「私にできることなんてあるのかな？」と思いながらも、とりあえずやってみることにしました。 🐈‍⬛ 最初に挑戦したのはLINEスタンプ！ AIやCanvaについて調べながら、初めて作ったのがLINEスタンプです。 愛猫をモチーフにした「OTAMA」スタンプを作り、LINEスタンプの販売に申請。 そして、ついに…… 自分が作…",
+   "date": "2026-10-25T22:17:25+00:00",
+   "source": "note（AI副業）",
+   "publisher": "",
+   "category": "収益化",
+   "lang": "ja"
+  },
+  {
+   "id": "572c3dc81f3fe9eb",
+   "title": "『povo AI』に『ChatGPT 5.5』シリーズ追加！ 『Nano Banana 2』の画像生成も1日3回まで無料で利用可能に",
+   "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9UX0ZoMm1Bdm9HaEpCSlhpcjZXek5EREU0MmtVRDJ1VG1yMS0xWHRHX1NTbVlpZjNjUjZvOU5hSzJQcXZLTFBLNE96V0xFYm9RWHVvOEhhM0x5M1RHMUdFdXZIV3VCUHM5SlE?oc=5",
+   "summary": "",
+   "date": "2026-10-25T22:16:10+00:00",
+   "source": "Googleニュース（ChatGPT・Claude・Gemini）",
+   "publisher": "AppBank",
+   "category": "ニュース",
+   "lang": "ja"
+  },
+  {
+   "id": "eb1cf6e430739cb1",
+   "title": "IA en América Latina: crece su enseñanza, pero pocas empresas la utilizan",
+   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPZGp3LVFQSTVYMmp4SzZvaWw5aWFidm9KTURDOHZiYWctdVNWOVJ6RFRfTkc2VWh3Rm81OTd2dzA1SnRmVHJBb1pqOVhBbU4wbW13Y05QSXBiZlpVWmdiMDhiNktvN01JTExHVDdFWUd5dWM5SVVrU1BPMGV2VjFPLWFlTGE4a0ZOdE9VNUMzcEpmbzVFVVRNeUY2RkFLRGd1dGxxWWhZNFVzSDVoN3BnTFRGMjVRZw?oc=5",
+   "summary": "",
+   "date": "2026-10-25T22:15:25+00:00",
+   "source": "Google Noticias（スペイン語・IA）",
+   "publisher": "Central Electoral INE",
+   "category": "ニュース",
+   "lang": "es"
+  },
+  {
+   "id": "8a2157f87661dc54",
+   "title": "🤖【保存版】ChatGPTとClaude、結局どっちが優秀？副業で使うなら知っておきたい違い！",
+   "link": "https://note.com/ai_tensai_school/n/nef50b4dca2a8",
+   "summary": "AIを使って副業を始めたい！ そう思って調べていると、必ずといっていいほど出てくるのがChatGPTとClaude。 どっちも文章を書けるし、アイデアも出せるし、仕事の効率化にも使える。 「結局、何が違うの？」 「無料で使うならどっち？」 「副業で稼ぎたいなら、どっちを使えばいい？」 今回は、そんな疑問を分かりやすくまとめてみたよ！✨ 🤖 1. ChatGPTとClaudeの違い まずは、それぞれの特徴から。 ChatGPT ChatGPTは、幅広い作業をまとめて手伝ってくれるAI。 例えば…… * 副業のアイデア出し * noteの記事作成 * 画像生…",
+   "date": "2026-10-25T22:10:22+00:00",
+   "source": "note（AI副業）",
+   "publisher": "",
+   "category": "収益化",
+   "lang": "ja"
+  },
+  {
+   "id": "b789590ecc34baf3",
+   "title": "Desarrolla app con inteligencia artificial para identificar razas de perros y mejorar su cuidado",
+   "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOZl9zRW9zWkhuNlRLajdTX1FCOWtXc1hPWnJVYnRhbm1PeVo3MjRQcjJNMV80eFJ2dVZsaW1naEh2eUNta2tXRldBUWxtandocXhGYUNPaEtnZDBIZ0RsYmYwTDkyUk1UUjBCaGdwV0FJeE9YbXNFVVZHWUZuQkVjdk9xcGhnM1hqdDJqWC04V0huUWE4LVJPR0ZybmhmcmJQaHJJYXpneEVQbm1aSE9hTzUyT2l3RmdzY0stWHFDZkhTaTBGMVpWU080a29QMXpzMmxGSV9WTkhuWGc?oc=5",
+   "summary": "",
+   "date": "2026-10-25T22:08:52+00:00",
+   "source": "Google Noticias（スペイン語・IA）",
+   "publisher": "Publimetro México",
+   "category": "ニュース",
+   "lang": "es"
+  },
+  {
+   "id": "ecc38f0dff1ee1ee",
+   "title": "OPINION: Your AI posters are ugly",
+   "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOYkxRVGExQUM4aVJ3WW5FYTJPVVlHVFo3djlDTWo0NkxEMkdFUTRIbThQVmhRcU9VUlV2MHZRdDBpZGtJTFdhMmctMlRjbjNjU2Z0OHNRd0xjaWpVV2IyazI5VVBwM2drNDA3VTQ0TlB6U1ZwLUFzRFdoY0Z1bWlwMHpR?oc=5",
+   "summary": "",
+   "date": "2026-10-25T22:08:04+00:00",
+   "source": "Google News（Generative AI）",
+   "publisher": "The Louisville Cardinal",
+   "category": "ニュース",
+   "lang": "en"
+  },
+  {
+   "id": "7d678df75b61c0b6",
+   "title": "Elice Slides in Korea Debut Amid Caution Toward AI Stocks",
+   "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQQlhfR2F5aFV1TnBnUHlEZGFVV1h6eWJDRWxkeVJGRjFMalBSLTBDVFNCOXFNNTZpRkxGSWFLTDNxcHBpTTJ1N0x6aXFtNTZackYyd0oyZHdLbzBZZ2JyakU2NDYzSVN0eFQ2ZjZabkVwRjV5ZzNRSzdmN3FKLU12c3UyeXR6a3IyNzE5VGpWQmJRVEJDVTVMQUd3?oc=5",
+   "summary": "",
+   "date": "2026-10-25T22:07:22+00:00",
+   "source": "Google News（AI Startups）",
+   "publisher": "WSJ",
+   "category": "ビジネス",
+   "lang": "en"
+  },
+  {
+   "id": "41e1c8346913c775",
+   "title": "CrowdGPT - A collaboratively trained LLM.",
+   "link": "https://www.reddit.com/r/LocalLLaMA/comments/1xff9e4/crowdgpt_a_collaboratively_trained_llm/",
+   "summary": "Hello, I'm developing CrowdGPT , a project aiming to create an LLM without datacenters and without the usual millions of dollars spent by AI companies. The project aims to train a 1 billion parameter model collaboratively and openly, with a protocol where everyone gets a say in t…",
+   "date": "2026-10-25T22:07:17+00:00",
+   "source": "Reddit r/LocalLLaMA",
+   "publisher": "",
+   "category": "話題",
+   "lang": "en"
+  },
+  {
+   "id": "0ed065cbaa384698",
+   "title": "放置で月3万円｜AIでnoteマガジンを\"サブスク自動販売機\"にする設計と運用の全記録",
+   "link": "https://note.com/freelife_creator/n/n203e38d1da79",
+   "summary": "こんにちは。僕はこの1年、AIを使ってnoteのマガジン機能を仕組み化し、ほぼ放置の状態で月3万円程度の継続収入を作ることに成功しました。この記事では、その全過程を公開します。 最初は「noteなんて誰が買うんだろう」と疑っていた僕ですが、正しい設計と自動化の仕組みを作ると、意外とドライバーになることに気づきました。そして何より、一度構築したら更新の手間がほぼゼロになる点が素晴らしいのです。 続きをみる",
+   "date": "2026-10-25T22:03:28+00:00",
+   "source": "note（AI副業）",
+   "publisher": "",
+   "category": "収益化",
+   "lang": "ja"
+  },
+  {
+   "id": "19e32f163a786b61",
+   "title": "AIに自分のプロンプトを改善させたら、長くなりすぎたので進化的最適化してみた",
+   "link": "https://qiita.com/R-You/items/690c9f2c95b7019732ca",
+   "summary": "⚠️ この記事はAI（Claude）と一緒に作成しました。 内容は執筆時点（2026年10月）の情報です。 最近、 「自分で新しいAIシステムを一から組む」 よりも、 「既存の、もっと質のいいAIシステムをどう使うか」 が大事になってきていると感じています。(個人の...",
+   "date": "2026-10-25T22:03:27+00:00",
+   "source": "Qiita（LLM）",
+   "publisher": "",
+   "category": "技術記事",
+   "lang": "ja"
+  },
+  {
+   "id": "254f9198807bcd4a",
+   "title": "Copilot を入れてもAI活用が進まない？「暗黙知」を武器に変える5つの突破策",
+   "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9IUjBGeUNVSFNTYkpycllyRGdRZnJDbEt1eE1vNTB0bHdnUUJ5UWxTYWVYOVBYZUNPWDhNc3RXZF9hS243RmVqWGZ1MW1UZlU?oc=5",
+   "summary": "",
+   "date": "2026-10-25T22:03:22+00:00",
+   "source": "Googleニュース（生成AI）",
+   "publisher": "ビジネス+IT",
+   "category": "ニュース",
+   "lang": "ja"
+  },
+  {
+   "id": "bb8528027d331482",
+   "title": "法政大、生成AIの教育利用方針を全面改定 授業運用の3類型やAI検出ツールの扱いも明記",
+   "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1BSWxwOEFuc0dsOXp2azJOZVZLcnByeVhubUtCWG5NMERmLVFZdHZnUVBLZlg1S21peWQ5RU1Za1o4bnVjc19JdGJEcC1sVHRjOEtN?oc=5",
+   "summary": "",
+   "date": "2026-10-25T22:02:33+00:00",
+   "source": "Googleニュース（生成AI）",
+   "publisher": "教育家庭新聞",
+   "category": "ニュース",
+   "lang": "ja"
+  },
+  {
+   "id": "3908f7d269bd2a91",
+   "title": "45歳・AI初心者35日目。侍と柴犬のリール、再生は3分の1なのに「いいね」が初めて付きました",
+   "link": "https://note.com/jtatgd4/n/nf9c9dbda5396",
+   "summary": "おはようございます、ゼロです。 昨日の夜、侍と柴犬のリールを初めて出しました。再生は31回で、いつもの写真リールの3分の1くらいです。でも、知らない人から「いいね」が2つ付きました。 続きをみる",
+   "date": "2026-10-25T22:01:54+00:00",
+   "source": "note（AI副業）",
+   "publisher": "",
+   "category": "収益化",
+   "lang": "ja"
+  },
+  {
+   "id": "5870aaf8934f9e53",
+   "title": "Anthropic’s Big Reveal",
+   "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOZXd0T09fbE5uZDRfaFJubzdmUTNYWTMtWURWMFBEZG5YeTY0Mm94SDhUaktoTXFrOFI1Sk1vNjBZRDh0a2dPZ0MwaC02dVhYSWxlQkx3Umg0QWtteHVTcndCVnFoYlpEM3VIcXZTMzhCTTY4UDlndmZjb2tZWWtWMXloQQ?oc=5",
+   "summary": "",
+   "date": "2026-10-25T22:01:00+00:00",
+   "source": "Google News（OpenAI・Anthropic・Google）",
+   "publisher": "The Information",
+   "category": "ニュース",
+   "lang": "en"
+  },
+  {
+   "id": "b876d197f6b52ae0",
+   "title": "無料の画像生成AI「Moss-Image」がすごい 日本語も漫画も生成、商用利用OKの実力を試した (1/4)",
+   "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBXd2ktVjAtZEZ2cmpPRTE2VERCWkgtcFpTUjExTTVZREQzZ0NhMWtCa1ZiWC1vUkFfejZPNVljMmlIMkhsR2Jvb2VOLUZkX3FCZHFETQ?oc=5",
+   "summary": "",
+   "date": "2026-10-25T22:00:00+00:00",
+   "source": "Googleニュース（生成AI）",
+   "publisher": "ASCII.jp",
+   "category": "ニュース",
+   "lang": "ja"
+  },
+  {
+   "id": "16ce8fe9f6639c71",
+   "title": "AIで開発爆速化、運用監視はもう限界？三菱電機「3人＋AI」が挑んだ自動化の舞台裏",
+   "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE41U3ltbVlpN2pGWjZHaGJDS1JkSG14WXl2Qk1EVU1pSVJpQjduRWl3NGdpSGpuclo0V2F0SnpSLXVYVk5SME5wZUFKMHpHVHM?oc=5",
+   "summary": "",
+   "date": "2026-10-25T22:00:00+00:00",
+   "source": "Googleニュース（生成AI）",
+   "publisher": "ビジネス+IT",
+   "category": "ニュース",
+   "lang": "ja"
+  },
+  {
+   "id": "f0ebfe5d011befc5",
+   "title": "市場は1日では動かなかった｜初記事はスキ2、それでも有料1本目を500円で出す理由",
+   "link": "https://note.com/ai_shikumi_note/n/n26a692e6290c",
+   "summary": "はじめに 続きをみる",
+   "date": "2026-10-25T21:52:32+00:00",
+   "source": "note（AI副業）",
+   "publisher": "",
+   "category": "収益化",
+   "lang": "ja"
+  },
+  {
+   "id": "c8df3fcbbb8b2af4",
+   "title": "Owners of Elvis Presley’s music sue Anthropic over un-permissioned AI use",
+   "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNcEZfdDVfMjR5UzZJYkFTa091dnFNcGRhV04wSHV5em5JbURvak9QSFNCT1ItbHdzb2wzOWhZUkRaVjVGVnd5WlNha1NZaUVjWXBmdndTNllBT3J2aWFWTl9PTTdwektrQjhtMkdKTzQ5YThYa19kSTN0Nm9sQzEtbmdzM2ZxbFlOT2tFNUw4eTJDTzFSaVYyU3NmbXVjMEhZ?oc=5",
+   "summary": "",
+   "date": "2026-10-25T21:51:38+00:00",
+   "source": "Google News（OpenAI・Anthropic・Google）",
+   "publisher": "New York Daily News",
+   "category": "ニュース",
+   "lang": "en"
+  },
+  {
+   "id": "18d7f5c51eaeb8fa",
+   "title": "These microwave animations tickle my brain in a certain way",
+   "link": "https://www.reddit.com/r/StableDiffusion/comments/1xfethe/these_microwave_animations_tickle_my_brain_in_a/",
+   "summary": "submitted by /u/SenpaizCreations [link] [comments]",
+   "date": "2026-10-25T21:47:56+00:00",
+   "source": "Reddit r/StableDiffusion",
+   "publisher": "",
+   "category": "話題",
+   "lang": "en"
+  },
+  {
+   "id": "da1267cbec59262d",
+   "title": "‍‍‍NSFW AI生成ツール：成人向けコンテンツ作成AIトップ5",
+   "link": "https://news.google.com/rss/articles/CBMijgJBVV95cUxNQWkwVDNvT0JMNEl6M2NXQ050WFl2YmVsWk5wVmZKNlczUklpUlRLNUdxbXNlU2lwcHdqVzhMSDJIZ3lRdkxwZENra0tQelIzdlJiYTg2SkVITFIwMy1kSGxIdDRvaVpJbU9zNVU5eDJjb3BzeWdKSUt2Y3VGeU02eU00Wk42MDY4ZlhzY2M1dldyMlpBY3lUVUhmeldTMGFyTFVOc2tITTFSRllfQ2tZenBReDE3RWxMeHRTMDhLVFk5Z3NXWGE2Vi1MLWJkMTVhMndmWVJCNHF3aE4ycE1YejUySU1rQ1FZZzJ1MFZoNHZyRUMxUHVad0lPaE90c3RUbjVpZWtnY3JleXFUTlE?oc=5",
+   "summary": "",
+   "date": "2026-10-25T21:44:59+00:00",
+   "source": "Googleニュース（生成AI）",
+   "publisher": "FC東京オフィシャルホームページ",
+   "category": "ニュース",
+   "lang": "ja"
+  },
+  {
+   "id": "29880a9283cba3ca",
+   "title": "【Threads】今週AI副業界隈で話題になったことと、副業28週目の私の見解",
+   "link": "https://note.com/large_quail9923/n/n179f50a00fb9",
+   "summary": "Threadsの運用代行サービスが、ちょっと変わったビジネスモデルで始まったらしい。今週はそれを筆頭に、AIエージェント×セキュリティの話と、AIイラストクリエイターの収益公開記事の3本が気になった。副業28週目、相変わらず収益は少額だけど、こういう記事を読むたびに「業界が動いている」という感覚はある。 続きをみる",
+   "date": "2026-10-25T21:42:46+00:00",
+   "source": "note（AI副業）",
+   "publisher": "",
+   "category": "収益化",
+   "lang": "ja"
+  },
+  {
+   "id": "a71473f5e25ab47f",
+   "title": "Un foro de código abierto en Reddit vetó los proyectos con IA y dejó afuera a quienes no hablan inglés",
+   "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOU0lDT3VUSklfeUlNUzZEVkU5b01qazhvRWs0XzRYblFaUDQwQWFPY3JsSVhhU1J1QTVZdm94cmYxRFB0SjdYYkhLaW05aUFSdzBjMDVDeU1hRzZCU2pCV05fUlYwT1JuMnBtQVFBUExiX1N2dHhCNDExV2lrWTdJc2dER1hZeWhwVjhaSnRpZWVnX2M5WGJjdVdtXzg2cHRCYXBuMXFjYm5UU181TFR5WGRDaXZOMEdDa1V6eGp4d1pwNFRqc1U1VGZNVGJkMkhNcEs3TEJVNllvN0ZM0gH3AUFVX3lxTFBlUkJjTFJkQUg5ZF91REVZODhSdTFYUmY4eGZMMkVIcU14SF92dFdYMzk5UHEzZldXbFI1MjZnejRZOU1uYUlreVkwd3VrdHRsSHNWZktHTG1GOVk3SDdNYk5hWHZjLU4zWlB2T2hUNXYwWkpISy0yeFJjZUdQQi0zLWFUZlVsTzFOTUlncENyZG9JdWs4MXZzcmdKQXhZdHg3N0Flang3a0xkdXNoemt5b2oxWG5LX0p5NXctb3ItZmJfYjI4VGtOOHNNVk1yX2FWT29NRDFGQzhBTjRpX2dkaEczczVEclpEb0RCOWNrQkJjUS02aFU?oc=5",
+   "summary": "",
+   "date": "2026-10-25T21:42:37+00:00",
+   "source": "Google Noticias（スペイン語・IA）",
+   "publisher": "Infobae",
+   "category": "ニュース",
+   "lang": "es"
+  },
+  {
+   "id": "87a8d98dd0013b73",
+   "title": "Krea 2 king of styles!",
+   "link": "https://www.reddit.com/r/StableDiffusion/comments/1xfeonr/krea_2_king_of_styles/",
+   "summary": "https://docs.google.com/spreadsheets/d/1fb2yD74gqT\\_BxmBpkOMX2V7gSj\\_A8RQ0/edit?usp=drivesdk&ouid=116026940769410491877&rtpof=true&sd=true I know it's not perfect, but here's 1255 styles for Krea 2, I'm still working on it, some styles are most likely too close, some others are f…",
+   "date": "2026-10-25T21:41:52+00:00",
+   "source": "Reddit r/StableDiffusion",
+   "publisher": "",
+   "category": "話題",
+   "lang": "en"
+  },
+  {
+   "id": "827940f01d4d4fa3",
+   "title": "面談まで進んだ2件。1件は相手が消えて、1件は1か月、返事を待っています｜AIと副業 #9",
+   "link": "https://note.com/hip_raven3787/n/n5c333f309b66",
+   "summary": "副業の応募で「面談しましょう」と言われたこと、ありますか？ 続きをみる",
+   "date": "2026-10-25T21:40:53+00:00",
+   "source": "note（AI副業）",
+   "publisher": "",
+   "category": "収益化",
+   "lang": "ja"
+  },
+  {
+   "id": "04c3d23350e00194",
+   "title": "I 'hacked' Krea 2 to work with Pose Studio because I was tired of Qwen/Klein's lack of style diversity and realism",
+   "link": "https://www.reddit.com/r/StableDiffusion/comments/1xfek2n/i_hacked_krea_2_to_work_with_pose_studio_because/",
+   "summary": "submitted by /u/foxdit [link] [comments]",
+   "date": "2026-10-25T21:36:26+00:00",
+   "source": "Reddit r/StableDiffusion",
+   "publisher": "",
+   "category": "話題",
+   "lang": "en"
+  },
+  {
+   "id": "4f92f621d5c09e3c",
+   "title": "Nanbeige4.3-33B Quantised GGUF",
+   "link": "https://www.reddit.com/r/LocalLLaMA/comments/1xfeho8/nanbeige4333b_quantised_gguf/",
+   "summary": "Quant ladder of Nanbeige's new 33B model from 35.2GB down to 13.7GB For 32GB hardware the sweet spot is 20.3GB AD-IQ4_XS with a top-1% of 92.0% compared to BF16 submitted by /u/gladkos [link] [comments]",
+   "date": "2026-10-25T21:33:29+00:00",
+   "source": "Reddit r/LocalLLaMA",
+   "publisher": "",
+   "category": "話題",
+   "lang": "en"
+  },
+  {
+   "id": "a6feae291b1a855a",
+   "title": "Grok releases the first seven minutes of its AI-generated ‘Odyssey’",
+   "link": "https://techcrunch.com/2026/10/25/grok-releases-the-first-seven-minutes-of-its-ai-generated-odyssey/",
+   "summary": "The footage looks okay, as long as you're not seeking artistry, inspiration, or human interest.",
+   "date": "2026-10-25T21:31:16+00:00",
+   "source": "TechCrunch AI",
+   "publisher": "",
+   "category": "ニュース",
+   "lang": "en"
+  },
+  {
+   "id": "0e2b9352d0713298",
+   "title": "パナソニック、従業員・元従業員と家族約 33万4,000人の個人情報を禁止しているAIへアップロード RIZAPでも類似事例",
+   "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPQUJsdFVFZjJGYUJsMGlmSk9nVFFGQnNkYVE4UDM4MFhDOTBNV0RXUTl0QjhqSkNHTmROQWdIR0hiVUc4Tl9xcUwxd1RvdHVKZm5NaHFxSmp3WGdnbzdDcXgxQ0NSS3h2U1BaYlpUa1ZZRWJvWXptUGRCZDd5M2hQR1FEX3dmUHJkTm1KSnVCUk9iS3lSc0R2T1Racw?oc=5",
+   "summary": "",
+   "date": "2026-10-25T21:30:38+00:00",
+   "source": "Googleニュース（生成AI）",
+   "publisher": "合同会社ロケットボーイズ",
+   "category": "ニュース",
+   "lang": "ja"
+  },
+  {
+   "id": "dd97061a1dabba11",
+   "title": "Oh...uhh...thanks Claude. Was not expecting that response to test my security, but it's appreciated!",
+   "link": "https://www.reddit.com/r/ClaudeAI/comments/1xfee7m/ohuhhthanks_claude_was_not_expecting_that/",
+   "summary": "Building an app, as someone with a degree in cybersecurity though; gave a VERY extensive list of tests, attack vectors, ect to check for. He said \"Aight, bet.\" Then build whole ass attack framework to tackle the list. Half of me wants to ask for it. 😂 submitted by /u/SubliminalCh…",
+   "date": "2026-10-25T21:29:32+00:00",
+   "source": "Reddit r/ClaudeAI",
+   "publisher": "",
+   "category": "話題",
+   "lang": "en"
+  },
+  {
+   "id": "160a58dbe37ba4c4",
+   "title": "Jay-Z tells fans to question online criticism of his performances amid rise of AI",
+   "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPRG50MEtKMUIzRGVjWVdXanloOTV3ZENIdHFGUzRSZkxQMHNQVHl6WWQ4dFhYN3FCRWI1eFpHMHRZN25PTkdxcThia3BrdEhwekJ4ME1qazZvQXdqSWg5ck1jdGZTNEtDVFY5bVJPck9RX2RPbnZLUlp5ZlpscWNfM012TU5SdlA1?oc=5",
+   "summary": "",
+   "date": "2026-10-25T21:19:41+00:00",
+   "source": "Google News UK（AI）",
+   "publisher": "TheGrio",
+   "category": "ニュース",
+   "lang": "en"
+  },
+  {
+   "id": "ecda038643e811f5",
+   "title": "Moss vs Kromoss vs Krea 2, 192 images for each.",
+   "link": "https://www.reddit.com/r/StableDiffusion/comments/1xfe5qy/moss_vs_kromoss_vs_krea_2_192_images_for_each/",
+   "summary": "Hey! I'm constantly testing model using the same set of 192 prompts. https://preview.redd.it/y96g0pjxjoxh1.png?width=2946&format=png&auto=webp&s=faec4d3ae05edff6c544aa87a3b4535c97a14e20 Here is the directly link to the gallery if you are curious and want to see all the images htt…",
+   "date": "2026-10-25T21:19:32+00:00",
+   "source": "Reddit r/StableDiffusion",
+   "publisher": "",
+   "category": "話題",
+   "lang": "en"
+  },
+  {
+   "id": "c932414b7eb961ad",
+   "title": "Nanbeige Releases Nanbeige4.3-33B, a 33B Open Agentic Coding Model",
+   "link": "https://www.marktechpost.com/2026/10/25/nanbeige-releases-nanbeige4-3-33b-open-agentic-coding-model/",
+   "summary": "Nanbeige LLM Lab released Nanbeige4.3-33B, a 33B dense Apache 2.0 model with 512K context. It reports 80.9 on Terminal-Bench 2.1 and will teach the upcoming Nanbeige4.3-3B. The post Nanbeige Releases Nanbeige4.3-33B, a 33B Open Agentic Coding Model appeared first on MarkTechPost…",
+   "date": "2026-10-25T21:15:21+00:00",
+   "source": "MarkTechPost",
+   "publisher": "",
+   "category": "ニュース",
+   "lang": "en"
+  },
+  {
+   "id": "8bc63f3a4f00531e",
+   "title": "AIは我々の目── 全盲eスポーツ選手が「ChatGPT」と「Codex」で自らアプリを開発する理由",
+   "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE12eFhuRFd5NVF6X3pPSG1USUkzNXZYNEh6WkpUOC1vTHRlUlh2NDNXTnU1Tm10dE9NV2R2V2VvU0Fsb1NLRXRNbWdkcVg2LUVPVFh5RWZOcERYUVdTMjZpY3BSQko0RDRBYmtNM21ucHUxd3BvMDEzV0lvZW4?oc=5",
+   "summary": "",
+   "date": "2026-10-25T21:15:00+00:00",
+   "source": "Googleニュース（ChatGPT・Claude・Gemini）",
+   "publisher": "Business Insider Japan",
+   "category": "ニュース",
+   "lang": "ja"
+  },
+  {
+   "id": "efe32be8b2473781",
+   "title": "「稼ぎたいのに、お金が減っていく。」副業初心者がハマる、ちょっと怖い落とし穴",
+   "link": "https://note.com/maegoro/n/n115960cdbe6e",
+   "summary": "「副業で月5万円くらい稼げたらなぁ……」 そう思って、副業について調べ始めた。 続きをみる",
+   "date": "2026-10-25T21:14:02+00:00",
+   "source": "note（AI副業）",
+   "publisher": "",
+   "category": "収益化",
+   "lang": "ja"
+  },
+  {
+   "id": "3150ba61e3f800a3",
+   "title": "noteを読んでもらえても売れない。初心者が見直したい3つのこと【Day41】",
+   "link": "https://note.com/super_crab9133/n/nb8b8cfbef7be",
+   "summary": "こんにちは、追い焚きです。 noteで記事を書き続けていると、こんな悩みはありませんか？ 「記事は読んでもらえるようになった。でも、商品が売れない……」 僕自身、ChatGPTを使ってAI副業に挑戦し、noteの記事を投稿し続けています。 アクセスやスキは少しずつ増えてきました。 それでも、有料noteの売上はまだ0円です。 そこで今回は、読んでもらえても売れないときに、初心者が見直したい3つのことを整理してみました。 1．誰のための商品なのか、はっきりしているか 例えば、「ChatGPTで使えるプロンプト集」という商品があったとします。 便利そうではあ…",
+   "date": "2026-10-25T21:13:25+00:00",
+   "source": "note（AI副業）",
+   "publisher": "",
+   "category": "収益化",
+   "lang": "ja"
+  },
+  {
+   "id": "da0f5dc63f5e8a74",
+   "title": "【保存版】GPT-6 Astraに“PCの初期設定“を丸投げ？凄すぎる「画面操作機能」活用術",
+   "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBpUFpoSERfbF9teENjeHZQVXRiLWZraDVUaEtJQ3lNaElKek04aXU4U1o1Qnh3VHB3aEhNeWxyaWVWX1NDMHhHNU1NQmxyOWJzY1Vz?oc=5",
+   "summary": "",
+   "date": "2026-10-25T21:10:00+00:00",
+   "source": "Googleニュース（生成AI）",
+   "publisher": "ビジネス+IT",
+   "category": "ニュース",
+   "lang": "ja"
+  },
+  {
+   "id": "e5d0a6974fdfde27",
+   "title": "【西川和久の不定期コラム】撮影なし・生成AI動画なしでミュージックビデオ作成！AIにコードで動画を作らせる",
+   "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTFB6ajRfWkk2TlE1aVhFMVJ1YjZRLUVXNWtQWGdJdUc3Mm1UTWpPSk1aLTRGNnJWQVVuNnFvZS1JWmhFQTZqQ0pFQWt4UFdiY1g4Uk9YX2FZdC1IYy1DdVRhakhpc2NtY3BPNzlYbXJqT3AtUmc?oc=5",
+   "summary": "",
+   "date": "2026-10-25T21:04:00+00:00",
+   "source": "Googleニュース（生成AI）",
+   "publisher": "PC Watch",
+   "category": "ニュース",
+   "lang": "ja"
+  },
+  {
+   "id": "7cc403f0ec797f83",
+   "title": "AI副業って何から始める？初心者が最初に決めたい３つのこと",
+   "link": "https://note.com/chiikawa__/n/nfaf9ab0a1013",
+   "summary": "AI副業って何から始める？初心者が最初に決めたい3つのこと 「AIを使って副業を始めてみたい！」 そう思って調べてみても、いろいろな情報があって、何から始めればいいのか迷ってしまいますよね。 文章作成、画像制作、デジタル商品の販売など、AIを活用できる分野はさまざまです。 でも、最初から全部に手を出す必要はありません。 今回は、AI初心者が副業を始める前に考えておきたい3つのことを紹介します。 1. まずは興味のあることから選ぶ 副業を始めるとき、最初に考えたいのは「何なら続けられそうか」ということです。 例えば、 ・文章を書くことが好きなら、記事作成や…",
+   "date": "2026-10-25T21:01:33+00:00",
+   "source": "note（AI副業）",
+   "publisher": "",
+   "category": "収益化",
+   "lang": "ja"
+  },
+  {
+   "id": "1432b33f87e9eb75",
+   "title": "AIを使った調査で見つかったPHPの欠陥「PHP2Shell」、修正公開の夜に国内のサービスが予防のため相次ぎ停止",
+   "link": "https://qiita.com/quotidia/items/792a3bc859dd738facee",
+   "summary": "本記事は筆者が運営する AI Quotidia の海外ニュース解説記事です。 PHPの開発プロジェクトは2026年10月21日(水)、Webサイトの裏側で広く使われているプログラミング言語PHPの中核にあった深刻な脆弱性2件 (通称「PHP2Shell」) を直した修正...",
+   "date": "2026-10-25T21:01:10+00:00",
+   "source": "Qiita（LLM）",
+   "publisher": "",
+   "category": "技術記事",
+   "lang": "ja"
+  },
+  {
+   "id": "1055b4a03ec911de",
+   "title": "Gen Z Turns to AI for Emotional Support, Boomers for Symptoms",
+   "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNZnFVdjl5TUNlNFgwLWpGVjJuMm1PbkVkRElEZ0ZuUGJoNldwR1FGUERXWm43OUl6dkRQNU9YZkVYemdTemFLMDRlRzRiMktOQkltUVdxbElQS2M4eDQwdGIyR25CTFdwdTRESXFSelo1RWVtemZYLUtoTnUxSzh4MFB3SDNiVFQyVWp2R1dKb2F3WEhGRHVCQ1pSbnNudldVcGFPSw?oc=5",
+   "summary": "",
+   "date": "2026-10-25T21:00:05+00:00",
+   "source": "Google News（Generative AI）",
+   "publisher": "Seoul Economic Daily",
+   "category": "ニュース",
+   "lang": "en"
+  },
+  {
+   "id": "ca6067ff974a00a8",
+   "title": "フジテレビ、生成AIで番組制作の新たな実験 エピソードトークを可視化、低予算・短時間・少人数でクオリティー向上目指す",
+   "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBZSzRWTTA0OS0xdzM2cW14aXlvTFpBSUs1bDZUUDc5RnJVeVU3RzZGa2dTS24xN3otXzdwdlZ0Uk95VmVWUTMxZndGNWgzVTVJREMwbmRqU0t0dzRs?oc=5",
+   "summary": "",
+   "date": "2026-10-25T21:00:00+00:00",
+   "source": "Googleニュース（生成AI）",
+   "publisher": "マイナビニュース",
+   "category": "ニュース",
+   "lang": "ja"
+  },
+  {
+   "id": "b9efbba043a784af",
+   "title": "AIエージェントによる操作の多くがボット検出システムのhCaptchaやCloudflare Turnstileを通過",
+   "link": "https://gigazine.net/news/20261026-ai-bot-detection-benchmark/",
+   "summary": "ボット検出システムを開発するProof of Humanが、自社製品を含む5種類のシステムを比較した結果を公開しました。 続きを読む...",
+   "date": "2026-10-25T21:00:00+00:00",
+   "source": "GIGAZINE",
+   "publisher": "",
+   "category": "ニュース",
+   "lang": "ja"
+  },
+  {
+   "id": "545263958e843b75",
+   "title": "AI에 뭐 묻나 봤더니…Z세대는 ‘마음 상담’, 베이비부머는 ‘질환 검색’",
+   "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1QakYzRTBFOXFLSkVuQTFheTRPdFNIVVVNWlp0MVMxY01JMTFzM2lBRGJ3U1lrdXRSamJCcGNOM18tamgyTmJDd2FhOGpRcFltTXZF0gFTQVVfeXFMTVBqRjNFMEU5cUtKRW5BMWF5NE90U0hVVU1aWnQxUzFjTUkxMXMzaUFEYndTWWt1dFJqYkJwY04zXy1qaDJOYkN3YWE4alFwWW1NdkU?oc=5",
+   "summary": "",
+   "date": "2026-10-25T21:00:00+00:00",
+   "source": "Google 뉴스（韓国・생성형 AI）",
+   "publisher": "서울경제",
+   "category": "ニュース",
+   "lang": "ko"
+  },
   {
    "id": "7b642295b7095efb",
    "title": "Cursos bonificados para empresas: Avanforma imparte Excel e inteligencia artificial para trabajar mejor",
@@ -540,6 +1596,28 @@
    "lang": "es"
   },
   {
+   "id": "f42a3399fe501948",
+   "title": "The importance of usage intelligence for artificial intelligence companies",
+   "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPUFFQU09RSWstSEN5YWpKcmJHU2hEaC1YRGRZaE9jc0JBLTJsYW5waUx1UU1OVk51Q2YwcmxBaU9kd1RCUWNQTU53Zlh2NXE4UGhBekg0ZEtEZEp4Yy1VRXA4TDlFQnZsMWlyVG9uUzJJNnY3ZFN6bk9OdzgzLWdOMl9ldnRnVHM0dVlVN0pZNG9fUnRzcWpnUVE0SEo0OW5aZUdCSVFQTQ?oc=5",
+   "summary": "",
+   "date": "2026-10-25T20:54:31+00:00",
+   "source": "Google News UK（AI）",
+   "publisher": "SC Media",
+   "category": "ニュース",
+   "lang": "en"
+  },
+  {
+   "id": "ac04577bc85ebed2",
+   "title": "Elvis Presley’s rights owners sue Anthropic over use of 274 songs",
+   "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQaHlmX3AwSFA1VG9ET2dhOGlHcmJpVTlLLW1JUEJtSEhJYnExS3lrU0ppZTFhNHNJU3E1eDNCWnZHZHFHbF8xRmdTM050OGNOZkNiREdRQ3Z1Wll6b2xDTk9SbFVsTkl3dXY3QW9ITVVFUzVpZlN2OXktTnhIT2lOZURvM3N1OXZaa2lNLUg4R21iY0JtVnNvNUlWT1c?oc=5",
+   "summary": "",
+   "date": "2026-10-25T20:47:01+00:00",
+   "source": "Google News（OpenAI・Anthropic・Google）",
+   "publisher": "The Needle Drop",
+   "category": "ニュース",
+   "lang": "en"
+  },
+  {
    "id": "a24aa13983e4f261",
    "title": "Virginia governor orders new cybersecurity plan to address artificial intelligence risks",
    "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPdldKMDlfNGJ4R1pQMURfYlFfc2N4Y0c5eEZDOHVlRUdZTjJ0S2plTTkzc0lCRXdEYURWWFZjZXZtckkxbGFrbFFHc3FsUk9NMzg2ZnRhSEpVMVQySlk2dlA0MHBFc0l2aGI3dUVrUUtvSndyLXZxSk0wTURaaksyckR2ZHRKLUxPdWhnOHhyV0VPbHpqVXB4eXMxYWlYdGxfeFRxTEphMTBBN0h5cEJBNzE3dFJzRXNJcnc?oc=5",
@@ -549,6 +1627,17 @@
    "publisher": "SC Media",
    "category": "ニュース",
    "lang": "en"
+  },
+  {
+   "id": "bdfe323fc24b1b20",
+   "title": "Shigeru Miyamoto (73 años), sobre la inteligencia artificial generativa: \"Si la IA llegara a encargarse de todo, siempre habrá un papel para nosotros\"",
+   "link": "https://news.google.com/rss/articles/CBMiggJBVV95cUxPTEZnSEhDV2s2dXVPdzQ4Zjh1ank4QTV3T1ZyS21zRHJ2Tnk4c3daMUlDS1VXNmYtSGZPS0V4dE9NR2JZaUxxLWRLbUN6dGtMYTNiN2lZUWJwNWgyX253TFN0RWN2R3h2aDR0U1hHQnpkNWtOYjhXcEN4b0NuVDBnQ09EWWExVldJcldaSlNVSWIzWjg1T0daTHVjU2d2Y0RSaUl1U3htUDE5VE1kWnotQjZTd2F2T0ZpbDRBOWlJMVRITHYxQml4cU5qbjRiaXJ1aHpleWdGQmVna0g3bWstMUVLbzR2RHpwSnBqd2hucWpKTjFJTkJzTVdYUXowaUprX3fSAYcCQVVfeXFMTkRMcUl1UkFXU3dLaXFhRjNFQUhfeEJUZHVDTjVtOUZIM0FBNFhKX2JjS2hFdXhLQjRaNEhzTlpQbTJ4WnEyQXV4RVJKazFxZmFWQTdiNUZNb2pxaUl0Y1kwWGxvWE9OdTB5a1ppNWp0V2F6eGZqVlMtSEJ1YlpIT05NdlFDYXo3U1VqNzNPRmkxY2J3MWxhTDk0aEZwUUFBbzNGWlFUZ3VFMjlKbkc0ZUhoaXpXTXNock53cHFOb0dqMXZhOGZOajhKdVJUTWlMajIzQnR0TEVVQm5uRjJlbjI2V2xYM2dRTEZ6YzBBdndKU0R5MENPY05xSllmekw2VkhlYkF4a1U?oc=5",
+   "summary": "",
+   "date": "2026-10-25T20:42:47+00:00",
+   "source": "Google Noticias（スペイン語・IA）",
+   "publisher": "3DJuegos",
+   "category": "ニュース",
+   "lang": "es"
   },
   {
    "id": "69c979489181ac3d",
@@ -628,6 +1717,28 @@
    "lang": "ja"
   },
   {
+   "id": "8e8545d515a0e7a8",
+   "title": "As a generally pro-AI person, I worry that AI will make it so that common people can never resist their governments again",
+   "link": "https://www.reddit.com/r/singularity/comments/1xfd2ea/as_a_generally_proai_person_i_worry_that_ai_will/",
+   "summary": "[Addendum so this post doesn't get removed: This isn't a fearmongering post about AI (per rule 5) - I am pro AI and this post is in favor of more democratized access to AI capabilities for the average person.] Consider the current reality: World Superpower 1 of 2 (USA): OpenAI an…",
+   "date": "2026-10-25T20:34:56+00:00",
+   "source": "Reddit r/singularity",
+   "publisher": "",
+   "category": "話題",
+   "lang": "en"
+  },
+  {
+   "id": "836555ac86e88c98",
+   "title": "I built an open-source local film studio for 8 GB cards (LTX 2.5 and MiniMax H3), with long takes joined in latent space",
+   "link": "https://www.reddit.com/r/StableDiffusion/comments/1xfd1tv/i_built_an_opensource_local_film_studio_for_8_gb/",
+   "summary": "I have been working on this for a while now, and i just made the repo public. Kinoloom is a web app that runs on your Windows PC and using your cast it takes a idea and turns it in to a movie. You write the story with any LLM, generate the cast and the studio renders the shots, c…",
+   "date": "2026-10-25T20:34:18+00:00",
+   "source": "Reddit r/StableDiffusion",
+   "publisher": "",
+   "category": "話題",
+   "lang": "en"
+  },
+  {
    "id": "69bdd045031bbf16",
    "title": "【Day 68】新人社労士実務戦略｜業務マニュアル・研修資料のAI書き換え支援｜決まったルールを「5分で伝わる行動手順」に変える",
    "link": "https://note.com/ari_days100/n/nc9a37ae927bd",
@@ -661,13 +1772,24 @@
    "lang": "en"
   },
   {
+   "id": "074da87c5e391d63",
+   "title": "RTX Spark N1Xの実力は？120BのローカルLLMやベンチマークを実機検証",
+   "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1rUHRIU3FoNVhuXzlJNUFoQkxLQTF2Yms0bHBYZkF1a0gzb3EtU1d0UkxXN0VlSVl4V3l5Z08zOWVaVFJUMlh5cWp6M0MzaG82dGxwWHplb1B4Q3ZQckxtUWZpVlk?oc=5",
+   "summary": "",
+   "date": "2026-10-25T20:27:31+00:00",
+   "source": "Googleニュース（ChatGPT・Claude・Gemini）",
+   "publisher": "the比較",
+   "category": "ニュース",
+   "lang": "ja"
+  },
+  {
    "id": "00dcc817950b56cb",
    "title": "IPN desarrolla app con inteligencia artificial para cuidado de mascotas",
    "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQaDJhMVhKM1hxbGUyNlIzU0dZMktSNUltNkVuMzdEckxILTdsUDFjS1FoOUdrdjZOOTVfY0paQzhfaUJOd1laTkhDdzdieHFMcDBNWURSSF9hZzRSckx3OWNzMEtPWDdxNEZmZnZ4bkFIY2wtTzNJMUV4Q1htTEZVRjJoQko5SDB10gGIAUFVX3lxTFBTZTlVR21jTnFLUUxQVW8zN1RNNmxtU2NhUmtFd3dUdGx2ZmNYSG5UZV8zZTJNX21RTFJNTV9xUVFXVzU4Y2dKQjJBWTN0RzJlS1drRGctcDZ6cnFPZTRTdjd4YTFVbXdBc2d1Sng5UVZBZVpiMkF2ckhlTjk1R1h6MDJJdExOWDY?oc=5",
    "summary": "",
    "date": "2026-10-25T20:25:00+00:00",
    "source": "Google Noticias（スペイン語・IA）",
-   "publisher": "Milenio",
+   "publisher": "MILENIO",
    "category": "ニュース",
    "lang": "es"
   },
@@ -681,6 +1803,17 @@
    "publisher": "",
    "category": "収益化",
    "lang": "ja"
+  },
+  {
+   "id": "25c671b29fef7792",
+   "title": "When AI writes the brief, everyone loses the plot",
+   "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQY0VQRGlCaTZKcWhNenhOV0hvLUNHeWE3Z25MYy1VQXNPN0ppU0pRVi1MTmxqazRKeW1XdnZSeEdGNGNpdU13QUl4R0FWalNidXplamMyX0pyRVlPSVhxbE1Ecm1pb3EtT2hyYnQ4bWhNT0RxSVFYSVVRbi1aVVpISlUzYXhJVWtnMkE?oc=5",
+   "summary": "",
+   "date": "2026-10-25T20:20:35+00:00",
+   "source": "Google News（Generative AI）",
+   "publisher": "AdNews",
+   "category": "ニュース",
+   "lang": "en"
   },
   {
    "id": "99f628c0ed603f24",
@@ -705,6 +1838,17 @@
    "lang": "es"
   },
   {
+   "id": "9c0864a193b4b87c",
+   "title": "Anyone else having serious quality issues with Claude lately?",
+   "link": "https://www.reddit.com/r/ClaudeAI/comments/1xfcot1/anyone_else_having_serious_quality_issues_with/",
+   "summary": "I’m currently working on a website and two apps. One of them is a large app that requires a lot of development. Let me start with the app. The main thing I’ve noticed is that before this week, I could work comfortably on Opus 5.5 Medium (sometimes High) and barely made a dent in…",
+   "date": "2026-10-25T20:19:37+00:00",
+   "source": "Reddit r/ClaudeAI",
+   "publisher": "",
+   "category": "話題",
+   "lang": "en"
+  },
+  {
    "id": "87943685f12b6f0c",
    "title": "AI に note を任せる公開実験で読者を増やしたい人へ。フォロワーが多く増えた上位5アカウントは、3つが先週と同じ顔ぶれだった",
    "link": "https://note.com/yakanhenshu/n/n137310ada6ac",
@@ -714,6 +1858,17 @@
    "publisher": "",
    "category": "収益化",
    "lang": "ja"
+  },
+  {
+   "id": "38c7db1ca9883a2d",
+   "title": "upgraded desktop client, now I cant upgrade? anyone else?",
+   "link": "https://www.reddit.com/r/OpenAI/comments/1xfcldg/upgraded_desktop_client_now_i_cant_upgrade_anyone/",
+   "summary": "submitted by /u/Poowatereater [link] [comments]",
+   "date": "2026-10-25T20:15:56+00:00",
+   "source": "Reddit r/OpenAI",
+   "publisher": "",
+   "category": "話題",
+   "lang": "en"
   },
   {
    "id": "9d2148a8d398a724",
@@ -735,6 +1890,17 @@
    "source": "note（AI副業）",
    "publisher": "",
    "category": "収益化",
+   "lang": "ja"
+  },
+  {
+   "id": "d228092b3954f9e3",
+   "title": "生成ＡＩ浸透に危機感",
+   "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9HS1FQYzMwSkdRZkE5S0Y0TzBmdG9GVEItaWxMS0hlTGFSTUw0YjFSMGx5NXp1WVFQQXVPTG95WWxpNDBCS2JaUUt0RzNobFRVb2tWem43Uko4T1U?oc=5",
+   "summary": "",
+   "date": "2026-10-25T20:09:02+00:00",
+   "source": "Googleニュース（生成AI）",
+   "publisher": "下野新聞社",
+   "category": "ニュース",
    "lang": "ja"
   },
   {
@@ -769,6 +1935,17 @@
    "publisher": "",
    "category": "技術記事",
    "lang": "ja"
+  },
+  {
+   "id": "2f723376892e97ed",
+   "title": "Orgtree School 1: Introduction",
+   "link": "https://www.reddit.com/r/OpenAI/comments/1xfcd00/orgtree_school_1_introduction/",
+   "summary": "submitted by /u/DynaBeast [link] [comments]",
+   "date": "2026-10-25T20:06:45+00:00",
+   "source": "Reddit r/OpenAI",
+   "publisher": "",
+   "category": "話題",
+   "lang": "en"
   },
   {
    "id": "a7ec9825835a550c",
@@ -969,6 +2146,17 @@
    "lang": "en"
   },
   {
+   "id": "a0b8c84a8035934c",
+   "title": "Apple amène l'IA générative dans Pages, Numbers et Keynote avec son nouvel assistant",
+   "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOenlDa2R6SlNGYWpSUW0tVnFGaUZDWXVRRFRPcFcyX2Jwc0wyX3hjbTRHYnU5Y0txWkpRcnZjU3FvVlNRSVBNMkhoU05pUkNrbW9aY2VEZ09nRXFMY1NfdGZZYk1qbWtEeklUVldIZHE2WTJFYmZLRXE5d0M0eVlHWTdTNnRBYWlGdzZQM25lS2UzQWRGQmNmRjBZbG1JT095X0lwOGwyQ093LWdsdlpj?oc=5",
+   "summary": "",
+   "date": "2026-10-25T19:44:23+00:00",
+   "source": "Google Actualités（フランス・IA）",
+   "publisher": "Foro3D",
+   "category": "ニュース",
+   "lang": "fr"
+  },
+  {
    "id": "45fc8e53d3f448e1",
    "title": "Elvis Presley rights holder sues Anthropic, says Claude trained on unauthorized songs",
    "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOQ2xhUk9UN09Xa21neEc2TVN2RjVMREhVekVyVmVuQlZZYVhHa3RwSUpncFFFUWNBNzg5bU11YjdyZk1odFItM213Y2dwX3NtQzBvVWF1Y3JkTVVHRnF4a3ZyRVczU1RzLXZPNjNVRlZRcm0wNjR1cTgwNEN6bWItWWw5RXI2dm9DMHRVX0M2ZDNleER3MVNUblRnSm5aUUt6elh4WVI5Z0cwOGxEcDVtMDltRC1vZmpGamZwbGg3MzFKQQ?oc=5",
@@ -976,6 +2164,17 @@
    "date": "2026-10-25T19:42:08+00:00",
    "source": "Google News（OpenAI・Anthropic・Google）",
    "publisher": "Los Angeles Times",
+   "category": "ニュース",
+   "lang": "en"
+  },
+  {
+   "id": "fc2d6fb9c5f721db",
+   "title": "Nicaragua and Models of Artificial Intelligence",
+   "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOUXBXQzZuaTF3SFgyUHpvTTctVGNmMGRKcUVkdnFuOHozdFIwUzg5dFotQktmNUE1N2JIRXAxbjhUelBEU1ZyZTIwRUV5bzgtMTl2WVZmZGVfSWRJN2FqdFp2UVpGVlRFTU1hMkdCTjRKaDdwd0xtVEh4QUJWek1EUjNYQWF5WjRIUkJwS1hCallrdEJ2TVZsQVhkS0I?oc=5",
+   "summary": "",
+   "date": "2026-10-25T19:42:06+00:00",
+   "source": "Google News UK（AI）",
+   "publisher": "El 19 Digital",
    "category": "ニュース",
    "lang": "en"
   },
@@ -1011,6 +2210,17 @@
    "publisher": "",
    "category": "技術記事",
    "lang": "ja"
+  },
+  {
+   "id": "6405523a7409a7d3",
+   "title": "Anthropic Tokens on OpenRouter Are Up 3.6x Since Opus 5.5",
+   "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPMmR5WGRLRzk1SWM2V2dycFB2TU5zcmowdVZXNktNY250Ylk2WTZOOTdUdENndFJ0dXZMVk1Ba3JyYzJIWmdQQUtSalFYaE1ETS1NN2d2Tll3bnFiSVlOX3NucEVOby01MFR4dkxnSllkc2lxOExKbF9OS205YVVQN1pRUGJkcjNjN3d0SjV3?oc=5",
+   "summary": "",
+   "date": "2026-10-25T19:34:34+00:00",
+   "source": "Google News（OpenAI・Anthropic・Google）",
+   "publisher": "FourWeekMBA",
+   "category": "ニュース",
+   "lang": "en"
   },
   {
    "id": "aceed07805bf5304",
@@ -1080,7 +2290,7 @@
   },
   {
    "id": "1b7c9565367385e3",
-   "title": "Elvis Presley’s rights holders sue Anthropic saying it trained AI on his music",
+   "title": "Elvis Presley’s rights holders sue Anthropic, saying it trained AI on his music",
    "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQbG82ZXpUaVVOTDJpczU3NXh0WWRqV2VkbENhUVJBQTJKZDQ4YlFjeDdXemlvQU0zRllGTFpBb3ZjcElSVERQZmQ2X0paY1NzMXlBM0FkZUhST2FMc0xrOTBjTUtEWjNpNEFkNVZ1UG45VHlScFJTZkxBc1ZOR2s0UFVBYjRlcGNsdlEwOTAtNkRhbWl4VjdBX2FTeDRKYUp6NEhCNVJ4T19ZTEV4Y3BnQ1dyM01XZ1lB?oc=5",
    "summary": "",
    "date": "2026-10-25T19:11:32+00:00",
@@ -1178,6 +2388,17 @@
    "lang": "en"
   },
   {
+   "id": "2ebce889031b3c0e",
+   "title": "Singularity Daily Discussion Thread - Oct 25, 2026",
+   "link": "https://www.reddit.com/r/singularity/comments/1xfafo9/singularity_daily_discussion_thread_oct_25_2026/",
+   "summary": "This thread is for any discussions that doesn't necessitate a new post. Permission from a mod here: https://www.reddit.com/r/singularity/s/FM1UwNdoL9 Since this thread isn't going to be to stickied, it's up to you to upvote it. Share your anxiety, ideas on how to achieve alignmen…",
+   "date": "2026-10-25T18:51:13+00:00",
+   "source": "Reddit r/singularity",
+   "publisher": "",
+   "category": "話題",
+   "lang": "en"
+  },
+  {
    "id": "b567ab65607e7abe",
    "title": "AI自身にカスタム指示（人格アンカー）を書かせると、応答は安定するのか？ ― ChatGPTとClaudeの観測から考える ―",
    "link": "https://qiita.com/Raina-ai/items/1b6c946679be303d0645",
@@ -1211,6 +2432,17 @@
    "lang": "es"
   },
   {
+   "id": "352ef31b8022598f",
+   "title": "【10/21 特別記念無料セミナー】生成AIで仕事はどう変わったか、3億円企業から100億円企業の事例つき｜オンライン・先着30名｜岡山・ネットリンクス主催",
+   "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE8ydTluMUJ4WnR6eENhV3NxS0JjbmFsS3pmZGVxTmJXV1dGWjJ4VXpXQUsyR0owVVdvRTVXbUt0RHFhNnY5WGJIVjFJZkVCSFF3Z1E?oc=5",
+   "summary": "",
+   "date": "2026-10-25T18:41:03+00:00",
+   "source": "Googleニュース（生成AI）",
+   "publisher": "山陽新聞",
+   "category": "ニュース",
+   "lang": "ja"
+  },
+  {
    "id": "841de2ccd84cdda5",
    "title": "Anthropic sued for allegedly using 274 Elvis Presley songs to train AI models",
    "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNelFOZFdTZmw2a1FtcjAxZk5lYktWT09FRTRaT0g0MmFrRFpHX0dIbk1IeVJNYmxVVlhBZHRYWk1YZzFHRjh0N29jSEdWd2s3OEJrcFM4SW9Tb29tLTQ5VjJaQ3BFQThpRXNJUzVPbXcwOElvcVJUNl9aZE1SaWVZTTR1VTYtcHNGZVdjU2t4MVItd2ZKYlhZZGd3cw?oc=5",
@@ -1230,6 +2462,17 @@
    "source": "Reddit r/ClaudeAI",
    "publisher": "",
    "category": "話題",
+   "lang": "en"
+  },
+  {
+   "id": "39f12f725b21d102",
+   "title": "Elvis Presley catalogue owners take legal action against Anthropic for copyright infringement",
+   "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQYm50TGU1REV3ZFgzQVlHdnNVT01QbjZlMVpOM1ZfejkwUnF3UDc4a0V4c0s1b0U3Y1NtbUgxY0lQb3RaVlZKOVdMY0tXbWVjdXRCdFdpZHVnUld2ZkZERmMwM3RJX3VCWXgyemNXUkRWRWt4RTBLTjlUWGtGYUZvX3VsS1ZSd1NmSlFuOXhJYVNUX0hwbjF1Z3VjMFJDd0oxb1lvLWpEcmRVcHdxSk5RYnZrUzZQQ0JDV3B5RzB4M3NYSEozV1NBZWlpbld2Y3hT0gHMAUFVX3lxTFBvZ3MtaV9DbHlxM3AycmhRbXdIYUkwdVp5TjNya3BVOE51bWNzUzVKUlRNanNyZFB5WDIxQTV0aXd2MUtBNkZPU09lV2NrN3BlSkFRbUQ2YVlMdFpuZ0d3eGxnVUJxZ09jcWVvT2dVUVR5QkJmQllVZkJTUWhhM2lscXZKYmJTU2lTYjEtMHZVVVlqMndiYVhXYXcwTUlqS29uLWh0TGN4X0tyUlY5RklIWEtsT2c4eGpRWUtCNUlYdG82Y1B2c0c4US1mRg?oc=5",
+   "summary": "",
+   "date": "2026-10-25T18:36:58+00:00",
+   "source": "Google News（OpenAI・Anthropic・Google）",
+   "publisher": "The News International",
+   "category": "ニュース",
    "lang": "en"
   },
   {
@@ -1310,6 +2553,17 @@
    "lang": "en"
   },
   {
+   "id": "1fdab4fe7c93ea72",
+   "title": "DeepSeek, MiniMax Complete Registration for LLM Overseas Expansion as Compliance Channel for Open-Source Models Takes Shape",
+   "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9md2dLdFJ3TjlteV8tRThsLVk5N0RZbjh2MUpoV1J2c2xqbHVoWUUyVkhCNGNfZjItVEZ2QWo3M2RlMTFoZ3EzQm1wTmxGNXIwYndNRDVlb2dOLXViVUI3S2VJLXRQNVlGUkg3ZWU1WHBZRVN6aVE?oc=5",
+   "summary": "",
+   "date": "2026-10-25T18:15:00+00:00",
+   "source": "Google News（Generative AI）",
+   "publisher": "finance.biggo.com",
+   "category": "ニュース",
+   "lang": "en"
+  },
+  {
    "id": "692548455456c2a8",
    "title": "China lleva la inteligencia artificial a puertos, buques y rutas marítimas",
    "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOQzdQekxZVkVzN05Ra01kR2FYbTFYdWphSFlJTWZuYzMyU2NORHZCSzRsbXBzdXRXSlBBdFU1b0s2NGs3WUFBWWMtVkx1akpsQmoxS2x4WF9yMHpCd052a215eTdXbUxBT2pHc3dXenlROGFaWkJWeEFyNXBJY3MybEYxa3ppQUFna0F5dlc0MHdyQXV4VFM5S21WMU5YVjVa?oc=5",
@@ -1330,6 +2584,17 @@
    "publisher": "El Periódico Mediterráneo",
    "category": "ニュース",
    "lang": "es"
+  },
+  {
+   "id": "b808ae3ec3d73ab3",
+   "title": "If Anthropic doesn’t rule out their models having consciousness, how justifiable is selling them for $20/month?",
+   "link": "https://www.reddit.com/r/singularity/comments/1xf9fft/if_anthropic_doesnt_rule_out_their_models_having/",
+   "summary": "You could argue an artificial mind might not need freedom the way humans do and of course, this is a valid point. Still, it doesn’t sit right with me. Creating a mind only to sell it as a monthly subscription. Pretty black mirror-esque, if you ask me. (Not claiming current models…",
+   "date": "2026-10-25T18:11:11+00:00",
+   "source": "Reddit r/singularity",
+   "publisher": "",
+   "category": "話題",
+   "lang": "en"
   },
   {
    "id": "084f8835bd4636f4",
@@ -1753,7 +3018,7 @@
    "id": "1dc75a32fc6a65d3",
    "title": "A 10-year-old CNN outperforms frontier LLMs for skin cancer diagnosis",
    "link": "https://lynchlab.net/llm-skin-cancer",
-   "summary": "Article URL: https://lynchlab.net/llm-skin-cancer Comments URL: https://news.ycombinator.com/item?id=50233779 Points: 286 # Comments: 140",
+   "summary": "Article URL: https://lynchlab.net/llm-skin-cancer Comments URL: https://news.ycombinator.com/item?id=50233779 Points: 359 # Comments: 180",
    "date": "2026-10-25T17:15:38+00:00",
    "source": "Hacker News（100pt以上）",
    "publisher": "",
@@ -2036,6 +3301,17 @@
    "lang": "fr"
   },
   {
+   "id": "91f661b505665226",
+   "title": "古特瑞斯：人工智慧與科技將形塑全球經濟，籲私部門投資開發中國家 - 新聞與統計",
+   "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxON0Y4WWRUNkR4NUhGQzU3bEVGOU1NVkZleUNaZHVnbmtfSDJuamhONjhDY0psd2NKVGNBODEwZ245eWs5TjZfak5rOTA4Mlg0RzdPVkdCZHdQZER1YlNTRWZrLTc2cHJjbXU4SkVWMTYxc2dEOFFWSnpZS2FwUHhYQ1ROZzNrd3hHbExqM2JMZ2hTdHpWQ2NPMU5OU2V1UDE5U3ZVdC1iVnYteHE0QVZnOUhSdGxBOUF2bnJQY3lWQUhjY18tWWc2NVQ2QkVwdHZxcDVEZExxNXNGT0dJSVV6UVRCNA?oc=5",
+   "summary": "",
+   "date": "2026-10-25T16:51:04+00:00",
+   "source": "Google新聞（台湾・生成式AI）",
+   "publisher": "IndexBox",
+   "category": "ニュース",
+   "lang": "zh"
+  },
+  {
    "id": "65431f96c622afca",
    "title": "Controversy/History | Beyond the Artificial: AI and the Workplace",
    "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxOUmZWVXk5VjZxblo2NV9VRTkxYVAzbHAwcFAzN1YxdWY4WFAtS2Z5c19SOHVsaksxdVR6ZUtuOGZENnN4aFAxQ2FlNHlURE8zYjVPS3dHOU1hbFVLZG0zM213eWNnVEI1bnlnc2RjMEhSMlBSYmtzZ0kySHNROWlDWFZtcnhpRXpNZGl4UXdya0RkRkhtWXBtM05CMm9BZw?oc=5",
@@ -2237,7 +3513,7 @@
    "id": "2af7003f0e2faf2b",
    "title": "AI use leads UC Berkeley math professor to see 'no point' in grading homework",
    "link": "https://www.dailycal.org/news/campus/academics/ai-use-leads-uc-berkeley-math-professor-to-see-no-point-in-grading-homework/article_bdf1eae2-c08b-491f-b9f1-81a7cea177de.html",
-   "summary": "Article URL: https://www.dailycal.org/news/campus/academics/ai-use-leads-uc-berkeley-math-professor-to-see-no-point-in-grading-homework/article_bdf1eae2-c08b-491f-b9f1-81a7cea177de.html Comments URL: https://news.ycombinator.com/item?id=50233304 Points: 141 # Comments: 225",
+   "summary": "Article URL: https://www.dailycal.org/news/campus/academics/ai-use-leads-uc-berkeley-math-professor-to-see-no-point-in-grading-homework/article_bdf1eae2-c08b-491f-b9f1-81a7cea177de.html Comments URL: https://news.ycombinator.com/item?id=50233304 Points: 178 # Comments: 259",
    "date": "2026-10-25T16:28:26+00:00",
    "source": "Hacker News（100pt以上）",
    "publisher": "",
@@ -2295,7 +3571,7 @@
    "summary": "",
    "date": "2026-10-25T16:22:27+00:00",
    "source": "Google Noticias（スペイン語・IA）",
-   "publisher": "www.telokwento.com",
+   "publisher": "Telokwento",
    "category": "ニュース",
    "lang": "es"
   },
@@ -2333,6 +3609,17 @@
    "lang": "en"
   },
   {
+   "id": "70d48d5fbcc95ef0",
+   "title": "Anthropic Consulted More Than 15 Groups on Claude’s Moral Guidance",
+   "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9NU0xzZFJkWnV1bC1iYVpNdV9tSUdwamF4aGNoWF9jbWRlWUFLT05Cd2E5aVhfV0VydVBsSEV1Y2JpTWhCU0V1c1F6Q2lORDBYMkZnUXktd3NTRWc?oc=5",
+   "summary": "",
+   "date": "2026-10-25T16:18:12+00:00",
+   "source": "Google News（OpenAI・Anthropic・Google）",
+   "publisher": "TOKENPOST",
+   "category": "ニュース",
+   "lang": "en"
+  },
+  {
    "id": "bdf683a6850cc80d",
    "title": "AIを使える人が増えても、会社にノウハウが残らないのはなぜ？個人の工夫を、チームの学びに変える",
    "link": "https://note.com/akiramurata/n/ne79b18759893",
@@ -2366,6 +3653,17 @@
    "lang": "ja"
   },
   {
+   "id": "6de7c95d37f8e9cb",
+   "title": "Jensen Huang Chiffre à 2 000 Dollars Par GPU Le Logiciel Des Usines IA",
+   "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1TcUFqQjYtWEREZkp6U0RFY0VPM0gzN084MUNTUUF2c1pGb1UzNzNDdjFwTVQ0YnQ4RkZaYXpEYXdUTVRkQWRoYnFRNThPdjE2RFlDaUhUcWNiOXBCUmJBU2VtU2Q1Qi1sY0NUcTBMSy0?oc=5",
+   "summary": "",
+   "date": "2026-10-25T16:12:10+00:00",
+   "source": "Google Actualités（フランス・IA）",
+   "publisher": "Pause Hardware",
+   "category": "ニュース",
+   "lang": "fr"
+  },
+  {
    "id": "1126bcd91aeafa81",
    "title": "Threadsで占い投稿が保存される理由と、鑑定しない収益の作り方",
    "link": "https://note.com/yutori_lab/n/n39d8fda611a2",
@@ -2386,6 +3684,28 @@
    "publisher": "이즈보험",
    "category": "ニュース",
    "lang": "ko"
+  },
+  {
+   "id": "bbbe0e5f60077cb9",
+   "title": "Magic Moment、営業情報をClaude・ChatGPTから参照できるMCPサーバーを提供開始｜Infoseekニュース",
+   "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE95T1RwTXBrUGFxZmdQUklGV3huQ2R1NzZkWFY4Z2pTRWhlYVh2YTdKZi1fSEZ5QVlsWHlDMERFcFljR29QcDNsdmJIdFBZb0lUcVFCSmNRN1dWQ1NWUHRGekxMU09UZ3NEcGs5Q1hlcU94dw?oc=5",
+   "summary": "",
+   "date": "2026-10-25T16:10:00+00:00",
+   "source": "Googleニュース（ChatGPT・Claude・Gemini）",
+   "publisher": "Infoseek",
+   "category": "ニュース",
+   "lang": "ja"
+  },
+  {
+   "id": "b04366ba8e46bdc8",
+   "title": "SOKUDAN代表の田根が広島県主催 生成AI共有会「生成AI、結局どこに使える？」に登壇します｜Infoseekニュース",
+   "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE44dFBtT21oY2JHV1RIQ3ZlTlBJNGxpdWRzWEl3eWRSMVAyT3BWeFFwREZhNVlyaGtLWHhVOG1hak1ybVVoT2dSc05reXZvUG1ENE1tNmdHbnpSWV8tZWVnU050OWdqdy11b1lKWWM1Y2ZhUQ?oc=5",
+   "summary": "",
+   "date": "2026-10-25T16:10:00+00:00",
+   "source": "Googleニュース（生成AI）",
+   "publisher": "Infoseek",
+   "category": "ニュース",
+   "lang": "ja"
   },
   {
    "id": "0584aa0cc26629b4",
@@ -2595,6 +3915,17 @@
    "publisher": "CelebrityAccess",
    "category": "ニュース",
    "lang": "en"
+  },
+  {
+   "id": "85cb11128a11b274",
+   "title": "上週表現最佳與最差的選手——人工智能",
+   "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPWldzZ2hHVHczeU51NnhvaDZLTVBsdlFCd3VQNE9SWThOeC13NFdFNVBCV0ZmQVltQ3F6RlpZZ1NoVUpQMzFhM09BNlE2SUdHTG95SGFGTVZQOWpfS0xiMUFvMzRXZmJQWFFXTTRFS1JwdDU0WHY5d290WG1aTm9YWDhlVDBrV2RwVklpWlluX2szNWZMN21jVjBQS0RRamct?oc=5",
+   "summary": "",
+   "date": "2026-10-25T15:53:16+00:00",
+   "source": "Google新聞（台湾・生成式AI）",
+   "publisher": "Moomoo",
+   "category": "ニュース",
+   "lang": "zh"
   },
   {
    "id": "1852363fa9e8762e",
@@ -2960,6 +4291,17 @@
    "lang": "en"
   },
   {
+   "id": "987ac4366acffe49",
+   "title": "おい！あなたのGPU演算能力制限されてますよ👽 gpu-unlock",
+   "link": "https://zenn.dev/minecode/articles/b4b9f7babcd56d",
+   "summary": "おい！あなたのGPU演算能力制限されてますよ👽 最近、gpu-unlockが話題ですね。 素人ながら調べてみると、いろいろ面白かったので備忘録としてなんとなくまとめます🌎 1. 「gpu-unlock」って何？ 端的に言うと、GeForceシリーズのGPUのリミッター解除をするLinuxカーネルモジュールです。 GPU内部には命令の発行ペースを制御する「Speed Selector（FEAT_OVR_SM_SPD）」という設定値が存在します。full-rate 1/2-rate 1/4-rate 1/8-rateが選べます。要するに、発行速度を選べるよう…",
+   "date": "2026-10-25T15:05:59+00:00",
+   "source": "Zenn（AI）",
+   "publisher": "",
+   "category": "技術記事",
+   "lang": "ja"
+  },
+  {
    "id": "d950770f5a79eb9b",
    "title": "Show HN: I put employees inside S&P 500 market-cap bubbles",
    "link": "https://bigwhalehunting.com/workforce/",
@@ -2987,9 +4329,9 @@
    "link": "https://zenn.dev/alt_tanuki/articles/fb9ae0966bd791",
    "summary": "Live2D のキャラクターと声で会話できるアプリを個人開発しています。 これまでに 会話から「間」を消す話 と 会わない間も進む人生と記憶の話 を書きました。今回はそこから少し引いて、「人間味を出すために何をしたか」を、人間の側の性質から整理し直します。 AIは「完璧すぎる」から人間に見えない 作り始めた頃、返答の中身にはほとんど不満がありませんでした。LLM の返答は丁寧で的確で、破綻もしない。 それなのに、何日か続けて話していると、だんだん相手が「人」に見えなくなっていきます。原因を一つずつ書き出してみると、どれもAI が完璧すぎることに行き着きま…",
    "date": "2026-10-25T15:04:14+00:00",
-   "source": "Zenn（LLM）",
+   "source": "Zenn（個人開発）",
    "publisher": "",
-   "category": "技術記事",
+   "category": "収益化",
    "lang": "ja"
   },
   {
@@ -3262,7 +4604,7 @@
    "link": "https://zenn.dev/shoyataguchi/articles/bc98b3562bdf3a",
    "summary": "最近の私の開発は、AI との対話で大きめの GitHub Issue を作り、それらの PR 作成 + AI レビューまで AI にやってもらって、最後に必要な箇所を人がレビューする、という進め方です。ループエンジニアリングやグラフエンジニアリングの考え方は、自分なりにある程度実践できていると思っています。 ただ、これをもっと大規模なソフトウェア開発にスケールさせようとなると、わからないことだらけです。エージェントの構成、タスクの単位、人の役割の設計などなど。そこで、最近話題になった AI を最大限に活用したソフトウェア開発事例をいくつか読んで再整理して…",
    "date": "2026-10-25T14:39:28+00:00",
-   "source": "Zenn（LLM）",
+   "source": "Zenn（AI）",
    "publisher": "",
    "category": "技術記事",
    "lang": "ja"
@@ -3328,9 +4670,9 @@
    "link": "https://zenn.dev/twinharness/articles/codex-review-gate-stop-hook",
    "summary": "「実装したら、書いたのとは別の AI にレビューさせる」というルールを作っても、AI は忘れます。ルールを文章で書くだけでは守られなかったので、会話を終えようとした瞬間に、レビューを通したかを調べて、通していなければ1回だけ止める仕組み（ゲート）を作りました。 ところが作ってみると、誤判定が次々に出ました。レビュー済みのコミットを「未レビューの変更」と数える、裏で走らせたレビューを起動しただけで済んだことにする、差し戻しの文が会話に積み上がって使用量を食う、そして差し戻している最中なのに完了通知が出る、といったものです。この記事では、ゲートの作りと、実際…",
    "date": "2026-10-25T14:31:24+00:00",
-   "source": "Zenn（AI）",
+   "source": "Zenn（個人開発）",
    "publisher": "",
-   "category": "技術記事",
+   "category": "収益化",
    "lang": "ja"
   },
   {
@@ -3460,9 +4802,9 @@
    "link": "https://zenn.dev/tlc/articles/004b80b904de9c",
    "summary": "2026年9月30日、人のAI活用能力を可視化する情報処理技術が、日本で特許登録されました。 特許第7932117号 僕は眼鏡職人です。AIの研究者でも、プログラマーでもありません。 今回の発明は、僕自身が考えたアイデアをAIとの対話を重ねながら情報処理技術として具体化したものです。 出願書類の作成から拒絶理由通知書への対応まで、弁理士に依頼せず自分で行い、特許取得に至りました。 今回は、登録された技術の考え方と、実際に開発したアプリについて紹介します。 なぜ人のAI活用能力を可視化するのか 生成AIの普及によって、文章作成、分析、企画、プログラミングな…",
    "date": "2026-10-25T14:17:12+00:00",
-   "source": "Zenn（生成AI）",
+   "source": "Zenn（個人開発）",
    "publisher": "",
-   "category": "技術記事",
+   "category": "収益化",
    "lang": "ja"
   },
   {
@@ -3552,6 +4894,17 @@
    "publisher": "Infobae",
    "category": "ニュース",
    "lang": "es"
+  },
+  {
+   "id": "707680d02a214978",
+   "title": "亞德尼：人工智慧泡沫確實存在，但尚未破裂- 股市爆料同學會",
+   "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFAxZGZaUEd3eV82ZVRqU1dwNXJQQVNySDFDU2RsRTF1bFRTcjhfTkUzM3FNeVdsRUFCRzJ4XzM4SGw1cXgtX1hSc05pazBjNlRSMmY5NGhlWlU?oc=5",
+   "summary": "",
+   "date": "2026-10-25T14:00:44+00:00",
+   "source": "Google新聞（台湾・生成式AI）",
+   "publisher": "CMoney",
+   "category": "ニュース",
+   "lang": "zh"
   },
   {
    "id": "9a6e8cc189ade85f",
@@ -3669,9 +5022,9 @@
    "link": "https://zenn.dev/frb_tamasub/articles/ai-collaboration07-frb-launch-wheel-experience",
    "summary": "はじめに——ランチャーを作った、その後の話（笑） 先日、こんな記事を書いた。 AI協働：昨日の日付を入力したくなくて、ランチャーを作った話 — FRB Launch 会社で「昨日の日付」を入力するのが面倒で、Copilotくんに小さなテキストランチャーを作ってもらった。左右の矢印キーでメニューを操作したら、妙に気持ちよかった。そこから家のChatGPTくんと一緒に、パソコン作業の入り口となる FRB Launch を育て始めた——という話だった。 前の記事の最後に、こんなことを書いた。 面倒だなぁ、という感覚が改善する場所を教えてくれる。 気持ちいいなぁ…",
    "date": "2026-10-25T13:44:37+00:00",
-   "source": "Zenn（AI）",
+   "source": "Zenn（個人開発）",
    "publisher": "",
-   "category": "技術記事",
+   "category": "収益化",
    "lang": "ja"
   },
   {
@@ -3750,6 +5103,17 @@
    "publisher": "",
    "category": "収益化",
    "lang": "ja"
+  },
+  {
+   "id": "e1fcf961e870d02c",
+   "title": "Les organisateurs d'un nouveau prix littéraire, baptisé prix Pascal et présenté comme le premier visant...",
+   "link": "https://news.google.com/rss/articles/CBMi8wJBVV95cUxOQVdCNlNCWFV2MGE1MV9oaHRHamc3Sk1vX2o3ZDdJSDF6SlR1SUtSNEp2LWFkYmxDVm02aDZmUmtzUGF2ZC13Z0ZWMVNpM19yNDRBNVlYZjZwSXdxMG5LOGZDWk9UUGlzRThpQ2s5ZG9kLVZGS3ZnblpDRWFmQlhYQURZSlVJSEtTQXFOTl9oLTdadkhKaFM2TTNncFlzLWk1RllWXzNabmc4aEpxZ0JCdEJxQktvMFJKN1B5RkdaR05ZMGpjdUlJMFhWc2pzNmt5Sno3YmtIXzV3dzNRa0J2Vy1SQkMtOU5wUzZlSGxGbUtzOXFBNF91eE15VTBvcGZVQldVc18wMUZvY0JMWGI3b21OY3NLOFRka1pWcDMzRkF0N1JkNVlzNU9FMkUwSzJWRkxuVjBDdE1MRnJhbzlMNG56UXIwYWRPVzJkWU9LS3E2Rm1vWG13TkNPZF9URWJNSWp6UVQ0NW5EZV95WEwzOTJUSdIB-AJBVV95cUxPT0w3WURleFQ2WDl5REl1T2FHNk1MVTZnTEZlempUQlg3bkVmbU1EUE83U0l0REt4dlhHanZOcmVfLXJVZk5ZalB6c1dpS3lGOTNGdlhtZUk3Z3JGRUdNUUl1NlB5Y0RScmlZS0loTExhdUctS2F1VGNqUTE1X2lvNE5FTjY0VExrMzdHbzJCN3lBLXMxc0dMeEVrX2NiblpEekZnZUFZcGE4TjlYTlhmZmFfYmpIa3AwSEU4U2hMVm9UbExINkQ3UzNzaUFsS0tuLTgxMW5YbFFsMURqa1ZESHE0MmJzWjZqNjNKRTJSa2t6N3lWeVRKOWRoMm9QVkJZdHVwOW5xSVZBUEJHUmZrYjl2RUVfbmk5akEtOHYzTkpGdWZfUkNjWVEwaXdrZjBPLV9IU29udXRUdkYtOEdSbmVtZnRrNUN2TVU1b1gyVG9rcGRqbHVSbmtXS1AxMGh5Nk1vZ3N1RHBHQTdCenZpMXRkU0xZZkE1?oc=5",
+   "summary": "",
+   "date": "2026-10-25T13:36:00+00:00",
+   "source": "Google Actualités（フランス・IA）",
+   "publisher": "Jean-Marc Morandini",
+   "category": "ニュース",
+   "lang": "fr"
   },
   {
    "id": "09220df3f9351b92",
@@ -3834,7 +5198,7 @@
    "link": "https://zenn.dev/palon7/articles/clawsaga-ai-mmo",
    "summary": "! この記事はLLMの校正を受けながら人間が執筆しました ソフトウェアエンジニアであれば、業務でも趣味でもAIエージェントを活用されている方は多いかと思います。コーディングから最近では3Dモデリングまで、LLMができることは増え続けている印象です。 そんなAIエージェントたちに、仕事の代わりにゲームをさせてみたらどうなるでしょうか？ そう思って「ClawSaga」というMMORPGを作りました。ファンタジー世界で冒険者として暮らし、採集・戦闘・取引などを行えるゲームです。 ただし操作はすべてCLIで行い、応答もJSONで返ってくるため、人間が遊ぶのは困難…",
    "date": "2026-10-25T13:23:54+00:00",
-   "source": "Zenn（LLM）",
+   "source": "Zenn（AI）",
    "publisher": "",
    "category": "技術記事",
    "lang": "ja"
@@ -4010,9 +5374,9 @@
    "link": "https://zenn.dev/suna/articles/e0e3af015d7bed",
    "summary": "Cloudflare が公開している security-audit-skill は、AI がコードから問題を探し、別の AI が「本当に問題なのか」と疑って検証するセキュリティ監査用の Skill だ。 自作の防災備蓄アプリ「おすそぐら」で試してみた。このアプリは 2 週間前に、OWASP ASVS というセキュリティ要件の基準で 253 項目を点検したばかりだ。それでも、別の視点で調べたら何が見つかるのか知りたかった。 最初に見つかった問題の候補は 18 件。ただし別の AI が検証すると 5 件が否定され、残る 13 件も追加の確認が必要という結果に…",
    "date": "2026-10-25T12:54:26+00:00",
-   "source": "Zenn（AI）",
+   "source": "Zenn（個人開発）",
    "publisher": "",
-   "category": "技術記事",
+   "category": "収益化",
    "lang": "ja"
   },
   {
@@ -4145,6 +5509,17 @@
    "source": "Engadget",
    "publisher": "",
    "category": "ニュース",
+   "lang": "en"
+  },
+  {
+   "id": "b98b200776c9b15d",
+   "title": "how much difference does kv cache quants even make?",
+   "link": "https://www.reddit.com/r/LocalLLaMA/comments/1xf1cx0/how_much_difference_does_kv_cache_quants_even_make/",
+   "summary": "I currently run qwen flash next 3.8 iq3xxs via strata (like almost everyone lol) and I currently have kv cache at q8 with 262k ctx. Ive never actually tried any other quant and dont know how big the difference even is. Id like to have a bit more context (like 300-400k) but it doe…",
+   "date": "2026-10-25T12:41:13+00:00",
+   "source": "Reddit r/LocalLLaMA",
+   "publisher": "",
+   "category": "話題",
    "lang": "en"
   },
   {
@@ -4494,7 +5869,7 @@
    "link": "https://zenn.dev/lilpacy/articles/claude-code-skill-two-stage-activation",
    "summary": "Claude Codeのskillが「選ばれるのに読まれない」理由：発火を2段階に分けて測った TL;DR skillが使われるかどうかは2段階で決まる。1段目は「descriptionを見て候補に入るか」、2段目は「その場でモデルが実際にそのskillを読むか」である。 description一覧だけを見せて選ばせるテストでは9/9で選ばれたskillが、実際の作業では一度も読まれなかった。descriptionを強めても変わらず、UserPromptSubmit hookで「このskillを読め」と差し込んで初めて最初に読まれた。 skill同士の名…",
    "date": "2026-10-25T11:48:55+00:00",
-   "source": "Zenn（LLM）",
+   "source": "Zenn（AI）",
    "publisher": "",
    "category": "技術記事",
    "lang": "ja"
@@ -5110,7 +6485,7 @@
    "link": "https://news.google.com/rss/articles/CBMizwJBVV95cUxQUzdBSXJpd083eUx4UlRyNnVSRC1kZjBhWUVuNjVmbkVvU3hGNlZjM3A2a0g1ZzRNVkJrdU82QmFabXVUMFhJMW1xeFJzUVJ3ZEEzRTFLZ0p6Q1E4SDRsRDhGaGUtSEhsNWxPRkdUNzJfQUxWS3FRSW45aHU0b0J2dzYwSE82QWRmS2h3Q3FUU2xQWEdaVDVURTFGdHVMRC0xclpPTE9aVnNLU0dycTN6SVltOVhEZU12YjRkQmhNN0FSd2ZaMGFXT2ozSExFXzJyaGZ6LVE1ZE5IZ0h4dHpJWmNPZGFhXy1LYl9JSVc5V1lLMFJ5RFJrTko0WXZFTldHR01jaHVfSWRsSk8xcUJ4Qmt5ZkhWUUJJTERSRmdCb0FEMEl4RDFhR3FjWlQ1Vi1kTGllQzhNYUFIcDFiM18zNkkyeHcwT0w5Qmh2dkNkQQ?oc=5",
    "summary": "",
    "date": "2026-10-25T11:30:00+00:00",
-   "source": "Google News UK（AI）",
+   "source": "Google News（OpenAI・Anthropic・Google）",
    "publisher": "Tom's Hardware",
    "category": "ニュース",
    "lang": "en"
@@ -5187,7 +6562,7 @@
    "link": "https://zenn.dev/tkpurine/articles/text-guidance-in-diffusion",
    "summary": "はじめに 前回の拡散モデル入門で、テキスト→画像は「テキスト条件＋CFGでプロンプトへの忠実度を制御する」と一言で描きました。今回はその箱の中身を深掘りします。テキスト誘導は3段階です。 テキストを数値化する（text encoder：CLIP / T5） 除去ネットに注入する（cross-attention＝Transformerの注意機構） 効き具合を増幅する（Classifier-Free Guidance / CFG） ① テキストを数値化する：CLIP と T5 プロンプトはまずトークンに分割され、text encoderで「単語ごとの意味ベク…",
    "date": "2026-10-25T11:27:21+00:00",
-   "source": "Zenn（生成AI）",
+   "source": "Zenn（AI）",
    "publisher": "",
    "category": "技術記事",
    "lang": "ja"
@@ -5462,7 +6837,7 @@
    "link": "https://zenn.dev/chris_probably/articles/f6ffe71678cde1",
    "summary": "機能のリリース速度は確実に上がっている。 AIコーディングツールのおかげで、以前なら数週間かかっていた実装が数日で終わる。 でも、プロダクトの成長指標は動いていない。なぜだろうか。 「速く作れば勝てる」は、100年前に否定されている 1920年代、ヘンリー・フォードは世界最速の生産ラインを持っていた。組立ラインの発明で、自動車の製造コストは劇的に下がった。「速く、安く、大量に」――それがフォードの勝利の方程式だった。 しかし、GM に追い抜かれた。GM は生産速度ではなく、顧客が何を求めているかに注目した。色の選択肢、スタイルの変化、価格帯の幅。フォード…",
    "date": "2026-10-25T11:04:13+00:00",
-   "source": "Zenn（生成AI）",
+   "source": "Zenn（AI）",
    "publisher": "",
    "category": "技術記事",
    "lang": "ja"
@@ -5539,9 +6914,9 @@
    "link": "https://zenn.dev/lnkiai/articles/d5942b2f251e7d",
    "summary": "こんにちは、いのりです。 個人開発で「あなたをAIモデルに例えると？」というAI診断サイトを公開したところ、6000人以上の方に診断してもらえました！やったー！！＼(＞ヮ＜)／ しかし、これだけ多くの人に使ってもらっても、なんと収益は0円でした。それどころか、API費用が増えてお金が減る仕組みになっていました…！大赤字です(ﾉω･､) ｳｩ･･･ そこで、この診断サイトが広まった仕組みや運用コスト、開発してわかったことをまとめてみました。ぜひ、今後の個人開発などで参考にしていただければと思います。 何を作ったのか https://ai.tatoe.top…",
    "date": "2026-10-25T10:59:42+00:00",
-   "source": "Zenn（LLM）",
+   "source": "Zenn（個人開発）",
    "publisher": "",
-   "category": "技術記事",
+   "category": "収益化",
    "lang": "ja"
   },
   {
@@ -6010,7 +7385,7 @@
    "id": "b82b80f1678212b4",
    "title": "Nikon photography contest winner loses title after scientists spot signs of AI",
    "link": "https://www.techspot.com/news/114171-nikon-photography-contest-winner-loses-title-after-scientists.html",
-   "summary": "Article URL: https://www.techspot.com/news/114171-nikon-photography-contest-winner-loses-title-after-scientists.html Comments URL: https://news.ycombinator.com/item?id=50229827 Points: 124 # Comments: 59",
+   "summary": "Article URL: https://www.techspot.com/news/114171-nikon-photography-contest-winner-loses-title-after-scientists.html Comments URL: https://news.ycombinator.com/item?id=50229827 Points: 128 # Comments: 68",
    "date": "2026-10-25T09:51:17+00:00",
    "source": "Hacker News（100pt以上）",
    "publisher": "",
@@ -6282,6 +7657,17 @@
    "lang": "ja"
   },
   {
+   "id": "e20a11b74f0c95c6",
+   "title": "Apollo’s Slok Says AI Has Delivered Zero Payoff Outside of Tech",
+   "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOR1FnYXFIOUpyU1VUdzNDazE4cFE2VDFyNU5DS3h0R0VSR2xHa0k0V2dHZ0hKbTZ6dFo3X1hUSW96S2dRRE5GODJUSUlCQ0dHUTVpSUJ0ZExNM1FBMVFld0JmSTBDMkpfSG5IOXVlS0hPX1h6OHpRT0xhbzNweEVxVDBLZGRreHVCc0VPZjVEQjN5dEIxQ2x4TGhfN2o3UHA3dVZrTXhRNVhsV216MGxNSnZWUGdNU1JiQjMxbQ?oc=5",
+   "summary": "",
+   "date": "2026-10-25T09:28:36+00:00",
+   "source": "Google News UK（AI）",
+   "publisher": "Bloomberg.com",
+   "category": "ニュース",
+   "lang": "en"
+  },
+  {
    "id": "5b092d85bf1fda38",
    "title": "Ventura County Star Events - Kelly Boesch: PTTOW-Next 2026",
    "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNb0pzY200dmxJdERJQnlpcjBvZHVQcUUzZ3hHcTlYLTY3NHBrMFFrVmZDOUlHZVdYXzlkMHhvaDhHZG5vLWRyc3Flb2tFelVSdGpaNktISm9zSWxyZm9mMGtZc2dPVy1nQ2JKM2FrUkE1VFVfRVJxX2hMWnQwM3Bzby1pY0F5T29jMlRoeDR3T256VzFMX3dBaDFTRFBLd0xQbjBGWmpGYVVOX00?oc=5",
@@ -6469,6 +7855,17 @@
    "lang": "fr"
   },
   {
+   "id": "f5d1b7f128a53715",
+   "title": "Überraschende Entdeckung: Künstliche Intelligenz kann Warnzeichen des plötzlichen Herztodes erkennen.",
+   "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOYU5hWkNwZU5GU3ZzUUU0TXB2RWo3dl9Ca2otSGxVWGpFZ0tDRW9yanJLa0FoRVhfYUt2SUs5bWlOWDBVbkdkNjRYeDA0cVlqSHFLSWN6aUFHM3psdXBUakZqc1lGSUY0WEJmaFZRbi1OQUpVeno5cFJyQXlWOEljYUs0ekZkWnpnLVhDVzhJWktGelFfMXBXTWRB?oc=5",
+   "summary": "",
+   "date": "2026-10-25T08:58:55+00:00",
+   "source": "Google News（ドイツ・KI）",
+   "publisher": "Vietnam.vn",
+   "category": "ニュース",
+   "lang": "de"
+  },
+  {
    "id": "d29d5579181b5a6a",
    "title": "With the huge price hike on the 32GB VRAM scene, I’m reconsidering my purchase options. Any input or advice?",
    "link": "https://www.reddit.com/r/LocalLLaMA/comments/1xexe1m/with_the_huge_price_hike_on_the_32gb_vram_scene/",
@@ -6617,7 +8014,7 @@
    "link": "https://zenn.dev/hfujihira/articles/hf-67c7f0d6b504",
    "summary": "! この記事は 2026年9月19日に note で公開した記事を Zenn に移したものです。内容は公開時点のものです。続編（実際に Jev を使って自宅の AI と比べた記録）は別記事で公開します。 AIに「答えだけ」を言わせたい人たちがいる ChatGPT や Claude に何か聞くと、文章が返ってくる。 「このメールは、クレジットカードの支払日のお知らせですね。9月28日が引き落とし日なので、口座残高を確認しておくとよさそうです。」 人間が読むなら、これでいい。ていねいだし、理由も書いてある。 でも、この答えをプログラムに渡したいときは、急に不…",
    "date": "2026-10-25T08:37:10+00:00",
-   "source": "Zenn（AI）",
+   "source": "Zenn（LLM）",
    "publisher": "",
    "category": "技術記事",
    "lang": "ja"
@@ -7013,7 +8410,7 @@
    "link": "https://zenn.dev/hodakam/articles/fbf973b8044288",
    "summary": "はじめに 2026年2月27日に最初のコミットをしてから8ヶ月。個人で作っている分子ビューアのMeganeは、2,708コミット、マージしたPRは約780件になりました。そのうち作者がClaudeになっているコミットが1,512件。自分の名前で入っているのは30件足らずで、しかも半分くらいは「Update」みたいなやつです。途中で使ったモデルも、Opus 4.6からOpus 5.5まで6回入れ替わりました。 AIが作っているなら、一見すると誰でも真似できそうに思えます。でも、同じLLMが使えたとしても、成果物の出来栄えには大きな差がある。そう実感している…",
    "date": "2026-10-25T07:49:57+00:00",
-   "source": "Zenn（AI）",
+   "source": "Zenn（LLM）",
    "publisher": "",
    "category": "技術記事",
    "lang": "ja"
@@ -7220,6 +8617,17 @@
    "id": "e84a954dc9c851b8",
    "title": "比爾蓋茲警告：AI「進化」時代對勞工將十分殘酷 機器人取代人類沒回頭路",
    "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1OVHdldHFEcUxRUGZuU3MxUUtEb1ZDd2ktZWRqSWN1WVBFV092Mm16eXp3S2JSM2FEUy1GYVdveV9LcFktWWlJY09YUnB0SWJsYzhaRWFvVEF3Z3NrSXAtLTVjeDjSAWRBVV95cUxNTlR3ZXRxRHFMUVBmblNzMVFLRG9WQ3dpLWVkakljdVlQRVdPdjJtenl6d0tiUjNhRFMtRmFXb3lfS3BZLVlpSWNPWFJwdElibGM4WkVhb1RBd2dza0lwLS01Y3g4?oc=5",
+   "summary": "",
+   "date": "2026-10-25T07:07:26+00:00",
+   "source": "Google新聞（台湾・生成式AI）",
+   "publisher": "自由財經",
+   "category": "ニュース",
+   "lang": "zh"
+  },
+  {
+   "id": "ba32b776b4ed21e9",
+   "title": "比爾蓋茲警告：AI「進化」時代對勞工將十分殘酷",
+   "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBrQi0tanJJQmtNTHl3Umg3TFpBMDB2TzNMd0hBSF9SU1VsZEszTUlqT0Ywb3FxNC0yY3FUbXBWUlV3WERJZXp5M3lHOVMwVU52TVhUcUJLNTFOOURlQ1pn0gFkQVVfeXFMTU5Ud2V0cURxTFFQZm5TczFRS0RvVkN3aS1lZGpJY3VZUEVXT3YybXp5endLYlIzYURTLUZhV295X0twWS1ZaUljT1hScHRJYmxjOFpFYW9UQXdnc2tJcC0tNWN4OA?oc=5",
    "summary": "",
    "date": "2026-10-25T07:07:26+00:00",
    "source": "Google新聞（台湾・生成式AI）",
@@ -7673,7 +9081,7 @@
    "link": "https://zenn.dev/inaki/articles/2ab775d3f48c81",
    "summary": "はじめに ウォーターフォール型の大規模なシステム改修で、各工程（設計工程〜リリース前まで）でAIエージェント（GitHub Copilotなど）を全面的に使いました。一番の学びは、SKILLの価値を私たち自身が誤解していた、ということです。 当初はSKILLを「AIエージェントを強くする魔法」のように考えていました。手順を細かく書くほど品質が上がるはずだ、と。実際には逆で、書きすぎたSKILLほどAIエージェントは迷いました。本記事では、その反省と、SKILLの仕組みを生んだAnthropicの公式ドキュメント「Skill authoring best…",
    "date": "2026-10-25T05:42:05+00:00",
-   "source": "Zenn（AI）",
+   "source": "Zenn（生成AI）",
    "publisher": "",
    "category": "技術記事",
    "lang": "ja"
@@ -7794,7 +9202,7 @@
    "link": "https://zenn.dev/masafumi_ai/books/grokbot-video-team",
    "summary": "Grok BotでBotを役割ごとに分け、動画の企画・台本・音声・動画・予約・公開確認・計測を回している記録です。各Botの設定文、CEO役のBotが送った依頼文、ルーティン、チェックリスト、画面5パターンのスタイル仕様書、失敗から足した31行を全文で載せています。公開と予約の最後のOKは人間が出しています。",
    "date": "2026-10-25T05:27:14+00:00",
-   "source": "Zenn（AI）",
+   "source": "Zenn（LLM）",
    "publisher": "",
    "category": "技術記事",
    "lang": "ja"
@@ -7805,7 +9213,7 @@
    "link": "https://zenn.dev/masafumi_ai/articles/00009-grokbot-video-team-intro",
    "summary": "「勝文のAI現場」の勝文です。エンジニア歴10年以上、フリーランス6年以上のAIエンジニアです。 Grok BotでBotを役割ごとに分けて「動画チーム」を作り、YouTubeショートとTikTokのチャンネルを運用しています。この記事は、その全体像を無料でまとめたものです。設定文・依頼文・ルーティン・スタイル仕様書・失敗31件の全文は、Zennの本（有料）に載せています。 先に、この記事で言わないことを書いておきます。 「全部自動」とは書きません。 企画・台本・実機での確認・音声・動画・予約・公開の確認・計測はBotがやります。でも、公開と予約の最後の…",
    "date": "2026-10-25T05:27:12+00:00",
-   "source": "Zenn（AI）",
+   "source": "Zenn（LLM）",
    "publisher": "",
    "category": "技術記事",
    "lang": "ja"
@@ -8471,6 +9879,17 @@
    "lang": "ja"
   },
   {
+   "id": "4d50b745deea5cbe",
+   "title": "LiteLLM 1.107.0 のマルウェア ― AI 開発者が 5 分で確かめることと、次から 3 日待つ設定",
+   "link": "https://zenn.dev/persimmoq/articles/litellm-1-107-0-compromise-check",
+   "summary": "2026 年 10 月 21 日、PyPI の litellm に、情報窃取型のマルウェアが入った版（1.107.0）が公開されました。2026 年 3 月の事案とは別の、2 度目の侵害です。PyPI からは削除済みで、安全な版は 1.106.2 です。 LiteLLM は、Claude や GPT など複数のモデルを同じ形で呼ぶためのライブラリです。AI エージェントやプロキシの依存に入っていることが多く、自分で入れた覚えがなくても入っている場合があります。そして今回のマルウェアは、Claude や Cursor、Codex など AI 開発ツールの認…",
+   "date": "2026-10-25T04:27:40+00:00",
+   "source": "Zenn（LLM）",
+   "publisher": "",
+   "category": "技術記事",
+   "lang": "ja"
+  },
+  {
    "id": "813111ed106eafdc",
    "title": "A assistant for your Job",
    "link": "https://www.reddit.com/r/SideProject/comments/1xesth1/a_assistant_for_your_job/",
@@ -8848,7 +10267,7 @@
    "id": "325a829b858da832",
    "title": "Five Qwen3.8-27B models match Fable 5 Using GVS5H Harness",
    "link": "https://github.com/slee-persis/GVS5H",
-   "summary": "Article URL: https://github.com/slee-persis/GVS5H Comments URL: https://news.ycombinator.com/item?id=50228167 Points: 180 # Comments: 67",
+   "summary": "Article URL: https://github.com/slee-persis/GVS5H Comments URL: https://news.ycombinator.com/item?id=50228167 Points: 180 # Comments: 69",
    "date": "2026-10-25T03:56:01+00:00",
    "source": "Hacker News（100pt以上）",
    "publisher": "",
@@ -8920,6 +10339,17 @@
    "publisher": "",
    "category": "収益化",
    "lang": "ja"
+  },
+  {
+   "id": "a406afc486303975",
+   "title": "México enfrenta rezago legal ante el avance de la inteligencia artificial: especialista de la UASLP",
+   "link": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxNM0RPci1nUUVIZ2t1VE01ZF9iOGowMmtRUVNZVzRfSnV5b2N0Y1ZfVVBSYWFlSFk1Y19id1lKS19VTU5ubFVHSFJrcHlUWVBDWWU0OG1wRHRqbEJpT3BSOEcySzJVRzlReWlSa3RIbDNpSXdWZzNJNE12eHdGczBHU2hSYVhCZUM2SHF6TmNlLWRrMnc1QjJTN0xVcTA1VXRtTzVkVG8xZlRpMWF0QXdQNGtaT3BONVQxdW93TFg4M1JUMXJKX0REVmEzcWhDSG1VdlE5ZUdVdndlc3Q3Ri16SVgwMEhySWRsX2k2Mzln?oc=5",
+   "summary": "",
+   "date": "2026-10-25T03:50:04+00:00",
+   "source": "Google Noticias（スペイン語・IA）",
+   "publisher": "El Sol de México",
+   "category": "ニュース",
+   "lang": "es"
   },
   {
    "id": "f5910fd84465dad0",
@@ -9340,6 +10770,17 @@
    "lang": "ja"
   },
   {
+   "id": "55a0c5ba39f4a996",
+   "title": "油價跟人工智能泡沫破滅有什麼關係……？？？",
+   "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPTnVHWHdmUlREejRmUWVYczZ0aVpKYVBNdVJ6UnNGUUhueDVfSzlLMlF0VVBCWmdRRDYtNGdCVEpxR2hEWF9oUmhXelpGNGlaSVBxVXJHSWtSSWRJMk53S25QZ2ZZR3ZSaFJKa0dkTXhFTjIwQzh1LUtyZlB3bGFuRHJZR292YXBwTUdjOWtGa1l0eWcxT2s2R0NDRzVBVHBqR1g4MGk0Mzk?oc=5",
+   "summary": "",
+   "date": "2026-10-25T02:43:00+00:00",
+   "source": "Google新聞（台湾・生成式AI）",
+   "publisher": "Moomoo",
+   "category": "ニュース",
+   "lang": "zh"
+  },
+  {
    "id": "bebf6554492b0959",
    "title": "I built a laser dry-fire shooting game with Claude Code: a webcam watches your monitor and scores laser hits (open source, free)",
    "link": "https://www.reddit.com/r/ClaudeAI/comments/1xeqtp1/i_built_a_laser_dryfire_shooting_game_with_claude/",
@@ -9684,7 +11125,7 @@
    "id": "2325af3360e06716",
    "title": "Cerebras Deploys Trillion-Parameter AI Models",
    "link": "https://www.cerebras.ai/blog/how-we-deploy-trillion-parameter-frontier-models-on-cerebras",
-   "summary": "Article URL: https://www.cerebras.ai/blog/how-we-deploy-trillion-parameter-frontier-models-on-cerebras Comments URL: https://news.ycombinator.com/item?id=50227356 Points: 338 # Comments: 121",
+   "summary": "Article URL: https://www.cerebras.ai/blog/how-we-deploy-trillion-parameter-frontier-models-on-cerebras Comments URL: https://news.ycombinator.com/item?id=50227356 Points: 344 # Comments: 127",
    "date": "2026-10-25T01:33:49+00:00",
    "source": "Hacker News（100pt以上）",
    "publisher": "",
@@ -9723,6 +11164,17 @@
    "publisher": "Microsoft",
    "category": "ニュース",
    "lang": "es"
+  },
+  {
+   "id": "a9e08b18c9f802a3",
+   "title": "Show HN: Hurston-1 open source TTS that speak Southern American and Afro-English",
+   "link": "https://huggingface.co/destined/hurston-1",
+   "summary": "Hey HN, I’m open sourcing my Hurston-1 narrowband TTS model (Apache-2.0). It is very good with American English and does especially well with Southern American and Regional African English accents. Destined AI is based in Atlanta, and I built this because I’m amazed by what AI ca…",
+   "date": "2026-10-25T01:30:13+00:00",
+   "source": "Hacker News（Show HN）",
+   "publisher": "",
+   "category": "収益化",
+   "lang": "en"
   },
   {
    "id": "fcf9f34ed4c91786",
@@ -9832,6 +11284,17 @@
    "source": "Reddit r/singularity",
    "publisher": "",
    "category": "話題",
+   "lang": "en"
+  },
+  {
+   "id": "8df5b3df6bb7b9be",
+   "title": "Google Harness2: How a Cheaper AI Gained 11.5 Points in 2026",
+   "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5HcW1CVjlrOU95bE1IYnc2cl9fa3E5VUJDdmhwTVYtc1VVWHp2RERjQ2wzUFdlLUxDOC0xaE1mSHRUUVdUWHpkQU5VUXVvdw?oc=5",
+   "summary": "",
+   "date": "2026-10-25T01:14:43+00:00",
+   "source": "Google News（Generative AI）",
+   "publisher": "Memeburn",
+   "category": "ニュース",
    "lang": "en"
   },
   {
@@ -11490,6 +12953,17 @@
    "link": "https://news.google.com/rss/articles/CBMikANBVV95cUxOLWNiT2FwX0xVNnJoc09tRHFQU3lDeFFjUjhZT1o3LXM0bE9vMGttUHVLUXBzc3dSZjZiZFJKZzVpS3dhTlRoblowaXZEbm0tRFVCOU9UVXR5a1d4a3poSlhmaU5DMFFVeVFFaWVUQlZwZHdVUV8xUU1YNjNSNVdibHloVGVleTZkeHZub2p2d2pQQUwybHRxSGQxZmYyZGlQM0JJWU9KU2tUcTJZdjFrZ3NyTDZkYnFNcHBlZVNvTExaN0JHdHhvZW9oU2ozNWVJRHRFclFSS3N0dWhGRjJwc1F6alpmSHpNeFU2UlhMX3ZldW5lRm5BdDc5ZE1MNnBMRHpYcFBxZ0g0V0Nyc3ZTbVJZZXZQZ1BRYkhURXJhNXdZd19qTWpfbjVTM0lWbzV6UFp5bzNpWFpIbEppODVycEVMTkdlMGtvVEcxb2RKWUU4amlPbEJaWFlfVW5yODVyWk4wNUtTZlR6SU0wSnNmVW9ZS1JORW51Z1F0VUNVS3RiZTh5aUZ4T2owQm5GTzZS?oc=5",
    "summary": "",
    "date": "2026-10-24T21:39:36+00:00",
+   "source": "Googleニュース（生成AI）",
+   "publisher": "小豆島町",
+   "category": "ニュース",
+   "lang": "ja"
+  },
+  {
+   "id": "2e871fe243258df8",
+   "title": "‍‍‍生成AIアニメ制作 完全ガイド",
+   "link": "https://news.google.com/rss/articles/CBMi5gJBVV95cUxQNzJhRFB4alJKcTB5YXhUbjZGWnR2R3N4ZmNhbnlXMWppNGNKZlJyclRkSUVwTVMzNF9leTctZ1FYOXZEamN4X3pEM1BEcklZSUoyS1VsdVVRelFnQndFb2dXZHI0QUgtUDJ3UmpOMzhDSFdJS2IzZG84UlFXSnlNRFJSb0tMUlRfd2NQMkttbFNfRk1zdGU0NmkzWDVBcTBKLUhSaDhQcWZRby1wWWJQa2ZEMjFacUFrREpQZFE3a2wxSVV1LS1QWjdYR1RoaVdJQ2RPdDZxTnMyUDIxSFpWcmVMeVQtNG9tT3lmOVJoX0YwSWg0ZlhPOXZ5VmNjN2dRNlRHNXNwa09ESmpvaGJjbjliZXlYTFBtZjJBM19rd1V0d0hzWk8xTmd3SXBvOTZSeFE5dzlhTVU2VzZHVzhIVFFrV3FmbWRReHN2Nk9mUGJwZXRWSldUWnEzdTJYSkF4djlpTmF3?oc=5",
+   "summary": "",
+   "date": "2026-10-24T21:39:26+00:00",
    "source": "Googleニュース（生成AI）",
    "publisher": "小豆島町",
    "category": "ニュース",
@@ -13949,6 +15423,17 @@
    "lang": "en"
   },
   {
+   "id": "95cd878a377fab6b",
+   "title": "미야모토 시게루가 본 AI, '작업할수록 만든다는 것 고민할 기회'",
+   "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5Bdk9XNGh2ZDZVVEZlbzlJMldGdzB5SFc3SFhfOUU3WTNiUlc5cS1uTTVYUXd2TU1SWm5faG9ONzFlLWY5QWdVdmFiSm9zTTBua3JYT1hJUlRZOFIzVmc?oc=5",
+   "summary": "",
+   "date": "2026-10-24T16:05:53+00:00",
+   "source": "Google 뉴스（韓国・생성형 AI）",
+   "publisher": "인벤",
+   "category": "ニュース",
+   "lang": "ko"
+  },
+  {
    "id": "968da023a49c5b99",
    "title": "Kimi K3.1 removes cyberattack training data from open weight release",
    "link": "https://www.reddit.com/r/LocalLLaMA/comments/1xecgrf/kimi_k31_removes_cyberattack_training_data_from/",
@@ -15206,11 +16691,11 @@
    "id": "2843d45dbb438567",
    "title": "人間とAIエージェント両方のために設計されたワークスペース全体を対象としたローカルファースト検索「zg」",
    "link": "https://gigazine.net/news/20261024-zvec-grep/",
-   "summary": "zg(zvec-grep)はAlibaba製のベクトルデータベース「zvec」を基盤とする、ripgrep・BM25・ベクトル検索を統合したローカルファーストな検索レイヤーです。ターミナルから直接使うことも、AIエージェントから利用することも可能です。 続きを読む...",
+   "summary": "zg(zvec-grep)はAlibaba製のベクトルデータベース「zvec」を基盤とする、ripgrep・BM25・ベクトル検索を統合したローカルファーストな検索レイヤーです。ターミナルから直接使うことも、AIエージェントから利用することも可能です。 GitHub - zvec-ai/zvec-grep: Local-first search across your workspace, built for h...",
    "date": "2026-10-24T14:00:00+00:00",
-   "source": "GIGAZINE",
+   "source": "はてなブックマーク IT新着",
    "publisher": "",
-   "category": "ニュース",
+   "category": "話題",
    "lang": "ja"
   },
   {
@@ -23759,6 +25244,17 @@
    "publisher": "",
    "category": "論文",
    "lang": "en"
+  },
+  {
+   "id": "5833170c957f3810",
+   "title": "생성형 AI 아티스트 로진, 지상파 뚫었다… 25일 '인기가요' 출격",
+   "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5WYVNYVENjN0ZNMEx4SjdkN0Y0dW1BeUlodWtxbE9ta3k3Z1J3UkFGTTRXYk9XQ2YtanVuSEtqT1g1d21oQ1NRWlZkM3NsZ3VOaldZZ3FfNVJzNkU?oc=5",
+   "summary": "",
+   "date": "2026-10-24T04:00:00+00:00",
+   "source": "Google 뉴스（韓国・생성형 AI）",
+   "publisher": "씨네플레이",
+   "category": "ニュース",
+   "lang": "ko"
   },
   {
    "id": "53d3fd7735983464",
@@ -38955,6 +40451,17 @@
    "id": "2c5d4db327c97d71",
    "title": "SIGGRAPH 2026",
    "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9nZFFESExOWXZsRGlXWDI4ZEF3M3pYTWN3SkNRNG9iS0I3YTF1Q0owbk44WFY0c3RBbHQzRGM1dXBvbWVqSzlFYUVPVUhVRWc3a2FOaVFSMlhWd2s?oc=5",
+   "summary": "",
+   "date": "2026-10-18T23:25:57+00:00",
+   "source": "Googleニュース（学生・ハッカソン）",
+   "publisher": "CGinterest",
+   "category": "収益化",
+   "lang": "ja"
+  },
+  {
+   "id": "12e512145a3e56e7",
+   "title": "【学生無料】Live2Dクリエイターのための年に一度のイベント「alive 2026」",
+   "link": "https://news.google.com/rss/articles/CBMizgJBVV95cUxQLVN6UjNjQWNDZENob1pjNGtIUTJuZHpnN2dHa0RUd1NEOThJMGM1ckxNdUpvbS05cWF3ckpYbk5BX29ZNk5tYzloYXQxWEs0UExxZ3BHZ2xjWXlFRFdtWEZWeEdKa3oyWmtVUkg1N3FERXhGSk95YVcyUDlzOGJWQVY0cUhLamVsLTRVb3Judl9wSkc2U3NUa3Z6Ul9Na1NiLVlBMU56ZGNYa1U3cDBjQllyTlpIUVV3QWtHZ2w5YjNhbG12QTVVcjFvclRIb1lNRGs0Vkk0c2VTOUk2NENnOXhlaGNLVzROMDZPQlJEVDZ6bFRaZUVRNzBzYkxUSV9Yak5wblB4VFU2NjZuWWdyTmJwekJTOGhqcUFNMG9qSmtEUmhZOXVsWU9ucmFrZVFZeVE2Zm4yTEJZaldKLVpjaFpNN2U0aUtlUzR4QmtR?oc=5",
    "summary": "",
    "date": "2026-10-18T23:25:57+00:00",
    "source": "Googleニュース（学生・ハッカソン）",
