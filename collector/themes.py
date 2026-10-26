@@ -87,7 +87,8 @@ GEAR = [
     ]),
     ("ガジェット", 3, [
         "gadget", "camera", "drone", "game console", "PlayStation", "Xbox", "Nintendo Switch", "Steam Deck",
-        "e-reader", "Kindle", "smart home", "robot vacuum", "keyboard", "monitor", "speaker", "headphones",
+        "e-reader", "Kindle", "smart home", "robot vacuum", "keyboard", "gaming monitor", "4K monitor",
+        "smart speaker", "Bluetooth speaker", "headphones",
         "power bank", "charger", "action camera", "GoPro", "Meta Quest", "ガジェット", "カメラ", "ドローン",
         "ゲーム機", "電子書籍リーダー", "スマートホーム", "スマート家電", "ロボット掃除機", "キーボード",
         "モニター", "スピーカー", "ヘッドホン", "モバイルバッテリー", "充電器", "家電",
