@@ -76,6 +76,7 @@ details li.ng { color: var(--new); }
     <nav class="tabs" id="tabs">
       <button class="tab" data-tab="tech">技術の進歩</button>
       <button class="tab" data-tab="money">収益化のヒント</button>
+      <button class="tab" data-tab="gear">新しいツール</button>
       <button class="tab" data-tab="all">すべての記事</button>
     </nav>
     <div class="controls">
@@ -120,6 +121,7 @@ let activeCategory = "";
 const TABS = {
   tech: "新しいAIモデル・研究成果・性能向上など、AI技術の進歩に関する記事を注目度の高い順に並べています。",
   money: "副業・個人開発・起業・学生向けコンテストなど、大学生がAIで収益につなげるヒントになりそうな記事を並べています。",
+  gear: "新しいブラウザ、AIサービス、スマホやパソコンなどのハードウェア、アプリの情報を並べています。",
   all: "",
 };
 let tab = TABS[store.get("tab")] !== undefined ? store.get("tab") : "tech";
@@ -183,7 +185,7 @@ function card(i, mode) {
     body = `<a class="title" href="${esc(i.link)}" target="_blank" rel="noopener">${esc(i.title_ja)}</a>
       ${i.title_ja !== i.title ? `<div class="original">${esc(i.title)}</div>` : ""}
       <p class="digest">${esc(i.summary_ja)}</p>
-      <p class="point"><b>${tab === "money" ? "活かし方" : "ポイント"}</b>${esc(i.point)}</p>`;
+      <p class="point"><b>${{ money: "活かし方", gear: "使いどころ" }[tab] || "ポイント"}</b>${esc(i.point)}</p>`;
   } else if (mode === "theme") {
     body = `<a class="title" href="${esc(i.link)}" target="_blank" rel="noopener">${esc(i.title)}</a>
       ${i.digest ? `<p class="digest">${esc(i.digest)}</p>` : ""}
@@ -227,7 +229,7 @@ function render() {
       if (DATA.curated.overview && !opts.words.length) html += `<div class="overview"><b>今日のまとめ</b>${esc(DATA.curated.overview)}</div>`;
       html += picks.map((i) => card(i, "curated")).join("") || '<p class="empty">条件に合う注目記事はありません。</p>';
     } else {
-      html += '<p class="notice">Claudeによる選定・日本語要約はまだありません。デスクトップ版の Claude Code でこのリポジトリを開き、<code>/curate</code> と入力すると表示されます。</p>';
+      html += '<p class="notice">Claudeによる選定・日本語要約はまだありません。毎朝7時ごろの自動選定で表示されます。</p>';
     }
     const pickedIds = new Set(curated.map((i) => i.id));
     const rest = pickTheme(filtered.filter((i) => !pickedIds.has(i.id)));

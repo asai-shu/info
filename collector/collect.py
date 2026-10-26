@@ -191,7 +191,10 @@ def collect_feed(feed: dict, now: datetime) -> tuple[list[dict], str | None]:
     except Exception as exc:  # 1つのフィードが失敗しても全体は止めない
         return [], f"{type(exc).__name__}: {exc}"
 
-    if feed.get("filter"):
+    if feed.get("filter") == "gear":
+        # ガジェット系のサイトは記事が多いので、AI関連か、ブラウザ・デバイスの記事だけ残す
+        entries = [e for e in entries if is_ai_related(e) or themes.is_gear_related(e)]
+    elif feed.get("filter"):
         entries = [e for e in entries if is_ai_related(e)]
     if feed.get("limit"):
         entries = entries[: feed["limit"]]
@@ -225,7 +228,7 @@ def load_curated(items: list[dict]) -> dict | None:
         return None
     curated = json.loads(CURATED_PATH.read_text(encoding="utf-8"))
     by_id = {i["id"]: i for i in items}
-    for theme in ("tech", "money"):
+    for theme in ("tech", "money", "gear"):
         curated[theme] = [
             {**by_id[e["id"]], **e} for e in curated.get(theme, []) if e.get("id") in by_id
         ]

@@ -22,7 +22,7 @@ DATA_PATH = ROOT / "data" / "items.json"
 CURATED_PATH = ROOT / "data" / "curated.json"
 CONFIG_PATH = ROOT / "feeds.toml"
 
-THEMES = ("tech", "money")
+THEMES = ("tech", "money", "gear")
 ENTRY_FIELDS = ("id", "title_ja", "summary_ja", "point")
 
 

@@ -1,7 +1,7 @@
-"""記事を「AI技術の進歩」と「大学生の収益化のヒント」の2つのテーマで採点し、短い要約を付ける。
+"""記事を「AI技術の進歩」「大学生の収益化のヒント」「新しいツール」の3つのテーマで採点し、短い要約を付ける。
 
 AI の API は使わず、キーワードの一致と取得元の分類で判定する。
-判定の基準を変えたいときは、下の TECH / MONEY のキーワードを編集する。
+判定の基準を変えたいときは、下の TECH / MONEY / GEAR のキーワードを編集する。
 """
 
 from __future__ import annotations
@@ -70,10 +70,33 @@ MONEY = [
     ]),
 ]
 
+# 新しいブラウザ・AIサービス・ハードウェア・アプリ
+GEAR = [
+    ("ブラウザ", 3, [
+        "browser", "Chrome", "Firefox", "Safari", "Brave", "Vivaldi", "Microsoft Edge", "Arc browser",
+        "Dia browser", "ChatGPT Atlas", "Perplexity Comet", "Opera Neon", "ブラウザ", "拡張機能",
+    ]),
+    ("AIデバイス", 3, [
+        "AI device", "AI PC", "Copilot+ PC", "AI glasses", "smart glasses", "AI phone", "AIデバイス",
+        "AIスマホ", "AIグラス", "スマートグラス",
+    ]),
+    ("ハードウェア", 3, [
+        "smartphone", "iPhone", "Pixel", "Galaxy", "iPad", "MacBook", "laptop", "wearable", "headset",
+        "Vision Pro", "earbuds", "smartwatch", "Snapdragon", "RTX", "NPU", "スマホ", "スマートフォン",
+        "ノートPC", "パソコン", "タブレット", "ウェアラブル", "イヤホン", "スマートウォッチ", "ガジェット",
+    ]),
+    ("新しいアプリ・サービス", 2, [
+        "app", "new feature", "beta", "waitlist", "now available", "available now", "extension",
+        "アプリ", "ベータ", "提供開始", "サービス開始", "新サービス", "新機能",
+    ]),
+    ("レビュー・使ってみた", 1, ["review", "hands-on", "tested", "レビュー", "使ってみた", "試してみた", "実機"]),
+]
+
 # 取得元の分類（feeds.toml の category）による加点
 CATEGORY_BONUS = {
     "tech": {"論文": ("研究・論文", 1), "公式発表": ("公式発表", 3)},
     "money": {"ツール": ("新ツール・サービス", 1), "ビジネス": ("起業・スタートアップ", 1)},
+    "gear": {"ツール": ("新しいアプリ・サービス", 1), "新製品": ("新製品", 1)},
 }
 # feeds.toml で theme = "money" などと指定した取得元への加点
 FEED_THEME_BONUS = 2
@@ -96,7 +119,7 @@ def compile_groups(groups):
     return [(label, points, [compile_keyword(k) for k in keywords]) for label, points, keywords in groups]
 
 
-THEMES = {"tech": compile_groups(TECH), "money": compile_groups(MONEY)}
+THEMES = {"tech": compile_groups(TECH), "money": compile_groups(MONEY), "gear": compile_groups(GEAR)}
 
 # 要約から除く定型文
 NOISE_RES = [
@@ -144,6 +167,16 @@ def digest(item: dict) -> str:
     if len(result) > DIGEST_LENGTH:
         result = result[:DIGEST_LENGTH].rstrip() + "…"
     return result
+
+
+def is_gear_related(item: dict) -> bool:
+    """「新しいツール」のキーワード（アプリ・サービスとレビューを除く）を含むか。"""
+    text = f"{item['title']} {item['summary']}"
+    return any(
+        p.search(text)
+        for label, _, patterns in THEMES["gear"] if label in ("ブラウザ", "AIデバイス", "ハードウェア")
+        for p in patterns
+    )
 
 
 def annotate(item: dict, feed_themes: dict[str, str]) -> dict:
