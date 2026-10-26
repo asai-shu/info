@@ -1,4 +1,4 @@
-"""記事を「AI技術の進歩」「大学生の収益化のヒント」「新しいツール」の3つのテーマで採点し、短い要約を付ける。
+"""記事を「AI技術の進歩」「大学生の収益化のヒント」「ツール・ガジェット」の3つのテーマで採点し、短い要約を付ける。
 
 AI の API は使わず、キーワードの一致と取得元の分類で判定する。
 判定の基準を変えたいときは、下の TECH / MONEY / GEAR のキーワードを編集する。
@@ -70,7 +70,7 @@ MONEY = [
     ]),
 ]
 
-# 新しいブラウザ・AIサービス・ハードウェア・アプリ
+# 新しいブラウザ・AIサービス・ハードウェア・ガジェット・アプリ
 GEAR = [
     ("ブラウザ", 3, [
         "browser", "Chrome", "Firefox", "Safari", "Brave", "Vivaldi", "Microsoft Edge", "Arc browser",
@@ -83,7 +83,14 @@ GEAR = [
     ("ハードウェア", 3, [
         "smartphone", "iPhone", "Pixel", "Galaxy", "iPad", "MacBook", "laptop", "wearable", "headset",
         "Vision Pro", "earbuds", "smartwatch", "Snapdragon", "RTX", "NPU", "スマホ", "スマートフォン",
-        "ノートPC", "パソコン", "タブレット", "ウェアラブル", "イヤホン", "スマートウォッチ", "ガジェット",
+        "ノートPC", "パソコン", "タブレット", "ウェアラブル", "イヤホン", "スマートウォッチ",
+    ]),
+    ("ガジェット", 3, [
+        "gadget", "camera", "drone", "game console", "PlayStation", "Xbox", "Nintendo Switch", "Steam Deck",
+        "e-reader", "Kindle", "smart home", "robot vacuum", "keyboard", "monitor", "speaker", "headphones",
+        "power bank", "charger", "action camera", "GoPro", "Meta Quest", "ガジェット", "カメラ", "ドローン",
+        "ゲーム機", "電子書籍リーダー", "スマートホーム", "スマート家電", "ロボット掃除機", "キーボード",
+        "モニター", "スピーカー", "ヘッドホン", "モバイルバッテリー", "充電器", "家電",
     ]),
     ("新しいアプリ・サービス", 2, [
         "app", "new feature", "beta", "waitlist", "now available", "available now", "extension",
@@ -170,11 +177,11 @@ def digest(item: dict) -> str:
 
 
 def is_gear_related(item: dict) -> bool:
-    """「新しいツール」のキーワード（アプリ・サービスとレビューを除く）を含むか。"""
+    """「ツール・ガジェット」のキーワード（アプリ・サービスとレビューを除く）を含むか。"""
     text = f"{item['title']} {item['summary']}"
     return any(
         p.search(text)
-        for label, _, patterns in THEMES["gear"] if label in ("ブラウザ", "AIデバイス", "ハードウェア")
+        for label, _, patterns in THEMES["gear"] if label in ("ブラウザ", "AIデバイス", "ハードウェア", "ガジェット")
         for p in patterns
     )
 

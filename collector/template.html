@@ -76,7 +76,7 @@ details li.ng { color: var(--new); }
     <nav class="tabs" id="tabs">
       <button class="tab" data-tab="tech">技術の進歩</button>
       <button class="tab" data-tab="money">収益化のヒント</button>
-      <button class="tab" data-tab="gear">新しいツール</button>
+      <button class="tab" data-tab="gear">ツール・ガジェット</button>
       <button class="tab" data-tab="all">すべての記事</button>
     </nav>
     <div class="controls">
@@ -121,7 +121,7 @@ let activeCategory = "";
 const TABS = {
   tech: "新しいAIモデル・研究成果・性能向上など、AI技術の進歩に関する記事を注目度の高い順に並べています。",
   money: "副業・個人開発・起業・学生向けコンテストなど、大学生がAIで収益につなげるヒントになりそうな記事を並べています。",
-  gear: "新しいブラウザ、AIサービス、スマホやパソコンなどのハードウェア、アプリの情報を並べています。",
+  gear: "新しいブラウザ、AIサービス、アプリ、スマホやパソコン、イヤホン・カメラ・ゲーム機などのガジェットの情報を並べています。",
   all: "",
 };
 let tab = TABS[store.get("tab")] !== undefined ? store.get("tab") : "tech";

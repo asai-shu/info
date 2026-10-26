@@ -192,7 +192,7 @@ def collect_feed(feed: dict, now: datetime) -> tuple[list[dict], str | None]:
         return [], f"{type(exc).__name__}: {exc}"
 
     if feed.get("filter") == "gear":
-        # ガジェット系のサイトは記事が多いので、AI関連か、ブラウザ・デバイスの記事だけ残す
+        # ガジェット系のサイトは記事が多いので、AI関連か、ブラウザ・デバイス・ガジェットの記事だけ残す
         entries = [e for e in entries if is_ai_related(e) or themes.is_gear_related(e)]
     elif feed.get("filter"):
         entries = [e for e in entries if is_ai_related(e)]

@@ -6,9 +6,9 @@
 #   category : 分類（画面の絞り込みに使います）
 #   lang     : 言語（ja / en / zh / ko / de / fr / es）
 #   filter   : true にすると、AI関連のキーワードを含む記事だけ残します（AI専門でないサイト向け）
-#              "gear" にすると、AI関連に加えてブラウザ・デバイス・ハードウェアの記事も残します（ガジェット系サイト向け）
+#              "gear" にすると、AI関連に加えてブラウザ・デバイス・ハードウェア・ガジェットの記事も残します（ガジェット系サイト向け）
 #   limit    : 1回の収集で取り込む最大件数（大量に流れるフィード向け。省略すると全件）
-#   theme    : "tech"（技術の進歩）/ "money"（収益化のヒント）/ "gear"（新しいツール）。そのテーマのページに載りやすくなる
+#   theme    : "tech"（技術の進歩）/ "money"（収益化のヒント）/ "gear"（ツール・ガジェット）。そのテーマのページに載りやすくなる
 
 [settings]
 keep_days = 14       # 何日前までの記事を残すか
@@ -41,7 +41,7 @@ name = "GIGAZINE"
 url = "https://gigazine.net/news/rss_2.0/"
 category = "ニュース"
 lang = "ja"
-filter = true
+filter = "gear"
 
 [[feeds]]
 name = "Publickey"
@@ -524,7 +524,7 @@ lang = "en"
 theme = "money"
 filter = true
 
-# ================= 新しいツール（ブラウザ・AIサービス・ハードウェア・アプリ） =================
+# ================= ツール・ガジェット（ブラウザ・AIサービス・ハードウェア・ガジェット・アプリ） =================
 
 [[feeds]]
 name = "Googleニュース（AIブラウザ・新アプリ）"
@@ -536,7 +536,7 @@ limit = 40
 
 [[feeds]]
 name = "Googleニュース（新製品・ガジェット）"
-url = "https://news.google.com/rss/search?q=(新製品+OR+発表)+(スマホ+OR+ノートPC+OR+ガジェット+OR+ウェアラブル)+AI+when:2d&hl=ja&gl=JP&ceid=JP:ja"
+url = "https://news.google.com/rss/search?q=(新製品+OR+発表+OR+発売)+(スマホ+OR+ノートPC+OR+ガジェット+OR+ウェアラブル+OR+イヤホン+OR+カメラ)+when:2d&hl=ja&gl=JP&ceid=JP:ja"
 category = "新製品"
 lang = "ja"
 theme = "gear"
@@ -615,6 +615,38 @@ filter = "gear"
 [[feeds]]
 name = "ITmedia PC USER"
 url = "https://rss.itmedia.co.jp/rss/2.0/pcuser.xml"
+category = "新製品"
+lang = "ja"
+theme = "gear"
+filter = "gear"
+
+[[feeds]]
+name = "Google News（Gadgets）"
+url = "https://news.google.com/rss/search?q=%22new+gadget%22+OR+%22gadget+review%22+OR+%22hands-on%22+when:2d&hl=en-US&gl=US&ceid=US:en"
+category = "新製品"
+lang = "en"
+theme = "gear"
+limit = 30
+
+[[feeds]]
+name = "Gizmodo（US）"
+url = "https://gizmodo.com/feed"
+category = "新製品"
+lang = "en"
+theme = "gear"
+filter = "gear"
+
+[[feeds]]
+name = "家電Watch"
+url = "https://kaden.watch.impress.co.jp/data/rss/1.0/kdw/feed.rdf"
+category = "新製品"
+lang = "ja"
+theme = "gear"
+filter = "gear"
+
+[[feeds]]
+name = "AV Watch"
+url = "https://av.watch.impress.co.jp/data/rss/1.0/avw/feed.rdf"
 category = "新製品"
 lang = "ja"
 theme = "gear"
