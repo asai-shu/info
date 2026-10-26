@@ -622,19 +622,12 @@ filter = "gear"
 
 [[feeds]]
 name = "Google News（Gadgets）"
-url = "https://news.google.com/rss/search?q=%22new+gadget%22+OR+%22gadget+review%22+OR+%22hands-on%22+when:2d&hl=en-US&gl=US&ceid=US:en"
+url = "https://news.google.com/rss/search?q=%22new+gadget%22+OR+%22gadget+review%22+OR+%22tech+review%22+when:2d&hl=en-US&gl=US&ceid=US:en"
 category = "新製品"
 lang = "en"
 theme = "gear"
 limit = 30
 
-[[feeds]]
-name = "Gizmodo（US）"
-url = "https://gizmodo.com/feed"
-category = "新製品"
-lang = "en"
-theme = "gear"
-filter = "gear"
 
 [[feeds]]
 name = "家電Watch"
