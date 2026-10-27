@@ -93,6 +93,13 @@ GEAR = [
         "ゲーム機", "電子書籍リーダー", "スマートホーム", "スマート家電", "ロボット掃除機", "キーボード",
         "モニター", "スピーカー", "ヘッドホン", "モバイルバッテリー", "充電器", "家電",
     ]),
+    ("面白ITグッズ・クラファン", 3, [
+        "crowdfunding", "Kickstarter", "Indiegogo", "USB hub", "docking station", "desk setup", "desk gadget",
+        "クラウドファンディング", "クラファン", "Makuake", "マクアケ", "GREEN FUNDING", "CAMPFIRE",
+        "便利グッズ", "便利ガジェット", "面白ガジェット", "変わり種", "USBハブ", "ドッキングステーション",
+        "デスク周り", "ガジェットポーチ", "トラッカー", "AirTag", "スマートリング", "ボイスレコーダー", "AIレコーダー",
+        "翻訳機", "プロジェクター", "電子ペーパー", "小型PC", "ミニPC",
+    ]),
     ("新しいアプリ・サービス", 2, [
         "app", "new feature", "beta", "waitlist", "now available", "available now", "extension",
         "アプリ", "ベータ", "提供開始", "サービス開始", "新サービス", "新機能",
@@ -182,7 +189,7 @@ def is_gear_related(item: dict) -> bool:
     text = f"{item['title']} {item['summary']}"
     return any(
         p.search(text)
-        for label, _, patterns in THEMES["gear"] if label in ("ブラウザ", "AIデバイス", "ハードウェア", "ガジェット")
+        for label, _, patterns in THEMES["gear"] if label in ("ブラウザ", "AIデバイス", "ハードウェア", "ガジェット", "面白ITグッズ・クラファン")
         for p in patterns
     )
 

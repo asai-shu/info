@@ -644,3 +644,61 @@ category = "新製品"
 lang = "ja"
 theme = "gear"
 filter = "gear"
+
+# ----- 面白ITグッズ・クラウドファンディング（あると便利な変わり種ガジェット） -----
+
+[[feeds]]
+name = "Googleニュース（クラファン・面白ガジェット）"
+url = "https://news.google.com/rss/search?q=(Makuake+OR+クラファン+OR+クラウドファンディング+OR+GREEN+FUNDING)+(ガジェット+OR+USB+OR+AI+OR+スマホ+OR+PC+OR+充電)+when:7d&hl=ja&gl=JP&ceid=JP:ja"
+category = "新製品"
+lang = "ja"
+theme = "gear"
+limit = 30
+
+[[feeds]]
+name = "Googleニュース（便利ITグッズ）"
+url = "https://news.google.com/rss/search?q=(便利グッズ+OR+便利ガジェット+OR+面白ガジェット+OR+デスク周り)+(PC+OR+スマホ+OR+USB+OR+AI)+when:7d&hl=ja&gl=JP&ceid=JP:ja"
+category = "新製品"
+lang = "ja"
+theme = "gear"
+limit = 25
+
+[[feeds]]
+name = "Google News（Crowdfunding Gadgets）"
+url = "https://news.google.com/rss/search?q=(Kickstarter+OR+Indiegogo)+(gadget+OR+tech+OR+AI)+when:7d&hl=en-US&gl=US&ceid=US:en"
+category = "新製品"
+lang = "en"
+theme = "gear"
+limit = 25
+
+[[feeds]]
+name = "Gadget Flow"
+url = "https://thegadgetflow.com/feed/"
+category = "新製品"
+lang = "en"
+theme = "gear"
+filter = "gear"
+
+[[feeds]]
+name = "Yanko Design"
+url = "https://www.yankodesign.com/feed/"
+category = "新製品"
+lang = "en"
+theme = "gear"
+filter = "gear"
+
+[[feeds]]
+name = "ROOMIE"
+url = "https://www.roomie.jp/feed/"
+category = "新製品"
+lang = "ja"
+theme = "gear"
+filter = "gear"
+
+[[feeds]]
+name = "GetNavi web"
+url = "https://getnavi.jp/feed/"
+category = "新製品"
+lang = "ja"
+theme = "gear"
+filter = "gear"

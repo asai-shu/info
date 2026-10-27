@@ -503,6 +503,190 @@
       "section": "gadget"
     },
     {
+      "tier": "flagship",
+      "category": "面白ITグッズ",
+      "name": "Rokid スマートAIグラス",
+      "price": "10万9,890円（公式ストア表示、2026年9月時点）",
+      "why": "メガネ型で、目の前に字幕や翻訳を表示し、話しかけるとAIが答えてくれます。Makuakeで約6億円を集めた2026年上半期の1位製品で、7月から量販店でも買えます。",
+      "for": "海外の人との会話や講義の字幕・メモを、スマホを出さずにやりたい人",
+      "caution": "度付きにするには別売りのレンズ（約2万円〜）が必要です。人に向けて撮影できるため、使う場所のマナーに注意してください。",
+      "sources": [
+        {
+          "title": "「Rokid スマートAIグラス」10日から一般販売（AV Watch）",
+          "url": "https://av.watch.impress.co.jp/docs/news/2123886.html"
+        },
+        {
+          "title": "Rokid スマートAIグラス、7月10日に正式販売、税込109,990円（MoguLive）",
+          "url": "https://www.moguravr.com/rokid-smart-ai-glasses-preorder-2026/"
+        },
+        {
+          "title": "Rokid スマートAIグラス日本発売｜価格・度付き対応まで解説（ISSOH）",
+          "url": "https://www.issoh.co.jp/tech/details/11197/"
+        }
+      ],
+      "section": "gadget"
+    },
+    {
+      "tier": "flagship",
+      "category": "面白ITグッズ",
+      "name": "TCL Note A1 NXTPAPER（AI電子ノート）",
+      "price": "8万4,800円前後（量販店表示。Makuake先行時は9万9,800円）",
+      "why": "紙のような書き心地の11.5型画面に、手書きメモの文字起こし・要約・翻訳などのAI機能を入れた「電子ノート」です。ペンとケースが付属します。",
+      "for": "ノートを全部デジタルにして、あとから検索・要約したい人",
+      "caution": "Googleのアプリストアがなく、普通のタブレットのようにはアプリを入れられません。",
+      "sources": [
+        {
+          "title": "TCLがAIスマートノート「Note A1 NXTPAPER」を日本で発売（ケータイ Watch）",
+          "url": "https://k-tai.watch.impress.co.jp/docs/news/2083374.html"
+        },
+        {
+          "title": "TCL、タブレットとスマートAI電子ノート計4機種（価格.comニュース）",
+          "url": "https://news.kakaku.com/prdnews/cd=pc/ctcd=0030/id=155943/"
+        },
+        {
+          "title": "個性派AIタブレット「TCL Note A1 NXTPAPER」実機レビュー（テクノエッジ）",
+          "url": "https://www.techno-edge.net/article/2026/02/10/4858.html"
+        }
+      ],
+      "section": "gadget"
+    },
+    {
+      "tier": "flagship",
+      "category": "面白ITグッズ",
+      "name": "Plaud Note Pro（AIボイスレコーダー）",
+      "price": "3万800円（定価）＋文字起こしプラン（無料は月300分、プロは年1万6,800円）",
+      "why": "カード型のレコーダーで、録音した講義や会議をAIが文字起こしして要約まで作ってくれます。マイク4基と画面付きで、対面の会話にも通話にも使えます。",
+      "for": "講義・面接・打ち合わせの記録を、あとから読み返せる文章で残したい人",
+      "caution": "たくさん使うと有料プランが必要です。講義を録音するときは、先生の許可を取りましょう。",
+      "sources": [
+        {
+          "title": "Plaud Note Proとは？他モデルとの違いや料金（Plaud公式）",
+          "url": "https://jp.plaud.ai/blogs/blog/plaud-note-pro"
+        },
+        {
+          "title": "Plaud Noteの月額料金プランを比較（AI文字起こしガイド）",
+          "url": "https://ai-transcription-guide.jp/plaud-note-monthly-fee/"
+        }
+      ],
+      "section": "gadget"
+    },
+    {
+      "tier": "student",
+      "category": "面白ITグッズ",
+      "name": "AI ONE UltraHub（AI搭載USBハブ）",
+      "price": "1万7,900円〜（Makuakeの応援購入。一般販売予定価格は2万4,200円）",
+      "why": "パソコンに挿してボタンを押して話すだけで、AIチャット・文章作成・翻訳・音声入力・画像生成が使える10-in-1のUSBハブです。登録・月額料金なしの買い切りとうたっています。Makuake開始3日で400万円を超えました。",
+      "for": "USBの差し口が足りないノートPCで、AIも手軽に試してみたい人",
+      "caution": "クラウドファンディング（2026年11月29日まで）なので、届くのは2027年1月末予定で、遅れることもあります。AIは販売元のサービス経由（GPT-5などを使うと説明）のため、無料で使える期間は販売元が続ける限りで、入力した内容の扱いも事前に確認してください。性能の第三者検証はまだありません。",
+      "sources": [
+        {
+          "title": "【登録不要・課金不要】AIが気軽に使えるUSBハブ（Makuake）",
+          "url": "https://www.makuake.com/project/revia2/"
+        },
+        {
+          "title": "Makuake開始3日で400万円突破！AIを使えるUSBハブ「UltraHub」（PR TIMES）",
+          "url": "https://prtimes.jp/main/html/rd/p/000000001.000193253.html"
+        }
+      ],
+      "section": "gadget"
+    },
+    {
+      "tier": "student",
+      "category": "面白ITグッズ",
+      "name": "XGIMI Nova（ポータブルプロジェクター）",
+      "price": "3万9,900円（定価）",
+      "why": "本体がくるっと回るので、壁でも天井でも最大150型で映せます。バッテリーとスピーカー内蔵で、寝ながら天井で映画を見るといった使い方ができます。",
+      "for": "一人暮らしの部屋で大画面の映画・ゲームを楽しみたい人",
+      "caution": "明るい部屋では見えにくくなります。夜や暗い部屋向けです。",
+      "sources": [
+        {
+          "title": "XGIMI ジンバル一体型で39900円「Nova」（AV Watch）",
+          "url": "https://av.watch.impress.co.jp/docs/news/2078786.html"
+        },
+        {
+          "title": "価格.com - XGIMI Nova 価格比較",
+          "url": "https://kakaku.com/item/K0001764792/"
+        }
+      ],
+      "section": "gadget"
+    },
+    {
+      "tier": "student",
+      "category": "面白ITグッズ",
+      "name": "Anker Nano Charging Station（7-in-1, 100W, 巻取り式USB-Cケーブル）",
+      "price": "9,990円（直販価格。Amazonで7千円台になることも）",
+      "why": "巻き取り式のUSB-Cケーブル2本とUSB・コンセントがまとまった充電ステーションです。机の上のケーブルがすっきりし、ノートPCも充電できます。",
+      "for": "机の周りのケーブルや充電器をまとめたい人",
+      "caution": "",
+      "sources": [
+        {
+          "title": "Anker Nano Charging Station (7-in-1)レビュー（monodeck）",
+          "url": "https://monodeck.jp/anker-nano-charging-station-7in1-100w/"
+        },
+        {
+          "title": "Anker Nano Charging Station 7 in 1 レビュー（もちゅガジェ）",
+          "url": "https://mochugaje.com/anker-nano-charging-station-7-in-1/"
+        }
+      ],
+      "section": "gadget"
+    },
+    {
+      "tier": "student",
+      "category": "面白ITグッズ",
+      "name": "SwitchBot ボットCharge（指ロボット）",
+      "price": "5,480円（公式発表時の価格）",
+      "why": "壁のスイッチや家電のボタンに貼ると、スマホから押してくれる小さなロボットです。古い家電でも「スマート家電」にでき、USB-Cで充電できます。",
+      "for": "寝たまま電気を消したい、外から家電を操作したい人",
+      "caution": "外出先から操作するには別売りのハブ（ハブ2は9,980円）が必要です。",
+      "sources": [
+        {
+          "title": "新製品「SwitchBot ボットCharge」早くもAmazon入荷（ジェットストリーム）",
+          "url": "https://jetstream.blog/2026/03/01/switchbot-bot-charge-early-release-amazon/"
+        },
+        {
+          "title": "価格.com - SwitchBotボットCharge スペック",
+          "url": "https://kakaku.com/item/K0001769719/spec/"
+        }
+      ],
+      "section": "gadget"
+    },
+    {
+      "tier": "student",
+      "category": "面白ITグッズ",
+      "name": "Apple AirTag（第2世代）",
+      "price": "4,980円（4個入りは1万6,980円）",
+      "why": "鍵や財布、カバンに付けておくと、iPhoneで場所を探せます。第2世代は鳴らす音が約2倍の距離まで届くようになりました。",
+      "for": "鍵や学生証・財布をよくなくす人（iPhoneユーザー）",
+      "caution": "Androidスマホでは使えません。日本では「正確な場所を見つける」の距離拡大は使えません。",
+      "sources": [
+        {
+          "title": "新型AirTag発売（PC Watch）",
+          "url": "https://pc.watch.impress.co.jp/docs/news/2081062.html"
+        },
+        {
+          "title": "AirTag（第2世代）レビュー（Business Insider Japan）",
+          "url": "https://www.businessinsider.jp/article/2603-airtag-2nd-gen-review/"
+        }
+      ],
+      "section": "gadget"
+    },
+    {
+      "tier": "student",
+      "category": "面白ITグッズ",
+      "name": "エレコム 自立するガジェットポーチ",
+      "price": "1,680円",
+      "why": "マウス・ケーブル・小型充電器・イヤホンなどをまとめて入れられ、立てて置けるので出し入れしやすいポーチです。",
+      "for": "PC周りの小物を毎日カバンで持ち歩く人",
+      "caution": "",
+      "sources": [
+        {
+          "title": "自立仕様 エレコムのガジェットポーチを紹介（ITmedia Mobile）",
+          "url": "https://www.itmedia.co.jp/mobile/articles/2610/26/news023.html"
+        }
+      ],
+      "section": "gadget"
+    },
+    {
       "section": "software",
       "tier": "flagship",
       "category": "AIアシスタント",
@@ -928,8 +1112,8 @@
       "label": "ガジェット",
       "title": "ガジェット",
       "lead": {
-        "flagship": "スマホ・タブレット・イヤホン・カメラ・スマートウォッチの最上位モデルです。",
-        "student": "毎日の通学や勉強で使いやすく、値段とのバランスが良いガジェットを選びました。"
+        "flagship": "スマホ・タブレット・イヤホン・カメラ・スマートウォッチの最上位モデルと、AIグラスなど「ちょっと未来」の面白ITグッズです。",
+        "student": "毎日の通学や勉強で使いやすく、値段とのバランスが良いガジェットと、あると便利な面白ITグッズを選びました。"
       }
     },
     "software": {
