@@ -29,6 +29,9 @@ header { position: sticky; top: 0; z-index: 1; background: var(--bg); border-bot
 .wrap { max-width: 880px; margin: 0 auto; padding: 0 16px; }
 h1 { font-size: 20px; margin: 14px 0 2px; }
 .titlebar { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
+.titlebar .buttons { display: flex; gap: 6px; }
+.gearlink { border: 1px solid var(--line); background: var(--card); color: var(--accent); border-radius: 999px;
+            padding: 4px 12px; font-size: 13px; text-decoration: none; margin-top: 10px; white-space: nowrap; }
 #reload { border: 1px solid var(--line); background: var(--card); color: var(--accent); border-radius: 999px;
           padding: 4px 12px; font-size: 13px; cursor: pointer; margin-top: 10px; }
 .meta { color: var(--muted); font-size: 13px; }
@@ -71,7 +74,7 @@ details li.ng { color: var(--new); }
 <body>
 <header>
   <div class="wrap">
-    <div class="titlebar"><h1>AI情報まとめ</h1><button id="reload" type="button">更新</button></div>
+    <div class="titlebar"><h1>AI情報まとめ</h1><div class="buttons"><a class="gearlink" href="gear.html">おすすめ機材</a><button id="reload" type="button">更新</button></div></div>
     <div class="meta" id="meta"></div>
     <nav class="tabs" id="tabs">
       <button class="tab" data-tab="tech">技術の進歩</button>

@@ -7,7 +7,7 @@ on:
   workflow_dispatch: # Actions 画面から手動でも実行できる
   push:
     # data/curated.json は Claude Code（/curate）が更新したときにページを作り直すため
-    paths: [feeds.toml, collector/**, data/curated.json, .github/workflows/collect.yml]
+    paths: [feeds.toml, collector/**, data/curated.json, data/gear_guide.json, .github/workflows/collect.yml]
 
 permissions:
   contents: write

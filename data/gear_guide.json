@@ -1,0 +1,484 @@
+{
+  "updated": "2026-10-27",
+  "note": "価格は2026年10月下旬に確認した目安です（メーカー直販・量販店・価格.comの最安値などが混在します）。セール・値上げ・在庫で大きく変わるので、買う前に公式サイトや価格比較サイトで必ず確認してください。",
+  "tiers": {
+    "flagship": {
+      "label": "最高性能",
+      "title": "最高性能（予算度外視）",
+      "lead": "値段を気にせず、今いちばん性能が高いものを選びました。AIをパソコンで動かす、4Kで動画編集する、プロ並みの写真を撮る、といった使い方向けです。"
+    },
+    "student": {
+      "label": "大学生向け",
+      "title": "大学生向け（手の届く価格）",
+      "lead": "大学生がアルバイト代や入学準備の予算で買えそうな価格帯で、性能と値段のバランスが良いものを選びました。学割が使える製品もあります。"
+    }
+  },
+  "items": [
+    {
+      "tier": "flagship",
+      "category": "ノートPC",
+      "name": "ASUS ProArt P16（H7607）RTX Spark・メモリ128GB",
+      "price": "124万8,000円（48GB版は99万9,800円）",
+      "why": "NVIDIAの新しいPC向けチップ「RTX Spark」を搭載し、大容量メモリで大きなAIモデルを手元で動かせます。国内で買えるRTX Spark搭載ノートの最上位クラスです。",
+      "for": "AIの開発・研究、画像・動画生成をクラウドに頼らず手元でやりたい人",
+      "caution": "ゲーム性能はRTX 5050並みという検証もあり、ゲーム目的なら割高です。",
+      "sources": [
+        {
+          "title": "ついに買える！RTX SparkのASUSノートが予約開始、94万円台から（PC Watch）",
+          "url": "https://pc.watch.impress.co.jp/docs/news/2147835.html"
+        },
+        {
+          "title": "RTX Sparkのゲーミング性能はRTX 5050並み（ゲーマーズログ）",
+          "url": "https://gazlog.jp/entry/rtx-spark-gaming-benchmark-rtx5050-level/"
+        },
+        {
+          "title": "120万円払ってRTX Sparkノートを買った。で、AIエージェントで元は取れる？（PC Watch）",
+          "url": "https://pc.watch.impress.co.jp/docs/topic/feature/2150970.html"
+        }
+      ]
+    },
+    {
+      "tier": "flagship",
+      "category": "デスクトップPC",
+      "name": "NVIDIA GeForce RTX 5090（グラフィックボード）",
+      "price": "国内希望小売 39万3,800円（価格.comの最安は 119万8,000円まで高騰・10月17日時点）",
+      "why": "ゲーム用グラフィックボードの最上位です。4Kゲームや、手元での画像・動画生成AIの速度で最も強力な選択肢です。",
+      "for": "最高画質でゲームをしたい人、画像生成AIを手元で高速に動かしたい人",
+      "caution": "メモリ価格の高騰で、希望小売価格の約3倍で売られています。生産終了の報道もあり、搭載済みのパソコン（127万9,800円〜）を買う方が割安な場合もあります。",
+      "sources": [
+        {
+          "title": "RTX 5090のスペックと価格｜最安119.8万円・生産終了報道（2026年10月）",
+          "url": "https://www.issoh.co.jp/tech/details/9876/"
+        },
+        {
+          "title": "GeForce RTX 5090は単体で約120万円も搭載BTOは127万円台から（ゲーマーズログ）",
+          "url": "https://gazlog.jp/entry/geforce-rtx5090-bto-cost-effective-way-to-buy/"
+        },
+        {
+          "title": "GeForce RTX 50の国内価格が明らかに（PC Watch）",
+          "url": "https://pc.watch.impress.co.jp/docs/news/1652618.html"
+        }
+      ]
+    },
+    {
+      "tier": "flagship",
+      "category": "デスクトップPC",
+      "name": "AMD Ryzen 9 9950X3D2 Dual Edition（CPU）",
+      "price": "17万8,000円（発売時）／価格.comの最安 約16万8,000円",
+      "why": "2つのCPUダイの両方に大容量キャッシュを積んだ、AMDの最上位クラスのCPUです。ゲームと動画編集などの重い作業の両方に強く、評価の高い9950X3Dのさらに上位モデルです。",
+      "for": "ゲームも制作も最高性能で1台にまとめたい人",
+      "caution": "",
+      "sources": [
+        {
+          "title": "Ryzen 9 9950X3D2 Dual Editionが4月24日発売。17万円台（PC Watch）",
+          "url": "https://pc.watch.impress.co.jp/docs/news/2104056.html"
+        },
+        {
+          "title": "AMD Ryzen 9 9950X3D2 Dual Edition 価格比較（価格.com）",
+          "url": "https://kakaku.com/item/K0001782911/"
+        },
+        {
+          "title": "Best CPU 2026（Club386）",
+          "url": "https://www.club386.com/best-cpus/"
+        }
+      ]
+    },
+    {
+      "tier": "flagship",
+      "category": "スマホ",
+      "name": "Samsung Galaxy S26 Ultra",
+      "price": "24万790円（ドコモ・256GB）",
+      "why": "Androidの最上位スマホです。カメラ・画面・処理性能のどれもトップクラスです。",
+      "for": "Androidで最高のカメラと大画面がほしい人",
+      "caution": "",
+      "sources": [
+        {
+          "title": "ドコモのスマホおすすめランキング（2026年10月）",
+          "url": "https://www.strapya.com/blogs/hameefun/20600"
+        }
+      ]
+    },
+    {
+      "tier": "flagship",
+      "category": "スマホ",
+      "name": "Apple iPhone 18 Pro",
+      "price": "21万9,800円〜（256GB）",
+      "why": "現行iPhoneの上位モデルで、比較記事でも1位に選ばれています。iOS 27.2で日本語の「Siri AI」も使えます。",
+      "for": "iPhoneを使い続けたい人、カメラと動画性能を重視する人",
+      "caution": "",
+      "sources": [
+        {
+          "title": "スマホおすすめ最新ランキング12選（スマホのススメ）",
+          "url": "https://sumaho-susume.jp/smartphone-osusume"
+        }
+      ]
+    },
+    {
+      "tier": "flagship",
+      "category": "タブレット",
+      "name": "Apple iPad Pro 13インチ（M5）",
+      "price": "26万9,800円〜",
+      "why": "現行iPadで最も高性能なモデルです。大画面でイラスト制作や動画編集がこなせます。",
+      "for": "イラスト・デザイン・動画編集をタブレットで本格的にやりたい人",
+      "caution": "2026年7月に値上げされています。",
+      "sources": [
+        {
+          "title": "iPadを買うならどれがオススメ？現行の全モデルを徹底比較（2026年8月）",
+          "url": "https://mobile-hoken.com/blog/3313"
+        }
+      ]
+    },
+    {
+      "tier": "flagship",
+      "category": "イヤホン・ヘッドホン",
+      "name": "Sony WH-1000XM6（ヘッドホン）／ Sony WF-1000XM6（イヤホン）",
+      "price": "ヘッドホン 5万9,400円／イヤホン 4万4,550円（いずれもソニーストア価格。イヤホンは発売時）",
+      "why": "ノイズキャンセリングの評価で、ヘッドホン・イヤホンともに複数の専門サイトが最上位に選んでいます。",
+      "for": "通学や自習で周りの音を消して集中したい人",
+      "caution": "イヤホンはBose QuietComfort Ultra Earbuds（第2世代）も最高評価を得ています。",
+      "sources": [
+        {
+          "title": "WH-1000XM6（ソニー公式）",
+          "url": "https://www.sony.jp/headphone/products/WH-1000XM6/"
+        },
+        {
+          "title": "WF-1000XM6が販売開始。ソニーストア販売価格44,550円（ソニーショップくんこく）",
+          "url": "https://kunkoku.jp/wf-1000xm6-3.html"
+        },
+        {
+          "title": "Best noise-cancelling headphones 2026（What Hi-Fi?）",
+          "url": "https://www.whathifi.com/best-buys/headphones/best-noise-cancelling-headphones"
+        },
+        {
+          "title": "The 5 Best Noise Cancelling Earbuds of 2026（RTINGS）",
+          "url": "https://www.rtings.com/headphones/reviews/best/noise-cancelling-earbuds"
+        }
+      ]
+    },
+    {
+      "tier": "flagship",
+      "category": "モニター",
+      "name": "ASUS ROG Swift OLED PG32UCDM（第3世代）",
+      "price": "21万4,920円",
+      "why": "32インチ・4Kの有機ELモニターで、専門サイトの評価で最上位です。色の再現と動きの滑らかさに優れます。",
+      "for": "ゲーム・映像制作・写真編集を最高の画面でやりたい人",
+      "caution": "",
+      "sources": [
+        {
+          "title": "ROG Swift OLED PG32UCDM Gen3（ASUS Store）",
+          "url": "https://store.asus.com/jp/rog/90lm0cl0-b02921-rog-swift-oled-pg32ucdm-gen3-pg32ucdm3.html"
+        },
+        {
+          "title": "ASUS、タンデムOLED技術を投入した32型ゲーミングモニター（PHILE WEB）",
+          "url": "https://www.phileweb.com/news/mobile_pc/202604/28/3735.html"
+        },
+        {
+          "title": "The 6 Best OLED Monitors of 2026（RTINGS）",
+          "url": "https://www.rtings.com/monitor/reviews/best/oled"
+        }
+      ]
+    },
+    {
+      "tier": "flagship",
+      "category": "キーボード・マウス",
+      "name": "ロジクール MX Master 4（マウス）＋ MX Keys S（キーボード）",
+      "price": "マウス 約1万9,000円（定価 2万1,890円）／キーボード 約1万7,600円",
+      "why": "仕事や勉強で使うマウスとキーボードとして、複数の専門サイトで最高評価です。静かで打ちやすく、複数の機器を切り替えて使えます。",
+      "for": "レポートやプログラミングで長時間タイピングする人",
+      "caution": "",
+      "sources": [
+        {
+          "title": "ロジクール MX Master 4 価格比較（価格.com）",
+          "url": "https://kakaku.com/item/J0000048997/"
+        },
+        {
+          "title": "ロジクール MX KEYS S KX800sGR 価格比較（価格.com）",
+          "url": "https://kakaku.com/item/K0001548209/"
+        },
+        {
+          "title": "The 5 Best Logitech Mice of 2026（RTINGS）",
+          "url": "https://www.rtings.com/mouse/reviews/logitech"
+        }
+      ]
+    },
+    {
+      "tier": "flagship",
+      "category": "カメラ",
+      "name": "Sony α7 V",
+      "price": "41万6,900円（ソニーストア）／価格.comではボディ 約32万円台から",
+      "why": "2025年12月発売のフルサイズミラーレスで、専門サイトのテストで最も評価が高いカメラです。部分積層センサーで、30コマ/秒の連写と高い画質を両立しています。",
+      "for": "写真や映像作品を本格的に撮りたい人",
+      "caution": "プロ向けの選択肢として Nikon Z9、Canon EOS R5 Mark II も評価されています。",
+      "sources": [
+        {
+          "title": "ソニー「α7 V」実機レビュー（価格.comマガジン）",
+          "url": "https://kakakumag.com/camera/?id=22471"
+        },
+        {
+          "title": "α7 V 発売日・価格まとめ（みんなのカメラ）",
+          "url": "https://www.minnacamera.com/mags/1480"
+        },
+        {
+          "title": "The 8 Best Mirrorless Cameras of 2026（RTINGS）",
+          "url": "https://www.rtings.com/camera/reviews/best/by-type/mirrorless"
+        }
+      ]
+    },
+    {
+      "tier": "flagship",
+      "category": "スマートウォッチ",
+      "name": "Apple Watch Ultra 4",
+      "price": "14万2,800円〜",
+      "why": "現行Apple Watchの最上位モデル（2026年9月発売）です。チタニウムケース、長いバッテリー、高精度GPSを備えます。",
+      "for": "運動・アウトドアで使いたい人、電池持ちを重視するiPhoneユーザー",
+      "caution": "",
+      "sources": [
+        {
+          "title": "Apple Watchおすすめモデルはどれ？ SE 3/Series 12/Ultra 4の違い（価格.comマガジン）",
+          "url": "https://kakakumag.com/pc-smartphone/?id=19899"
+        }
+      ]
+    },
+    {
+      "tier": "student",
+      "category": "ノートPC",
+      "name": "HP OmniBook 7 Aero 13（Ryzen AI 5・メモリ16GB・SSD 512GB）",
+      "price": "12万9,800円（10月のセール時）／通常 15万9,800円〜",
+      "why": "約1kgと軽く、毎日の持ち運びが苦になりません。大学生向けの比較記事で何度も推されている定番のモバイルノートです。",
+      "for": "ノートPCを毎日大学に持って行く人",
+      "caution": "セール価格は期間限定です。セールの時期を狙うと2〜3万円安く買えます。",
+      "sources": [
+        {
+          "title": "HP OmniBook 7 Aero 13-bg 製品詳細（日本HP）",
+          "url": "https://jp.ext.hp.com/notebooks/personal/omnibook_7_aero_13_bg/"
+        },
+        {
+          "title": "1kg切りのHP OmniBook 7 Aeroが12万9,800円（2026年10月）",
+          "url": "https://usshi-na-life.com/2026/10/24/1026hpsale1/"
+        },
+        {
+          "title": "大学生におすすめのノートパソコン（the比較）",
+          "url": "https://thehikaku.net/pc/mokuteki/university3.html"
+        }
+      ]
+    },
+    {
+      "tier": "student",
+      "category": "ノートPC",
+      "name": "Dell 14（Core 5 120U・メモリ16GB・SSD 512GB）",
+      "price": "約10万9,800円（楽天・10月13日時点）／過去のセールでは8万円台",
+      "why": "メモリ16GB・SSD 512GBという4年間使える構成で、10万円前後で買えるノートPCです。セールのときはさらに安くなります。",
+      "for": "とにかく費用を抑えつつ、4年間困らない性能がほしい人",
+      "caution": "販売店や型番で価格が大きく違い、Dell公式では15万円前後の表示もあります。Officeは付いていないので、大学で無料配布されているか確認しましょう。",
+      "sources": [
+        {
+          "title": "楽天で10万円前後の新品PCを選ぶ｜Dell 14の使いどころと注意点",
+          "url": "https://yasui-notepc.com/rakuten-dell14-core5/"
+        },
+        {
+          "title": "Dell 14 レビュー：Core 5 120U、16GBメモリで8万円台の高コスパノートPC（the比較）",
+          "url": "https://thehikaku.net/pc/dell/26dell14-DC14250.html"
+        },
+        {
+          "title": "Dell 14インチ ノートパソコン（Dell公式）",
+          "url": "https://www.dell.com/ja-jp/shop/dell%E3%81%AE%E3%83%8E%E3%83%BC%E3%83%88%E3%83%91%E3%82%BD%E3%82%B3%E3%83%B3/dell-14-%E3%83%8E%E3%83%BC%E3%83%88%E3%83%91%E3%82%BD%E3%82%B3%E3%83%B3/spd/dell-dc14250-laptop"
+        }
+      ]
+    },
+    {
+      "tier": "student",
+      "category": "ノートPC",
+      "name": "Apple MacBook Air 13インチ（M5）",
+      "price": "学割 20万6,800円（通常 22万4,800円）",
+      "why": "軽くて電池持ちが良く、動画編集やプログラミングも快適にこなせます。学割で少し安く買えます。",
+      "for": "Macが指定されている学部の人、デザイン・動画制作にも使いたい人",
+      "caution": "2026年6月の値上げで通常価格は18万4,800円から22万4,800円に上がりました。学割の価格や対象は時期によって変わり、量販店のセールの方が安いこともあります。",
+      "sources": [
+        {
+          "title": "「Mac」「iPad」突然の一斉値上げ MacBook Airは22万4800円からに（ITmedia NEWS）",
+          "url": "https://www.itmedia.co.jp/news/articles/2606/25/news138.html"
+        },
+        {
+          "title": "MacBookを安く買う方法8選（Apple Gadget）",
+          "url": "https://apple-gadget.jp/macbook-buy-cheap/"
+        },
+        {
+          "title": "【本日みつけたお買い得品】MacBook Airが約1万4千円オフ（PC Watch）",
+          "url": "https://pc.watch.impress.co.jp/docs/news/todays_sales/2147522.html"
+        }
+      ]
+    },
+    {
+      "tier": "student",
+      "category": "デスクトップPC",
+      "name": "AMD Ryzen 5 9600X ／ Intel Core Ultra 5 250K Plus（CPU）",
+      "price": "Ryzen 5 9600X 約3万4,000円／Core Ultra 5 250K Plus 約3万8,600円（価格.com最安・10月下旬）",
+      "why": "自作PCや組み立て済みPCを安く組むときの定番CPUです。Core Ultra 5 250K Plusは価格あたりの性能が最も高いと評価されています。",
+      "for": "予算を抑えてゲームや開発用のデスクトップを組みたい人",
+      "caution": "グラフィックボードは値上がりしているため、ゲームをしないならCPU内蔵のグラフィックで始めるのも手です。",
+      "sources": [
+        {
+          "title": "AMD Ryzen 5 9600X 価格推移（価格.com）",
+          "url": "https://kakaku.com/item/K0001630333/pricehistory/"
+        },
+        {
+          "title": "インテル Core Ultra 5 250K Plus 価格比較（価格.com）",
+          "url": "https://kakaku.com/item/K0001782751/"
+        },
+        {
+          "title": "The best desktop processors 2026（CPU Monkey）",
+          "url": "https://www.cpu-monkey.com/en/cpu_ranking-best_desktop_processors"
+        }
+      ]
+    },
+    {
+      "tier": "student",
+      "category": "スマホ",
+      "name": "シャープ AQUOS wish6",
+      "price": "4万4,900円（楽天モバイル・一括）／SIMフリー版 約4万9,000円",
+      "why": "2026年9月発売の5万円以下のスマホで、価格帯別ランキングで1位に選ばれています。120Hzの滑らかな画面と、迷惑電話を見分けるAI機能を備えています。",
+      "for": "安く、丈夫で、長く使える国内メーカーのスマホがほしい人",
+      "caution": "Pixel 10a はカメラやAIの評価が高いものの、10月1日に値上げされ9万2,800円からになりました。",
+      "sources": [
+        {
+          "title": "AQUOS wish6の価格まとめ｜6社の一括・実質価格を徹底比較（セレクトラ）",
+          "url": "https://selectra.jp/telecom/news/aquos-wish6-release-price-comparison"
+        },
+        {
+          "title": "最新スマホおすすめ人気機種ランキング【2026年10月】（ショーケース プラス）",
+          "url": "https://www.showcase-tv.com/mobile/smartphone-ranking/"
+        },
+        {
+          "title": "Google Pixel 10aが10月1日から値上げ。128GBは9万2,800円から（ゲーマーズログ）",
+          "url": "https://gazlog.jp/entry/google-pixel-10a-price-up/"
+        }
+      ]
+    },
+    {
+      "tier": "student",
+      "category": "タブレット",
+      "name": "Apple iPad（A16）",
+      "price": "7万4,800円〜（学割 7万800円〜）",
+      "why": "いちばん安いiPadで、ノート取り・資料の閲覧・動画視聴に十分な性能です。",
+      "for": "授業資料をタブレットで見たり、手書きでノートを取りたい人",
+      "caution": "2026年6月25日に5万8,800円から値上げされました。",
+      "sources": [
+        {
+          "title": "iPadとMac、HomePodやVision Proなどを値上げ〜新価格を確認（iPhone Mania）",
+          "url": "https://iphone-mania.jp/apple-602777/"
+        },
+        {
+          "title": "「Mac」「iPad」突然の一斉値上げ（ITmedia NEWS）",
+          "url": "https://www.itmedia.co.jp/news/articles/2606/25/news138.html"
+        }
+      ]
+    },
+    {
+      "tier": "student",
+      "category": "イヤホン・ヘッドホン",
+      "name": "Sony WF-C710N（イヤホン）／ Anker Soundcore Space One（ヘッドホン）",
+      "price": "イヤホン 1万7,600円（ソニーストア）／ヘッドホン 約1万円",
+      "why": "ノイズキャンセリング付きの手ごろなモデルとして、専門サイトが予算重視のおすすめに選んでいます。",
+      "for": "安くても通学中の騒音をしっかり減らしたい人",
+      "caution": "",
+      "sources": [
+        {
+          "title": "WF-C710N 日本発売、ソニーストア販売価格17,600円（ソニーショップくんこく）",
+          "url": "https://kunkoku.jp/wfc710n-7.html"
+        },
+        {
+          "title": "ANKER Soundcore Space One 価格比較（価格.com）",
+          "url": "https://kakaku.com/item/J0000042898/"
+        },
+        {
+          "title": "Best noise-cancelling earbuds 2026（What Hi-Fi?）",
+          "url": "https://whathifi.com/best-buys/best-noise-cancelling-earbuds-the-true-wireless-way-to-cut-out-background-noise"
+        }
+      ]
+    },
+    {
+      "tier": "student",
+      "category": "モニター",
+      "name": "iiyama ProLite XUB2792QSU-B6（27インチ・WQHD）",
+      "price": "2万6,980円",
+      "why": "27インチのWQHD（2560×1440）で文字が見やすく、資料を並べて作業できます。高さ調整や縦回転ができ、保証も3年と長めです。",
+      "for": "自宅でノートPCを大画面で使いたい人、レポートやプログラミングを効率よく進めたい人",
+      "caution": "さらに安くするなら、2万円前後の27インチWQHDモニター（KTC、LG など）もあります。",
+      "sources": [
+        {
+          "title": "在宅ワーク向けWQHDモニター27インチおすすめ5選（GAPLESS）",
+          "url": "https://gapless.jp/reviews/monitor/wqhd-monitor-27inch-remote-work/"
+        },
+        {
+          "title": "27インチのWQHDモニターのおすすめ人気ランキング（mybest）",
+          "url": "https://my-best.com/31272"
+        }
+      ]
+    },
+    {
+      "tier": "student",
+      "category": "キーボード・マウス",
+      "name": "ロジクール Wireless Combo MK270G（キーボード・マウスのセット）",
+      "price": "約2,500〜2,900円",
+      "why": "とても安いワイヤレスのキーボードとマウスのセットで、価格重視のおすすめに選ばれています。",
+      "for": "自宅でノートPCを外部モニターにつないで使いたい人",
+      "caution": "",
+      "sources": [
+        {
+          "title": "ロジクール Wireless Combo MK270G 価格比較（価格.com）",
+          "url": "https://kakaku.com/item/K0001354709/"
+        },
+        {
+          "title": "10 Best Wireless Keyboard and Mouse Combos of 2026（Reviewed）",
+          "url": "https://www.reviewed.com/laptops/best-right-now/the-best-wireless-keyboard-and-mouse"
+        }
+      ]
+    },
+    {
+      "tier": "student",
+      "category": "カメラ",
+      "name": "Sony ZV-E10 II ／ Canon EOS R50",
+      "price": "EOS R50 レンズキット 約10万〜12万6,500円／ZV-E10 II パワーズームレンズキット 約14万7,500円",
+      "why": "動画・写真を始める人向けのミラーレスカメラとして、複数の専門サイトがおすすめしています。EOS R50はレンズ付きのセットで4K動画も撮れます。",
+      "for": "YouTubeやVlog、サークル活動の撮影を始めたい人",
+      "caution": "動画中心ならZV-E10 II、写真も撮りたく予算を抑えたいならEOS R50がおすすめです。",
+      "sources": [
+        {
+          "title": "CANON EOS R50 RF-S18-45 IS STM レンズキット 価格比較（価格.com）",
+          "url": "https://kakaku.com/item/J0000040678/"
+        },
+        {
+          "title": "VLOGCAM ZV-E10 II（ソニー公式）",
+          "url": "https://www.sony.jp/ichigan/products/ZV-E10M2/"
+        },
+        {
+          "title": "The Best Mirrorless Cameras in 2026（Fstoppers）",
+          "url": "https://fstoppers.com/best-mirrorless-cameras-2026"
+        }
+      ]
+    },
+    {
+      "tier": "student",
+      "category": "スマートウォッチ",
+      "name": "Apple Watch SE 3 ／ Google Fitbit Edge",
+      "price": "SE 3 は 4万1,800円〜（整備済製品は 3万5,800円〜）、Fitbit Edge は 2万6,800円",
+      "why": "Apple Watch SE 3はiPhoneユーザー向けの手ごろなモデル、Fitbit EdgeはGoogleの新しい画面付きトラッカーで、運動や睡眠の記録に十分な機能があります。",
+      "for": "健康管理や通知の確認を安く始めたい人",
+      "caution": "",
+      "sources": [
+        {
+          "title": "Apple Watch整備済製品に7モデル追加、SE 3が3.5万円台で大量復活（ゴリミー）",
+          "url": "https://gori.me/sale/apple-refurbished/171715"
+        },
+        {
+          "title": "Apple Watchを安く買う方法（pricey）",
+          "url": "https://www.pricey.jp/web/articles/2026"
+        },
+        {
+          "title": "2万6800円で買えるGoogle製スマートウォッチ「Google Fitbit Edge」レビュー（GIGAZINE）",
+          "url": "https://gigazine.net/news/20261027-google-fitbit-edge-short-review/"
+        }
+      ]
+    }
+  ]
+}

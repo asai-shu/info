@@ -34,6 +34,8 @@ CURATED_PATH = ROOT / "data" / "curated.json"  # Claude Code（/curate）が選�
 TEMPLATE_PATH = ROOT / "collector" / "template.html"
 OUTPUT_PATH = ROOT / "docs" / "index.html"
 STATIC_DIR = ROOT / "collector" / "static"  # アイコンなど、ページと一緒に公開するファイル
+GEAR_PATH = ROOT / "data" / "gear_guide.json"  # おすすめ機材（Claude Code の /gear-guide が更新する）
+GEAR_TEMPLATE_PATH = ROOT / "collector" / "gear_template.html"
 
 # 一部のサイトはブラウザ以外からのアクセスを拒否するため、一般的なブラウザ名を名乗る
 USER_AGENT = (
@@ -247,6 +249,11 @@ def render(items: list[dict], statuses: list[dict], updated: datetime, feeds: li
     return TEMPLATE_PATH.read_text(encoding="utf-8").replace("/*__DATA__*/null", blob)
 
 
+def render_gear() -> str:
+    blob = GEAR_PATH.read_text(encoding="utf-8").replace("</", "<\\/")
+    return GEAR_TEMPLATE_PATH.read_text(encoding="utf-8").replace("/*__DATA__*/null", blob)
+
+
 def main() -> int:
     config = tomllib.loads(CONFIG_PATH.read_text(encoding="utf-8"))
     settings = config.get("settings", {})
@@ -302,6 +309,8 @@ def main() -> int:
     OUTPUT_PATH.parent.mkdir(parents=True, exist_ok=True)
     OUTPUT_PATH.write_text(render(kept, statuses, now, feeds), encoding="utf-8")
     shutil.copytree(STATIC_DIR, OUTPUT_PATH.parent, dirs_exist_ok=True)
+    if GEAR_PATH.exists():
+        (OUTPUT_PATH.parent / "gear.html").write_text(render_gear(), encoding="utf-8")
     # ホーム画面のアプリが、新しいデータが出たことに気づいて読み込み直すための小さなファイル
     curated = json.loads(CURATED_PATH.read_text(encoding="utf-8")) if CURATED_PATH.exists() else {}
     (OUTPUT_PATH.parent / "version.json").write_text(

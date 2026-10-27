@@ -1,0 +1,52 @@
+---
+name: gear-guide
+description: おすすめ機材ページ（data/gear_guide.json）を最新の製品と価格に更新する。「最高性能（予算度外視）」と「大学生向け（手の届く価格）」の2ランクで、ノートPC・デスクトップPC・スマホ・タブレット・イヤホン・モニター・キーボード・カメラ・スマートウォッチを選び直し、GitHub に反映する。ユーザーが「/gear-guide」「おすすめ機材を更新して」と言ったときや、毎月1日の定期実行で使う。
+---
+
+# おすすめ機材ページの更新
+
+アプリの「おすすめ機材」ページ（https://asai-shu.github.io/info/gear.html）は `data/gear_guide.json` から作られる。
+あなた（Claude）の仕事は、今の製品と価格を調べ、内容を正確に保つこと。読み手は AI やパソコンに詳しくない日本の大学生。
+
+## いちばん大事なこと：推測で書かない
+
+- 製品名・価格・発売日・URL は、**この作業中に Web 検索や記事データで確認できたものだけ**を書く。記憶やURLの形からの推測は禁止
+- 価格は **日本円の国内価格** を優先して調べる。見つからないときは検索語を変えて最低2回は探し直す（「製品名 価格 円」「製品名 価格.com」「製品名 公式 ストア」など）
+- それでも分からないときだけ、`price` に「要確認」と書き、`caution` に何が分からなかったかを書く
+- 値上げ・値下げ・セールの終了は頻繁に起きる。古い記事の価格は使わず、**いつ時点の価格か**を `price` に添える（例：「（価格.com最安・10月下旬）」）
+- 情報源ごとに価格が食い違うときは、新しい日付の情報を採用し、必要なら幅で書く
+
+## 手順
+
+1. `git pull --rebase origin ccr-9eb32590-esny4k`
+2. 現在の `data/gear_guide.json` を読む
+3. 最近の記事データから、新製品・値上げ・発売のニュースを拾う
+   ```sh
+   python3 collector/curation.py candidates --hours 720 --limit 400 --per-source 10 | grep -E '円|\$|発売|値上げ|発表|launch|price'
+   ```
+4. カテゴリごとに、最高性能・大学生向けの両方を WebSearch で確認する。次のことを確かめる
+   - 今いちばん評価の高い現行モデルは何か（後継機が出ていないか、販売終了していないか）
+   - 国内価格（最新の日付のもの）
+   - 大学生向けは、性能と値段のバランス・学割・セールも考える。目安は ノートPC 10〜15万円、スマホ 5万円前後、ほかは数千円〜数万円
+5. `data/gear_guide.json` を更新する（書式は今のファイルと同じ）
+   - `updated` を今日の日付（YYYY-MM-DD）に
+   - 各項目：`tier`（flagship / student）、`category`、`name`、`price`、`why`（何がすごいか・何が良いか）、`for`（どんな人に）、`caution`（注意点。なければ空文字）、`sources`（確認に使ったページ。title と url。1項目に1〜3件）
+   - 1カテゴリにつき各ランク1〜2件。カテゴリの並びは今のファイルに合わせる
+6. 書式を確認する
+   ```sh
+   python3 -c "import json;g=json.load(open('data/gear_guide.json'));assert all(i['sources'] and i['price'] for i in g['items']);print(len(g['items']),'items ok')"
+   ```
+7. GitHub に送る
+   ```sh
+   git add data/gear_guide.json
+   git commit -m "おすすめ機材を更新（Claude による調査）"
+   git pull --rebase origin ccr-9eb32590-esny4k
+   git push origin HEAD:ccr-9eb32590-esny4k
+   ```
+8. 入れ替えた製品と、大きく変わった価格だけを短く報告する
+
+## 守ること
+
+- `data/gear_guide.json` 以外のファイルは変更しない
+- AI の API や有料サービスは使わない
+- 宣伝やアフィリエイトのリンクは付けない
