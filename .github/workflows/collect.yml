@@ -45,8 +45,12 @@ jobs:
           git add data/items.json
           git diff --cached --quiet && exit 0
           git commit -m "収集データを更新 $(date -u +'%Y-%m-%d %H:%M') UTC"
-          git pull --rebase
-          git push
+          # 同時に別の保存があって押し返されたら、取り込み直して最大3回までやり直す
+          for i in 1 2 3; do
+            git pull --rebase && git push && exit 0
+            sleep 5
+          done
+          exit 1
 
   # Settings → Pages の Source を「GitHub Actions」にすると、ここでページが公開される。
   # 未設定でも収集は止まらないよう、このジョブの失敗は無視する。

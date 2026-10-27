@@ -224,6 +224,16 @@ def load_existing() -> dict[str, dict]:
     return {item["id"]: item for item in data["items"]}
 
 
+def dump_data(now: datetime, statuses: list[dict], items: list[dict]) -> str:
+    """記事を1件1行で書き出す。入れ替わった記事の行だけが差分になり、GitHub の履歴が膨らみにくい。"""
+    line = lambda obj: json.dumps(obj, ensure_ascii=False)
+    return (
+        '{\n"updated": ' + line(now.isoformat(timespec="seconds")) + ",\n"
+        + '"statuses": [\n' + ",\n".join(line(s) for s in statuses) + "\n],\n"
+        + '"items": [\n' + ",\n".join(line(i) for i in items) + "\n]\n}\n"
+    )
+
+
 def load_curated(items: list[dict]) -> dict | None:
     """注目記事に、元の記事のリンクや取得元を付けて返す。保存期間を過ぎて消えた記事は除く。"""
     if not CURATED_PATH.exists():
@@ -302,10 +312,7 @@ def main() -> int:
     kept = kept[: settings.get("max_items", 3000)]
 
     DATA_PATH.parent.mkdir(parents=True, exist_ok=True)
-    DATA_PATH.write_text(
-        json.dumps({"updated": now.isoformat(timespec="seconds"), "statuses": statuses, "items": kept}, ensure_ascii=False, indent=1),
-        encoding="utf-8",
-    )
+    DATA_PATH.write_text(dump_data(now, statuses, kept), encoding="utf-8")
     OUTPUT_PATH.parent.mkdir(parents=True, exist_ok=True)
     OUTPUT_PATH.write_text(render(kept, statuses, now, feeds), encoding="utf-8")
     shutil.copytree(STATIC_DIR, OUTPUT_PATH.parent, dirs_exist_ok=True)
