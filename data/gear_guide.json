@@ -164,6 +164,26 @@
     },
     {
       "tier": "flagship",
+      "category": "イヤホン・ヘッドホン",
+      "name": "final ZE3000 ASMR for TINGLE（ASMR特化・完全ワイヤレス）",
+      "price": "1万9,800円（参考価格。GREEN FUNDINGで先行販売中）",
+      "why": "ASMRを聴いたときのゾクゾクする感覚「ティングル」を強めるよう調整した、ASMR専用の完全ワイヤレスイヤホンです。「TINGLEモード」と「RELAXモード」を切り替えられ、イコライザーも10バンドに増えました。ケース込みで最大28時間再生できます。",
+      "for": "ASMRや音声作品を毎日のように聴く人。いちばん良いASMR専用イヤホンが欲しい人",
+      "caution": "2026年10月22日に始まったクラウドファンディングでの販売で、一般販売の予定は発表されていません。届く時期は募集ページで確認してください。",
+      "sources": [
+        {
+          "title": "final、“脳が超とろける”ASMR専用イヤホン「ZE3000 ASMR for TINGLE」クラファン開始（PHILE WEB）",
+          "url": "https://www.phileweb.com/news/d-av/202610/22/66214.html"
+        },
+        {
+          "title": "final、ASMR特化/ゲーミング特化の新完全ワイヤレスをGREENFUNDINGで先行販売（AV Watch）",
+          "url": "https://av.watch.impress.co.jp/docs/news/2145743.html"
+        }
+      ],
+      "section": "gadget"
+    },
+    {
+      "tier": "flagship",
       "category": "モニター",
       "name": "ASUS ROG Swift OLED PG32UCDM（第3世代）",
       "price": "21万4,920円",
@@ -410,6 +430,66 @@
         {
           "title": "Best noise-cancelling earbuds 2026（What Hi-Fi?）",
           "url": "https://whathifi.com/best-buys/best-noise-cancelling-earbuds-the-true-wireless-way-to-cut-out-background-noise"
+        }
+      ],
+      "section": "gadget"
+    },
+    {
+      "tier": "student",
+      "category": "イヤホン・ヘッドホン",
+      "name": "final E500（ASMR・バイノーラル向け有線イヤホン）",
+      "price": "1,980円前後（セールで1,780円の例あり）",
+      "why": "VRやASMRのバイノーラル音源（右・左・耳元などの位置が分かる録音）に合わせて作られた有線イヤホンです。2,000円ほどで、ささやき声が耳元から聞こえる感覚をしっかり味わえる定番です。",
+      "for": "まずは安くASMR専用イヤホンを試してみたい人",
+      "caution": "有線（3.5mmプラグ）なので、差し込み口のないスマホでは変換アダプターが必要です。USB-C版（3,980円）は2026年10月30日発売予定です。",
+      "sources": [
+        {
+          "title": "final E500をレビュー。ASMRを気持ちよく聴ける有線イヤホン（イヤホンの選び方）",
+          "url": "https://iyusuke.jp/final-e500-review/"
+        },
+        {
+          "title": "ASMR・ゲーム向けイヤホン「E500」「VR3000 Recable for Gaming」にマイク付きUSB-Cモデル（PR TIMES）",
+          "url": "https://prtimes.jp/main/html/rd/p/000000236.000121822.html"
+        }
+      ],
+      "section": "gadget"
+    },
+    {
+      "tier": "student",
+      "category": "イヤホン・ヘッドホン",
+      "name": "final VR1000 for ASMR Patra（有線）",
+      "price": "5,980円",
+      "why": "finalとVTuberの周防パトラさんのコラボ第4弾で、シリーズ初の有線モデルです。E500より一段上の音で、ASMRの細かい音や位置の感じを楽しめます。",
+      "for": "E500より良い音でASMRを聴きたい人",
+      "caution": "有線（3.5mmプラグ）です。",
+      "sources": [
+        {
+          "title": "final×周防パトラ第4弾の有線モデル「VR1000 for ASMR」一般販売開始（AV Watch）",
+          "url": "https://av.watch.impress.co.jp/docs/news/2087560.html"
+        },
+        {
+          "title": "価格.com - final VR1000 for ASMR 価格比較",
+          "url": "https://kakaku.com/item/J0000049958/"
+        }
+      ],
+      "section": "gadget"
+    },
+    {
+      "tier": "student",
+      "category": "イヤホン・ヘッドホン",
+      "name": "final ZE500 for ASMR（完全ワイヤレス）",
+      "price": "8,980円（直販価格）",
+      "why": "片耳約3gの小さなASMR専用ワイヤレスイヤホンです。タップ音や案内音声を消せる「ASMRモード」があり、寝ながら聴いても静かな音を邪魔しません。",
+      "for": "ケーブルなしで、寝る前などにASMRを聴きたい人",
+      "caution": "1回の充電で約4.5時間（ケース込み18時間）です。",
+      "sources": [
+        {
+          "title": "final、ASMR専用完全ワイヤレス通常モデル「ZE500 for ASMR」（AV Watch）",
+          "url": "https://av.watch.impress.co.jp/docs/news/2005469.html"
+        },
+        {
+          "title": "final ZE500 for ASMR（frieve audio review）",
+          "url": "https://audioreview.frieve.com/products/ja/final-ze500-for-asmr/"
         }
       ],
       "section": "gadget"
