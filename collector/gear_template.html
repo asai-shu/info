@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>おすすめ機材</title>
+<title>おすすめ</title>
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="icon" type="image/svg+xml" href="icon.svg">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -28,7 +28,11 @@ h1 { font-size: 20px; margin: 14px 0 2px; }
 .back { border: 1px solid var(--line); background: var(--card); color: var(--accent); border-radius: 999px;
         padding: 4px 12px; font-size: 13px; text-decoration: none; margin-top: 10px; white-space: nowrap; }
 .meta { color: var(--muted); font-size: 13px; }
-.tabs { display: flex; gap: 4px; margin-top: 10px; overflow-x: auto; }
+.sections { display: flex; gap: 6px; margin-top: 10px; overflow-x: auto; }
+.section { flex: 0 0 auto; border: 1px solid var(--line); background: var(--card); color: var(--text); border-radius: 8px;
+           padding: 5px 12px; font-size: 14px; font-weight: 600; text-decoration: none; }
+.section.on { background: var(--accent); border-color: var(--accent); color: #fff; }
+.tabs { display: flex; gap: 4px; margin-top: 6px; overflow-x: auto; }
 .tab { flex: 0 0 auto; border: 0; border-bottom: 3px solid transparent; background: none; color: var(--muted);
        padding: 8px 12px; font-size: 15px; font-weight: 600; cursor: pointer; }
 .tab.on { color: var(--accent); border-bottom-color: var(--accent); }
@@ -55,8 +59,9 @@ footer { margin: 24px 0 40px; color: var(--muted); font-size: 12.5px; }
 <body>
 <header>
   <div class="wrap">
-    <div class="titlebar"><h1>おすすめ機材</h1><a class="back" href="./">記事一覧に戻る</a></div>
+    <div class="titlebar"><h1 id="title">おすすめ</h1><a class="back" href="./">記事一覧に戻る</a></div>
     <div class="meta" id="meta"></div>
+    <nav class="sections" id="sections"></nav>
     <nav class="tabs" id="tabs"></nav>
     <div class="chips" id="chips"></div>
   </div>
@@ -70,7 +75,10 @@ footer { margin: 24px 0 40px; color: var(--muted); font-size: 12.5px; }
 
 <script id="data" type="application/json">/*__DATA__*/null</script>
 <script>
-const GUIDE = JSON.parse(document.getElementById("data").textContent) || { tiers: {}, items: [] };
+// このページが表示する区分（pc / gadget / software / other）と、おすすめ全体のデータ
+const PAGE = JSON.parse(document.getElementById("data").textContent) || { section: "", guide: { tiers: {}, sections: {}, items: [] } };
+const GUIDE = PAGE.guide;
+const SECTION = GUIDE.sections[PAGE.section];
 const $ = (id) => document.getElementById(id);
 const store = {
   get(k) { try { return localStorage.getItem(k); } catch { return null; } },
@@ -83,7 +91,7 @@ let tier = tierKeys.includes(store.get("gearTier")) ? store.get("gearTier") : ti
 let category = "";
 
 function render() {
-  const items = GUIDE.items.filter((i) => i.tier === tier);
+  const items = GUIDE.items.filter((i) => i.section === PAGE.section && i.tier === tier);
   const categories = [...new Set(items.map((i) => i.category))];
   if (category && !categories.includes(category)) category = "";
 
@@ -91,7 +99,7 @@ function render() {
     `<button class="tab${k === tier ? " on" : ""}" data-tier="${esc(k)}">${esc(GUIDE.tiers[k].label)}</button>`).join("");
   $("chips").innerHTML = [["", "すべて"], ...categories.map((c) => [c, c])].map(([c, label]) =>
     `<button class="chip${c === category ? " on" : ""}" data-c="${esc(c)}">${esc(label)}</button>`).join("");
-  $("lead").textContent = GUIDE.tiers[tier].lead;
+  $("lead").textContent = SECTION.lead[tier];
 
   let html = "";
   for (const c of categories) {
@@ -112,6 +120,10 @@ function render() {
   $("list").innerHTML = html;
 }
 
+document.title = `おすすめ｜${SECTION.title}`;
+$("title").textContent = `おすすめ｜${SECTION.label}`;
+$("sections").innerHTML = Object.entries(GUIDE.sections).map(([k, s]) =>
+  `<a class="section${k === PAGE.section ? " on" : ""}" href="gear-${esc(k)}.html">${esc(s.label)}</a>`).join("");
 $("meta").textContent = `${GUIDE.updated} 時点の情報`;
 $("note").textContent = GUIDE.note;
 $("tabs").addEventListener("click", (e) => {

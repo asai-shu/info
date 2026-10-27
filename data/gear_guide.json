@@ -35,7 +35,8 @@
           "title": "120万円払ってRTX Sparkノートを買った。で、AIエージェントで元は取れる？（PC Watch）",
           "url": "https://pc.watch.impress.co.jp/docs/topic/feature/2150970.html"
         }
-      ]
+      ],
+      "section": "pc"
     },
     {
       "tier": "flagship",
@@ -58,7 +59,8 @@
           "title": "GeForce RTX 50の国内価格が明らかに（PC Watch）",
           "url": "https://pc.watch.impress.co.jp/docs/news/1652618.html"
         }
-      ]
+      ],
+      "section": "pc"
     },
     {
       "tier": "flagship",
@@ -81,7 +83,8 @@
           "title": "Best CPU 2026（Club386）",
           "url": "https://www.club386.com/best-cpus/"
         }
-      ]
+      ],
+      "section": "pc"
     },
     {
       "tier": "flagship",
@@ -96,7 +99,8 @@
           "title": "ドコモのスマホおすすめランキング（2026年10月）",
           "url": "https://www.strapya.com/blogs/hameefun/20600"
         }
-      ]
+      ],
+      "section": "gadget"
     },
     {
       "tier": "flagship",
@@ -111,7 +115,8 @@
           "title": "スマホおすすめ最新ランキング12選（スマホのススメ）",
           "url": "https://sumaho-susume.jp/smartphone-osusume"
         }
-      ]
+      ],
+      "section": "gadget"
     },
     {
       "tier": "flagship",
@@ -126,7 +131,8 @@
           "title": "iPadを買うならどれがオススメ？現行の全モデルを徹底比較（2026年8月）",
           "url": "https://mobile-hoken.com/blog/3313"
         }
-      ]
+      ],
+      "section": "gadget"
     },
     {
       "tier": "flagship",
@@ -153,7 +159,8 @@
           "title": "The 5 Best Noise Cancelling Earbuds of 2026（RTINGS）",
           "url": "https://www.rtings.com/headphones/reviews/best/noise-cancelling-earbuds"
         }
-      ]
+      ],
+      "section": "gadget"
     },
     {
       "tier": "flagship",
@@ -176,7 +183,8 @@
           "title": "The 6 Best OLED Monitors of 2026（RTINGS）",
           "url": "https://www.rtings.com/monitor/reviews/best/oled"
         }
-      ]
+      ],
+      "section": "pc"
     },
     {
       "tier": "flagship",
@@ -199,7 +207,8 @@
           "title": "The 5 Best Logitech Mice of 2026（RTINGS）",
           "url": "https://www.rtings.com/mouse/reviews/logitech"
         }
-      ]
+      ],
+      "section": "pc"
     },
     {
       "tier": "flagship",
@@ -222,7 +231,8 @@
           "title": "The 8 Best Mirrorless Cameras of 2026（RTINGS）",
           "url": "https://www.rtings.com/camera/reviews/best/by-type/mirrorless"
         }
-      ]
+      ],
+      "section": "gadget"
     },
     {
       "tier": "flagship",
@@ -237,7 +247,8 @@
           "title": "Apple Watchおすすめモデルはどれ？ SE 3/Series 12/Ultra 4の違い（価格.comマガジン）",
           "url": "https://kakakumag.com/pc-smartphone/?id=19899"
         }
-      ]
+      ],
+      "section": "gadget"
     },
     {
       "tier": "student",
@@ -260,7 +271,8 @@
           "title": "大学生におすすめのノートパソコン（the比較）",
           "url": "https://thehikaku.net/pc/mokuteki/university3.html"
         }
-      ]
+      ],
+      "section": "pc"
     },
     {
       "tier": "student",
@@ -283,7 +295,8 @@
           "title": "Dell 14インチ ノートパソコン（Dell公式）",
           "url": "https://www.dell.com/ja-jp/shop/dell%E3%81%AE%E3%83%8E%E3%83%BC%E3%83%88%E3%83%91%E3%82%BD%E3%82%B3%E3%83%B3/dell-14-%E3%83%8E%E3%83%BC%E3%83%88%E3%83%91%E3%82%BD%E3%82%B3%E3%83%B3/spd/dell-dc14250-laptop"
         }
-      ]
+      ],
+      "section": "pc"
     },
     {
       "tier": "student",
@@ -306,7 +319,8 @@
           "title": "【本日みつけたお買い得品】MacBook Airが約1万4千円オフ（PC Watch）",
           "url": "https://pc.watch.impress.co.jp/docs/news/todays_sales/2147522.html"
         }
-      ]
+      ],
+      "section": "pc"
     },
     {
       "tier": "student",
@@ -329,7 +343,8 @@
           "title": "The best desktop processors 2026（CPU Monkey）",
           "url": "https://www.cpu-monkey.com/en/cpu_ranking-best_desktop_processors"
         }
-      ]
+      ],
+      "section": "pc"
     },
     {
       "tier": "student",
@@ -352,7 +367,8 @@
           "title": "Google Pixel 10aが10月1日から値上げ。128GBは9万2,800円から（ゲーマーズログ）",
           "url": "https://gazlog.jp/entry/google-pixel-10a-price-up/"
         }
-      ]
+      ],
+      "section": "gadget"
     },
     {
       "tier": "student",
@@ -371,7 +387,8 @@
           "title": "「Mac」「iPad」突然の一斉値上げ（ITmedia NEWS）",
           "url": "https://www.itmedia.co.jp/news/articles/2606/25/news138.html"
         }
-      ]
+      ],
+      "section": "gadget"
     },
     {
       "tier": "student",
@@ -394,7 +411,8 @@
           "title": "Best noise-cancelling earbuds 2026（What Hi-Fi?）",
           "url": "https://whathifi.com/best-buys/best-noise-cancelling-earbuds-the-true-wireless-way-to-cut-out-background-noise"
         }
-      ]
+      ],
+      "section": "gadget"
     },
     {
       "tier": "student",
@@ -413,7 +431,8 @@
           "title": "27インチのWQHDモニターのおすすめ人気ランキング（mybest）",
           "url": "https://my-best.com/31272"
         }
-      ]
+      ],
+      "section": "pc"
     },
     {
       "tier": "student",
@@ -432,7 +451,8 @@
           "title": "10 Best Wireless Keyboard and Mouse Combos of 2026（Reviewed）",
           "url": "https://www.reviewed.com/laptops/best-right-now/the-best-wireless-keyboard-and-mouse"
         }
-      ]
+      ],
+      "section": "pc"
     },
     {
       "tier": "student",
@@ -455,7 +475,8 @@
           "title": "The Best Mirrorless Cameras in 2026（Fstoppers）",
           "url": "https://fstoppers.com/best-mirrorless-cameras-2026"
         }
-      ]
+      ],
+      "section": "gadget"
     },
     {
       "tier": "student",
@@ -478,7 +499,454 @@
           "title": "2万6800円で買えるGoogle製スマートウォッチ「Google Fitbit Edge」レビュー（GIGAZINE）",
           "url": "https://gigazine.net/news/20261027-google-fitbit-edge-short-review/"
         }
+      ],
+      "section": "gadget"
+    },
+    {
+      "section": "software",
+      "tier": "flagship",
+      "category": "AIアシスタント",
+      "name": "ChatGPT Pro",
+      "price": "月1万6,800円〜（月100・200・500ドルの3段階）",
+      "why": "OpenAIの最上位プランで、最新・最高性能のモデルを最も多く使えます。",
+      "for": "研究や開発でAIを1日中使う人、最新モデルをいち早く試したい人",
+      "caution": "上位の段階は約3万円・約8万4,000円と高額です。普段使いならPlus（月3,000円）で十分なことが多いです。",
+      "sources": [
+        {
+          "title": "ChatGPT料金一覧【2026年10月】Plus 3,000円・Pro 16,800円〜（AI Revolution）",
+          "url": "https://ai-revolution.co.jp/media/chatgpt-pricing/"
+        },
+        {
+          "title": "ChatGPTの有料プランを徹底比較【2026年10月版】（テックキャンプ）",
+          "url": "https://tech-camp.in/ai-navi/chatgpt-paid/"
+        }
+      ]
+    },
+    {
+      "section": "software",
+      "tier": "flagship",
+      "category": "AIアシスタント",
+      "name": "Claude Max（Claude Code込み）",
+      "price": "Max 5x：月100ドル（税込約1万6,500円）／Max 20x：月200ドル（税込約3万3,000円）",
+      "why": "Claudeの上位プランで、使える量がProの5倍または20倍になります。プログラミング用の「Claude Code」もたっぷり使えます。",
+      "for": "AIにプログラムを書かせて開発を進めたい人、長い文章や資料を大量に扱う人",
+      "caution": "ドル建てのため、請求額は為替で変わります。Maxは年払いがなく月払いのみです。",
+      "sources": [
+        {
+          "title": "Claude料金プラン｜Pro・Max・Teamを日本円で【2026年10月】（Uravation）",
+          "url": "https://uravation.com/media/claude-pricing-plan-complete-guide-2026/"
+        },
+        {
+          "title": "Claude ProとMaxの違い｜料金・上限・Claude Code【2026年10月】（Uravation）",
+          "url": "https://uravation.com/media/claude-pro-vs-max-complete-comparison-2026/"
+        }
+      ]
+    },
+    {
+      "section": "software",
+      "tier": "flagship",
+      "category": "AIアシスタント",
+      "name": "Google AI Ultra",
+      "price": "月1万4,500円（Proの5倍）／月3万2,000円（Proの20倍）",
+      "why": "Geminiの最上位プランで、20TB以上のストレージも付きます。GmailやGoogleドキュメントなどと連携して使えます。",
+      "for": "Googleのサービスを中心に使っていて、AIも保存容量も最大限ほしい人",
+      "caution": "古い記事には旧価格（3万6,400円）が載っていることがあります。",
+      "sources": [
+        {
+          "title": "Gemini の料金プラン一覧｜無料・Plus・Pro・Ultra を日本円で比較（Zenken AI）",
+          "url": "https://ai.zenken.co.jp/post/gemini-pricing-guide/"
+        },
+        {
+          "title": "Gemini料金｜個人・法人・APIの全プラン早見表【2026年10月】（Uravation）",
+          "url": "https://uravation.com/media/gemini-paid-plan-comparison-2026/"
+        }
+      ]
+    },
+    {
+      "section": "software",
+      "tier": "flagship",
+      "category": "AIコーディング",
+      "name": "Cursor Ultra",
+      "price": "月200ドル（ドル建て）",
+      "why": "AIと一緒にプログラムを書くためのエディタで、Ultraは最も多く使える最上位プランです。",
+      "for": "本格的にアプリやサービスを開発する人",
+      "caution": "10月に料金体系が変わり、20ドルのProプランは終了して、Premium（月30ドル）が標準になりました。",
+      "sources": [
+        {
+          "title": "Cursor Pricing (Oct 2026): Every Plan After the 12 Oct Change",
+          "url": "https://munderdiffl.in/blog/cursor-pricing/"
+        }
+      ]
+    },
+    {
+      "section": "software",
+      "tier": "flagship",
+      "category": "動画・画像編集",
+      "name": "Adobe Creative Cloud Pro（旧コンプリートプラン）",
+      "price": "月9,080円（通常価格）",
+      "why": "Photoshop・Illustrator・Premiere Proなど、Adobeの主要アプリをすべて使えるプランです。デザインや映像の仕事で標準的に使われています。",
+      "for": "デザイン・イラスト・動画を仕事レベルでやりたい人",
+      "caution": "学生・教職員なら大幅に安くなります（大学生向けを参照）。",
+      "sources": [
+        {
+          "title": "Adobe学割の2年目は月4,180円｜買い方・学生認証【2026年10月版】",
+          "url": "https://techloglab.com/blog/adobe-gakuwari-kaikata/"
+        },
+        {
+          "title": "2026年版 Adobe学生プラン徹底比較（アプリの達人）",
+          "url": "https://app-tatsujin.com/adobe-student-plan-2026-guide/"
+        }
+      ]
+    },
+    {
+      "section": "software",
+      "tier": "flagship",
+      "category": "動画・画像編集",
+      "name": "DaVinci Resolve Studio 21",
+      "price": "5万1,980円（買い切り）／11月20日までのセールで4万980円",
+      "why": "映画やテレビでも使われる本格的な動画編集・色調整ソフトの有料版です。月額ではなく一度買えばずっと使えます。",
+      "for": "動画編集を本格的にやりたい人、サブスクより買い切りが良い人",
+      "caution": "無料版でもかなりのことができます（大学生向けを参照）。",
+      "sources": [
+        {
+          "title": "「DaVinci Resolve Studio 21」の期間限定セールを開始（PRONEWS）",
+          "url": "https://jp.pronews.com/news/202610211325793226.html"
+        },
+        {
+          "title": "DaVinci Resolve（Blackmagic Design 公式）",
+          "url": "https://www.blackmagicdesign.com/products/davinciresolve"
+        }
+      ]
+    },
+    {
+      "section": "software",
+      "tier": "flagship",
+      "category": "ノート・勉強",
+      "name": "Notion Business（Notion AI込み）",
+      "price": "月3,800円（月払い）／月3,150円（年払い）",
+      "why": "ノート・タスク管理・データベースを1つにまとめられるNotionで、AI機能を制限なく使えるプランです。",
+      "for": "授業ノートや研究メモ、サークル運営などをAIで整理したい人",
+      "caution": "無料・Plusプランでは、AIは合計20回のお試しだけです。",
+      "sources": [
+        {
+          "title": "Notion料金プラン完全ガイド【2026年最新版】",
+          "url": "https://temp.co.jp/blog/price"
+        },
+        {
+          "title": "Notion AIとは｜料金・できること【2026年10月】（Uravation）",
+          "url": "https://uravation.com/media/notion-ai-complete-guide-2026/"
+        }
+      ]
+    },
+    {
+      "section": "software",
+      "tier": "student",
+      "category": "AIアシスタント",
+      "name": "Google AI Plus（大学生は1年無料）",
+      "price": "学生は12か月無料（2026年12月31日まで受付）／通常 月725円",
+      "why": "Googleの学生向け特典で、Geminiの有料プラン「AI Plus」が1年間無料になります。",
+      "for": "まずは無料で有料版のAIを使ってみたい大学生",
+      "caution": "無料なのはAI ProではなくAI Plusです。個人のGoogleアカウントと学生証、支払い方法の登録が必要で、無料期間のあとは自動で月725円が請求されます。",
+      "sources": [
+        {
+          "title": "Gemini学生無料はいつまで？1年無料は12/31まで受付【2026年10月】（Uravation）",
+          "url": "https://uravation.com/media/gemini-student-free-guide-2026/"
+        },
+        {
+          "title": "Gemini学割でGoogle AI Plusが1年無料｜学生の条件・登録方法（AI PICKS）",
+          "url": "https://aipicks.jp/mag/gemini-student-discount-2026"
+        }
+      ]
+    },
+    {
+      "section": "software",
+      "tier": "student",
+      "category": "AIアシスタント",
+      "name": "ChatGPT Go ／ Claude Pro",
+      "price": "ChatGPT Go 月1,400円／Claude Pro 月20ドル（税込約3,300円）",
+      "why": "ChatGPT Goは手ごろな価格で無料版より多く使えるプラン、Claude Proは文章作成やプログラミングに強いClaudeを十分に使えるプランです。",
+      "for": "毎日のレポートや調べもの、勉強にAIを使いたい人",
+      "caution": "ChatGPTはアプリ内で課金すると月1,500円と少し高くなります。Claude Proは年払いにすると割引があります。",
+      "sources": [
+        {
+          "title": "ChatGPT Goとは？料金・機能・Plusとの違い【2026年10月最新】（AIsmiley）",
+          "url": "https://aismiley.co.jp/ai_news/chatgpt-go-plus/"
+        },
+        {
+          "title": "Claude料金プラン｜Pro・Max・Teamを日本円で【2026年10月】（Uravation）",
+          "url": "https://uravation.com/media/claude-pricing-plan-complete-guide-2026/"
+        }
+      ]
+    },
+    {
+      "section": "software",
+      "tier": "student",
+      "category": "AIコーディング",
+      "name": "GitHub Copilot Student",
+      "price": "無料（学生認証が必要）",
+      "why": "プログラムの入力補完が無制限、AIのチャットなどに使えるクレジットが毎月200回分付く学生向けの無料プランです。",
+      "for": "授業や個人開発でプログラミングをする人",
+      "caution": "2026年6月から、以前の「Copilot Proが無料」より内容が絞られました。Cursorの学生向け1年無料は6月25日で新規受付を終了しています。",
+      "sources": [
+        {
+          "title": "GitHub Copilot Free for Students 2026: Sign-Ups Reopened（Fello AI）",
+          "url": "https://felloai.com/how-to-get-microsoft-and-github-copilot-pro-free/"
+        },
+        {
+          "title": "Cursor Student Discount 2026: What Changed for Students（Fello AI）",
+          "url": "https://felloai.com/cursor-student-discount/"
+        }
+      ]
+    },
+    {
+      "section": "software",
+      "tier": "student",
+      "category": "動画・画像編集",
+      "name": "DaVinci Resolve 21（無料版）",
+      "price": "無料",
+      "why": "無料でもプロ向けに近い動画編集・色調整ができるソフトです。サークルの動画やYouTubeには十分な機能があります。",
+      "for": "お金をかけずに本格的な動画編集を始めたい人",
+      "caution": "一部の高度な機能は有料版のStudio限定です。",
+      "sources": [
+        {
+          "title": "DaVinci Resolve（Blackmagic Design 公式）",
+          "url": "https://www.blackmagicdesign.com/products/davinciresolve"
+        },
+        {
+          "title": "DaVinci Resolve料金！無料版とStudioの損益分岐【2026年版】",
+          "url": "https://edit-films.com/davinci-resolve-ryokin/"
+        }
+      ]
+    },
+    {
+      "section": "software",
+      "tier": "student",
+      "category": "動画・画像編集",
+      "name": "Adobe Creative Cloud Pro 学生・教職員版",
+      "price": "最初の3か月 月980円 → 4〜12か月目 月2,180円 → 2年目以降 月4,180円",
+      "why": "Photoshop・Illustrator・Premiere Proなどをすべて、通常の半額以下で使えます。",
+      "for": "デザインや映像を学んでいる人、就職に向けてAdobeのソフトに慣れておきたい人",
+      "caution": "学校のメールアドレスなどで在籍確認が必要です。キャンペーンで価格が変わることがあります。",
+      "sources": [
+        {
+          "title": "Adobe学割の2年目は月4,180円｜買い方・学生認証【2026年10月版】",
+          "url": "https://techloglab.com/blog/adobe-gakuwari-kaikata/"
+        },
+        {
+          "title": "2026年版 Adobe学生プラン徹底比較（アプリの達人）",
+          "url": "https://app-tatsujin.com/adobe-student-plan-2026-guide/"
+        }
+      ]
+    },
+    {
+      "section": "software",
+      "tier": "student",
+      "category": "オフィス",
+      "name": "Microsoft 365（大学の契約）",
+      "price": "多くの大学で無料",
+      "why": "大学がMicrosoftと契約していれば、Word・Excel・PowerPointを無料で使えます。大学のメールアドレスがあれば、ウェブ版を無料で使える「Office 365 A1」もあります。",
+      "for": "レポートや発表資料を作るすべての大学生",
+      "caution": "まず自分の大学で配布されているか確認しましょう。個人で買うと Personal は月2,130円（年2万1,300円）です。",
+      "sources": [
+        {
+          "title": "Officeの学割はある？学生がOfficeを無料・安く使う方法",
+          "url": "https://shinjo-net.com/7686/"
+        },
+        {
+          "title": "Microsoft 365 完全料金ガイド【2026年9月最新】（はてなベース）",
+          "url": "https://hatenabase.jp/blog/microsoft-365-pricing-complete-guide-2026/"
+        }
+      ]
+    },
+    {
+      "section": "software",
+      "tier": "student",
+      "category": "ノート・勉強",
+      "name": "Notion Education Plus",
+      "price": "無料（対象の大学の学生・教職員）",
+      "why": "授業ノートや課題管理、サークルの情報共有に使えるNotionの有料プラン（Plus）を無料で使えます。",
+      "for": "ノートや予定をパソコンとスマホでまとめて管理したい人",
+      "caution": "Notion AIは含まれず、お試しの20回だけです。",
+      "sources": [
+        {
+          "title": "Notion料金プラン完全ガイド【2026年最新版】",
+          "url": "https://temp.co.jp/blog/price"
+        },
+        {
+          "title": "Notion AI 料金を徹底比較【2026年最新】",
+          "url": "https://digital-gorilla.co.jp/ai-lab/notion-ai-pricing/"
+        }
+      ]
+    },
+    {
+      "section": "other",
+      "tier": "flagship",
+      "category": "充電器・モバイルバッテリー",
+      "name": "Anker Prime Charger（250W・6ポート・GaN）",
+      "price": "2万2,990円（10月27日のセールで1万5,990円）",
+      "why": "6つの差し込み口で合計最大250W、1つあたり最大140Wの高出力充電器です。ノートPC・スマホ・タブレットをまとめて急速充電できます。",
+      "for": "ノートPCを含む機器をまとめて充電したい人",
+      "caution": "",
+      "sources": [
+        {
+          "title": "Anker Prime Charger (250W, 6 Ports, GaN)（Anker公式）",
+          "url": "https://www.ankerjapan.com/products/a2345"
+        },
+        {
+          "title": "30%引き！「Anker Prime Charger（250W, 6 Ports, GaN）」Amazonタイムセール",
+          "url": "https://jetstream.blog/2026/10/27/anker-charger-a2345-amazon-timesale-20261027/"
+        }
+      ]
+    },
+    {
+      "section": "other",
+      "tier": "flagship",
+      "category": "外付けSSD",
+      "name": "LaCie Rugged SSD Pro5（Thunderbolt 5・2TB）",
+      "price": "国内価格は要確認（米国で約394〜482ドル）",
+      "why": "Thunderbolt 5に対応し、読み込み最大6,700MB/sと非常に高速です。防水・防塵（IP68）で、落下にも強い頑丈なつくりです。",
+      "for": "4K・8K動画の素材を持ち運んで編集する人",
+      "caution": "国内の販売価格を確認できませんでした。メモリ価格の高騰でSSD全体が値上がりしているので、購入前に価格を確認してください。",
+      "sources": [
+        {
+          "title": "LaCie Rugged SSD Pro5 2TB - A First of its Kind Masterpiece（TweakTown）",
+          "url": "https://www.tweaktown.com/reviews/10987/lacie-rugged-ssd-pro5-2tb-first-of-its-kind-masterpiece/index.html"
+        },
+        {
+          "title": "2026年版おすすめ外付けSSD（StorageReview）",
+          "url": "https://www.storagereview.com/best/portable-ssds"
+        }
+      ]
+    },
+    {
+      "section": "other",
+      "tier": "flagship",
+      "category": "Wi-Fiルーター",
+      "name": "ASUS ROG Rapture GT-BE19000AI（Wi-Fi 7）",
+      "price": "13万5,273円（10月20日時点の参考価格）",
+      "why": "最新規格のWi-Fi 7に対応したゲーミング向けの最上位ルーターです。高速回線の性能を最大限に引き出せます。",
+      "for": "10ギガの光回線を使う人、オンラインゲームで遅延を極力減らしたい人",
+      "caution": "1ギガの回線なら、ここまでの性能は必要ありません。",
+      "sources": [
+        {
+          "title": "ゲーミングルーターおすすめ8選【2026】最強のWi-Fi 7も（ゲームウィズ）",
+          "url": "https://gamewith.jp/gaming-pc/554116"
+        },
+        {
+          "title": "コスパ最強のルーターおすすめランキング10選（2026年）",
+          "url": "https://kadekura.com/router-ranking-2026/"
+        }
+      ]
+    },
+    {
+      "section": "other",
+      "tier": "student",
+      "category": "充電器・モバイルバッテリー",
+      "name": "Anker Prime 67W 充電器（3ポート）",
+      "price": "通常 8,490円（セール時は約4,400円）",
+      "why": "約144gと小さく、14インチのMacBook Proも充電できる出力があります。ノートPCとスマホの充電器を1つにまとめられます。",
+      "for": "ノートPCとスマホの充電器を1つにして荷物を減らしたい人",
+      "caution": "",
+      "sources": [
+        {
+          "title": "Anker Prime 67W充電器が過去最安級。ほぼ半額（ゴリミー）",
+          "url": "https://gori.me/sale/peripheral-sale/171742"
+        }
+      ]
+    },
+    {
+      "section": "other",
+      "tier": "student",
+      "category": "充電器・モバイルバッテリー",
+      "name": "Anker Power Bank（10000mAh・22.5W）",
+      "price": "約2,300〜2,800円",
+      "why": "スマホを約2回充電できる定番のモバイルバッテリーで、価格の安さで人気です。",
+      "for": "外出先や通学中のスマホの電池切れが心配な人",
+      "caution": "",
+      "sources": [
+        {
+          "title": "モバイルバッテリー 人気売れ筋ランキング 2026年10月（価格.com）",
+          "url": "https://kakaku.com/kaden/mobile-battery/ranking_3114/"
+        },
+        {
+          "title": "モバイルバッテリーのおすすめ人気ランキング 2026年10月（mybest）",
+          "url": "https://my-best.com/959"
+        }
+      ]
+    },
+    {
+      "section": "other",
+      "tier": "student",
+      "category": "外付けSSD",
+      "name": "バッファロー ポータブルSSD 1TB（約17g）",
+      "price": "1万9,800円（記事掲載時）",
+      "why": "約17gととても軽く、レポートや写真のバックアップ、動画素材の持ち運びに使える手ごろな1TBのSSDです。",
+      "for": "パソコンの容量が足りない人、大事なデータのバックアップを取りたい人",
+      "caution": "メモリ価格の高騰でSSDは値上がり傾向です。購入前に最新価格を確認してください。",
+      "sources": [
+        {
+          "title": "1TBポータブルSSDおすすめ5選｜2026年最新価格比較",
+          "url": "https://pickma.blog/portable-ssd-best-5/"
+        },
+        {
+          "title": "1TBの外付けSSDのおすすめ人気ランキング（mybest）",
+          "url": "https://my-best.com/22859"
+        }
+      ]
+    },
+    {
+      "section": "other",
+      "tier": "student",
+      "category": "Wi-Fiルーター",
+      "name": "TP-Link Archer BE3600 ／ バッファロー WSR3600BE4P（Wi-Fi 7）",
+      "price": "約9,900円〜／約1万2,600円〜",
+      "why": "1万円前後で最新規格のWi-Fi 7に対応した、一人暮らしの部屋に十分なルーターです。",
+      "for": "一人暮らしで1ギガの光回線を使う人",
+      "caution": "",
+      "sources": [
+        {
+          "title": "無線ルーターおすすめ10選【2026年10月更新】（Wi-Fiの森）",
+          "url": "https://cadenza.co.jp/wifinomori/wifi-router-recommend/"
+        },
+        {
+          "title": "コスパ最強のルーターおすすめランキング10選（2026年）",
+          "url": "https://kadekura.com/router-ranking-2026/"
+        }
       ]
     }
-  ]
+  ],
+  "sections": {
+    "pc": {
+      "label": "PC",
+      "title": "PC",
+      "lead": {
+        "flagship": "値段を気にせず、今いちばん性能が高いPCと周辺機器を選びました。AIを手元で動かす、4Kで動画編集する、といった使い方向けです。",
+        "student": "大学の授業・レポート・プログラミングに困らない性能を、手の届く価格で選びました。"
+      }
+    },
+    "gadget": {
+      "label": "ガジェット",
+      "title": "ガジェット",
+      "lead": {
+        "flagship": "スマホ・タブレット・イヤホン・カメラ・スマートウォッチの最上位モデルです。",
+        "student": "毎日の通学や勉強で使いやすく、値段とのバランスが良いガジェットを選びました。"
+      }
+    },
+    "software": {
+      "label": "ソフトウェア",
+      "title": "ソフトウェア・AIサービス",
+      "lead": {
+        "flagship": "料金を気にせず、いちばん高性能なプランを選ぶ場合のおすすめです。多くは毎月の料金がかかるサブスクリプションです。",
+        "student": "無料プランや学生向けの割引・特典で使えるものを中心に選びました。学割は在籍確認が必要です。"
+      }
+    },
+    "other": {
+      "label": "その他",
+      "title": "その他（充電器・ストレージ・ネット）",
+      "lead": {
+        "flagship": "充電器・外付けSSD・Wi-Fiルーターの中で、性能を最優先したものです。",
+        "student": "一人暮らしや毎日の持ち運びで役立つ、手ごろな周辺機器を選びました。"
+      }
+    }
+  }
 }

@@ -34,7 +34,7 @@ CURATED_PATH = ROOT / "data" / "curated.json"  # Claude Code（/curate）が選�
 TEMPLATE_PATH = ROOT / "collector" / "template.html"
 OUTPUT_PATH = ROOT / "docs" / "index.html"
 STATIC_DIR = ROOT / "collector" / "static"  # アイコンなど、ページと一緒に公開するファイル
-GEAR_PATH = ROOT / "data" / "gear_guide.json"  # おすすめ機材（Claude Code の /gear-guide が更新する）
+GEAR_PATH = ROOT / "data" / "gear_guide.json"  # おすすめ（Claude Code の /gear-guide が更新する）
 GEAR_TEMPLATE_PATH = ROOT / "collector" / "gear_template.html"
 
 # 一部のサイトはブラウザ以外からのアクセスを拒否するため、一般的なブラウザ名を名乗る
@@ -249,8 +249,8 @@ def render(items: list[dict], statuses: list[dict], updated: datetime, feeds: li
     return TEMPLATE_PATH.read_text(encoding="utf-8").replace("/*__DATA__*/null", blob)
 
 
-def render_gear() -> str:
-    blob = GEAR_PATH.read_text(encoding="utf-8").replace("</", "<\\/")
+def render_gear(guide: dict, section: str) -> str:
+    blob = json.dumps({"section": section, "guide": guide}, ensure_ascii=False).replace("</", "<\\/")
     return GEAR_TEMPLATE_PATH.read_text(encoding="utf-8").replace("/*__DATA__*/null", blob)
 
 
@@ -310,7 +310,13 @@ def main() -> int:
     OUTPUT_PATH.write_text(render(kept, statuses, now, feeds), encoding="utf-8")
     shutil.copytree(STATIC_DIR, OUTPUT_PATH.parent, dirs_exist_ok=True)
     if GEAR_PATH.exists():
-        (OUTPUT_PATH.parent / "gear.html").write_text(render_gear(), encoding="utf-8")
+        # おすすめは区分ごとに別ページ（gear-pc.html など）。以前の gear.html は PC のページへ転送する
+        guide = json.loads(GEAR_PATH.read_text(encoding="utf-8"))
+        for section in guide["sections"]:
+            (OUTPUT_PATH.parent / f"gear-{section}.html").write_text(render_gear(guide, section), encoding="utf-8")
+        (OUTPUT_PATH.parent / "gear.html").write_text(
+            '<!doctype html><meta charset="utf-8"><meta http-equiv="refresh" content="0; url=gear-pc.html">'
+            '<a href="gear-pc.html">おすすめ</a>', encoding="utf-8")
     # ホーム画面のアプリが、新しいデータが出たことに気づいて読み込み直すための小さなファイル
     curated = json.loads(CURATED_PATH.read_text(encoding="utf-8")) if CURATED_PATH.exists() else {}
     (OUTPUT_PATH.parent / "version.json").write_text(
