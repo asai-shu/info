@@ -654,6 +654,7 @@ category = "新製品"
 lang = "ja"
 theme = "gear"
 limit = 30
+filter = "gear"
 
 [[feeds]]
 name = "Googleニュース（便利ITグッズ）"
@@ -662,6 +663,7 @@ category = "新製品"
 lang = "ja"
 theme = "gear"
 limit = 25
+filter = "gear"
 
 [[feeds]]
 name = "Google News（Crowdfunding Gadgets）"
@@ -670,13 +672,6 @@ category = "新製品"
 lang = "en"
 theme = "gear"
 limit = 25
-
-[[feeds]]
-name = "Gadget Flow"
-url = "https://thegadgetflow.com/feed/"
-category = "新製品"
-lang = "en"
-theme = "gear"
 filter = "gear"
 
 [[feeds]]

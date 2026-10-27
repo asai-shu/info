@@ -19,7 +19,7 @@ AIに関する最新情報を、日本と海外の約70か所から自動で集�
 | 話題 | はてなブックマーク、Hacker News、Reddit、Lobsters |
 | ビジネス | AIスタートアップ・資金調達のニュース |
 | ツール | Product Hunt、GitHub で人気のプロジェクト |
-| 新製品 | Googleニュース（AIブラウザ・ガジェット）、The Verge、Engadget、9to5Google、9to5Mac、Chrome・Firefoxの公式ブログ、ギズモード・ジャパン、ITmedia Mobile・PC USER、家電Watch、AV Watch、GetNavi web、ROOMIE、Gadget Flow、Yanko Design |
+| 新製品 | Googleニュース（AIブラウザ・ガジェット）、The Verge、Engadget、9to5Google、9to5Mac、Chrome・Firefoxの公式ブログ、ギズモード・ジャパン、ITmedia Mobile・PC USER、家電Watch、AV Watch、GetNavi web、ROOMIE、Yanko Design |
 | 面白ITグッズ | クラウドファンディング（Makuake・Kickstarter など）や便利グッズのニュース |
 | 論文 | arXiv、Hugging Face Daily Papers |
 

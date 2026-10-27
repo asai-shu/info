@@ -93,12 +93,16 @@ GEAR = [
         "ゲーム機", "電子書籍リーダー", "スマートホーム", "スマート家電", "ロボット掃除機", "キーボード",
         "モニター", "スピーカー", "ヘッドホン", "モバイルバッテリー", "充電器", "家電",
     ]),
-    ("面白ITグッズ・クラファン", 3, [
-        "crowdfunding", "Kickstarter", "Indiegogo", "USB hub", "docking station", "desk setup", "desk gadget",
-        "クラウドファンディング", "クラファン", "Makuake", "マクアケ", "GREEN FUNDING", "CAMPFIRE",
-        "便利グッズ", "便利ガジェット", "面白ガジェット", "変わり種", "USBハブ", "ドッキングステーション",
-        "デスク周り", "ガジェットポーチ", "トラッカー", "AirTag", "スマートリング", "ボイスレコーダー", "AIレコーダー",
-        "翻訳機", "プロジェクター", "電子ペーパー", "小型PC", "ミニPC",
+    ("面白ITグッズ", 3, [
+        "USB hub", "docking station", "desk setup", "desk gadget", "desk display", "便利ガジェット", "面白ガジェット",
+        "USBハブ", "ドッキングステーション", "ガジェットポーチ", "トラッカー", "AirTag", "スマートリング",
+        "smart ring", "ボイスレコーダー", "AIレコーダー", "翻訳機", "プロジェクター", "projector", "電子ペーパー",
+        "小型PC", "ミニPC", "mini PC", "マウス", "mechanical keyboard",
+    ]),
+    # クラファンの記事は機器以外（映画・グッズなど）も多いので、これだけでは「ガジェットの記事」とみなさない
+    ("クラウドファンディング", 1, [
+        "crowdfunding", "Kickstarter", "Indiegogo", "クラウドファンディング", "クラファン", "Makuake", "マクアケ",
+        "GREEN FUNDING", "CAMPFIRE",
     ]),
     ("新しいアプリ・サービス", 2, [
         "app", "new feature", "beta", "waitlist", "now available", "available now", "extension",
@@ -189,7 +193,7 @@ def is_gear_related(item: dict) -> bool:
     text = f"{item['title']} {item['summary']}"
     return any(
         p.search(text)
-        for label, _, patterns in THEMES["gear"] if label in ("ブラウザ", "AIデバイス", "ハードウェア", "ガジェット", "面白ITグッズ・クラファン")
+        for label, _, patterns in THEMES["gear"] if label in ("ブラウザ", "AIデバイス", "ハードウェア", "ガジェット", "面白ITグッズ")
         for p in patterns
     )
 
