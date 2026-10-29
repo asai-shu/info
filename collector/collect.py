@@ -242,7 +242,7 @@ def load_curated(items: list[dict]) -> dict | None:
         return None
     curated = json.loads(CURATED_PATH.read_text(encoding="utf-8"))
     by_id = {i["id"]: i for i in items}
-    for theme in ("tech", "money", "gear"):
+    for theme in ("tech",):
         curated[theme] = [
             {**by_id[e["id"]], **e} for e in curated.get(theme, []) if e.get("id") in by_id
         ]
