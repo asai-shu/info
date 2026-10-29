@@ -34,7 +34,7 @@ CURATED_PATH = ROOT / "data" / "curated.json"  # Claude Code（/curate）が選�
 TEMPLATE_PATH = ROOT / "collector" / "template.html"
 OUTPUT_PATH = ROOT / "docs" / "index.html"
 STATIC_DIR = ROOT / "collector" / "static"  # アイコンなど、ページと一緒に公開するファイル
-GEAR_PATH = ROOT / "data" / "gear_guide.json"  # おすすめ（Claude Code の /gear-guide が更新する）
+GEAR_PATH = ROOT / "data" / "gear_guide.json"  # 機材・ソフトガイド（Claude Code の /gear-guide が更新する）
 GEAR_TEMPLATE_PATH = ROOT / "collector" / "gear_template.html"
 DEMAND_PATH = ROOT / "data" / "demand.json"  # 需要リサーチ（Claude Code の /demand が更新する）
 DEMAND_TEMPLATE_PATH = ROOT / "collector" / "demand_template.html"
@@ -324,13 +324,13 @@ def main() -> int:
     OUTPUT_PATH.write_text(render(kept, statuses, now, feeds), encoding="utf-8")
     shutil.copytree(STATIC_DIR, OUTPUT_PATH.parent, dirs_exist_ok=True)
     if GEAR_PATH.exists():
-        # おすすめは区分ごとに別ページ（gear-pc.html など）。以前の gear.html は PC のページへ転送する
+        # 機材・ソフトガイドは区分ごとに別ページ（gear-pc.html など）。以前の gear.html は PC のページへ転送する
         guide = json.loads(GEAR_PATH.read_text(encoding="utf-8"))
         for section in guide["sections"]:
             (OUTPUT_PATH.parent / f"gear-{section}.html").write_text(render_gear(guide, section), encoding="utf-8")
         (OUTPUT_PATH.parent / "gear.html").write_text(
             '<!doctype html><meta charset="utf-8"><meta http-equiv="refresh" content="0; url=gear-pc.html">'
-            '<a href="gear-pc.html">おすすめ</a>', encoding="utf-8")
+            '<a href="gear-pc.html">機材・ソフトガイド</a>', encoding="utf-8")
     if DEMAND_PATH.exists():
         report = json.loads(DEMAND_PATH.read_text(encoding="utf-8"))
         (OUTPUT_PATH.parent / "demand.html").write_text(render_demand(report), encoding="utf-8")

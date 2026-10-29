@@ -28,7 +28,16 @@ header { position: sticky; top: 0; z-index: 1; background: var(--bg); border-bot
 .wrap { max-width: 880px; margin: 0 auto; padding: 0 16px; }
 .titlebar { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 0 8px; }
 .titlebar h1 { white-space: nowrap; }
-.titlebar .buttons { display: flex; gap: 6px; }
+/* 右上のメニュー（ページの切り替え） */
+.menu { position: relative; margin-top: 12px; }
+.menu summary { list-style: none; cursor: pointer; border: 1px solid var(--line); background: var(--card); color: var(--accent);
+                border-radius: 999px; padding: 4px 12px; font-size: 13px; white-space: nowrap; }
+.menu summary::-webkit-details-marker { display: none; }
+.menu-list { position: absolute; right: 0; top: calc(100% + 6px); z-index: 2; min-width: 180px; padding: 6px;
+             background: var(--card); border: 1px solid var(--line); border-radius: 10px; box-shadow: 0 6px 20px rgba(0,0,0,.15); }
+.menu-list a { display: block; color: var(--text); font-size: 15px; padding: 10px 12px; border-radius: 6px; text-decoration: none; }
+.menu-list a:hover { background: var(--accent-bg); color: var(--accent); }
+.menu-list a.on { color: var(--accent); font-weight: 700; }
 h1 { font-size: 20px; margin: 14px 0 2px; }
 .back { border: 1px solid var(--line); background: var(--card); color: var(--accent); border-radius: 999px;
         padding: 4px 12px; font-size: 13px; text-decoration: none; margin-top: 10px; white-space: nowrap; }
@@ -63,7 +72,7 @@ footer { margin: 16px 0 40px; color: var(--muted); font-size: 12.5px; }
 <body>
 <header>
   <div class="wrap">
-    <div class="titlebar"><h1>需要リサーチ</h1><a class="back" href="./">記事一覧に戻る</a></div>
+    <div class="titlebar"><h1>需要リサーチ</h1><details class="menu" id="menu"><summary>☰ メニュー</summary><nav class="menu-list"><a href="./">記事一覧</a><a href="demand.html" class="on">需要リサーチ</a><a href="gear-pc.html">機材・ソフトガイド</a></nav></details></div>
     <div class="meta" id="meta"></div>
     <nav class="tabs" id="tabs"></nav>
     <div class="chips" id="chips"></div>
@@ -145,6 +154,8 @@ $("chips").addEventListener("click", (e) => {
   render();
 });
 render();
+// メニューの外を押したら閉じる
+document.addEventListener("click", (e) => { if (!$("menu").contains(e.target)) $("menu").open = false; });
 </script>
 </body>
 </html>
