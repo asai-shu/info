@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>おすすめ</title>
+<title>機材・ソフトガイド</title>
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="icon" type="image/svg+xml" href="icon.svg">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -24,6 +24,17 @@ body { margin: 0; background: var(--bg); color: var(--text);
 header { position: sticky; top: 0; z-index: 1; background: var(--bg); border-bottom: 1px solid var(--line); }
 .wrap { max-width: 880px; margin: 0 auto; padding: 0 16px; }
 .titlebar { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
+.titlebar h1 { white-space: nowrap; }
+/* 右上のメニュー（ページの切り替え） */
+.menu { position: relative; margin-top: 12px; }
+.menu summary { list-style: none; cursor: pointer; border: 1px solid var(--line); background: var(--card); color: var(--accent);
+                border-radius: 999px; padding: 4px 12px; font-size: 13px; white-space: nowrap; }
+.menu summary::-webkit-details-marker { display: none; }
+.menu-list { position: absolute; right: 0; top: calc(100% + 6px); z-index: 2; min-width: 180px; padding: 6px;
+             background: var(--card); border: 1px solid var(--line); border-radius: 10px; box-shadow: 0 6px 20px rgba(0,0,0,.15); }
+.menu-list a { display: block; color: var(--text); font-size: 15px; padding: 10px 12px; border-radius: 6px; text-decoration: none; }
+.menu-list a:hover { background: var(--accent-bg); color: var(--accent); }
+.menu-list a.on { color: var(--accent); font-weight: 700; }
 h1 { font-size: 20px; margin: 14px 0 2px; }
 .back { border: 1px solid var(--line); background: var(--card); color: var(--accent); border-radius: 999px;
         padding: 4px 12px; font-size: 13px; text-decoration: none; margin-top: 10px; white-space: nowrap; }
@@ -59,7 +70,7 @@ footer { margin: 24px 0 40px; color: var(--muted); font-size: 12.5px; }
 <body>
 <header>
   <div class="wrap">
-    <div class="titlebar"><h1 id="title">おすすめ</h1><a class="back" href="./">記事一覧に戻る</a></div>
+    <div class="titlebar"><h1>機材・ソフトガイド</h1><details class="menu" id="menu"><summary>☰ メニュー</summary><nav class="menu-list"><a href="./">記事一覧</a><a href="demand.html">需要リサーチ</a><a href="gear-pc.html" class="on">機材・ソフトガイド</a></nav></details></div>
     <div class="meta" id="meta"></div>
     <nav class="sections" id="sections"></nav>
     <nav class="tabs" id="tabs"></nav>
@@ -75,7 +86,7 @@ footer { margin: 24px 0 40px; color: var(--muted); font-size: 12.5px; }
 
 <script id="data" type="application/json">/*__DATA__*/null</script>
 <script>
-// このページが表示する区分（pc / gadget / software / other）と、おすすめ全体のデータ
+// このページが表示する区分（pc / gadget / software / other）と、機材・ソフトガイド全体のデータ
 const PAGE = JSON.parse(document.getElementById("data").textContent) || { section: "", guide: { tiers: {}, sections: {}, items: [] } };
 const GUIDE = PAGE.guide;
 const SECTION = GUIDE.sections[PAGE.section];
@@ -120,8 +131,7 @@ function render() {
   $("list").innerHTML = html;
 }
 
-document.title = `おすすめ｜${SECTION.title}`;
-$("title").textContent = `おすすめ｜${SECTION.label}`;
+document.title = `機材・ソフトガイド｜${SECTION.title}`;
 $("sections").innerHTML = Object.entries(GUIDE.sections).map(([k, s]) =>
   `<a class="section${k === PAGE.section ? " on" : ""}" href="gear-${esc(k)}.html">${esc(s.label)}</a>`).join("");
 $("meta").textContent = `${GUIDE.updated} 時点の情報`;
@@ -141,6 +151,8 @@ $("chips").addEventListener("click", (e) => {
   render();
 });
 render();
+// メニューの外を押したら閉じる
+document.addEventListener("click", (e) => { if (!$("menu").contains(e.target)) $("menu").open = false; });
 </script>
 </body>
 </html>
