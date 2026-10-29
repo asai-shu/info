@@ -24,7 +24,8 @@ CURATED_PATH = ROOT / "data" / "curated.json"
 CONFIG_PATH = ROOT / "feeds.toml"
 DEMAND_PATH = ROOT / "data" / "demand.json"
 
-THEMES = ("tech", "money", "gear")
+# 収益化のヒント・ツール・ガジェットは、需要リサーチ・機材・ソフトガイドのページに役割を移した
+THEMES = ("tech",)
 ENTRY_FIELDS = ("id", "title_ja", "summary_ja", "point")
 DEMAND_FIELDS = ("section", "category", "title", "body")
 
