@@ -28,13 +28,18 @@ body { margin: 0; background: var(--bg); color: var(--text);
 header { position: sticky; top: 0; z-index: 1; background: var(--bg); border-bottom: 1px solid var(--line); }
 .wrap { max-width: 880px; margin: 0 auto; padding: 0 16px; }
 h1 { font-size: 20px; margin: 14px 0 2px; }
-.titlebar { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 0 8px; }
+.titlebar { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
 .titlebar h1 { white-space: nowrap; }
-.titlebar .buttons { display: flex; gap: 6px; }
-.gearlink { border: 1px solid var(--line); background: var(--card); color: var(--accent); border-radius: 999px;
-            padding: 4px 12px; font-size: 13px; text-decoration: none; margin-top: 10px; white-space: nowrap; }
-#reload { border: 1px solid var(--line); background: var(--card); color: var(--accent); border-radius: 999px;
-          padding: 4px 12px; font-size: 13px; cursor: pointer; margin-top: 10px; }
+/* 右上のメニュー（需要リサーチ・おすすめ・更新） */
+.menu { position: relative; margin-top: 12px; }
+.menu summary { list-style: none; cursor: pointer; border: 1px solid var(--line); background: var(--card); color: var(--accent);
+                border-radius: 999px; padding: 4px 12px; font-size: 13px; white-space: nowrap; }
+.menu summary::-webkit-details-marker { display: none; }
+.menu-list { position: absolute; right: 0; top: calc(100% + 6px); z-index: 2; min-width: 180px; padding: 6px;
+             background: var(--card); border: 1px solid var(--line); border-radius: 10px; box-shadow: 0 6px 20px rgba(0,0,0,.15); }
+.menu-list a, .menu-list button { display: block; width: 100%; text-align: left; border: 0; background: none; color: var(--text);
+                                  font: inherit; font-size: 15px; padding: 10px 12px; border-radius: 6px; text-decoration: none; cursor: pointer; }
+.menu-list a:hover, .menu-list button:hover { background: var(--accent-bg); color: var(--accent); }
 .meta { color: var(--muted); font-size: 13px; }
 .controls { display: flex; flex-wrap: wrap; gap: 8px; padding: 10px 0 12px; }
 input[type=search] { flex: 1 1 220px; padding: 8px 10px; border: 1px solid var(--line); border-radius: 8px;
@@ -75,7 +80,9 @@ details li.ng { color: var(--new); }
 <body>
 <header>
   <div class="wrap">
-    <div class="titlebar"><h1>AI情報まとめ</h1><div class="buttons"><a class="gearlink" href="demand.html">需要リサーチ</a><a class="gearlink" href="gear-pc.html">おすすめ</a><button id="reload" type="button">更新</button></div></div>
+    <div class="titlebar"><h1>AI情報まとめ</h1><details class="menu" id="menu"><summary>☰ メニュー</summary><nav class="menu-list">
+      <a href="demand.html">需要リサーチ</a><a href="gear-pc.html">おすすめ</a><button id="reload" type="button">最新に更新</button>
+    </nav></details></div>
     <div class="meta" id="meta"></div>
     <nav class="tabs" id="tabs">
       <button class="tab" data-tab="tech">技術の進歩</button>
@@ -303,6 +310,8 @@ async function checkForUpdate() {
 }
 
 $("reload").addEventListener("click", reloadFresh);
+// メニューの外を押したら閉じる
+document.addEventListener("click", (e) => { if (!$("menu").contains(e.target)) $("menu").open = false; });
 document.addEventListener("visibilitychange", () => { if (document.visibilityState === "visible") checkForUpdate(); });
 window.addEventListener("pageshow", (e) => { if (e.persisted) checkForUpdate(); });
 setInterval(checkForUpdate, 10 * 60 * 1000);

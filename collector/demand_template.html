@@ -63,7 +63,7 @@ footer { margin: 16px 0 40px; color: var(--muted); font-size: 12.5px; }
 <body>
 <header>
   <div class="wrap">
-    <div class="titlebar"><h1>需要リサーチ</h1><div class="buttons"><a class="back" id="rerun" target="_blank" rel="noopener" hidden>調べ直す</a><a class="back" href="./">記事一覧に戻る</a></div></div>
+    <div class="titlebar"><h1>需要リサーチ</h1><a class="back" href="./">記事一覧に戻る</a></div>
     <div class="meta" id="meta"></div>
     <nav class="tabs" id="tabs"></nav>
     <div class="chips" id="chips"></div>
@@ -75,7 +75,7 @@ footer { margin: 16px 0 40px; color: var(--muted); font-size: 12.5px; }
   <div id="list"></div>
   <details id="changes"></details>
 </main>
-<footer class="wrap">リンク先は外部サイトです。市場の数字や売上の例は記事ごとに根拠の強さが違うため、目安として読んでください。</footer>
+<footer class="wrap">リンク先は外部サイトです。市場の数字や売上の例は記事ごとに根拠の強さが違うため、目安として読んでください。調べ直すときは、デスクトップ版の Claude Code で <code>/demand</code> と送ってください。</footer>
 
 <script id="data" type="application/json">/*__DATA__*/null</script>
 <script>
@@ -124,8 +124,6 @@ function render() {
   $("list").innerHTML = html;
 }
 
-// 「調べ直す」は GitHub の Actions 画面を開く。そこで Run workflow を押すと Claude が調べ直す
-if (REPORT.rerun_url) { $("rerun").href = REPORT.rerun_url; $("rerun").hidden = false; }
 $("meta").textContent = REPORT.updated ? `${REPORT.updated} 時点の調査` : "";
 $("overview").innerHTML = `<b>今回のまとめ</b>${esc(REPORT.overview || "")}`;
 const changes = REPORT.changes || [];
