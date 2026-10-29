@@ -756,8 +756,8 @@ lang = "ja"
 limit = 20
 
 [[feeds]]
-name = "Google News（Bootstrapped SaaS MRR）"
-url = "https://news.google.com/rss/search?q=bootstrapped+OR+indie+hacker+MRR+OR+%22micro+SaaS%22+when:7d&hl=en-US&gl=US&ceid=US:en"
+name = "Google News（Bootstrapped SaaS・Indie Hacker）"
+url = "https://news.google.com/rss/search?q=bootstrapped+SaaS+OR+%22indie+hacker%22+OR+%22micro+SaaS%22+when:30d&hl=en-US&gl=US&ceid=US:en"
 category = "需要の種"
 lang = "en"
 limit = 20
