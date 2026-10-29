@@ -36,6 +36,8 @@ OUTPUT_PATH = ROOT / "docs" / "index.html"
 STATIC_DIR = ROOT / "collector" / "static"  # アイコンなど、ページと一緒に公開するファイル
 GEAR_PATH = ROOT / "data" / "gear_guide.json"  # おすすめ（Claude Code の /gear-guide が更新する）
 GEAR_TEMPLATE_PATH = ROOT / "collector" / "gear_template.html"
+DEMAND_PATH = ROOT / "data" / "demand.json"  # 需要リサーチ（Claude Code の /demand が更新する）
+DEMAND_TEMPLATE_PATH = ROOT / "collector" / "demand_template.html"
 
 # 一部のサイトはブラウザ以外からのアクセスを拒否するため、一般的なブラウザ名を名乗る
 USER_AGENT = (
@@ -264,6 +266,11 @@ def render_gear(guide: dict, section: str) -> str:
     return GEAR_TEMPLATE_PATH.read_text(encoding="utf-8").replace("/*__DATA__*/null", blob)
 
 
+def render_demand(report: dict) -> str:
+    blob = json.dumps(report, ensure_ascii=False).replace("</", "<\\/")
+    return DEMAND_TEMPLATE_PATH.read_text(encoding="utf-8").replace("/*__DATA__*/null", blob)
+
+
 def main() -> int:
     config = tomllib.loads(CONFIG_PATH.read_text(encoding="utf-8"))
     settings = config.get("settings", {})
@@ -324,6 +331,9 @@ def main() -> int:
         (OUTPUT_PATH.parent / "gear.html").write_text(
             '<!doctype html><meta charset="utf-8"><meta http-equiv="refresh" content="0; url=gear-pc.html">'
             '<a href="gear-pc.html">おすすめ</a>', encoding="utf-8")
+    if DEMAND_PATH.exists():
+        report = json.loads(DEMAND_PATH.read_text(encoding="utf-8"))
+        (OUTPUT_PATH.parent / "demand.html").write_text(render_demand(report), encoding="utf-8")
     # ホーム画面のアプリが、新しいデータが出たことに気づいて読み込み直すための小さなファイル
     curated = json.loads(CURATED_PATH.read_text(encoding="utf-8")) if CURATED_PATH.exists() else {}
     (OUTPUT_PATH.parent / "version.json").write_text(

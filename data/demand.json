@@ -1,0 +1,320 @@
+{
+  "updated": "2026-10-29",
+  "overview": "海外の個人開発では、医療・法律・不動産など一つの業種に絞った地味なツールや、決済の取りこぼし防止のように「お金に直結する」ツールが稼げる分野として挙がっています。日本では中小企業の人手不足が深刻になる一方、AIを入れられない理由の1位が「どの業務に使えばいいかイメージできない」で、用途が決まった業種向けツールに空きがあると読めます。ネットの記事は個人ブログや宣伝目的のものが多いので、数字は目安として扱ってください。",
+  "sections": {
+    "markets": {
+      "label": "稼げる分野",
+      "lead": "今どんな分野にお金が流れているか、海外と日本に分けてまとめました。"
+    },
+    "seeds": {
+      "label": "需要の種",
+      "lead": "集めた記事や調査から見つけた「困っている人がいそうな所」です。どれもまだ仮説なので、作る前に「確かめ方」の方法で本当に需要があるか確認してください。"
+    },
+    "methods": {
+      "label": "嗅ぎつけ方",
+      "lead": "需要を見つける方法と、見つけた需要が本物かを確かめる方法です。"
+    },
+    "books": {
+      "label": "本",
+      "lead": "需要の見つけ方・確かめ方を学べる本を、読む順に並べました。"
+    }
+  },
+  "items": [
+    {
+      "section": "markets",
+      "category": "海外の個人開発",
+      "title": "一つの業種に絞った「地味な」ツール",
+      "sub": "海外のまとめ記事で最も多く挙がる傾向",
+      "body": "医療・法律・不動産・金融など、一つの業種だけに向けた顧客管理や手続きのツールが、個人でも稼ぎやすい分野として繰り返し挙げられています。誰でも使える汎用ツールは大手と競争になるため不利です。",
+      "notes": [
+        {"label": "大学生の勝ち筋", "text": "バイト先や家族の職場など、自分が中を知っている業種に絞ると、大手が気づかない細かい困りごとを拾えます。"}
+      ],
+      "caution": "まとめ記事は宣伝目的のものも多く、売上の数字は検証されていません。",
+      "sources": [
+        {"title": "Indie Hacker SaaS Ideas 2026: 12 Boring Niches That Print Money（Flowjam）", "url": "https://www.flowjam.com/blog/indie-hackers-saas-ideas-2025-10-you-can-launch-fast"},
+        {"title": "Micro SaaS Trends 2026: 11 Shifts Backed by 3,400+ Startups（BigIdeasDB）", "url": "https://bigideasdb.com/micro-saas-trends-2026"}
+      ]
+    },
+    {
+      "section": "markets",
+      "category": "海外の個人開発",
+      "title": "お金に直結するツール",
+      "sub": "例：カード決済の失敗を自動で再請求して売上の取りこぼしを防ぐ",
+      "body": "「これで○万円取り戻せた」と効果を金額で示せるツールは売りやすく、取り戻した金額の一部を料金にする方式も紹介されています。開発者向けのツールやAPIも利益率が高い分野として挙がっています。",
+      "notes": [
+        {"label": "大学生の勝ち筋", "text": "Stripe などの決済サービスにつなぐ小さな追加ツールは、一人でも作れる規模です。"}
+      ],
+      "caution": "利益率などの数字は、まとめ記事どうしで食い違いがあります。",
+      "sources": [
+        {"title": "Best Micro SaaS Ideas for Solopreneurs and Indie Hackers in 2026（Superframeworks）", "url": "https://superframeworks.com/articles/best-micro-saas-ideas-solopreneurs"},
+        {"title": "35 Profitable Micro-SaaS Ideas for 2026（zbuild）", "url": "https://www.zbuild.io/resources/news/micro-saas-ideas-2026"}
+      ]
+    },
+    {
+      "section": "markets",
+      "category": "海外の個人開発",
+      "title": "AIエージェントの裏方ツール",
+      "sub": "動作記録・やり直し・評価・監査",
+      "body": "企業がAIエージェントを使い始めたことで、エージェントが何をしたかの記録、失敗したときのやり直し、出来の評価などを担う裏方のツールが伸びている分野として挙げられています。",
+      "notes": [
+        {"label": "大学生の勝ち筋", "text": "AIを使う側の開発者が相手なので、自分がClaude Codeなどで困ったことがそのまま種になります。"}
+      ],
+      "caution": "",
+      "sources": [
+        {"title": "Micro-SaaS Trends October 2026（mean.ceo）", "url": "https://blog.mean.ceo/micro-saas-trends-october-2026/"}
+      ]
+    },
+    {
+      "section": "markets",
+      "category": "海外の個人開発",
+      "title": "「ChatGPTを包んだだけ」のツールは苦戦",
+      "sub": "AIを入れただけでは売れない",
+      "body": "AIに文章を投げて返すだけのツールは真似されやすく、苦戦しているとされます。特定の業務に深く入り込み、AIなしでも役に立つ仕組みの上にAIを足す形が求められています。料金も月額の定額制から、使った分だけ払う方式や買い切りに移りつつあります。",
+      "notes": [],
+      "caution": "",
+      "sources": [
+        {"title": "Profitable AI Micro-SaaS Ideas in 2026: Stop Building ChatGPT Wrappers（IndieRadar）", "url": "https://indieradar.app/blog/profitable-ai-micro-saas-ideas-2026"},
+        {"title": "Micro SaaS Trends 2026（BigIdeasDB）", "url": "https://bigideasdb.com/micro-saas-trends-2026"}
+      ]
+    },
+    {
+      "section": "markets",
+      "category": "日本",
+      "title": "中小企業の人手不足はさらに深刻に",
+      "sub": "2026年版 中小企業白書",
+      "body": "人口が減るなかで人手不足はさらに深刻になる見通しで、中小企業の雇用者数は2040年に2018年の8割半ばまで減る可能性があるとされています。特に建設、運輸・郵便、情報通信で不足が強く、白書は省力化やAI活用を重要な対策として挙げています。",
+      "notes": [
+        {"label": "大学生の勝ち筋", "text": "人が足りない現場の「毎日の繰り返し作業」（日報、書類作り、予約・問い合わせ対応など）を減らすツールは、お金を払う理由がはっきりしています。"}
+      ],
+      "caution": "",
+      "sources": [
+        {"title": "2026年版 中小企業白書・小規模企業白書の概要（中小企業庁）", "url": "https://www.chusho.meti.go.jp/pamflet/hakusyo/2026/PDF/2026gaiyou.pdf"}
+      ]
+    },
+    {
+      "section": "markets",
+      "category": "日本",
+      "title": "AIを入れられない理由の1位は「使う業務がイメージできない」",
+      "sub": "63.4%（白書の解説記事より）",
+      "body": "AIやDXに取り組んだ企業は付加価値が伸びている一方、取り組めない理由として「活用する業務がイメージできていない」（63.4%）、「推進する人材が不足している」（40.0%）が挙がっています。「AIを使える」だけでは売れず、「〇〇業の△△作業がボタン一つで終わる」と用途が決まったツールに空きがあると読めます。",
+      "notes": [
+        {"label": "大学生の勝ち筋", "text": "汎用のAIツールではなく、業種と作業を一つに決めて「この作業専用」と言い切るツールにすると伝わりやすくなります。"}
+      ],
+      "caution": "数字は解説記事からの引用です。正確な値は中小企業庁の白書本文で確認してください。",
+      "sources": [
+        {"title": "【2026中小企業白書を読む】私たちは今、何を変えるべきか（営業製作所）", "url": "https://eigyo-mfg.com/blog/7237/"},
+        {"title": "2026年版 中小企業白書・小規模企業白書の概要（中小企業庁）", "url": "https://www.chusho.meti.go.jp/pamflet/hakusyo/2026/PDF/2026gaiyou.pdf"}
+      ]
+    },
+    {
+      "section": "markets",
+      "category": "日本",
+      "title": "個人開発の収益は「作れるか」より「知ってもらえるか」で決まる",
+      "sub": "うまくいった例とゼロだった例の両方がある",
+      "body": "AIコーディングのおかげで開発期間は短くなりましたが、月10万円は現実的だとする記事がある一方、AIに作業を任せて複数の収益化を試したが目標に届かなかったという実測記録もあります。収益化の方法よりも、集客の導線づくりが大事だという指摘が目立ちます。",
+      "notes": [
+        {"label": "大学生の勝ち筋", "text": "作る前に「どこで、誰に知ってもらうか」（SNS、業界の集まり、知り合いの紹介など）を決めておきます。"}
+      ],
+      "caution": "",
+      "sources": [
+        {"title": "個人開発マネタイズ2026: AIに任せた業務と売上ゼロの実測記録（masatoman.net）", "url": "https://www.masatoman.net/articles/indie-dev-monetization-strategy-2026"},
+        {"title": "【2026年版】1人SaaS開発で月10万円稼ぐ5ステップ（threadpost）", "url": "https://www.threadpost.jp/blog/solo-saas-development-roadmap"},
+        {"title": "【2026年AI時代版】個人開発のマネタイズ完全ガイド（The AI Venture）", "url": "https://www.theaiventure.com/personal-development-monetization-guide/"}
+      ]
+    },
+    {
+      "section": "seeds",
+      "category": "中小企業",
+      "title": "業種別「AIで減らせる作業」診断",
+      "sub": "仮説：AIを使う業務がイメージできない会社向け",
+      "body": "業種と今の作業を選ぶと、AIで減らせる作業と、すぐ使える手順やテンプレートが出てくるサービスです。AIを入れられない理由の1位「使う業務がイメージできない」にそのまま応えます。",
+      "notes": [
+        {"label": "誰が困っている", "text": "AIに興味はあるが、何に使えばいいか分からない中小企業の経営者や事務担当"},
+        {"label": "作るなら", "text": "まず1業種（例：飲食店）に絞り、診断は無料、テンプレートや導入の手伝いを有料にする"},
+        {"label": "確かめ方", "text": "その業種の知り合い5人に、最近いちばん時間を取られた作業を聞く（アイディアは話さない）"}
+      ],
+      "caution": "",
+      "sources": [
+        {"title": "【2026中小企業白書を読む】私たちは今、何を変えるべきか（営業製作所）", "url": "https://eigyo-mfg.com/blog/7237/"}
+      ]
+    },
+    {
+      "section": "seeds",
+      "category": "中小企業",
+      "title": "人手不足の現場の書類・日報づくりの自動化",
+      "sub": "仮説：建設・運輸など不足が強い業種向け",
+      "body": "現場で話した内容や写真から、日報や報告書の下書きを作るツールです。人手不足が特に強い建設、運輸で、事務作業に取られている時間を減らします。",
+      "notes": [
+        {"label": "誰が困っている", "text": "現場作業のあとに書類作りで残業している小さな建設会社や運送会社"},
+        {"label": "作るなら", "text": "スマホで声を吹き込むと、決まった書式の日報になるところまでに機能を絞る"},
+        {"label": "確かめ方", "text": "求人票や業界の掲示板で、事務作業の負担について書かれている例を集める。ココナラなどで書類作成の代行依頼が繰り返し出ていないか見る"}
+      ],
+      "caution": "業界ごとに書式や法律の決まりがあるので、実際に使う人と一緒に作る必要があります。",
+      "sources": [
+        {"title": "2026年版 中小企業白書・小規模企業白書の概要（中小企業庁）", "url": "https://www.chusho.meti.go.jp/pamflet/hakusyo/2026/PDF/2026gaiyou.pdf"}
+      ]
+    },
+    {
+      "section": "seeds",
+      "category": "個人事業主・小さなネットショップ",
+      "title": "決済の取りこぼしを防ぐ小さな追加ツール",
+      "sub": "仮説：サブスクや月謝を集めている小規模事業者向け",
+      "body": "カードの期限切れなどで決済が失敗したとき、自動で再請求したり、お客さんに分かりやすく知らせたりするツールです。海外では「お金に直結する」分野として多く挙がっていますが、日本語で使いやすいものはまだ少ない可能性があります。",
+      "notes": [
+        {"label": "誰が困っている", "text": "習い事の教室、オンラインサロン、小さなサブスクを運営している個人や小さな会社"},
+        {"label": "作るなら", "text": "Stripe につなぐだけで動き、取り戻した金額を画面に出す"},
+        {"label": "確かめ方", "text": "日本語で同じことができるサービスがあるか調べ、使っている人のレビューの不満を読む"}
+      ],
+      "caution": "日本で競合がどれだけあるかはまだ調べていません。お金を扱うので、作る前に決済サービスの規約を確認してください。",
+      "sources": [
+        {"title": "Best Micro SaaS Ideas for Solopreneurs and Indie Hackers in 2026（Superframeworks）", "url": "https://superframeworks.com/articles/best-micro-saas-ideas-solopreneurs"}
+      ]
+    },
+    {
+      "section": "methods",
+      "category": "見つける",
+      "title": "① 不満を掘る",
+      "sub": "Reddit、X、Yahoo!知恵袋、アプリストアの★1〜2レビュー、G2",
+      "body": "「〜できるツールない？」「〇〇が使いにくい」という声を探します。今あるサービスのレビューで同じ不満が繰り返し出ていれば、そのサービスの穴です。",
+      "notes": [
+        {"label": "やり方", "text": "Reddit は「いいね」の数より「コメント数」が多い投稿を見る（議論が起きている＝本当に困っている）。「is there a tool」「I would pay for」などの言葉で検索する"}
+      ],
+      "caution": "",
+      "sources": [
+        {"title": "How to find problems to solve on Reddit（GummySearch）", "url": "https://gummysearch.com/docs/how-to-find-problems-to-solve-on-reddit-0hn5o"},
+        {"title": "Reading negative customer reviews to find startup ideas", "url": "https://startups-and-programming.beehiiv.com/p/reading-negative-customer-reviews-find-startup-ideas"}
+      ]
+    },
+    {
+      "section": "methods",
+      "category": "見つける",
+      "title": "② お金が流れている所を見る",
+      "sub": "ココナラ、クラウドワークス、ランサーズ、Upwork",
+      "body": "同じ依頼が何度も出ているなら、人にお金を払ってやらせている作業です。その作業を自動化するツールは、すでにお金を払っている人がいるので売れる可能性が高くなります。",
+      "notes": [
+        {"label": "目安", "text": "100人以上が時給20ドルで頼んでいる作業なら、月50ドルで自動化するツールにも払う人がいる、という考え方（あくまで目安）"}
+      ],
+      "caution": "",
+      "sources": [
+        {"title": "Validating startup ideas（playbooks.com）", "url": "https://playbooks.com/skills/nweii/agent-stuff/validating-startup-ideas"}
+      ]
+    },
+    {
+      "section": "methods",
+      "category": "見つける",
+      "title": "③ 稼いでいる例を見る",
+      "sub": "TrustMRR、Acquire.com、Indie Hackers",
+      "body": "個人開発のサービスの売上を公開しているサイトや、サービスの売買サイトを見ると、実際にお金が動いている分野が分かります。売買サイトには売上と顧客の種類が書かれていることが多いです。",
+      "notes": [
+        {"label": "やり方", "text": "売上が出ているサービスの「日本版がない」「別の業種版がない」ものを探す"}
+      ],
+      "caution": "公開されている売上は本人の申告で、第三者が確かめていないものもあります。",
+      "sources": [
+        {"title": "TrustMRR", "url": "https://trustmrr.com/"},
+        {"title": "Acquire.com", "url": "https://acquire.com/"},
+        {"title": "Indie Hackers", "url": "https://www.indiehackers.com/"}
+      ]
+    },
+    {
+      "section": "methods",
+      "category": "見つける",
+      "title": "④ 検索の量を見る",
+      "sub": "Google トレンド、ラッコキーワード",
+      "body": "どれだけの人が、どんな言葉で探しているかを見ます。「〇〇 自動化」「〇〇 テンプレート」「〇〇 めんどくさい」などの検索が増えていれば、困っている人が増えている合図です。",
+      "notes": [],
+      "caution": "",
+      "sources": [
+        {"title": "Google トレンド", "url": "https://trends.google.co.jp/"},
+        {"title": "ラッコキーワード", "url": "https://related-keywords.com/"}
+      ]
+    },
+    {
+      "section": "methods",
+      "category": "見つける",
+      "title": "⑤ 身近な人に話を聞く",
+      "sub": "バイト先、研究室、サークル、家族の職場",
+      "body": "アイディアを話して「いいね」と言ってもらっても意味がありません。相手の最近の具体的な困りごとと、それに今いくら・何時間使っているかを聞きます。",
+      "notes": [
+        {"label": "やり方", "text": "「〇〇があったら使う？」ではなく「最後に〇〇で困ったのはいつ？そのときどうした？」と過去の事実を聞く。自分が話すより聞く時間を長くする"}
+      ],
+      "caution": "",
+      "sources": [
+        {"title": "【要約】『The Mom Test』ユーザーインタビューの「本当の声」を引き出す秘訣（PM x LLM STUDIO）", "url": "https://pm-ai-insights.com/the-mom-test/"}
+      ]
+    },
+    {
+      "section": "methods",
+      "category": "確かめる",
+      "title": "本当に需要があるかの判断基準",
+      "sub": "不満を見つけただけでは、需要の確認にならない",
+      "body": "次のような事実があって初めて需要があると言えます。知らない人がお金を払った、雑な試作品でも使い続けてくれた、今あるサービスへの強い不満がある、宣伝していないのに問い合わせが来た。",
+      "notes": [
+        {"label": "失敗しやすいアイディア", "text": "「友達と予定を合わせるアプリ」「音楽を見つけるアプリ」のように、思いつきやすいのに失敗しやすい分野がある"}
+      ],
+      "caution": "",
+      "sources": [
+        {"title": "Validating startup ideas（playbooks.com）", "url": "https://playbooks.com/skills/nweii/agent-stuff/validating-startup-ideas"},
+        {"title": "Stop Guessing What People Want: How to Validate Startup Ideas Using Real Complaints（We Are Founders）", "url": "https://www.wearefounders.uk/stop-guessing-what-people-want-how-to-validate-startup-ideas-using-real-complaints/"}
+      ]
+    },
+    {
+      "section": "books",
+      "category": "まず読む",
+      "title": "The Mom Test",
+      "sub": "Rob Fitzpatrick（2013）・英語",
+      "body": "相手が気をつかってつく嘘に引っかからずに、本当のニーズを聞き出すためのインタビューの本です。約130ページで英語も平易です。",
+      "notes": [
+        {"label": "読みどころ", "text": "アイディアの話をせず、相手の生活と過去の具体的な出来事を聞く、という質問の仕方"}
+      ],
+      "caution": "日本語版は見つかっていません。日本語の要約記事は多くあります。",
+      "sources": [
+        {"title": "The Mom Test（Goodreads）", "url": "https://www.goodreads.com/book/show/18529000-the-mom-test"},
+        {"title": "『The Mom Test』書評（note）", "url": "https://note.com/kei_w_business/n/n53ef68007828"}
+      ]
+    },
+    {
+      "section": "books",
+      "category": "まず読む",
+      "title": "ジョブ理論",
+      "sub": "クレイトン・M・クリステンセンほか、ハーパーコリンズ・ジャパン（2017）",
+      "body": "人は商品そのものを買うのではなく、自分の「片付けたい用事（ジョブ）」のために商品を雇う、という考え方の本です。需要の正体をつかむ基本になります。",
+      "notes": [
+        {"label": "読みどころ", "text": "ミルクシェイクの売上を伸ばした例。言い回しが難しいので、要約から入るのも手"}
+      ],
+      "caution": "",
+      "sources": [
+        {"title": "ジョブ理論（honto）", "url": "https://honto.jp/netstore/pd-book_29004020.html"},
+        {"title": "ジョブ理論の解説（MarkeZine）", "url": "https://markezine.jp/article/detail/28029"}
+      ]
+    },
+    {
+      "section": "books",
+      "category": "次に読む",
+      "title": "Running Lean 第3版",
+      "sub": "アッシュ・マウリャ、角征典 訳、オライリー・ジャパン（2023）",
+      "body": "アイディアを1枚の紙（リーンキャンバス）に整理し、課題を確かめるインタビューを経て、小さく検証しながら育てる方法の本です。",
+      "notes": [
+        {"label": "読みどころ", "text": "課題発見のインタビューのやり方と、アイディアの弱点を先に洗い出す方法"}
+      ],
+      "caution": "",
+      "sources": [
+        {"title": "Running Lean 第3版（O'Reilly）", "url": "https://www.oreilly.com/library/view/running-lean-di-3ban/9784814400263/"}
+      ]
+    },
+    {
+      "section": "books",
+      "category": "次に読む",
+      "title": "起業の科学",
+      "sub": "田所雅之、日経BP",
+      "body": "アイディアの検証から、商品が市場に受け入れられるまでの流れを、日本語で図を多めに解説した本です。全体像をつかむのに向いています。入門版の『入門 起業の科学』もあります。",
+      "notes": [],
+      "caution": "",
+      "sources": [
+        {"title": "田所雅之 著者ページ（ダイヤモンド・オンライン）", "url": "https://diamond.jp/ud/authors/5f8d39af7765618ef3000000"}
+      ]
+    }
+  ],
+  "changes": [
+    {"date": "2026-10-29", "summary": "初回の調査。稼げる分野7件、需要の種3件、嗅ぎつけ方6件、本4冊"}
+  ]
+}
