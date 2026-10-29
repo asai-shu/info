@@ -697,3 +697,74 @@ category = "新製品"
 lang = "ja"
 theme = "gear"
 filter = "gear"
+
+# ================= 需要の種（困りごと・「こんなツールがほしい」の声。/demand が需要リサーチに使う） =================
+
+[[feeds]]
+name = "Reddit r/SomebodyMakeThis"
+url = "https://www.reddit.com/r/SomebodyMakeThis/top/.rss?t=week"
+category = "需要の種"
+lang = "en"
+limit = 15
+
+[[feeds]]
+name = "Reddit r/smallbusiness"
+url = "https://www.reddit.com/r/smallbusiness/top/.rss?t=day"
+category = "需要の種"
+lang = "en"
+limit = 15
+
+[[feeds]]
+name = "Reddit r/Entrepreneur"
+url = "https://www.reddit.com/r/Entrepreneur/top/.rss?t=day"
+category = "需要の種"
+lang = "en"
+limit = 15
+
+[[feeds]]
+name = "Reddit r/SaaS"
+url = "https://www.reddit.com/r/SaaS/top/.rss?t=day"
+category = "需要の種"
+lang = "en"
+limit = 15
+
+[[feeds]]
+name = "Hacker News（Ask HN）"
+url = "https://hnrss.org/ask?points=20"
+category = "需要の種"
+lang = "en"
+
+[[feeds]]
+name = "Googleニュース（人手不足・業務効率化）"
+url = "https://news.google.com/rss/search?q=人手不足+効率化+OR+省力化+when:7d&hl=ja&gl=JP&ceid=JP:ja"
+category = "需要の種"
+lang = "ja"
+limit = 30
+
+[[feeds]]
+name = "Googleニュース（中小企業の困りごと）"
+url = "https://news.google.com/rss/search?q=中小企業+課題+OR+悩み+DX+OR+デジタル化+when:7d&hl=ja&gl=JP&ceid=JP:ja"
+category = "需要の種"
+lang = "ja"
+limit = 30
+
+[[feeds]]
+name = "Googleニュース（個人開発の売上）"
+url = "https://news.google.com/rss/search?q=個人開発+売上+OR+収益+OR+月収+when:7d&hl=ja&gl=JP&ceid=JP:ja"
+category = "需要の種"
+lang = "ja"
+limit = 20
+
+[[feeds]]
+name = "Google News（Bootstrapped SaaS・Indie Hacker）"
+url = "https://news.google.com/rss/search?q=bootstrapped+SaaS+OR+%22indie+hacker%22+OR+%22micro+SaaS%22+when:30d&hl=en-US&gl=US&ceid=US:en"
+category = "需要の種"
+lang = "en"
+limit = 20
+
+[[feeds]]
+name = "note（個人開発）"
+url = "https://note.com/hashtag/個人開発/rss"
+category = "需要の種"
+lang = "ja"
+limit = 20

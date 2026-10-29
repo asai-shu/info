@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0f9d76"/>
+      <stop offset="1" stop-color="#3b5bfd"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" fill="url(#bg)"/>
+  <!-- ホーム画面で丸く切り抜かれても欠けないよう、絵を少し小さくして中央に寄せる -->
+  <g transform="translate(256 256) scale(0.84) translate(-256 -256)">
+  <!-- 需要を探す虫めがね -->
+  <circle cx="226" cy="226" r="104" fill="#ffffff" opacity="0.96"/>
+  <circle cx="226" cy="226" r="104" fill="none" stroke="#ffffff" stroke-width="28"/>
+  <rect x="300" y="286" width="48" height="140" rx="24" fill="#ffffff" transform="rotate(-45 324 356)"/>
+  <!-- 伸びていく需要（棒グラフ） -->
+  <rect x="166" y="246" width="30" height="44" rx="8" fill="#0f9d76"/>
+  <rect x="211" y="212" width="30" height="78" rx="8" fill="#0f9d76"/>
+  <rect x="256" y="172" width="30" height="118" rx="8" fill="#3b5bfd"/>
+  <!-- 種（アイディア）のきらめき -->
+  <path d="M392 88 L405 126 L443 139 L405 152 L392 190 L379 152 L341 139 L379 126 Z" fill="#ffd54a"/>
+  </g>
+</svg>

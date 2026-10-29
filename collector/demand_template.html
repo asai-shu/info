@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>需要リサーチ</title>
+<!-- ホーム画面に追加すると「需要リサーチ」専用のアイコンで、このページが直接開く -->
+<link rel="manifest" href="demand.webmanifest">
+<link rel="icon" type="image/svg+xml" href="demand-icon.svg">
+<link rel="apple-touch-icon" href="demand-apple-touch-icon.png">
+<meta name="apple-mobile-web-app-title" content="需要リサーチ">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="theme-color" content="#0f9d76">
+<style>
+:root {
+  --bg: #f6f7f9; --card: #ffffff; --text: #1d2129; --muted: #6b7280;
+  --line: #e3e6ea; --accent: #2563eb; --accent-bg: #e8efff; --warn: #b45309; --warn-bg: #fef3c7;
+}
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #111317; --card: #1b1e24; --text: #e6e8eb; --muted: #9aa1ab;
+          --line: #2c3038; --accent: #7aa2ff; --accent-bg: #1f2a44; --warn: #fbbf24; --warn-bg: #3a2e12; }
+}
+* { box-sizing: border-box; }
+[hidden] { display: none !important; }
+body { margin: 0; background: var(--bg); color: var(--text);
+       font: 15px/1.6 system-ui, -apple-system, "Hiragino Sans", "Noto Sans JP", sans-serif; }
+header { position: sticky; top: 0; z-index: 1; background: var(--bg); border-bottom: 1px solid var(--line); }
+.wrap { max-width: 880px; margin: 0 auto; padding: 0 16px; }
+.titlebar { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 0 8px; }
+.titlebar h1 { white-space: nowrap; }
+.titlebar .buttons { display: flex; gap: 6px; }
+h1 { font-size: 20px; margin: 14px 0 2px; }
+.back { border: 1px solid var(--line); background: var(--card); color: var(--accent); border-radius: 999px;
+        padding: 4px 12px; font-size: 13px; text-decoration: none; margin-top: 10px; white-space: nowrap; }
+.meta { color: var(--muted); font-size: 13px; }
+.tabs { display: flex; gap: 4px; margin-top: 6px; overflow-x: auto; }
+.tab { flex: 0 0 auto; border: 0; border-bottom: 3px solid transparent; background: none; color: var(--muted);
+       padding: 8px 12px; font-size: 15px; font-weight: 600; cursor: pointer; }
+.tab.on { color: var(--accent); border-bottom-color: var(--accent); }
+.chips { display: flex; flex-wrap: wrap; gap: 6px; padding: 8px 0 12px; }
+.chip { border: 1px solid var(--line); background: var(--card); color: var(--text); border-radius: 999px;
+        padding: 3px 12px; font-size: 13px; cursor: pointer; }
+.chip.on { background: var(--accent-bg); border-color: var(--accent); color: var(--accent); }
+.overview { background: var(--card); border: 1px solid var(--accent); border-radius: 10px; padding: 12px 14px; margin: 14px 0 4px; font-size: 14px; }
+.overview b { color: var(--accent); margin-right: 6px; }
+.lead { margin: 14px 0 4px; font-size: 14px; }
+h2 { font-size: 14px; color: var(--muted); margin: 22px 0 8px; }
+article { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 12px 14px; margin-bottom: 10px; }
+.name { font-weight: 700; font-size: 16px; }
+.sub { color: var(--accent); font-weight: 700; font-size: 13.5px; margin-top: 2px; overflow-wrap: anywhere; }
+article p { margin: 6px 0 0; font-size: 14px; overflow-wrap: anywhere; }
+.box { background: var(--accent-bg); border-radius: 6px; padding: 6px 8px; margin-top: 8px !important; }
+.box b, .caution b { color: var(--accent); margin-right: 6px; }
+.caution { background: var(--warn-bg); border-radius: 6px; padding: 6px 8px; margin-top: 6px !important; }
+.caution b { color: var(--warn); }
+.sources { margin: 8px 0 0; padding-left: 18px; font-size: 12.5px; color: var(--muted); }
+.sources a { color: var(--accent); overflow-wrap: anywhere; }
+details { margin: 24px 0 8px; color: var(--muted); font-size: 13px; }
+details ul { padding-left: 18px; }
+footer { margin: 16px 0 40px; color: var(--muted); font-size: 12.5px; }
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="titlebar"><h1>需要リサーチ</h1><div class="buttons"><a class="back" id="rerun" target="_blank" rel="noopener" hidden>調べ直す</a><a class="back" href="./">記事一覧に戻る</a></div></div>
+    <div class="meta" id="meta"></div>
+    <nav class="tabs" id="tabs"></nav>
+    <div class="chips" id="chips"></div>
+  </div>
+</header>
+<main class="wrap">
+  <div class="overview" id="overview"></div>
+  <p class="lead" id="lead"></p>
+  <div id="list"></div>
+  <details id="changes"></details>
+</main>
+<footer class="wrap">リンク先は外部サイトです。市場の数字や売上の例は記事ごとに根拠の強さが違うため、目安として読んでください。</footer>
+
+<script id="data" type="application/json">/*__DATA__*/null</script>
+<script>
+// 需要リサーチのデータ（data/demand.json）。sections ごとにタブ、category ごとに見出しを作る
+const REPORT = JSON.parse(document.getElementById("data").textContent) || { sections: {}, items: [], changes: [] };
+const $ = (id) => document.getElementById(id);
+const store = {
+  get(k) { try { return localStorage.getItem(k); } catch { return null; } },
+  set(k, v) { try { localStorage.setItem(k, v); } catch {} },
+};
+const esc = (s) => String(s).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c]);
+
+const sectionKeys = Object.keys(REPORT.sections);
+let section = sectionKeys.includes(store.get("demandSection")) ? store.get("demandSection") : sectionKeys[0];
+let category = "";
+
+function render() {
+  const items = REPORT.items.filter((i) => i.section === section);
+  const categories = [...new Set(items.map((i) => i.category))];
+  if (category && !categories.includes(category)) category = "";
+
+  $("tabs").innerHTML = sectionKeys.map((k) =>
+    `<button class="tab${k === section ? " on" : ""}" data-s="${esc(k)}">${esc(REPORT.sections[k].label)}</button>`).join("");
+  $("chips").innerHTML = [["", "すべて"], ...categories.map((c) => [c, c])].map(([c, label]) =>
+    `<button class="chip${c === category ? " on" : ""}" data-c="${esc(c)}">${esc(label)}</button>`).join("");
+  $("lead").textContent = REPORT.sections[section]?.lead || "";
+  // 今回のまとめは最初のタブにだけ出す（ほかのタブでは本題がすぐ見えるように）
+  $("overview").hidden = !REPORT.overview || section !== sectionKeys[0];
+
+  let html = "";
+  for (const c of categories) {
+    if (category && c !== category) continue;
+    html += `<h2>${esc(c)}</h2>`;
+    for (const i of items.filter((x) => x.category === c)) {
+      html += `<article>
+        <div class="name">${esc(i.title)}</div>
+        ${i.sub ? `<div class="sub">${esc(i.sub)}</div>` : ""}
+        <p>${esc(i.body)}</p>
+        ${(i.notes || []).map((n) => `<p class="box"><b>${esc(n.label)}</b>${esc(n.text)}</p>`).join("")}
+        ${i.caution ? `<p class="caution"><b>注意</b>${esc(i.caution)}</p>` : ""}
+        ${(i.sources || []).length ? `<ul class="sources">${i.sources.map((s) =>
+          `<li><a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.title)}</a></li>`).join("")}</ul>` : ""}
+      </article>`;
+    }
+  }
+  $("list").innerHTML = html;
+}
+
+// 「調べ直す」は GitHub の Actions 画面を開く。そこで Run workflow を押すと Claude が調べ直す
+if (REPORT.rerun_url) { $("rerun").href = REPORT.rerun_url; $("rerun").hidden = false; }
+$("meta").textContent = REPORT.updated ? `${REPORT.updated} 時点の調査` : "";
+$("overview").innerHTML = `<b>今回のまとめ</b>${esc(REPORT.overview || "")}`;
+const changes = REPORT.changes || [];
+$("changes").hidden = !changes.length;
+$("changes").innerHTML = `<summary>更新の履歴</summary><ul>${changes.map((c) =>
+  `<li>${esc(c.date)}：${esc(c.summary)}</li>`).join("")}</ul>`;
+$("tabs").addEventListener("click", (e) => {
+  const b = e.target.closest(".tab");
+  if (!b) return;
+  section = b.dataset.s;
+  store.set("demandSection", section);
+  render();
+  window.scrollTo(0, 0);
+});
+$("chips").addEventListener("click", (e) => {
+  const b = e.target.closest(".chip");
+  if (!b) return;
+  category = b.dataset.c;
+  render();
+});
+render();
+</script>
+</body>
+</html>
