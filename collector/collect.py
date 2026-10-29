@@ -11,6 +11,7 @@ import gzip
 import hashlib
 import html
 import json
+import os
 import re
 import shutil
 import sys
@@ -266,6 +267,12 @@ def render_gear(guide: dict, section: str) -> str:
     return GEAR_TEMPLATE_PATH.read_text(encoding="utf-8").replace("/*__DATA__*/null", blob)
 
 
+def rerun_url() -> str:
+    """Claude に調べ直してもらうワークフローの画面。GitHub Actions の上で動いているときだけ分かる。"""
+    server, repo = os.environ.get("GITHUB_SERVER_URL"), os.environ.get("GITHUB_REPOSITORY")
+    return f"{server}/{repo}/actions/workflows/claude.yml" if server and repo else ""
+
+
 def render_demand(report: dict) -> str:
     blob = json.dumps(report, ensure_ascii=False).replace("</", "<\\/")
     return DEMAND_TEMPLATE_PATH.read_text(encoding="utf-8").replace("/*__DATA__*/null", blob)
@@ -333,6 +340,7 @@ def main() -> int:
             '<a href="gear-pc.html">おすすめ</a>', encoding="utf-8")
     if DEMAND_PATH.exists():
         report = json.loads(DEMAND_PATH.read_text(encoding="utf-8"))
+        report["rerun_url"] = rerun_url()
         (OUTPUT_PATH.parent / "demand.html").write_text(render_demand(report), encoding="utf-8")
     # ホーム画面のアプリが、新しいデータが出たことに気づいて読み込み直すための小さなファイル
     curated = json.loads(CURATED_PATH.read_text(encoding="utf-8")) if CURATED_PATH.exists() else {}

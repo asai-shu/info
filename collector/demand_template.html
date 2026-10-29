@@ -23,7 +23,9 @@ body { margin: 0; background: var(--bg); color: var(--text);
        font: 15px/1.6 system-ui, -apple-system, "Hiragino Sans", "Noto Sans JP", sans-serif; }
 header { position: sticky; top: 0; z-index: 1; background: var(--bg); border-bottom: 1px solid var(--line); }
 .wrap { max-width: 880px; margin: 0 auto; padding: 0 16px; }
-.titlebar { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
+.titlebar { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 0 8px; }
+.titlebar h1 { white-space: nowrap; }
+.titlebar .buttons { display: flex; gap: 6px; }
 h1 { font-size: 20px; margin: 14px 0 2px; }
 .back { border: 1px solid var(--line); background: var(--card); color: var(--accent); border-radius: 999px;
         padding: 4px 12px; font-size: 13px; text-decoration: none; margin-top: 10px; white-space: nowrap; }
@@ -58,7 +60,7 @@ footer { margin: 16px 0 40px; color: var(--muted); font-size: 12.5px; }
 <body>
 <header>
   <div class="wrap">
-    <div class="titlebar"><h1>需要リサーチ</h1><a class="back" href="./">記事一覧に戻る</a></div>
+    <div class="titlebar"><h1>需要リサーチ</h1><div class="buttons"><a class="back" id="rerun" target="_blank" rel="noopener" hidden>調べ直す</a><a class="back" href="./">記事一覧に戻る</a></div></div>
     <div class="meta" id="meta"></div>
     <nav class="tabs" id="tabs"></nav>
     <div class="chips" id="chips"></div>
@@ -119,6 +121,8 @@ function render() {
   $("list").innerHTML = html;
 }
 
+// 「調べ直す」は GitHub の Actions 画面を開く。そこで Run workflow を押すと Claude が調べ直す
+if (REPORT.rerun_url) { $("rerun").href = REPORT.rerun_url; $("rerun").hidden = false; }
 $("meta").textContent = REPORT.updated ? `${REPORT.updated} 時点の調査` : "";
 $("overview").innerHTML = `<b>今回のまとめ</b>${esc(REPORT.overview || "")}`;
 const changes = REPORT.changes || [];
