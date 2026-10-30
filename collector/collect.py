@@ -188,6 +188,12 @@ def fetch(url: str) -> bytes:
             time.sleep(5)
 
 
+def is_excluded(item: dict, words: list[str]) -> bool:
+    """feeds.toml の exclude に書いた言葉を、タイトルか要約に含むか。"""
+    text = f"{item['title']} {item['summary']}"
+    return any(w in text for w in words)
+
+
 def collect_feed(feed: dict, now: datetime) -> tuple[list[dict], str | None]:
     url = urllib.parse.quote(feed["url"], safe=":/?&=%+")
     try:
@@ -200,6 +206,8 @@ def collect_feed(feed: dict, now: datetime) -> tuple[list[dict], str | None]:
         entries = [e for e in entries if is_ai_related(e) or themes.is_gear_related(e)]
     elif feed.get("filter"):
         entries = [e for e in entries if is_ai_related(e)]
+    if feed.get("exclude"):
+        entries = [e for e in entries if not is_excluded(e, feed["exclude"])]
     if feed.get("limit"):
         entries = entries[: feed["limit"]]
 
@@ -314,7 +322,10 @@ def main() -> int:
         print(f"{mark} {feed['name']}: {len(new_items)}件（新規 {added}件）" + (f" {error}" if error else ""))
 
     cutoff = now - timedelta(days=settings.get("keep_days", 14))
-    kept = [i for i in items.values() if datetime.fromisoformat(i["date"]) >= cutoff]
+    # exclude を後から足したときも、保存済みの記事から消えるようにする
+    excludes = {f["name"]: f["exclude"] for f in feeds if f.get("exclude")}
+    kept = [i for i in items.values() if datetime.fromisoformat(i["date"]) >= cutoff
+            and not is_excluded(i, excludes.get(i["source"], []))]
     kept.sort(key=lambda i: (i["date"], i["id"]), reverse=True)
     kept = kept[: settings.get("max_items", 3000)]
 
