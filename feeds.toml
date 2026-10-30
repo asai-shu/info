@@ -8,6 +8,7 @@
 #   filter   : true にすると、AI関連のキーワードを含む記事だけ残します（AI専門でないサイト向け）
 #              "gear" にすると、AI関連に加えてブラウザ・デバイス・ハードウェア・ガジェットの記事も残します（ガジェット系サイト向け）
 #   limit    : 1回の収集で取り込む最大件数（大量に流れるフィード向け。省略すると全件）
+#   exclude  : タイトルか要約にこの言葉を含む記事は表示しない（例：note の小説・創作の投稿を除く）。保存済みの記事にも効く
 #   theme    : "tech"（技術の進歩）/ "money"（収益化のヒント）/ "gear"（ツール・ガジェット）。そのテーマのページに載りやすくなる
 
 [settings]
@@ -111,6 +112,7 @@ name = "note（生成AI）"
 url = "https://note.com/hashtag/生成AI/rss"
 category = "技術記事"
 lang = "ja"
+exclude = ["小説", "フィクション", "ショートショート", "短編", "ポエム", "詩集"]
 
 # ================= AI企業・研究機関の公式発表 =================
 
@@ -482,6 +484,7 @@ name = "note（AI副業）"
 url = "https://note.com/hashtag/AI副業/rss"
 category = "収益化"
 lang = "ja"
+exclude = ["小説", "フィクション", "ショートショート", "短編", "ポエム", "詩集"]
 theme = "money"
 
 [[feeds]]
@@ -767,4 +770,5 @@ name = "note（個人開発）"
 url = "https://note.com/hashtag/個人開発/rss"
 category = "需要の種"
 lang = "ja"
+exclude = ["小説", "フィクション", "ショートショート", "短編", "ポエム", "詩集"]
 limit = 20
