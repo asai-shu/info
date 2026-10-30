@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-27",
+  "updated": "2026-10-30",
   "note": "価格は2026年10月下旬に確認した目安です（メーカー直販・量販店・価格.comの最安値などが混在します）。セール・値上げ・在庫で大きく変わるので、買う前に公式サイトや価格比較サイトで必ず確認してください。",
   "tiers": {
     "flagship": {
@@ -40,7 +40,147 @@
     },
     {
       "tier": "flagship",
-      "category": "デスクトップPC",
+      "category": "デスクトップPC（AI向け）",
+      "name": "NVIDIA DGX Spark（AI専用の小型PC）",
+      "price": "98万4,980円（パソコン工房）／100万9,542円（TSUKUMO）",
+      "why": "NVIDIAが作った、手のひらサイズのAI開発専用コンピューターです。128GBの大きなメモリをGPUと共有でき、大きなAIモデルを手元で動かしたり学習させたりできます。",
+      "for": "AIの研究や開発を本気でやりたい人、クラウドの利用料を気にせずAIを試したい人",
+      "caution": "日本には直販がなく、認定販売店から買います。在庫切れが多く、値上がりも続いています。WindowsのふつうのPCではなく、ゲームにも向きません。",
+      "sources": [
+        {
+          "title": "NVIDIA DGX Spark（パソコン工房）",
+          "url": "https://www.pc-koubou.jp/products/detail.php?product_id=1188379"
+        },
+        {
+          "title": "DGX Sparkの買い方 国内は直販なし・認定パートナー10社とOEM版7機種",
+          "url": "https://kraber.co.jp/claude/dgx-spark-buy-options/"
+        },
+        {
+          "title": "DGX Spark 64GB版は4,999ドルで10月23日発売（ゲーミングスタイル）",
+          "url": "https://gaming-st.com/news/dgx-spark-64gb-4999-japan-vs-128gb/"
+        }
+      ],
+      "section": "pc"
+    },
+    {
+      "tier": "flagship",
+      "category": "デスクトップPC（AI向け）",
+      "name": "Apple Mac Studio（M5 Ultra）",
+      "price": "94万9,800円〜（メモリ512GB構成は397万3,800円〜）",
+      "why": "Appleのいちばん速いデスクトップです。最大512GBのメモリをCPUとGPUで共有でき、巨大なAIモデルも1台で動かせます。静かで小さく、動画編集にも強いです。",
+      "for": "Macで動画・音楽・3DとAIをまとめてこなしたい人",
+      "caution": "512GB構成は届くまで10週間以上かかる場合があります。ゲームはWindowsより遊べるタイトルが少ないです。",
+      "sources": [
+        {
+          "title": "M5 Max/Ultraの「Mac Studio」登場。最大512GBメモリ搭載（PC Watch）",
+          "url": "https://pc.watch.impress.co.jp/docs/news/2135555.html"
+        },
+        {
+          "title": "Apple、512GBのユニファイドメモリ搭載の「Mac Studio (M5 Ultra)」を発売（AAPL Ch.）",
+          "url": "https://applech2.com/archives/20261029-mac-studio-m5-ultra-512gb-unified-memory.html"
+        }
+      ],
+      "section": "pc"
+    },
+    {
+      "tier": "flagship",
+      "category": "デスクトップPC（AI向け）",
+      "name": "マウスコンピューター DAIV FW-X3N60（RTX PRO 6000 Blackwell）",
+      "price": "664万9,800円〜",
+      "why": "国内ブランド「DAIV」の、プロ向けGPU「RTX PRO 6000 Blackwell」（GPUメモリ96GB）を積んだ作業用PCです。企業や研究室が使う、AI学習・3D制作のための最上級機です。",
+      "for": "予算に上限がない研究室・企業、とにかく最強のAI開発環境を見てみたい人",
+      "caution": "個人で買う値段ではありません。同じGPUの機種でも、店や構成で数百万円の差があります。",
+      "sources": [
+        {
+          "title": "DAIV（マウスコンピューター）",
+          "url": "https://www.mouse-jp.co.jp/store/r/rs1021104/"
+        },
+        {
+          "title": "RTX PRO 6000 Blackwell搭載PC・BTOおすすめ比較【2026年】（コアスペック）",
+          "url": "https://corespec-pc.com/column_rtx_pro_6000_ranking.html"
+        }
+      ],
+      "section": "pc"
+    },
+    {
+      "tier": "flagship",
+      "category": "デスクトップPC（AI向け）",
+      "name": "GMKtec EVO-X2（Ryzen AI Max+ 395・メモリ64GB）",
+      "price": "約35万円（64GB＋1TB、公式ストアのセール時。通常約39万円）",
+      "why": "弁当箱ほどの大きさのミニPCに、AIに強いCPU「Ryzen AI Max+ 395」を積んでいます。大きなメモリをGPUと共有でき、DGX Sparkよりずっと安く大きなAIモデルを手元で試せます。",
+      "for": "置き場所を取らずに、ローカルAI（ネットなしで動くAI）を本格的に試したい人",
+      "caution": "中国メーカーのため、サポートは日本の大手より手薄です。ファンが3つあり、負荷をかけるとそれなりに音がします。",
+      "sources": [
+        {
+          "title": "GMKtec EVO-X2レビュー：Ryzen AI Max+ 395搭載モンスター級ミニPC（ちもろぐ）",
+          "url": "https://chimolog.co/gmktec-evo-x2/"
+        },
+        {
+          "title": "Ryzen搭載ハイパフォーマンス ミニPCのおすすめ9選（note）",
+          "url": "https://note.com/mocchan/n/n963adaa3d96a"
+        }
+      ],
+      "section": "pc"
+    },
+    {
+      "tier": "flagship",
+      "category": "デスクトップPC（ゲーム向け）",
+      "name": "マウスコンピューター G TUNE FZ-A9G90（Ryzen 9 9950X3D2＋RTX 5090）",
+      "price": "139万9,800円〜",
+      "why": "国内ブランド「G TUNE」の最上位ゲーミングPCです。ゲームに強い最新CPU「Ryzen 9 9950X3D2」と最強のGPU「RTX 5090」、64GBメモリ、2TB SSDを積んでいます。",
+      "for": "4Kの最高画質で最新ゲームを遊び、配信や動画編集も同時にしたい人",
+      "caution": "RTX 5090は単体でも価格.comの最安が約120万円まで上がっているため、組み立て済みの方がかえって割安なこともあります。",
+      "sources": [
+        {
+          "title": "Ryzen 9 9950X3D2搭載のウルトラハイエンドゲームPCがG TUNEから登場（4Gamer）",
+          "url": "https://www.4gamer.net/games/026/G002654/20260423039/"
+        },
+        {
+          "title": "G TUNE、ミドルタワー型ゲーミングPC「G TUNE FZ」にRyzen 9 9950X3D2搭載の上位構成モデルを追加（ITmedia PC USER）",
+          "url": "https://www.itmedia.co.jp/pcuser/articles/2604/24/news096.html"
+        }
+      ],
+      "section": "pc"
+    },
+    {
+      "tier": "flagship",
+      "category": "デスクトップPC（ゲーム向け）",
+      "name": "ドスパラ GALLERIA SMTRE-R59-GL（Threadripper 9980X＋RTX 5090）",
+      "price": "465万9,980円",
+      "why": "国内ブランド「GALLERIA」が出した、作業用の64コアCPU「Threadripper 9980X」とRTX 5090を組み合わせた怪物級のゲーミングPCです。ゲームをしながら重い作業を何本も同時に動かせます。",
+      "for": "「予算度外視でいちばん上」を見てみたい人",
+      "caution": "ゲームだけなら、CPUの性能を持て余します。ゲーム目的なら上のG TUNE FZのほうが現実的です。",
+      "sources": [
+        {
+          "title": "Threadripper 9980X＋RTX 5090搭載GALLERIA発売 価格460万円超（ゲームウィズ）",
+          "url": "https://gamewith.jp/gaming-pc/576850"
+        }
+      ],
+      "section": "pc"
+    },
+    {
+      "tier": "flagship",
+      "category": "デスクトップPC（ゲーム向け）",
+      "name": "Dell Alienware Area-51（Ryzen 9000X3D搭載モデル）",
+      "price": "69万9,980円〜（RTX 5070 Ti・メモリ32GB構成）",
+      "why": "海外ブランドDellのゲーミング最上位「Alienware」のデスクトップです。光るデザインのケースに、ゲームに強いRyzen 9000X3DのCPUを積み、構成を選んでRTX 5090まで上げられます。",
+      "for": "見た目にもこだわった、海外ブランドのゲーミングPCが欲しい人",
+      "caution": "構成とセールで価格が大きく変わります。注文前にDellのサイトで最新の価格を確かめてください。",
+      "sources": [
+        {
+          "title": "デル、最上位ゲーミングPC「Alienware Area-51」にRyzen 7 9850X3D搭載モデル（PC Watch）",
+          "url": "https://pc.watch.impress.co.jp/docs/news/2082996.html"
+        },
+        {
+          "title": "デル「Alienware」のフラッグシップ「Area-51」がより最強に！（GAME Watch）",
+          "url": "https://game.watch.impress.co.jp/docs/news/2082956.html"
+        }
+      ],
+      "section": "pc"
+    },
+    {
+      "tier": "flagship",
+      "category": "自作PCのパーツ",
       "name": "NVIDIA GeForce RTX 5090（グラフィックボード）",
       "price": "国内希望小売 39万3,800円（価格.comの最安は 119万8,000円まで高騰・10月17日時点）",
       "why": "ゲーム用グラフィックボードの最上位です。4Kゲームや、手元での画像・動画生成AIの速度で最も強力な選択肢です。",
@@ -64,7 +204,7 @@
     },
     {
       "tier": "flagship",
-      "category": "デスクトップPC",
+      "category": "自作PCのパーツ",
       "name": "AMD Ryzen 9 9950X3D2 Dual Edition（CPU）",
       "price": "17万8,000円（発売時）／価格.comの最安 約16万8,000円",
       "why": "2つのCPUダイの両方に大容量キャッシュを積んだ、AMDの最上位クラスのCPUです。ゲームと動画編集などの重い作業の両方に強く、評価の高い9950X3Dのさらに上位モデルです。",
@@ -344,7 +484,103 @@
     },
     {
       "tier": "student",
-      "category": "デスクトップPC",
+      "category": "デスクトップPC（AI向け）",
+      "name": "Apple Mac mini（M6）",
+      "price": "学割 13万2,800円〜（通常 14万9,800円〜）",
+      "why": "手のひらに乗る小さなMacです。授業・レポート・プログラミングに十分な速さがあり、Appleの新しいM6チップで、手元で動く小さめのAIも快適です。",
+      "for": "家ではモニターにつないで勉強したい人、Macでプログラミングを始めたい人",
+      "caution": "モニター・キーボード・マウスは別に必要です。メモリは後から増やせないので、AIを使うなら注文時に多めを選びましょう。",
+      "sources": [
+        {
+          "title": "Apple、M6／M5 Pro搭載の新型Mac miniを発表。149,800円からに値上げ（monodeck）",
+          "url": "https://monodeck.jp/mac-mini-m6-m5-pro-launch/"
+        }
+      ],
+      "section": "pc"
+    },
+    {
+      "tier": "student",
+      "category": "デスクトップPC（AI向け）",
+      "name": "RTX 5060 Ti（16GB）搭載のBTOパソコン",
+      "price": "約22万8,880円〜（各社のBTO。定番構成は23〜27万円台）",
+      "why": "画像生成AIや手元で動くAIを試すには、GPUのメモリが16GBあると安心です。RTX 5060 Ti 16GB版は、その条件を満たすいちばん手の届きやすいGPUで、ゲームもWQHDの高画質で遊べます。",
+      "for": "ゲームもしたいし、Stable Diffusionなどの画像生成AIも自分のPCで試したい人",
+      "caution": "同じRTX 5060 Tiでも8GB版があるので、必ず「16GB」と書かれたモデルを選んでください。AI用ならパソコン本体のメモリも32GB以上がおすすめです。",
+      "sources": [
+        {
+          "title": "RTX 5060 Ti 16GB搭載BTOおすすめ比較【2026年】（コアスペック）",
+          "url": "https://corespec-pc.com/column_rtx5060ti_bto_ranking.html"
+        },
+        {
+          "title": "RTX 5060 Ti (16GB) BTO・搭載ゲーミングPC一覧（good-gamers）",
+          "url": "https://good-gamers.jp/desktops/rtx-5060-ti-16gb/"
+        }
+      ],
+      "section": "pc"
+    },
+    {
+      "tier": "student",
+      "category": "デスクトップPC（ゲーム向け）",
+      "name": "ドスパラ GALLERIA（RTX 5060＋Ryzen AI 7）",
+      "price": "17万5,800円（ドスパラ34周年セール時）／通常は20万円前後",
+      "why": "国内ブランド「GALLERIA」の入門ゲーミングPCです。フルHDなら多くのゲームを高画質で遊べ、授業やプログラミングにも余裕のある性能です。",
+      "for": "なるべく安く、ちゃんとしたゲーミングPCを手に入れたい人",
+      "caution": "セール価格は期間限定です。通常価格は20万円前後になります。",
+      "sources": [
+        {
+          "title": "RTX 5060＋Ryzen AI 7搭載「GALLERIA」が17万5800円！ ドスパラ周年祭（週刊アスキー）",
+          "url": "https://weekly.ascii.jp/elem/000/004/438/4438295/"
+        },
+        {
+          "title": "ドスパラでガレリアRTX5060搭載モデルが約20万円（ファミ通）",
+          "url": "https://www.famitsu.com/article/202602/65420"
+        }
+      ],
+      "section": "pc"
+    },
+    {
+      "tier": "student",
+      "category": "デスクトップPC（ゲーム向け）",
+      "name": "マウスコンピューター G TUNE DG-A7G60（RTX 5060）",
+      "price": "29万9,800円",
+      "why": "国内ブランド「G TUNE」の新しいミニタワーです。Ryzen 7 5700XとRTX 5060、16GBメモリ、1TB SSDを積み、10月27日に「AION2」の推奨PCとして発売されました。",
+      "for": "国内メーカーの手厚いサポートと保証で選びたい人",
+      "caution": "同じクラスのGPUでも他社より高めです。G TUNEはセールで3〜4万円下がることが多いので、時期を見て買うのがおすすめです。",
+      "sources": [
+        {
+          "title": "G TUNE、『AION2』推奨ゲーミングPC発売 - ノート型とデスクトップ型（マイナビニュース）",
+          "url": "https://news.mynavi.jp/article/20261028-5210858/"
+        },
+        {
+          "title": "G TUNEのGeForce RTX 5060搭載ゲーミングPCが約4万円引き（PC Watch）",
+          "url": "https://pc.watch.impress.co.jp/docs/news/todays_sales/2123680.html"
+        }
+      ],
+      "section": "pc"
+    },
+    {
+      "tier": "student",
+      "category": "デスクトップPC（ゲーム向け）",
+      "name": "パソコン工房 LEVEL∞（Core i7-14700F＋RTX 5070）",
+      "price": "23万4,700円〜（2026年4月のセール時）",
+      "why": "国内ブランド「LEVEL∞」のRTX 5070搭載機です。RTX 5060より一段上のGPUで、WQHDの高画質や高いフレームレートでも遊びやすくなります。",
+      "for": "少し予算を足して、数年先まで快適に遊べる性能が欲しい人",
+      "caution": "セール価格です。通常は30万円前後です。",
+      "sources": [
+        {
+          "title": "ゲーミングPCセール情報まとめ【4月19日版】RTX 5070/5070 Ti搭載モデルが安い！（the比較）",
+          "url": "https://thehikaku.net/pc/sale/sale-desk_20260419.html"
+        },
+        {
+          "title": "LEVEL∞とLEVELθの違いは？価格・性能・ケースを比較",
+          "url": "https://pcgamebto.com/level-theta-vs-level-infinity/"
+        }
+      ],
+      "section": "pc"
+    },
+    {
+      "tier": "student",
+      "category": "自作PCのパーツ",
       "name": "AMD Ryzen 5 9600X ／ Intel Core Ultra 5 250K Plus（CPU）",
       "price": "Ryzen 5 9600X 約3万4,000円／Core Ultra 5 250K Plus 約3万8,600円（価格.com最安・10月下旬）",
       "why": "自作PCや組み立て済みPCを安く組むときの定番CPUです。Core Ultra 5 250K Plusは価格あたりの性能が最も高いと評価されています。",
@@ -1184,8 +1420,8 @@
       "label": "PC",
       "title": "PC",
       "lead": {
-        "flagship": "値段を気にせず、今いちばん性能が高いPCと周辺機器を選びました。AIを手元で動かす、4Kで動画編集する、といった使い方向けです。",
-        "student": "大学の授業・レポート・プログラミングに困らない性能を、手の届く価格で選びました。"
+        "flagship": "値段を気にせず、今いちばん性能が高いPCを選びました。デスクトップは「AI向け」「ゲーム向け」に分け、マウスコンピューター（DAIV・G TUNE）、ドスパラ（GALLERIA）、Dell（Alienware）などのブランドからも選んでいます。",
+        "student": "授業・レポート・プログラミングに困らない性能を、手の届く価格で選びました。デスクトップは「AI向け」「ゲーム向け」に分け、GALLERIA・G TUNE・LEVEL∞など国内ブランドの定番から選んでいます。"
       }
     },
     "gadget": {
