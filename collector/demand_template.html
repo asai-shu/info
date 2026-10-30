@@ -133,7 +133,10 @@ function render() {
   $("list").innerHTML = html;
 }
 
-$("meta").textContent = REPORT.updated ? `${REPORT.updated} 時点の調査` : "";
+const fmtTime = (s) => new Date(s).toLocaleString("ja-JP", { timeZone: "Asia/Tokyo", month: "numeric", day: "numeric", hour: "2-digit", minute: "2-digit" });
+// 毎晩の自動更新が動いたことを、内容に変更がない日でも分かるようにする
+const checked = REPORT.checked && REPORT.checked.at ? ` ・ 最終確認 ${fmtTime(REPORT.checked.at)}（${REPORT.checked.result || "確認済み"}）` : "";
+$("meta").textContent = (REPORT.updated ? `${REPORT.updated} 時点の調査` : "") + checked;
 $("overview").innerHTML = `<b>今回のまとめ</b>${esc(REPORT.overview || "")}`;
 const changes = REPORT.changes || [];
 $("changes").hidden = !changes.length;

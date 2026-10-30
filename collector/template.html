@@ -236,7 +236,7 @@ function render() {
       if (DATA.curated.overview && !opts.words.length) html += `<div class="overview"><b>今日のまとめ</b>${esc(DATA.curated.overview)}</div>`;
       html += picks.map((i) => card(i, "curated")).join("") || '<p class="empty">条件に合う注目記事はありません。</p>';
     } else {
-      html += '<p class="notice">Claudeによる選定・日本語要約はまだありません。毎朝7時ごろの自動選定で表示されます。</p>';
+      html += '<p class="notice">Claudeによる選定・日本語要約はまだありません。毎晩0時ごろの自動選定で表示されます。</p>';
     }
     const pickedIds = new Set(curated.map((i) => i.id));
     const rest = pickTheme(filtered.filter((i) => !pickedIds.has(i.id)));

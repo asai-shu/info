@@ -96,6 +96,20 @@ def check() -> list[str]:
     return errors
 
 
+def check_checked(data: dict) -> list[str]:
+    """毎晩の確認の記録（checked）があれば、日時と結果が書かれているか確かめる。"""
+    checked = data.get("checked")
+    if checked is None:
+        return []
+    try:
+        datetime.fromisoformat(str(checked.get("at", "")))
+    except ValueError:
+        return ["checked.at が日時（例 2026-10-31T00:10:00+09:00）ではありません"]
+    if not str(checked.get("result", "")).strip():
+        return ["checked.result（変更なし・更新あり など）がありません"]
+    return []
+
+
 def check_demand() -> list[str]:
     if not DEMAND_PATH.exists():
         return [f"{DEMAND_PATH.relative_to(ROOT)} がありません"]
@@ -107,6 +121,7 @@ def check_demand() -> list[str]:
         errors.append("updated が YYYY-MM-DD 形式の日付ではありません")
     if not str(data.get("overview", "")).strip():
         errors.append("overview（今回のまとめ）がありません")
+    errors += check_checked(data)
     sections = data.get("sections") or {}
     for key in sections:
         if not any(i.get("section") == key for i in data.get("items", [])):
