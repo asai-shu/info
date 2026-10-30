@@ -6,6 +6,8 @@ on:
     - cron: "0 15 * * *" # 毎日深夜0時（日本時間）
   workflow_dispatch: # Actions 画面から手動でも実行できる
   push:
+    # 作業用ブランチへのプッシュでは動かさない（公開ページは ccr-9eb32590-esny4k だけから作る）
+    branches: [ccr-9eb32590-esny4k]
     # data/curated.json などは Claude Code（/curate・/gear-guide・/demand）が更新したときにページを作り直すため
     paths: [feeds.toml, collector/**, data/curated.json, data/gear_guide.json, data/demand.json, .github/workflows/collect.yml]
 
