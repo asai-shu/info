@@ -23,8 +23,13 @@ body { margin: 0; background: var(--bg); color: var(--text);
        font: 15px/1.6 system-ui, -apple-system, "Hiragino Sans", "Noto Sans JP", sans-serif; }
 header { position: sticky; top: 0; z-index: 1; background: var(--bg); border-bottom: 1px solid var(--line); }
 .wrap { max-width: 880px; margin: 0 auto; padding: 0 16px; }
-.titlebar { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
+.titlebar { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 0 8px; }
 .titlebar h1 { white-space: nowrap; }
+/* 右上の「更新」ボタン（どのページでもメニューの隣に出す） */
+.actions { display: flex; align-items: center; gap: 6px; margin-top: 12px; }
+.actions .menu, .actions .refresh { margin: 0; }
+.refresh { margin-top: 12px; border: 1px solid var(--line); background: var(--card); color: var(--accent); border-radius: 999px;
+           padding: 4px 12px; font: inherit; font-size: 13px; white-space: nowrap; cursor: pointer; }
 /* 右上のメニュー（ページの切り替え） */
 .menu { position: relative; margin-top: 12px; }
 .menu summary { list-style: none; cursor: pointer; border: 1px solid var(--line); background: var(--card); color: var(--accent);
@@ -70,7 +75,7 @@ footer { margin: 24px 0 40px; color: var(--muted); font-size: 12.5px; }
 <body>
 <header>
   <div class="wrap">
-    <div class="titlebar"><h1>機材・ソフトガイド</h1><details class="menu" id="menu"><summary>☰ メニュー</summary><nav class="menu-list"><a href="./">記事一覧</a><a href="demand.html">需要リサーチ</a><a href="gear-pc.html" class="on">機材・ソフトガイド</a></nav></details></div>
+    <div class="titlebar"><h1>機材・ソフトガイド</h1><div class="actions"><button class="refresh" id="reload" type="button" title="最新の情報に読み込み直す">↻ 更新</button><details class="menu" id="menu"><summary>☰ メニュー</summary><nav class="menu-list"><a href="./">記事一覧</a><a href="demand.html">需要リサーチ</a><a href="gear-pc.html" class="on">機材・ソフトガイド</a></nav></details></div></div>
     <div class="meta" id="meta"></div>
     <nav class="sections" id="sections"></nav>
     <nav class="tabs" id="tabs"></nav>
@@ -154,6 +159,8 @@ $("chips").addEventListener("click", (e) => {
   render();
 });
 render();
+// 「更新」ボタン：キャッシュを使わずにページを読み込み直す
+$("reload").addEventListener("click", () => location.replace(`${location.pathname}?v=${Date.now()}`));
 // メニューの外を押したら閉じる
 document.addEventListener("click", (e) => { if (!$("menu").contains(e.target)) $("menu").open = false; });
 </script>
