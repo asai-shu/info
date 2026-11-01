@@ -21,6 +21,9 @@ AIに関する最新情報を、日本と海外の約70か所から自動で集�
 | ツール | Product Hunt、GitHub で人気のプロジェクト |
 | 新製品 | Googleニュース（AIブラウザ・ガジェット）、The Verge、Engadget、9to5Google、9to5Mac、Chrome・Firefoxの公式ブログ、ギズモード・ジャパン、ITmedia Mobile・PC USER、家電Watch、AV Watch、GetNavi web、ROOMIE、Yanko Design |
 | 面白ITグッズ | クラウドファンディング（Makuake・Kickstarter など）や便利グッズのニュース |
+| ブラウザ | Chrome・Edge・Safari（WebKit）・Firefox・Brave・Vivaldi・Opera の公式ブログ、ブラウザのニュース |
+| API | AIのAPI（OpenAI・Anthropic・Gemini）の料金・提供開始・終了のニュース、Google Developers Blog |
+| MCP | MCP（AIと外部ツールをつなぐ仕組み）の仕様のリリース、公式ブログ、Zenn・Qiita・Reddit、ニュース |
 | 論文 | arXiv、Hugging Face Daily Papers |
 | 需要の種 | Reddit（r/SomebodyMakeThis・r/smallbusiness・r/Entrepreneur・r/SaaS）、Ask HN、Googleニュース（人手不足・中小企業の困りごと・個人開発の売上）、note（個人開発） |
 
