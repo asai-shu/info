@@ -548,7 +548,7 @@ limit = 30
 [[feeds]]
 name = "Google News（AI Browser）"
 url = "https://news.google.com/rss/search?q=%22AI+browser%22+OR+%22agentic+browser%22+OR+%22browser+agent%22+when:7d&hl=en-US&gl=US&ceid=US:en"
-category = "ブラウザ"
+category = "新製品"
 lang = "en"
 filter = true
 theme = "gear"
@@ -589,14 +589,14 @@ filter = "gear"
 [[feeds]]
 name = "Google Chrome Blog"
 url = "https://blog.google/products/chrome/rss/"
-category = "ブラウザ"
+category = "新製品"
 lang = "en"
 theme = "gear"
 
 [[feeds]]
 name = "Mozilla Blog"
 url = "https://blog.mozilla.org/en/feed/"
-category = "ブラウザ"
+category = "新製品"
 lang = "en"
 theme = "gear"
 
@@ -774,81 +774,25 @@ lang = "ja"
 exclude = ["小説", "フィクション", "ショートショート", "短編", "ポエム", "詩集"]
 limit = 20
 
-# ================= ブラウザ・API・MCP =================
+# ================= コネクタ・プラグイン・MCP =================
 
 [[feeds]]
-name = "Googleニュース（ブラウザ）"
-url = "https://news.google.com/rss/search?q=ブラウザ+(新機能+OR+アップデート+OR+リリース+OR+AI)+when:3d&hl=ja&gl=JP&ceid=JP:ja"
-category = "ブラウザ"
-lang = "ja"
-exclude = ["ゲーム", "MMO", "RPG", "使い方", "方法", "対処法", "やり方", "解説", "原因", "できない", "手順", "設定", "ガイド", "入門", "始め方"]
-limit = 25
-
-[[feeds]]
-name = "Chrome for Developers"
-url = "https://developer.chrome.com/static/blog/feed.xml"
-category = "ブラウザ"
-lang = "en"
-
-[[feeds]]
-name = "Microsoft Edge Blog"
-url = "https://blogs.windows.com/msedgedev/feed/"
-category = "ブラウザ"
-lang = "en"
-
-[[feeds]]
-name = "WebKit Blog（Safari）"
-url = "https://webkit.org/feed/"
-category = "ブラウザ"
-lang = "en"
-
-[[feeds]]
-name = "Mozilla Hacks"
-url = "https://hacks.mozilla.org/feed/"
-category = "ブラウザ"
-lang = "en"
-
-[[feeds]]
-name = "Brave Blog"
-url = "https://brave.com/blog/index.xml"
-category = "ブラウザ"
-lang = "en"
-
-[[feeds]]
-name = "Vivaldi Blog"
-url = "https://vivaldi.com/blog/feed/"
-category = "ブラウザ"
-lang = "en"
-
-[[feeds]]
-name = "Opera Blog"
-url = "https://blogs.opera.com/news/feed/"
-category = "ブラウザ"
-lang = "en"
-
-[[feeds]]
-name = "Googleニュース（AIのAPI）"
-url = "https://news.google.com/rss/search?q=API+(OpenAI+OR+Anthropic+OR+Gemini+OR+Claude)+(料金+OR+提供開始+OR+新機能+OR+終了)+when:3d&hl=ja&gl=JP&ceid=JP:ja"
-category = "API"
+name = "Googleニュース（コネクタ・プラグイン）"
+url = "https://news.google.com/rss/search?q=(Claude+OR+ChatGPT+OR+Gemini+OR+Copilot)+(コネクタ+OR+プラグイン+OR+アプリ連携+OR+拡張機能)+when:7d&hl=ja&gl=JP&ceid=JP:ja"
+category = "コネクタ・プラグイン"
 lang = "ja"
 theme = "tech"
 limit = 25
+exclude = ["使い方", "方法", "対処法", "やり方", "原因", "できない", "手順", "入門", "始め方"]
 
 [[feeds]]
-name = "Google News（AI API）"
-url = "https://news.google.com/rss/search?q=API+(OpenAI+OR+Anthropic+OR+Gemini)+(pricing+OR+launch+OR+deprecation+OR+%22now+available%22)+when:3d&hl=en-US&gl=US&ceid=US:en"
-category = "API"
+name = "Google News（Connectors & Plugins）"
+url = "https://news.google.com/rss/search?q=(Claude+OR+ChatGPT+OR+Gemini+OR+Copilot)+(connector+OR+connectors+OR+plugin+OR+plugins+OR+%22apps+in+ChatGPT%22)+when:7d&hl=en-US&gl=US&ceid=US:en"
+category = "コネクタ・プラグイン"
 lang = "en"
 theme = "tech"
 limit = 25
-
-[[feeds]]
-name = "Google Developers Blog"
-url = "https://developers.googleblog.com/feeds/posts/default"
-category = "API"
-lang = "en"
-theme = "tech"
-filter = true
+exclude = ["how to", "How to", "How To"]
 
 [[feeds]]
 name = "Googleニュース（MCP）"
