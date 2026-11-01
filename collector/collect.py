@@ -55,10 +55,13 @@ KEYWORDS = [
     "Llama", "Mistral", "DeepSeek", "Qwen", "Copilot", "Grok", "Perplexity",
     "Hugging Face", "Stable Diffusion", "Midjourney", "Sora", "transformer",
     "machine learning", "deep learning", "neural", "artificial intelligence",
-    "agent", "RAG", "prompt", "chatbot", "NVIDIA",
+    "agent", "agentic", "RAG", "prompt", "chatbot", "NVIDIA", "MCP", "vLLM", "inference", "TPU",
     "生成AI", "人工知能", "機械学習", "深層学習", "エージェント", "プロンプト", "大規模言語モデル",
 ]
-KEYWORD_RE = re.compile("|".join(re.escape(k) for k in KEYWORDS), re.IGNORECASE)
+# 英語は単語全体で一致させる（"RAG" が "Dragon" や "tragedy" に一致しないように）。複数形などの語尾は許す
+KEYWORD_RE = re.compile("|".join(
+    re.escape(k) if not k.isascii() else r"(?<![A-Za-z])" + re.escape(k) + r"(?:s|es|ed|ing)?(?![A-Za-z])"
+    for k in KEYWORDS), re.IGNORECASE)
 # 「AI」は単語として現れたときだけ一致させる（"maintain" などを拾わないため）
 AI_WORD_RE = re.compile(r"(?<![A-Za-z])AI(?![A-Za-z])")
 
@@ -194,6 +197,16 @@ def is_excluded(item: dict, words: list[str]) -> bool:
     return any(w in text for w in words)
 
 
+def passes_filter(item: dict, feed: dict) -> bool:
+    """feeds.toml の filter（AI関連・ガジェット関連だけ残す）を満たすか。"""
+    if feed.get("filter") == "gear":
+        # ガジェット系のサイトは記事が多いので、AI関連か、ブラウザ・デバイス・ガジェットの記事だけ残す
+        return is_ai_related(item) or themes.is_gear_related(item)
+    if feed.get("filter"):
+        return is_ai_related(item)
+    return True
+
+
 def collect_feed(feed: dict, now: datetime) -> tuple[list[dict], str | None]:
     url = urllib.parse.quote(feed["url"], safe=":/?&=%+")
     try:
@@ -201,11 +214,7 @@ def collect_feed(feed: dict, now: datetime) -> tuple[list[dict], str | None]:
     except Exception as exc:  # 1つのフィードが失敗しても全体は止めない
         return [], f"{type(exc).__name__}: {exc}"
 
-    if feed.get("filter") == "gear":
-        # ガジェット系のサイトは記事が多いので、AI関連か、ブラウザ・デバイス・ガジェットの記事だけ残す
-        entries = [e for e in entries if is_ai_related(e) or themes.is_gear_related(e)]
-    elif feed.get("filter"):
-        entries = [e for e in entries if is_ai_related(e)]
+    entries = [e for e in entries if passes_filter(e, feed)]
     if feed.get("exclude"):
         entries = [e for e in entries if not is_excluded(e, feed["exclude"])]
     if feed.get("limit"):
@@ -322,10 +331,11 @@ def main() -> int:
         print(f"{mark} {feed['name']}: {len(new_items)}件（新規 {added}件）" + (f" {error}" if error else ""))
 
     cutoff = now - timedelta(days=settings.get("keep_days", 14))
-    # exclude を後から足したときも、保存済みの記事から消えるようにする
-    excludes = {f["name"]: f["exclude"] for f in feeds if f.get("exclude")}
+    # filter や exclude を後から変えたときも、保存済みの記事に効くようにする
+    feeds_by_name = {f["name"]: f for f in feeds}
     kept = [i for i in items.values() if datetime.fromisoformat(i["date"]) >= cutoff
-            and not is_excluded(i, excludes.get(i["source"], []))]
+            and passes_filter(i, feeds_by_name.get(i["source"], {}))
+            and not is_excluded(i, feeds_by_name.get(i["source"], {}).get("exclude", []))]
     kept.sort(key=lambda i: (i["date"], i["id"]), reverse=True)
     kept = kept[: settings.get("max_items", 3000)]
 

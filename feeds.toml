@@ -547,9 +547,10 @@ limit = 30
 
 [[feeds]]
 name = "Google News（AI Browser）"
-url = "https://news.google.com/rss/search?q=%22AI+browser%22+OR+%22agentic+browser%22+OR+%22new+browser%22+when:7d&hl=en-US&gl=US&ceid=US:en"
+url = "https://news.google.com/rss/search?q=%22AI+browser%22+OR+%22agentic+browser%22+OR+%22browser+agent%22+when:7d&hl=en-US&gl=US&ceid=US:en"
 category = "ブラウザ"
 lang = "en"
+filter = true
 theme = "gear"
 limit = 30
 
@@ -780,6 +781,7 @@ name = "Googleニュース（ブラウザ）"
 url = "https://news.google.com/rss/search?q=ブラウザ+(新機能+OR+アップデート+OR+リリース+OR+AI)+when:3d&hl=ja&gl=JP&ceid=JP:ja"
 category = "ブラウザ"
 lang = "ja"
+exclude = ["ゲーム", "MMO", "RPG"]
 limit = 25
 
 [[feeds]]
