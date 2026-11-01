@@ -233,11 +233,19 @@
       "price": "24万790円（ドコモ・256GB）",
       "why": "Androidの最上位スマホです。カメラ・画面・処理性能のどれもトップクラスです。",
       "for": "Androidで最高のカメラと大画面がほしい人",
-      "caution": "",
+      "caution": "サムスン公式のSIMフリー版は2026年10月1日に予告なく値上げされ、512GBは26万8,600円、1TBは33万4,200円になりました。キャリア版とSIMフリー版で価格が大きく違うので、買う前に比べてください。",
       "sources": [
         {
           "title": "ドコモのスマホおすすめランキング（2026年10月）",
           "url": "https://www.strapya.com/blogs/hameefun/20600"
+        },
+        {
+          "title": "Galaxy S26シリーズ、日本で値上げ（すまほん!!）",
+          "url": "https://smhn.info/202610-samsung-galaxy-s26-series-japan-price-increase"
+        },
+        {
+          "title": "Galaxy S26シリーズのSIMフリー版が値上げ（gori.me）",
+          "url": "https://gori.me/samsung/samsung-news/170852"
         }
       ],
       "section": "gadget"
