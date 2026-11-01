@@ -333,9 +333,14 @@ def main() -> int:
     cutoff = now - timedelta(days=settings.get("keep_days", 14))
     # filter や exclude を後から変えたときも、保存済みの記事に効くようにする
     feeds_by_name = {f["name"]: f for f in feeds}
+    # feeds.toml から外した取得元の記事も、保存済みの分から消す
     kept = [i for i in items.values() if datetime.fromisoformat(i["date"]) >= cutoff
-            and passes_filter(i, feeds_by_name.get(i["source"], {}))
-            and not is_excluded(i, feeds_by_name.get(i["source"], {}).get("exclude", []))]
+            and i["source"] in feeds_by_name
+            and passes_filter(i, feeds_by_name[i["source"]])
+            and not is_excluded(i, feeds_by_name[i["source"]].get("exclude", []))]
+    # 取得元の分類を変えたときも、保存済みの記事の分類をそろえる
+    for i in kept:
+        i["category"] = feeds_by_name[i["source"]]["category"]
     kept.sort(key=lambda i: (i["date"], i["id"]), reverse=True)
     kept = kept[: settings.get("max_items", 3000)]
 

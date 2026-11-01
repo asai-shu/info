@@ -1084,32 +1084,76 @@
     },
     {
       "tier": "flagship",
-      "category": "ブラウザ",
-      "name": "Perplexity Comet（AIブラウザ）＋Comet Pro",
-      "price": "本体は無料／Pro 月20ドル（ドル建て）",
-      "why": "ページの要約・調べもの・フォーム入力などを、AIが代わりにこなすAIブラウザです。2026年3月から、AIが自分で操作する機能も含めてMac・Windows・iPhone・Androidで無料になりました。Proにすると高性能なAIモデルや、裏で作業を続ける機能が使えます。",
-      "for": "調べものやレポートの下調べを、AIにまとめて任せたい人",
-      "caution": "AIがページを操作するため、悪意のあるページの指示に乗せられる危険（プロンプトインジェクション）があります。ログイン中のサイトでの操作は慎重に。",
+      "category": "コネクタ",
+      "name": "Claude のコネクタ（有料プラン）",
+      "price": "Claude Pro 月20ドル〜／Max 月100ドル〜（ドル建て）",
+      "why": "Gmail・Googleドライブ・Googleカレンダー・Notion・Slack・Canvaなどを、Claudeにつないで直接読み書きさせる機能です。公式の一覧には1,000件以上（2026年10月時点）が並びます。有料プランなら、自分で用意したMCPサーバーを「カスタムコネクタ」として複数つなげます。",
+      "for": "メール・予定・資料をまたぐ作業を、Claudeにまとめて任せたい人",
+      "caution": "Gmailの添付ファイルの中身は開けません（先にドライブへ保存する）。Notionのページ削除などできない操作もあります。つなぐ先には必要な権限だけを許可しましょう。",
       "sources": [
         {
-          "title": "Perplexity Comet とは？AIブラウザの新機能、料金プラン（AIsmiley）",
-          "url": "https://aismiley.co.jp/ai_news/perplexity-comet-chatgpt-atlas/"
+          "title": "Google Driveコネクタ（Claude公式マーケットプレイス）",
+          "url": "https://claude.com/ja/marketplace/connectors/google-drive"
         },
         {
-          "title": "AI Browsers Compared (2026): Atlas vs Comet vs Dia",
-          "url": "https://aisubscriptioncomparison.com/features/ai-browsers/"
+          "title": "Best Claude connectors in 2026: 13 worth connecting now（iGeeksBlog）",
+          "url": "https://www.igeeksblog.com/best-claude-connectors/"
+        },
+        {
+          "title": "Claudeのコネクタ機能とは？Googleドライブ・Slack・Notionと連携（マスタング）",
+          "url": "https://mustang.vc/blog/2026/02/24/claude%E3%81%AE%E3%82%B3%E3%83%8D%E3%82%AF%E3%82%BF%E6%A9%9F%E8%83%BD%E3%81%A8%E3%81%AF%EF%BC%9Fgoogle%E3%83%89%E3%83%A9%E3%82%A4%E3%83%96%E3%83%BBslack%E3%83%BBnotion%E3%81%A8%E9%80%A3%E6%90%BA/"
         }
       ],
       "section": "software"
     },
     {
       "tier": "flagship",
-      "category": "ブラウザ",
+      "category": "コネクタ",
+      "name": "ChatGPT のコネクタ（Plus・Pro）",
+      "price": "Plus 月20ドル／Pro 月1万6,800円〜",
+      "why": "ChatGPTの「設定 → コネクタ」から、Gmail・Googleドライブ・Dropboxなどをつなげます。ドライブのドキュメント・スプレッドシート・スライドの中身を読んで、要約や下書き作りに使えます。",
+      "for": "ChatGPTを中心に、メールやファイルの整理まで任せたい人",
+      "caution": "無料プランと廉価なGoプランでは、Gmailの連携は使えません。Googleでログインしただけではドライブは読まれず、コネクタの接続が別に必要です。",
+      "sources": [
+        {
+          "title": "ChatGPT Connectors（コネクター）使い方完全ガイド【2026年最新】",
+          "url": "https://playingai.hatenablog.com/entry/2026/06/18/080241"
+        },
+        {
+          "title": "ChatGPTとGoogleを連携する5つの方法 (2026年版)（AI PICKS）",
+          "url": "https://aipicks.jp/mag/chatgpt-google-integration-2026"
+        }
+      ],
+      "section": "software"
+    },
+    {
+      "tier": "flagship",
+      "category": "プラグイン",
+      "name": "Claude Code の公式プラグイン（code-review・feature-dev など）",
+      "price": "プラグインは無料（Claude Code はClaudeの有料プランで利用）",
+      "why": "Claude Codeに、決まった作業の手順や専用の道具をまとめて追加できる仕組みです。公式マーケットプレイスには、複数のAIでコードを見直す「code-review」、新機能の開発を段階的に進める「feature-dev」など、Anthropic製とパートナー企業のプラグインが並びます。",
+      "for": "AIと一緒の開発を、チームのやり方に合わせて本格的に整えたい人",
+      "caution": "入れすぎると、使うトークン（利用枠）が増えます。作者の分からないコミュニティのプラグインは中身を確かめてから入れましょう。",
+      "sources": [
+        {
+          "title": "Claude Code プラグインおすすめ 2026 — 公式マーケットプレイスから入れるべきプラグイン（Zenn）",
+          "url": "https://zenn.dev/ino_h/articles/2026-04-23-claude-code-plugins-ranking"
+        },
+        {
+          "title": "【2026年最新】Claude Code Plugins完全ガイド（Uravation）",
+          "url": "https://uravation.com/media/claude-code-plugins-complete-guide-2026/"
+        }
+      ],
+      "section": "software"
+    },
+    {
+      "tier": "flagship",
+      "category": "プラグイン",
       "name": "Claude in Chrome（Chromeの拡張機能）",
-      "price": "Claudeの有料プランが必要（Pro 月20ドル〜、Max 月100ドル〜）",
-      "why": "いつものChromeに入れると、Claudeが画面を見ながらクリックや入力をして、複数のサイトをまたぐ作業を代わりに進めます。ブラウザを乗り換えずにAIエージェントを使えるのが強みです。",
+      "price": "Claudeの有料プランが必要（Pro 月20ドル〜）",
+      "why": "いつものChromeに入れると、Claudeが画面を見ながらクリックや入力をして、複数のサイトをまたぐ作業を代わりに進めます。",
       "for": "Chromeのまま、Claudeに面倒なWeb作業を任せたい人",
-      "caution": "無料プランでは使えません。Chrome専用です。提供段階（ベータか正式か）は記事によって書き方が違うので、公式で確認してください。",
+      "caution": "無料プランでは使えません。Chrome専用です。悪意のあるページの指示に乗せられる危険（プロンプトインジェクション）があるので、支払いの画面などでは使わないようにしましょう。",
       "sources": [
         {
           "title": "Claude in Chromeとは?使い方・料金・対応プラン（ISSOH）",
@@ -1118,102 +1162,6 @@
         {
           "title": "Claude for Chromeとは?使い方と料金（MiraLab）",
           "url": "https://miralab.co.jp/media/claude-for-chrome/"
-        }
-      ],
-      "section": "software"
-    },
-    {
-      "tier": "flagship",
-      "category": "ブラウザ",
-      "name": "Dia（Mac用AIブラウザ）＋Dia Pro",
-      "price": "Dia Pro 月20ドル（ドル建て）",
-      "why": "Arcブラウザを作ったチームによる、AIとの会話を中心にしたブラウザです。開いているタブの内容をまとめて質問したり、文章を書いたりできます。",
-      "for": "Macで、AIと会話しながらネットを使いたい人",
-      "caution": "2026年6月時点でベータ版・Mac専用です（Windows版は開発中）。運営会社がAtlassianに買われたと報じられており、今後の方針が変わる可能性があります。",
-      "sources": [
-        {
-          "title": "【2026年8月最新】おすすめAIブラウザ徹底比較（GenAI）",
-          "url": "https://genai-ai.co.jp/ai-kanri/blog/cc-ai-browser-comparison-2/"
-        },
-        {
-          "title": "AI Browser Comparison — Atlas vs Comet vs Dia (2026)",
-          "url": "https://devgent.org/en/ai-browser-comparison-en/"
-        }
-      ],
-      "section": "software"
-    },
-    {
-      "tier": "flagship",
-      "category": "API",
-      "name": "Claude Opus 5.5 API（Anthropic）",
-      "price": "入力 100万トークンあたり4ドル／出力 20ドル（ドル建て）",
-      "why": "Anthropicの最上位モデルを、自分のプログラムやアプリから呼び出せるAPIです。100万トークンの長い文章でも料金が変わらず、まとめて処理する「Batch」なら約半額になります。",
-      "for": "自分のアプリやサービスに、トップクラスのAIを組み込みたい人",
-      "caution": "使った分だけ請求される従量課金です。プログラムのミスで大量に呼び出すと高額になるので、利用上限を必ず設定してください。",
-      "sources": [
-        {
-          "title": "主要AIモデルAPI料金 横断比較【2026年10月】（Uravation）",
-          "url": "https://uravation.com/media/ai-model-api-pricing-comparison-2026/"
-        },
-        {
-          "title": "Gemini 4 Argon vs GPT-6.1 Sol vs Claude Opus 5.5（Digital Applied）",
-          "url": "https://www.digitalapplied.com/blog/gemini-4-argon-vs-gpt-6-1-sol-vs-claude-opus-5-5"
-        }
-      ],
-      "section": "software"
-    },
-    {
-      "tier": "flagship",
-      "category": "API",
-      "name": "GPT-6.1 Sol API（OpenAI）",
-      "price": "入力 100万トークンあたり2ドル／出力 10ドル（27万2千トークンまで。ドル建て）",
-      "why": "OpenAIの上位モデルのAPIです。Claude Opus 5.5の約半額で、画面操作（Computer Use）などAIエージェント向けの機能も使えます。",
-      "for": "性能と料金のバランスを取りながら、AIエージェントを作りたい人",
-      "caution": "とても長い入力（27万2千トークン超）の料金は、情報源によって書き方が違います。長い文章を扱うなら公式の料金表で確認してください。",
-      "sources": [
-        {
-          "title": "主要AIモデルAPI料金 横断比較【2026年10月】（Uravation）",
-          "url": "https://uravation.com/media/ai-model-api-pricing-comparison-2026/"
-        },
-        {
-          "title": "Claude Opus 5.5 vs GPT-6.1 Sol vs Gemini 4 Argon（Tech Insider）",
-          "url": "https://tech-insider.org/au/claude-opus-5-5-vs-gpt-6-1-sol-vs-gemini-4-argon-2026/"
-        }
-      ],
-      "section": "software"
-    },
-    {
-      "tier": "flagship",
-      "category": "API",
-      "name": "Gemini 4 Argon API（Google）",
-      "price": "入力 100万トークンあたり2ドル／出力 10ドル（11月30日までの導入価格。12月からは4ドル／20ドル）",
-      "why": "Googleの最上位モデルのAPIです。11月30日までは導入価格でOpus 5.5の半額ですが、12月からは同じ水準に上がります。",
-      "for": "Googleのサービスと組み合わせて、最新のAIを試したい人",
-      "caution": "導入価格は期間限定です。試すなら11月中が割安です。",
-      "sources": [
-        {
-          "title": "Gemini 4 Argon vs GPT-6.1 Sol vs Claude Opus 5.5（Digital Applied）",
-          "url": "https://www.digitalapplied.com/blog/gemini-4-argon-vs-gpt-6-1-sol-vs-claude-opus-5-5"
-        }
-      ],
-      "section": "software"
-    },
-    {
-      "tier": "flagship",
-      "category": "MCP",
-      "name": "Claude Max ＋ Claude Code（MCPを使い倒す）",
-      "price": "Max 5x：月100ドル／Max 20x：月200ドル（ドル建て）",
-      "why": "MCPは、AIをGitHub・Slack・Googleドライブ・ブラウザなどの外部ツールとつなぐ共通の仕組みです。Claude Codeは多くのMCPサーバーをまとめてつなげられ、Maxプランなら使える量も多く、AIに複数のツールをまたぐ作業を任せられます。",
-      "for": "AIに開発や調査の作業を、ツールをまたいで丸ごと任せたい人",
-      "caution": "MCPを入れすぎると、使うトークン（利用枠）が増えます。申し込み画面の割引表示は条件付きのことがあるので、公式の料金を確認してください。",
-      "sources": [
-        {
-          "title": "Claude Max 20xの「50%オフ」表示の正体（SmartScope）",
-          "url": "https://smartscope.blog/blog/claude-max-20x-50-percent-off-price-2026/"
-        },
-        {
-          "title": "Claude活用おすすめMCPサーバー15選｜GitHub・Slack・Drive（JINRAI）",
-          "url": "https://jinrai.co.jp/en/blog/2026/04/19/claude-mcp-servers-recommendation-2026/"
         }
       ],
       "section": "software"
@@ -1340,132 +1288,60 @@
     },
     {
       "tier": "student",
-      "category": "ブラウザ",
-      "name": "Perplexity Comet（無料）",
-      "price": "無料",
-      "why": "AIが要約・調べもの・ページ操作までしてくれるAIブラウザが、無料で使えます。Windows・Mac・スマホのどれにも対応しています。",
-      "for": "お金をかけずにAIブラウザを試してみたい人",
-      "caution": "AIに任せる操作は、ログイン中のサイトや支払いの画面では使わないようにしましょう。なお、OpenAIのAIブラウザ「ChatGPT Atlas」は2026年8月9日に提供が終わっています。",
+      "category": "コネクタ",
+      "name": "Claude のコネクタ（無料プランでも使える）",
+      "price": "無料（カスタムコネクタは1つまで）",
+      "why": "2026年2月から、無料プランでもGmail・Googleドライブ・Notionなどのコネクタが使えるようになりました。「来週の予定と関係するメールをまとめて」のように頼めます。",
+      "for": "お金をかけずに、AIとGoogleのサービスをつなげてみたい人",
+      "caution": "無料プランは使える量に上限があります。大学のGoogleアカウントは、管理者の設定でつなげないことがあります。",
       "sources": [
         {
-          "title": "Perplexity Comet とは？AIブラウザの新機能、料金プラン（AIsmiley）",
-          "url": "https://aismiley.co.jp/ai_news/perplexity-comet-chatgpt-atlas/"
+          "title": "Claude.ai コネクタ5選——280件から厳選（Qiita）",
+          "url": "https://qiita.com/saitoko/items/eb981f56765ad5867917"
         },
         {
-          "title": "ChatGPT Atlasとは？2026年8月9日で提供終了｜できたこと・移行先（ISSOH）",
-          "url": "https://www.issoh.co.jp/tech/details/9429/"
+          "title": "Claude×Google（メール、ドライブ、カレンダー）・Canva・Notion 接続手順ガイド（リベシティ）",
+          "url": "https://library.libecity.com/articles/01KMVQWGXX8PYPMTB7HBBG3Q0Z"
         }
       ],
       "section": "software"
     },
     {
       "tier": "student",
-      "category": "ブラウザ",
-      "name": "Brave（AIアシスタント「Leo」付き）",
-      "price": "無料（Leo Premium は月14.99ドル）",
-      "why": "広告やトラッカーを最初からブロックする、プライバシー重視のブラウザです。内蔵のAIアシスタント「Leo」で、開いているページの要約や質問が無料でできます（回数に上限あり）。",
-      "for": "広告の少ない快適なブラウザで、AIも気軽に使いたい人",
-      "caution": "Leo Premium は端末ごとに購入が必要で、アカウントで同期されません。",
+      "category": "コネクタ",
+      "name": "Gemini のアプリ連携（旧：拡張機能）",
+      "price": "無料（個人のGoogleアカウント）",
+      "why": "GeminiをGmail・Googleドライブ・Googleカレンダー・マップ・YouTubeなどとつなぎ、1つのチャットで横断して調べたり操作したりできます。個人アカウントなら追加料金なしで使えます。",
+      "for": "ふだんGoogleのサービスを使っていて、すぐに試したい人",
+      "caution": "大学や会社のアカウントでは、管理者が機能を止めていることがあります（設定に項目が出ないときはこれが原因）。",
       "sources": [
         {
-          "title": "Brave Leo（Wikipedia）",
-          "url": "https://en.wikipedia.org/wiki/Brave_Leo"
+          "title": "Gemini「アプリ連携」Google Workspace仕様変更確認（ジェットストリーム）",
+          "url": "https://jetstream.blog/?p=211338"
         },
         {
-          "title": "Brave pricing（toolradar）",
-          "url": "https://toolradar.com/tools/brave/pricing"
+          "title": "Geminiのアプリ連携とは（マネーフォワード クラウド）",
+          "url": "https://biz.moneyforward.com/ai/basic/4965/"
         }
       ],
       "section": "software"
     },
     {
       "tier": "student",
-      "category": "API",
-      "name": "Gemini API の無料枠（Google AI Studio）",
-      "price": "無料（Flash系のモデル。クレジットカード登録なしで始められる）",
-      "why": "Google AI Studioでキーを作れば、Flash系のモデルを無料でAPIから使えます。自作アプリにAIを組み込む練習や、小さな個人開発にちょうどいい入口です。",
-      "for": "お金をかけずに、APIを使ったプログラミングを始めたい人",
-      "caution": "無料枠では、入力した内容がサービスの改善に使われる可能性があります。個人情報や秘密の情報は送らないでください。上位モデルは無料枠の対象外です。なお、大学生向けの有料プラン無償提供は2025年10月に終わっています。",
+      "category": "プラグイン",
+      "name": "Claude Code の定番プラグイン（commit-commands・context7）",
+      "price": "プラグインは無料（Claude Code はClaudeの有料プランで利用）",
+      "why": "「commit-commands」はコミット・プッシュ・プルリクエスト作成をまとめて行い、「context7」はライブラリの最新の説明書をAIに読ませます。授業の課題や個人開発の面倒な手順が減ります。",
+      "for": "Claude Codeでプログラミングの勉強や個人開発をしている人",
+      "caution": "最新版のClaude Codeでは公式マーケットプレイスが最初から登録されていて、/plugin から入れられます。",
       "sources": [
         {
-          "title": "Gemini API 無料枠の実態｜個人プランの制限と有料移行の判断【2026】（Crystal Method）",
-          "url": "https://crystal-method.com/blog/gemini-free/"
+          "title": "Claude Code プラグイン完全ガイド｜おすすめ15選・入れ方（テックジム）",
+          "url": "https://techgym.jp/column/claude-code-plugin/"
         },
         {
-          "title": "Google Gemini API 料金と無料枠【2026年9月】（Uravation）",
-          "url": "https://uravation.com/media/google-gemini-api-complete-guide-2026/"
-        }
-      ],
-      "section": "software"
-    },
-    {
-      "tier": "student",
-      "category": "API",
-      "name": "Gemini 3.8 Flash API（有料でも安い）",
-      "price": "入力 100万トークンあたり0.75ドル／出力 3.75ドル（12月31日までの導入価格。2027年1月からは1.50ドル／7.50ドル）",
-      "why": "無料枠を超えても、上位モデルよりずっと安い料金で使える高速モデルです。個人開発のアプリの裏側で、たくさん呼び出す使い方に向いています。",
-      "for": "無料枠では足りなくなった個人開発のアプリ",
-      "caution": "従量課金なので、Google Cloudの予算アラートを設定しておきましょう。導入価格は期間限定です。",
-      "sources": [
-        {
-          "title": "Gemini API 無料枠の実態｜個人プランの制限と有料移行の判断【2026】（Crystal Method）",
-          "url": "https://crystal-method.com/blog/gemini-free/"
-        }
-      ],
-      "section": "software"
-    },
-    {
-      "tier": "student",
-      "category": "MCP",
-      "name": "Playwright MCP（ブラウザ操作）",
-      "price": "無料（Microsoft公式）",
-      "why": "AIに「このサイトを開いて、ここを押して」と頼むだけでブラウザを操作させられるMCPサーバーです。Webアプリの動作確認や、決まった手順の作業の自動化に使えます。",
-      "for": "作ったWebアプリの動作確認を、AIに手伝ってほしい人",
-      "caution": "設定のコマンドが記事によって違います。公式の @playwright/mcp を使ってください。",
-      "sources": [
-        {
-          "title": "MCPサーバーおすすめ20選＋一覧表【2026年版】（AI Workflow）",
-          "url": "https://ai-workflow.jp/mcp-server-osusume/"
-        },
-        {
-          "title": "Claude Code MCPおすすめサーバー15選【2026年5月版】",
-          "url": "https://ai-career-japan.jp/posts/claude-code-mcp-%E3%81%8A%E3%81%99%E3%81%99%E3%82%81%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC%E5%AE%8C%E5%85%A8%E3%82%AC%E3%82%A4%E3%83%89/"
-        }
-      ],
-      "section": "software"
-    },
-    {
-      "tier": "student",
-      "category": "MCP",
-      "name": "GitHub MCP（GitHub公式）",
-      "price": "無料（GitHubのトークンが必要）",
-      "why": "AIに「このIssueを確認して」「このプルリクエストをレビューして」と頼むと、GitHubを直接操作してくれるMCPサーバーです。授業の課題や個人開発のコード管理がラクになります。",
-      "for": "GitHubでコードを管理している人（GitHub Copilot Studentと組み合わせると便利）",
-      "caution": "トークンには必要最小限の権限だけを付けましょう。GitHubのAPIには利用回数の上限があります。",
-      "sources": [
-        {
-          "title": "【2026年最新】おすすめMCPサーバー厳選12選（エンジニアの思い立ったが吉日）",
-          "url": "https://engineer-kichizitsu.net/entry/20260304/1772585327"
-        },
-        {
-          "title": "MCPサーバーおすすめ20選＋一覧表【2026年版】（AI Workflow）",
-          "url": "https://ai-workflow.jp/mcp-server-osusume/"
-        }
-      ],
-      "section": "software"
-    },
-    {
-      "tier": "student",
-      "category": "MCP",
-      "name": "Context7（ライブラリの最新ドキュメント）",
-      "price": "無料",
-      "why": "AIがプログラムを書くとき、ライブラリの最新の説明書を参照させるMCPサーバーです。AIが古い書き方でコードを書いてしまう失敗を減らせます。",
-      "for": "AIと一緒にプログラミングを勉強している人",
-      "caution": "",
-      "sources": [
-        {
-          "title": "Claude Code MCPおすすめサーバー15選【2026年5月版】",
-          "url": "https://ai-career-japan.jp/posts/claude-code-mcp-%E3%81%8A%E3%81%99%E3%81%99%E3%82%81%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC%E5%AE%8C%E5%85%A8%E3%82%AC%E3%82%A4%E3%83%89/"
+          "title": "Claude Code プラグインおすすめ 2026（Zenn）",
+          "url": "https://zenn.dev/ino_h/articles/2026-04-23-claude-code-plugins-ranking"
         }
       ],
       "section": "software"
@@ -1708,8 +1584,8 @@
       "label": "ソフトウェア",
       "title": "ソフトウェア・AIサービス",
       "lead": {
-        "flagship": "料金を気にせず、いちばん高性能なプランを選ぶ場合のおすすめです。AIアシスタントのほか、AIブラウザ、自分のアプリにAIを組み込むAPI、AIと外部ツールをつなぐMCPも載せています。多くは毎月の料金がかかるサブスクリプションか、使った分だけの従量課金です。",
-        "student": "無料プランや学生向けの割引・特典で使えるものを中心に選びました。AIブラウザ・APIの無料枠・無料のMCPサーバーもあります。学割は在籍確認が必要です。"
+        "flagship": "料金を気にせず、いちばん高性能なプランを選ぶ場合のおすすめです。AIアシスタントのほか、AIをGmailやドライブなどとつなぐ「コネクタ」、機能を足す「プラグイン」も載せています。多くは毎月の料金がかかるサブスクリプションです。",
+        "student": "無料プランや学生向けの割引・特典で使えるものを中心に選びました。無料で使えるコネクタやプラグインもあります。学割は在籍確認が必要です。"
       }
     },
     "other": {
