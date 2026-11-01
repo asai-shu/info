@@ -548,7 +548,7 @@ limit = 30
 [[feeds]]
 name = "Google News（AI Browser）"
 url = "https://news.google.com/rss/search?q=%22AI+browser%22+OR+%22agentic+browser%22+OR+%22new+browser%22+when:7d&hl=en-US&gl=US&ceid=US:en"
-category = "新製品"
+category = "ブラウザ"
 lang = "en"
 theme = "gear"
 limit = 30
@@ -588,14 +588,14 @@ filter = "gear"
 [[feeds]]
 name = "Google Chrome Blog"
 url = "https://blog.google/products/chrome/rss/"
-category = "新製品"
+category = "ブラウザ"
 lang = "en"
 theme = "gear"
 
 [[feeds]]
 name = "Mozilla Blog"
 url = "https://blog.mozilla.org/en/feed/"
-category = "新製品"
+category = "ブラウザ"
 lang = "en"
 theme = "gear"
 
@@ -772,3 +772,129 @@ category = "需要の種"
 lang = "ja"
 exclude = ["小説", "フィクション", "ショートショート", "短編", "ポエム", "詩集"]
 limit = 20
+
+# ================= ブラウザ・API・MCP =================
+
+[[feeds]]
+name = "Googleニュース（ブラウザ）"
+url = "https://news.google.com/rss/search?q=ブラウザ+(新機能+OR+アップデート+OR+リリース+OR+AI)+when:3d&hl=ja&gl=JP&ceid=JP:ja"
+category = "ブラウザ"
+lang = "ja"
+limit = 25
+
+[[feeds]]
+name = "Chrome for Developers"
+url = "https://developer.chrome.com/static/blog/feed.xml"
+category = "ブラウザ"
+lang = "en"
+
+[[feeds]]
+name = "Microsoft Edge Blog"
+url = "https://blogs.windows.com/msedgedev/feed/"
+category = "ブラウザ"
+lang = "en"
+
+[[feeds]]
+name = "WebKit Blog（Safari）"
+url = "https://webkit.org/feed/"
+category = "ブラウザ"
+lang = "en"
+
+[[feeds]]
+name = "Mozilla Hacks"
+url = "https://hacks.mozilla.org/feed/"
+category = "ブラウザ"
+lang = "en"
+
+[[feeds]]
+name = "Brave Blog"
+url = "https://brave.com/blog/index.xml"
+category = "ブラウザ"
+lang = "en"
+
+[[feeds]]
+name = "Vivaldi Blog"
+url = "https://vivaldi.com/blog/feed/"
+category = "ブラウザ"
+lang = "en"
+
+[[feeds]]
+name = "Opera Blog"
+url = "https://blogs.opera.com/news/feed/"
+category = "ブラウザ"
+lang = "en"
+
+[[feeds]]
+name = "Googleニュース（AIのAPI）"
+url = "https://news.google.com/rss/search?q=API+(OpenAI+OR+Anthropic+OR+Gemini+OR+Claude)+(料金+OR+提供開始+OR+新機能+OR+終了)+when:3d&hl=ja&gl=JP&ceid=JP:ja"
+category = "API"
+lang = "ja"
+theme = "tech"
+limit = 25
+
+[[feeds]]
+name = "Google News（AI API）"
+url = "https://news.google.com/rss/search?q=API+(OpenAI+OR+Anthropic+OR+Gemini)+(pricing+OR+launch+OR+deprecation+OR+%22now+available%22)+when:3d&hl=en-US&gl=US&ceid=US:en"
+category = "API"
+lang = "en"
+theme = "tech"
+limit = 25
+
+[[feeds]]
+name = "Google Developers Blog"
+url = "https://developers.googleblog.com/feeds/posts/default"
+category = "API"
+lang = "en"
+theme = "tech"
+filter = true
+
+[[feeds]]
+name = "Googleニュース（MCP）"
+url = "https://news.google.com/rss/search?q=MCP+(AI+OR+Claude+OR+サーバー+OR+エージェント)+when:7d&hl=ja&gl=JP&ceid=JP:ja"
+category = "MCP"
+lang = "ja"
+theme = "tech"
+limit = 25
+
+[[feeds]]
+name = "Google News（MCP）"
+url = "https://news.google.com/rss/search?q=%22Model+Context+Protocol%22+OR+%22MCP+server%22+when:7d&hl=en-US&gl=US&ceid=US:en"
+category = "MCP"
+lang = "en"
+theme = "tech"
+limit = 25
+
+[[feeds]]
+name = "Zenn（MCP）"
+url = "https://zenn.dev/topics/mcp/feed"
+category = "MCP"
+lang = "ja"
+theme = "tech"
+
+[[feeds]]
+name = "Qiita（MCP）"
+url = "https://qiita.com/tags/mcp/feed"
+category = "MCP"
+lang = "ja"
+theme = "tech"
+
+[[feeds]]
+name = "MCP 仕様のリリース"
+url = "https://github.com/modelcontextprotocol/modelcontextprotocol/releases.atom"
+category = "MCP"
+lang = "en"
+theme = "tech"
+
+[[feeds]]
+name = "MCP Blog"
+url = "https://blog.modelcontextprotocol.io/index.xml"
+category = "MCP"
+lang = "en"
+theme = "tech"
+
+[[feeds]]
+name = "Reddit r/mcp"
+url = "https://www.reddit.com/r/mcp/top/.rss?t=day"
+category = "MCP"
+lang = "en"
+theme = "tech"
