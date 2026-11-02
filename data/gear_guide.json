@@ -16,6 +16,30 @@
   "items": [
     {
       "tier": "flagship",
+      "category": "世界最高額のPC",
+      "name": "NVIDIA DGX Station（GB300）― MSI XpertStation WS300 など",
+      "price": "税込1,980万円（MSI XpertStation WS300・日本の販売代理店の掲載）／米国では約9.3万〜16万ドル",
+      "why": "NVIDIAの最新のAI用チップ「GB300 Grace Blackwell Ultra」を机の横に置ける形にした、デスクトップ型のAIスーパーコンピューターです。最大748GBの大容量メモリと400GbEのネットワークを2つ備え、データセンター級の大きなAIモデルを1台で学習・実行できます。価格が公開されていて今買えるPCの中では、調べた範囲でいちばん高い1台です。",
+      "for": "とにかく「この世でいちばん高いPC」を見てみたい人。研究機関や企業のAI開発チーム",
+      "caution": "NVIDIAは公式の価格を出しておらず、販売店やメーカー（MSI・ASUS・Dellなど）で価格が大きく違います。法人向けの見積もり販売が中心で、個人が気軽に買うものではありません。",
+      "sources": [
+        {
+          "title": "NVIDIA GB300搭載 AI GPUワークステーション（アプライド）",
+          "url": "https://www.applied.ne.jp/lp/ai-gpu_workstation/"
+        },
+        {
+          "title": "Nvidia's GB300-powered DGX Station desktop tower listed for nearly $100,000 online（Tom's Hardware）",
+          "url": "https://www.tomshardware.com/desktops/nvidias-gb300-powered-dgx-station-desktop-tower-listed-for-nearly-usd100-000-online-enterprise-ai-powerhouse-now-available-to-buy-for-mere-mortals-with-lots-of-cash"
+        },
+        {
+          "title": "MSI XpertStation WS300 Based on NVIDIA DGX Station Now Available（共同通信PRワイヤー）",
+          "url": "https://kyodonewsprwire.jp/release/202608284874"
+        }
+      ],
+      "section": "pc"
+    },
+    {
+      "tier": "flagship",
       "category": "ノートPC",
       "name": "ASUS ProArt P16（H7607）RTX Spark・メモリ128GB",
       "price": "124万8,000円（48GB版は99万9,800円）",
@@ -606,6 +630,30 @@
         {
           "title": "The best desktop processors 2026（CPU Monkey）",
           "url": "https://www.cpu-monkey.com/en/cpu_ranking-best_desktop_processors"
+        }
+      ],
+      "section": "pc"
+    },
+    {
+      "tier": "student",
+      "category": "AIアクセラレーター（TPU）",
+      "name": "Google Coral USB Accelerator（Edge TPU）",
+      "price": "1万5,980円〜1万8,313円前後（Yahoo!ショッピング・Amazonの掲載）",
+      "why": "GoogleのAI専用チップ「TPU」の小型版（Edge TPU）を、USBメモリほどの大きさにまとめた機器です。パソコンやRaspberry PiにUSBで挿すと、画像の物体検出などのAIを低い電力で高速に動かせます。個人が買える数少ないTPUです。",
+      "for": "TPUを実際に触ってみたい人、Raspberry PiでカメラのAI（顔や物の検出）を作ってみたい人",
+      "caution": "ChatGPTのような大きな言語モデルは動かせません。TensorFlow Lite形式の小さなモデル専用で、2019年に出た古い設計です。GoogleのクラウドのTPU（大きなAIを学習させる本格的なもの）は、個人がPCに積んで買うことはできず、Google Cloudで時間単位で借りる形です。",
+      "sources": [
+        {
+          "title": "Coral USB Accelerator（IoT本舗）",
+          "url": "https://shop.iothonpo.com/product/coral-usb-accelerator/"
+        },
+        {
+          "title": "Coral USB Accelerator（Amazon.co.jp）",
+          "url": "https://www.amazon.co.jp/Google-Coral-Accelerator-Edge-%E3%82%A2%E3%82%AF%E3%82%BB%E3%83%A9%E3%83%AC%E3%83%BC%E3%82%BF/dp/B07S214S5Y"
+        },
+        {
+          "title": "Google launches Coral Edge TPU development board and USB accelerator（AB Open）",
+          "url": "https://abopen.com/news/google-launches-coral-edge-tpu-development-board-usb-accelerator/"
         }
       ],
       "section": "pc"
