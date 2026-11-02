@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-02",
+  "updated": "2026-11-03",
   "note": "価格は2026年10月下旬に確認した目安です（メーカー直販・量販店・価格.comの最安値などが混在します）。セール・値上げ・在庫で大きく変わるので、買う前に公式サイトや価格比較サイトで必ず確認してください。",
   "tiers": {
     "flagship": {
@@ -895,6 +895,26 @@
       "section": "gadget"
     },
     {
+      "tier": "flagship",
+      "category": "面白ITグッズ",
+      "name": "XREAL AURA（Android XR・Gemini搭載のXRグラス）",
+      "price": "22万9,800円（12GB・256GB）／26万9,800円（16GB・512GB）",
+      "why": "Googleの「Android XR」で動く、日本で買える初めてのスマートグラスです。目の前に大きな画面を浮かべて作業や動画を楽しめ、Geminiに話しかけて操作できます。11月27日に発売され、一般の予約も始まりました。",
+      "for": "どこでも大画面で作業したい人、最先端のXR機器を早く試したい人",
+      "caution": "とても高価です。バッテリーはメガネ本体ではなく、ポケットに入れる別の機器にあります。",
+      "sources": [
+        {
+          "title": "Android XR／Gemini搭載XRグラス「XREAL AURA」11/27発売（PHILE WEB）",
+          "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBxM3FSbDJKUFo5alc5MWJvWF93S0dHeGxvTXB3STdja3FSRnZJd1JhWHRYWENmWlRrT3NrS3ZvRU1QRHBqOHh3Zkx3NnluMWtDdEliWlRUOC0yV0JfWlVHUkNWUzUydw?oc=5"
+        },
+        {
+          "title": "XREAL AURA、日本価格22万9800円から発表（hashout）",
+          "url": "https://hashout.jp/?p=12209"
+        }
+      ],
+      "section": "gadget"
+    },
+    {
       "tier": "student",
       "category": "面白ITグッズ",
       "name": "AI ONE UltraHub（AI搭載USBハブ）",
@@ -1606,7 +1626,7 @@
     }
   },
   "checked": {
-    "at": "2026-11-02T00:18:30+09:00",
+    "at": "2026-11-03T00:56:15+09:00",
     "result": "更新あり"
   }
 }
