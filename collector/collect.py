@@ -31,6 +31,7 @@ ROOT = Path(__file__).resolve().parent.parent
 CONFIG_PATH = ROOT / "feeds.toml"
 DATA_PATH = ROOT / "data" / "items.json"
 CURATED_PATH = ROOT / "data" / "curated.json"  # Claude Code（/curate）が選んで日本語で要約した注目記事
+TRANSLATIONS_PATH = ROOT / "data" / "translations.json"  # 外国語の記事の日本語訳（Claude Code の /translate が書く）
 TEMPLATE_PATH = ROOT / "collector" / "template.html"
 OUTPUT_PATH = ROOT / "docs" / "index.html"
 STATIC_DIR = ROOT / "collector" / "static"  # アイコンなど、ページと一緒に公開するファイル
@@ -266,11 +267,26 @@ def load_curated(items: list[dict]) -> dict | None:
     return curated
 
 
+def load_translations() -> dict[str, dict]:
+    """Claude Code（/translate）が日本語に訳したタイトルと要約。記事の id ごと。"""
+    if not TRANSLATIONS_PATH.exists():
+        return {}
+    return json.loads(TRANSLATIONS_PATH.read_text(encoding="utf-8")).get("items", {})
+
+
 def render(items: list[dict], statuses: list[dict], updated: datetime, feeds: list[dict]) -> str:
     feed_themes = {f["name"]: f["theme"] for f in feeds if f.get("theme")}
+    translations = load_translations()
+    annotated = []
+    for i in items:
+        a = themes.annotate(i, feed_themes)
+        t = translations.get(i["id"])
+        if t:
+            a["title_ja"], a["summary_ja"] = t.get("title", ""), t.get("summary", "")
+        annotated.append(a)
     payload = {
         "updated": updated.isoformat(timespec="seconds"),
-        "items": [themes.annotate(i, feed_themes) for i in items],
+        "items": annotated,
         "curated": load_curated(items),
         "statuses": statuses,
     }

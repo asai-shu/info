@@ -62,6 +62,7 @@ article p { margin: 4px 0 0; color: var(--muted); font-size: 13.5px; overflow-wr
 .tags { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-top: 6px; font-size: 12px; color: var(--muted); }
 .tags a { color: var(--accent); }
 .badge { color: var(--new); font-weight: 700; }
+.tags .ja { color: var(--accent); }
 .empty { text-align: center; color: var(--muted); padding: 40px 0; }
 .tabs { display: flex; gap: 4px; margin-top: 10px; overflow-x: auto; }
 .tab { flex: 0 0 auto; border: 0; border-bottom: 3px solid transparent; background: none; color: var(--muted);
@@ -190,8 +191,12 @@ function card(i, mode) {
   const time = mode === "all" ? hm : `${d.getMonth() + 1}/${d.getDate()} ${hm}`;
   const isNew = lastVisit && i.date > lastVisit;
   const translate = i.lang !== "ja"
-    ? `<a href="https://translate.google.com/translate?sl=auto&tl=ja&u=${encodeURIComponent(i.link)}" target="_blank" rel="noopener">日本語に翻訳して読む</a>`
+    ? `<a href="https://translate.google.com/translate?sl=auto&tl=ja&u=${encodeURIComponent(i.link)}" target="_blank" rel="noopener">${i.title_ja ? "本文を自動翻訳で読む" : "日本語に翻訳して読む"}</a>`
     : "";
+  // Claude が日本語に訳したタイトル・要約があれば、それを見出しにして原文のタイトルを小さく添える
+  const ja = mode !== "curated" && i.title_ja;
+  const title = ja ? `<a class="title" href="${esc(i.link)}" target="_blank" rel="noopener">${esc(i.title_ja)}</a>
+      <div class="original">${esc(i.title)}</div>` : `<a class="title" href="${esc(i.link)}" target="_blank" rel="noopener">${esc(i.title)}</a>`;
   let body;
   if (mode === "curated") {
     body = `<a class="title" href="${esc(i.link)}" target="_blank" rel="noopener">${esc(i.title_ja)}</a>
@@ -199,16 +204,18 @@ function card(i, mode) {
       <p class="digest">${esc(i.summary_ja)}</p>
       <p class="point"><b>ポイント</b>${esc(i.point)}</p>`;
   } else if (mode === "theme") {
-    body = `<a class="title" href="${esc(i.link)}" target="_blank" rel="noopener">${esc(i.title)}</a>
-      ${i.digest ? `<p class="digest">${esc(i.digest)}</p>` : ""}
+    const digest = ja ? i.summary_ja : i.digest;
+    body = `${title}
+      ${digest ? `<p class="digest">${esc(digest)}</p>` : ""}
       <div class="reasons">${i.themes[tab].reasons.map((r) => `<span class="reason">${esc(r)}</span>`).join("")}</div>`;
   } else {
-    body = `<a class="title" href="${esc(i.link)}" target="_blank" rel="noopener">${esc(i.title)}</a>
-      ${i.summary ? `<p>${esc(i.summary)}</p>` : ""}`;
+    const summary = ja ? i.summary_ja : i.summary;
+    body = `${title}
+      ${summary ? `<p>${esc(summary)}</p>` : ""}`;
   }
   return `<article${mode === "curated" ? ' class="curated"' : ""}>${body}
     <div class="tags">${isNew ? '<span class="badge">NEW</span>' : ""}
-      <span>${time}</span><span>${esc(i.publisher ? `${i.publisher}（${i.source}）` : i.source)}</span><span>${esc(i.category)}</span>${translate}</div>
+      <span>${time}</span><span>${esc(i.publisher ? `${i.publisher}（${i.source}）` : i.source)}</span><span>${esc(i.category)}</span>${ja ? '<span class="ja">Claude訳</span>' : ""}${translate}</div>
   </article>`;
 }
 
