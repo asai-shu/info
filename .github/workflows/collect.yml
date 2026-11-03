@@ -9,7 +9,7 @@ on:
     # 作業用ブランチへのプッシュでは動かさない（公開ページは ccr-9eb32590-esny4k だけから作る）
     branches: [ccr-9eb32590-esny4k]
     # data/curated.json などは Claude Code（/curate・/gear-guide・/demand）が更新したときにページを作り直すため
-    paths: [feeds.toml, collector/**, data/curated.json, data/gear_guide.json, data/demand.json, .github/workflows/collect.yml]
+    paths: [feeds.toml, collector/**, data/curated.json, data/translations.json, data/gear_guide.json, data/demand.json, .github/workflows/collect.yml]
 
 permissions:
   contents: write
