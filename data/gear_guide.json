@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-03",
+  "updated": "2026-11-04",
   "note": "価格は2026年10月下旬に確認した目安です（メーカー直販・量販店・価格.comの最安値などが混在します）。セール・値上げ・在庫で大きく変わるので、買う前に公式サイトや価格比較サイトで必ず確認してください。",
   "tiers": {
     "flagship": {
@@ -1637,6 +1637,206 @@
           "url": "https://kadekura.com/router-ranking-2026/"
         }
       ]
+    },
+    {
+      "tier": "flagship",
+      "category": "AIブラウザ",
+      "name": "Perplexity Comet ＋ Comet Pro",
+      "price": "本体は無料／Pro 月20ドル（ドル建て）",
+      "why": "調べもの・要約・フォーム入力などを、AIが代わりにページを操作してこなすAIブラウザです。Proにすると、高性能なAIモデルや、裏で作業を続ける機能が使えます。",
+      "for": "レポートの下調べや比較を、AIにまとめて任せたい人",
+      "caution": "AIがページを操作するため、悪意のあるページの指示に乗せられる危険（プロンプトインジェクション）があります。支払いの画面などでは使わないようにしましょう。",
+      "sources": [
+        {
+          "title": "Perplexity Comet とは？AIブラウザの新機能、料金プラン（AIsmiley）",
+          "url": "https://aismiley.co.jp/ai_news/perplexity-comet-chatgpt-atlas/"
+        },
+        {
+          "title": "AI Browsers Compared (2026): Atlas vs Comet vs Dia",
+          "url": "https://aisubscriptioncomparison.com/features/ai-browsers/"
+        }
+      ],
+      "section": "browser"
+    },
+    {
+      "tier": "flagship",
+      "category": "AIブラウザ",
+      "name": "Opera Neon",
+      "price": "月19.90ドル（ドル建て・約3,100円）",
+      "why": "Operaが「ブラウザの実験場」として出した有料のAIブラウザです。AIエージェントが作業を代わりに進めたり、簡単なWebアプリを作ったりできます。2025年12月から誰でも申し込めるようになりました。",
+      "for": "最先端のAIブラウザを、お金を払ってでも試してみたい人",
+      "caution": "日本向けの特別な案内はなく、ドル建てです。セキュリティの専門家は慎重に使うよう呼びかけています。",
+      "sources": [
+        {
+          "title": "Opera、AI操作代行ブラウザ『Neon』を月額20ドルで提供開始（PHILE WEB）",
+          "url": "https://gadget.phileweb.com/post-110622/"
+        },
+        {
+          "title": "ブラウザ界の実験場、AIブラウザを月額20ドルで提供（ギズモード・ジャパン）",
+          "url": "https://www.gizmodo.jp/2025/12/opera-wants-20-a-month-for-its-new-ai-browser-you-probably-shouldnt-pay-it.html"
+        }
+      ],
+      "section": "browser"
+    },
+    {
+      "tier": "flagship",
+      "category": "AIブラウザ",
+      "name": "Dia ＋ Dia Pro（Mac）",
+      "price": "本体は無料／Dia Pro 月20ドル（ドル建て）",
+      "why": "人気ブラウザ「Arc」を作ったチームによる、AIとの会話を中心にしたブラウザです。開いているタブの内容をまとめて質問したり、文章を書いたりできます。",
+      "for": "Macで、AIと会話しながらネットを使いたい人",
+      "caution": "Mac専用です。同じ会社のArcは2026年12月22日に動かなくなるため、Arcを使っている人はDiaにデータを移せます。",
+      "sources": [
+        {
+          "title": "【2026年8月最新】おすすめAIブラウザ徹底比較（GenAI）",
+          "url": "https://genai-ai.co.jp/ai-kanri/blog/cc-ai-browser-comparison-2/"
+        },
+        {
+          "title": "Arc Browserの提供終了とDiaへの移行（AI PICKS）",
+          "url": "https://aipicks.jp/news/20261023-arc-browser-2026-12-22-dia"
+        }
+      ],
+      "section": "browser"
+    },
+    {
+      "tier": "flagship",
+      "category": "プライバシー重視",
+      "name": "Brave ＋ Leo Premium",
+      "price": "本体は無料／Leo Premium 月14.99ドル（ドル建て）",
+      "why": "広告やトラッカーを最初からブロックする、プライバシー重視のブラウザです。Leo PremiumにするとClaudeなど高性能なAIモデルを、ブラウザの中のAIアシスタントで多く使えます。",
+      "for": "広告の少ない快適さと、AIの使いやすさを両方ほしい人",
+      "caution": "Leo Premiumは端末ごとに購入が必要で、アカウントで同期されません。",
+      "sources": [
+        {
+          "title": "Brave Leo（Wikipedia）",
+          "url": "https://en.wikipedia.org/wiki/Brave_Leo"
+        },
+        {
+          "title": "Brave pricing（toolradar）",
+          "url": "https://toolradar.com/tools/brave/pricing"
+        }
+      ],
+      "section": "browser"
+    },
+    {
+      "tier": "student",
+      "category": "AIブラウザ",
+      "name": "Perplexity Comet（無料）",
+      "price": "無料",
+      "why": "AIがページを操作する機能まで含めて、2026年3月から無料になったAIブラウザです。Windows・Mac・iPhone・Androidで使えます。",
+      "for": "お金をかけずにAIブラウザを試してみたい人",
+      "caution": "OpenAIのAIブラウザ「ChatGPT Atlas」は2026年8月9日に提供が終わりました。今AIブラウザを試すなら、こちらが入口になります。",
+      "sources": [
+        {
+          "title": "Perplexity Comet とは？AIブラウザの新機能、料金プラン（AIsmiley）",
+          "url": "https://aismiley.co.jp/ai_news/perplexity-comet-chatgpt-atlas/"
+        },
+        {
+          "title": "AI Browsers Compared (2026): Atlas vs Comet vs Dia",
+          "url": "https://aisubscriptioncomparison.com/features/ai-browsers/"
+        },
+        {
+          "title": "ChatGPT Atlasとは？2026年8月9日で提供終了（ISSOH）",
+          "url": "https://www.issoh.co.jp/tech/details/9429/"
+        }
+      ],
+      "section": "browser"
+    },
+    {
+      "tier": "student",
+      "category": "AIブラウザ",
+      "name": "Microsoft Edge（Copilot モード）",
+      "price": "無料",
+      "why": "Windowsに最初から入っているEdgeで使える、AIのモードです。開いている複数のタブの内容をAIに比べさせたり、ページの上でAIに作業を代わりにさせたりできます。",
+      "for": "新しいブラウザを入れずに、いつものEdgeでAIを試したい人",
+      "caution": "まだ試験的な機能で、日本での提供の範囲は時期によって変わります。設定から有効にして使います。",
+      "sources": [
+        {
+          "title": "Edge の Copilot Mode のご紹介（Microsoft 公式）",
+          "url": "https://news.microsoft.com/ja-jp/2025/07/31/introducing-copilot-mode-in-edge-a-new-way-to-browse-the-web"
+        },
+        {
+          "title": "Microsoft Edge「Copilot Mode」搭載開始（innovaTopia）",
+          "url": "https://innovatopia.jp/?p=61551"
+        }
+      ],
+      "section": "browser"
+    },
+    {
+      "tier": "student",
+      "category": "AIブラウザ",
+      "name": "Firefox（Smart Window）",
+      "price": "無料",
+      "why": "Firefoxの任意のAI機能です。開いているタブの情報からフォームを埋めたり、「/watch」と打つと指定したページの値下げや再入荷を毎日・毎週チェックしたりできます。",
+      "for": "Firefoxが好きで、新しいAI機能を早く試したい人",
+      "caution": "ベータ版で、今は英語・米国とカナダ向けに少しずつ公開中です。日本ではまだ使えない場合があります。AI Controlsから無効にもできます。",
+      "sources": [
+        {
+          "title": "Firefox 158 adds AI form filling（PCWorld）",
+          "url": "https://pcworld.com/article/3260663/firefox-158-adds-ai-form-filling-and-fixes-77-security-flaws.html"
+        },
+        {
+          "title": "Firefoxの「Smart Window」にフォーム入力支援とWebページ変更監視を追加（デジタルトゥデイ）",
+          "url": "https://www.digitaltoday.co.kr/jp/view/120683/firefox-boosts-ai-browser-features-to-cut-copy-and-paste"
+        }
+      ],
+      "section": "browser"
+    },
+    {
+      "tier": "student",
+      "category": "使いやすさを追求",
+      "name": "Zen Browser",
+      "price": "無料（オープンソース）",
+      "why": "Firefoxをもとにした、縦に並ぶタブが標準のブラウザです。作業ごとにタブを分けるワークスペース、画面を広く使うコンパクトモード、画面分割などで、タブがあふれる人でもすっきり使えます。",
+      "for": "タブを何十個も開いてしまう人、見た目の美しいブラウザを使いたい人",
+      "caution": "Firefoxがもとなので、Chromeの拡張機能は使えません（Firefoxのアドオンは使えます）。",
+      "sources": [
+        {
+          "title": "Zen Browser（ソフトアンテナ）",
+          "url": "https://softantenna.com/softwares/7793-zen-browser"
+        },
+        {
+          "title": "Zen Browser vs Firefox in 2026（Sigma Browser）",
+          "url": "https://www.sigmabrowser.com/blog/zen-browser-vs-firefox-privacy-speed-customization-in-2026"
+        }
+      ],
+      "section": "browser"
+    },
+    {
+      "tier": "student",
+      "category": "プライバシー重視",
+      "name": "Brave（無料）",
+      "price": "無料",
+      "why": "広告やトラッカーを最初からブロックするので、ページの表示が速く、動画の広告も少なくなります。AIアシスタント「Leo」も、回数に上限はありますが無料で使えます。",
+      "for": "広告の多いサイトをよく見る人",
+      "caution": "広告ブロックで一部のサイトが正しく表示されないときは、そのサイトだけブロックを切れます。",
+      "sources": [
+        {
+          "title": "Brave Leo（Wikipedia）",
+          "url": "https://en.wikipedia.org/wiki/Brave_Leo"
+        }
+      ],
+      "section": "browser"
+    },
+    {
+      "tier": "student",
+      "category": "AIを入れない派",
+      "name": "Vivaldi",
+      "price": "無料",
+      "why": "「AIに頼りすぎず、人が自分で探す」という方針で、会話するAIを入れていない珍しいブラウザです。そのかわり、タブを並べて表示する機能やメール・カレンダー内蔵など、自分好みに細かく作り込めます。",
+      "for": "AIに勝手に要約されるより、自分で情報を探したい人、細かく設定するのが好きな人",
+      "caution": "翻訳など一部にはAIを使っており、その機能はオン・オフを選べます。",
+      "sources": [
+        {
+          "title": "Vivaldi rejects AI hype（TechSpot）",
+          "url": "https://www.techspot.com/news/109307-vivaldi-rejects-ai-hype-browsing-stay-active-not.html"
+        },
+        {
+          "title": "Not in my browser! Vivaldi capo doubles down on generative AI ban（The Register）",
+          "url": "https://www.theregister.com/2025/08/28/vivaldi_capo_doubles_down_on/"
+        }
+      ],
+      "section": "browser"
     }
   ],
   "sections": {
@@ -1662,6 +1862,14 @@
       "lead": {
         "flagship": "料金を気にせず、いちばん高性能なプランを選ぶ場合のおすすめです。AIアシスタントのほか、AIをGmailやドライブなどとつなぐ「コネクタ」、機能を足す「プラグイン」も載せています。多くは毎月の料金がかかるサブスクリプションです。",
         "student": "無料プランや学生向けの割引・特典で使えるものを中心に選びました。無料で使えるコネクタやプラグインもあります。学割は在籍確認が必要です。"
+      }
+    },
+    "browser": {
+      "label": "ブラウザ",
+      "title": "面白いブラウザ",
+      "lead": {
+        "flagship": "お金をかけてでも試したい、最先端のAIブラウザや有料プランを集めました。AIがページを操作して作業を代わりにこなすものが中心です。",
+        "student": "無料で使える面白いブラウザを集めました。AIブラウザのほか、タブの整理が得意なもの、広告をブロックするもの、あえてAIを入れないものもあります。"
       }
     },
     "other": {
