@@ -63,6 +63,23 @@ article p { margin: 4px 0 0; color: var(--muted); font-size: 13.5px; overflow-wr
 .tags a { color: var(--accent); }
 .badge { color: var(--new); font-weight: 700; }
 .tags .ja { color: var(--accent); }
+/* ブックマーク（☆）。保存先は Supabase の info_bookmarks（持ち主だけが読み書きできる） */
+.star { border: 0; background: none; color: var(--muted); font-size: 16px; line-height: 1; cursor: pointer; padding: 0 2px; margin-left: auto; }
+.star.on { color: #f5a524; }
+.translation { white-space: pre-wrap; color: var(--text); font-size: 14px; line-height: 1.8; margin-top: 6px; overflow-wrap: anywhere; }
+article details summary { cursor: pointer; color: var(--accent); font-size: 13px; margin-top: 8px; }
+.wait { color: var(--muted); font-size: 13px; margin-top: 6px; }
+.linkbtn { border: 0; background: none; color: var(--accent); font: inherit; font-size: 13px; cursor: pointer; padding: 0; text-decoration: underline; }
+dialog { border: 1px solid var(--line); border-radius: 12px; background: var(--card); color: var(--text); padding: 18px; width: min(340px, calc(100vw - 32px)); }
+dialog::backdrop { background: rgba(0, 0, 0, .4); }
+dialog h3 { margin: 0 0 6px; font-size: 16px; }
+dialog p { margin: 0 0 10px; font-size: 13px; color: var(--muted); }
+dialog input { display: block; width: 100%; margin-bottom: 8px; padding: 8px 10px; border: 1px solid var(--line); border-radius: 8px;
+               background: var(--bg); color: var(--text); font-size: 15px; }
+dialog .row { display: flex; gap: 8px; justify-content: flex-end; margin-top: 6px; }
+dialog button { border: 1px solid var(--line); background: var(--card); color: var(--text); border-radius: 8px; padding: 6px 14px; font: inherit; cursor: pointer; }
+dialog button.primary { background: var(--accent); border-color: var(--accent); color: #fff; }
+#loginError { color: var(--new); min-height: 1em; }
 .empty { text-align: center; color: var(--muted); padding: 40px 0; }
 .tabs { display: flex; gap: 4px; margin-top: 10px; overflow-x: auto; }
 .tab { flex: 0 0 auto; border: 0; border-bottom: 3px solid transparent; background: none; color: var(--muted);
@@ -93,8 +110,9 @@ details li.ng { color: var(--new); }
     <nav class="tabs" id="tabs">
       <button class="tab" data-tab="tech">技術の進歩</button>
       <button class="tab" data-tab="all">すべての記事</button>
+      <button class="tab" data-tab="bookmarks">★ ブックマーク</button>
     </nav>
-    <div class="controls">
+    <div class="controls" id="controls">
       <input type="search" id="q" placeholder="キーワードで検索（例: Claude、画像生成）">
       <select id="lang">
         <option value="">すべての言語</option>
@@ -112,6 +130,16 @@ details li.ng { color: var(--new); }
 <main class="wrap"><p class="intro" id="intro"></p><div id="list"></div></main>
 <div class="wrap"><details id="status"></details></div>
 
+<dialog id="login"><form id="loginForm">
+  <h3>ログイン</h3>
+  <p>ブックマークは、講義管理アプリと同じメールアドレスとパスワードで保存します。</p>
+  <input type="email" id="loginEmail" placeholder="メールアドレス" autocomplete="username" required>
+  <input type="password" id="loginPassword" placeholder="パスワード" autocomplete="current-password" required>
+  <p id="loginError"></p>
+  <div class="row"><button type="button" id="loginCancel">キャンセル</button><button type="submit" class="primary">ログイン</button></div>
+</form></dialog>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.js"></script>
 <script id="data" type="application/json">/*__DATA__*/null</script>
 <script>
 const DATA = JSON.parse(document.getElementById("data").textContent) || { items: [], statuses: [] };
@@ -136,6 +164,7 @@ let activeCategory = "";
 const TABS = {
   tech: "新しいAIモデル・研究成果・性能向上など、AI技術の進歩に関する記事を注目度の高い順に並べています。",
   all: "",
+  bookmarks: "☆を押した記事が並びます。英語などの記事は、毎晩0時ごろにClaudeが本文まで日本語に訳します。",
 };
 let tab = TABS[store.get("tab")] !== undefined ? store.get("tab") : "tech";
 const THEME_LIMIT = 60;      // テーマのページに載せる最大件数
@@ -215,11 +244,13 @@ function card(i, mode) {
   }
   return `<article${mode === "curated" ? ' class="curated"' : ""}>${body}
     <div class="tags">${isNew ? '<span class="badge">NEW</span>' : ""}
-      <span>${time}</span><span>${esc(i.publisher ? `${i.publisher}（${i.source}）` : i.source)}</span><span>${esc(i.category)}</span>${ja ? '<span class="ja">Claude訳</span>' : ""}${translate}</div>
+      <span>${time}</span><span>${esc(i.publisher ? `${i.publisher}（${i.source}）` : i.source)}</span><span>${esc(i.category)}</span>${ja ? '<span class="ja">Claude訳</span>' : ""}${translate}${star(i.id)}</div>
   </article>`;
 }
 
 function render() {
+  if (tab === "bookmarks") return renderBookmarks();
+  $("controls").hidden = false;
   const days = Number($("range").value);
   const opts = {
     words: $("q").value.trim().toLowerCase().split(/\s+/).filter(Boolean),
@@ -266,6 +297,106 @@ function render() {
   document.querySelectorAll(".tab").forEach((b) => b.classList.toggle("on", b.dataset.tab === tab));
 }
 
+// ---- ブックマーク ----
+// 公開ページなので、使えるのは公開してよいキー（anon）だけ。読み書きは Supabase の行レベルの権限で持ち主に限っている
+const SUPABASE_URL = "https://jmsxajybjtvgxummvpps.supabase.co";
+const SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imptc3hhanlianR2Z3h1bW12cHBzIiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTI0NTEwNTgsImV4cCI6MjEwODAyNzA1OH0.f1aqlFCmyexSzpA-XgltJZk_iACprpTZWjN6TugO3Dk";
+const sb = window.supabase ? window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY, { auth: { storageKey: "info-auth" } }) : null;
+let signedIn = false;
+let bookmarks = new Map();  // 記事の id → info_bookmarks の行
+let pendingBookmark = null;  // ログインの後に登録する記事の id
+
+function star(id) {
+  const on = bookmarks.has(id);
+  return `<button class="star${on ? " on" : ""}" data-bm="${esc(id)}" title="${on ? "ブックマークを外す" : "ブックマークする"}">${on ? "★" : "☆"}</button>`;
+}
+
+async function loadBookmarks() {
+  if (!sb) return;
+  const { data: { session } } = await sb.auth.getSession();
+  signedIn = !!session;
+  if (!signedIn) { bookmarks = new Map(); return render(); }
+  const { data, error } = await sb.from("info_bookmarks").select("*").order("created_at", { ascending: false });
+  if (!error) bookmarks = new Map(data.map((r) => [r.item_id, r]));
+  render();
+}
+
+async function toggleBookmark(id) {
+  if (!sb) return alert("ブックマーク機能を読み込めませんでした。通信状態を確かめて、ページを更新してください。");
+  if (!signedIn) { pendingBookmark = id; $("loginError").textContent = ""; return $("login").showModal(); }
+  if (bookmarks.has(id)) {
+    const { error } = await sb.from("info_bookmarks").delete().eq("item_id", id);
+    if (error) return alert(`ブックマークを外せませんでした：${error.message}`);
+    bookmarks.delete(id);
+  } else {
+    const i = DATA.items.find((x) => x.id === id) || (DATA.curated && DATA.curated.tech || []).find((x) => x.id === id);
+    if (!i) return;
+    const row = { item_id: id, title: i.title, link: i.link, source: i.publisher || i.source, lang: i.lang, title_ja: i.title_ja || null };
+    const { data, error } = await sb.from("info_bookmarks").insert(row).select().single();
+    if (error) return alert(`ブックマークできませんでした：${error.message}`);
+    bookmarks.set(id, data);
+  }
+  render();
+}
+
+function renderBookmarks() {
+  $("controls").hidden = true;
+  $("chips").hidden = true;
+  $("intro").textContent = TABS.bookmarks;
+  $("intro").hidden = false;
+  document.querySelectorAll(".tab").forEach((b) => b.classList.toggle("on", b.dataset.tab === tab));
+  if (!sb) {
+    $("list").innerHTML = '<p class="notice">ブックマーク機能を読み込めませんでした。通信状態を確かめて、ページを更新してください。</p>';
+    return;
+  }
+  if (!signedIn) {
+    $("list").innerHTML = '<p class="notice">ブックマークを使うには、講義管理アプリと同じメールアドレスとパスワードでログインしてください。<br><button class="linkbtn" id="openLogin">ログインする</button></p>';
+    $("meta").textContent = "";
+    return;
+  }
+  const fmt = (s) => new Date(s).toLocaleString("ja-JP", { month: "numeric", day: "numeric", hour: "2-digit", minute: "2-digit" });
+  const rows = [...bookmarks.values()];
+  $("meta").textContent = `${rows.length}件のブックマーク ・ 翻訳済み ${rows.filter((r) => r.translated_at).length}件`;
+  if (!rows.length) {
+    $("list").innerHTML = '<p class="empty">まだブックマークはありません。記事の右下の☆を押すと追加できます。</p><p class="wait"><button class="linkbtn" id="logout">ログアウト</button></p>';
+    return;
+  }
+  $("list").innerHTML = rows.map((r) => {
+    const heading = r.title_ja || r.title;
+    let body;
+    if (r.translated_at && r.translation) {
+      body = `<details open><summary>日本語訳（Claude訳・${fmt(r.translated_at)}）</summary><div class="translation">${esc(r.translation)}</div></details>`;
+    } else if (r.translated_at) {
+      body = `<p class="wait">${esc(r.translation_note || "本文を訳せませんでした。")}</p>`;
+    } else {
+      body = `<p class="wait">翻訳待ち：毎晩0時ごろに、Claudeが本文を日本語に訳します。</p>`;
+    }
+    return `<article><a class="title" href="${esc(r.link)}" target="_blank" rel="noopener">${esc(heading)}</a>
+      ${heading !== r.title ? `<div class="original">${esc(r.title)}</div>` : ""}
+      ${r.translated_at && r.translation && r.translation_note ? `<p class="wait">${esc(r.translation_note)}</p>` : ""}
+      ${body}
+      <div class="tags"><span>${fmt(r.created_at)} に追加</span><span>${esc(r.source || "")}</span>${star(r.item_id)}</div></article>`;
+  }).join("") + '<p class="wait"><button class="linkbtn" id="logout">ログアウト</button></p>';
+}
+
+$("list").addEventListener("click", (e) => {
+  const b = e.target.closest("[data-bm]");
+  if (b) return toggleBookmark(b.dataset.bm);
+  if (e.target.id === "openLogin") { pendingBookmark = null; $("loginError").textContent = ""; $("login").showModal(); }
+  if (e.target.id === "logout" && sb) sb.auth.signOut().then(loadBookmarks);
+});
+$("loginCancel").addEventListener("click", () => $("login").close());
+$("loginForm").addEventListener("submit", async (e) => {
+  e.preventDefault();
+  $("loginError").textContent = "ログインしています…";
+  const { error } = await sb.auth.signInWithPassword({ email: $("loginEmail").value.trim(), password: $("loginPassword").value });
+  if (error) { $("loginError").textContent = "メールアドレスかパスワードが違います。"; return; }
+  $("login").close();
+  await loadBookmarks();
+  if (pendingBookmark && !bookmarks.has(pendingBookmark)) toggleBookmark(pendingBookmark);
+  pendingBookmark = null;
+});
+
 function renderStatus() {
   const s = DATA.statuses || [];
   const ng = s.filter((x) => !x.ok).length;
@@ -290,7 +421,7 @@ $("tabs").addEventListener("click", (e) => {
 });
 ["q", "lang", "range"].forEach((id) => $(id).addEventListener("input", render));
 
-renderChips(); render(); renderStatus();
+renderChips(); render(); renderStatus(); loadBookmarks();
 
 // ホーム画面のアプリは前に開いたページをそのまま見せることがあるため、
 // 開いたとき・画面に戻ったときに新しいデータがないか確かめ、あれば読み込み直す

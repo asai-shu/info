@@ -1,6 +1,6 @@
 ---
 name: translate
-description: 集めた外国語（英語・中国語・韓国語など）の記事のタイトルと要約を、自然な日本語に訳して data/translations.json に保存し、GitHub に反映する。ユーザーが「/translate」「英語の記事を訳して」と言ったときや、毎晩の定期実行で使う。
+description: 集めた外国語（英語・中国語・韓国語など）の記事のタイトルと要約を、自然な日本語に訳して data/translations.json に保存し、GitHub に反映する。あわせて、持ち主がブックマークした記事の本文を日本語に訳して Supabase に保存する。ユーザーが「/translate」「英語の記事を訳して」と言ったときや、毎晩の定期実行で使う。
 ---
 
 # 外国語の記事の翻訳
@@ -49,8 +49,30 @@ description: 集めた外国語（英語・中国語・韓国語など）の記�
    ```
 7. 訳した件数と、まだ訳していない件数を1行で報告する
 
+## ブックマークした記事の本文の翻訳（先に行う）
+
+記事一覧の☆でブックマークされた記事は、本文まで日本語に訳す。保存先は Supabase（プロジェクト university-companion、project_id: jmsxajybjtvgxummvpps）の表 `info_bookmarks`。読み書きは Supabase コネクタの execute_sql で行う。ほかの表には触れない。削除や表の作り替えはしない（UPDATE だけ）。
+
+1. まだ訳していないブックマークを、古い順に最大10件読む
+   ```sql
+   select id, item_id, title, link, source, lang, title_ja from info_bookmarks where translated_at is null order by created_at limit 10;
+   ```
+2. 1件ずつ、記事の本文を読む（WebFetch。使えなければ web-fetch エージェントに「本文をそのまま抜き出して」と頼む）
+3. 本文を日本語に訳す
+   - 見出し・段落の区切りを保ち、段落の間は空行にする。広告・関連記事・コメント欄などは除く
+   - 長い記事（目安：日本語で6,000字を超える）は、要点を落とさずに縮めた抄訳にしてよい。その場合は translation_note に「長い記事のため抄訳です」と書く
+   - 原文にないことを足さない。専門用語は短く言い換えるか、かっこで補う
+   - `title_ja` が空なら、タイトルも訳す
+4. 保存する（文字列はドル記号の引用 `$t$…$t$` で囲むと、引用符のエスケープがいらない）
+   ```sql
+   update info_bookmarks set title_ja = coalesce(title_ja, $t$…$t$), translation = $t$…$t$, translation_note = null, translated_at = now() where id = '…';
+   ```
+   - 日本語の記事：translation は null のまま、translation_note に「日本語の記事のため、翻訳はしていません」と書いて translated_at = now()
+   - 本文が読めなかった（会員限定・取得できない・動画だけなど）：translation は null、translation_note に理由（例「会員限定の記事で、本文を読めませんでした」）を書いて translated_at = now()
+5. 訳した件数を最後の報告に含める（「ブックマーク○件」）
+
 ## 守ること
 
-- `data/translations.json` 以外のファイルは変更しない
+- リポジトリでは `data/translations.json` 以外のファイルは変更しない（ブックマークの訳は Supabase に保存し、公開ページには載せない）
 - AI の API や外部の翻訳サービスは使わない（訳すのはあなた自身）
-- 記事の本文を取りに行かない（タイトルと要約だけを訳す）
+- 本文を取りに行くのは、ブックマークされた記事だけ（それ以外はタイトルと要約だけを訳す）
