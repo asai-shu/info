@@ -79,7 +79,7 @@ dialog input { display: block; width: 100%; margin-bottom: 8px; padding: 8px 10p
 dialog .row { display: flex; gap: 8px; justify-content: flex-end; margin-top: 6px; }
 dialog button { border: 1px solid var(--line); background: var(--card); color: var(--text); border-radius: 8px; padding: 6px 14px; font: inherit; cursor: pointer; }
 dialog button.primary { background: var(--accent); border-color: var(--accent); color: #fff; }
-#loginError { color: var(--new); min-height: 1em; }
+#loginError, #resetError { color: var(--new); min-height: 1em; }
 .empty { text-align: center; color: var(--muted); padding: 40px 0; }
 .tabs { display: flex; gap: 4px; margin-top: 10px; overflow-x: auto; }
 .tab { flex: 0 0 auto; border: 0; border-bottom: 3px solid transparent; background: none; color: var(--muted);
@@ -137,6 +137,14 @@ details li.ng { color: var(--new); }
   <input type="password" id="loginPassword" placeholder="パスワード" autocomplete="current-password" required>
   <p id="loginError"></p>
   <div class="row"><button type="button" id="loginCancel">キャンセル</button><button type="submit" class="primary">ログイン</button></div>
+  <p style="margin-top:12px"><button type="button" class="linkbtn" id="forgot">パスワードを忘れた・分からない</button></p>
+</form></dialog>
+<dialog id="reset"><form id="resetForm">
+  <h3>新しいパスワードを決める</h3>
+  <p>講義管理アプリでも、このパスワードでログインするようになります。</p>
+  <input type="password" id="newPassword" placeholder="新しいパスワード（8文字以上）" autocomplete="new-password" minlength="8" required>
+  <p id="resetError"></p>
+  <div class="row"><button type="submit" class="primary">保存する</button></div>
 </form></dialog>
 
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.js"></script>
@@ -386,6 +394,27 @@ $("list").addEventListener("click", (e) => {
   if (e.target.id === "logout" && sb) sb.auth.signOut().then(loadBookmarks);
 });
 $("loginCancel").addEventListener("click", () => $("login").close());
+// パスワードを忘れたとき：メールで届くリンクからこのページに戻り、新しいパスワードを決める
+$("forgot").addEventListener("click", async () => {
+  const email = $("loginEmail").value.trim();
+  if (!email) { $("loginError").textContent = "先にメールアドレスを入れてください。"; return; }
+  $("loginError").textContent = "送っています…";
+  const { error } = await sb.auth.resetPasswordForEmail(email, { redirectTo: location.origin + location.pathname });
+  $("loginError").textContent = error ? `送れませんでした：${error.message}` : "メールを送りました。メールのリンクを開くと、新しいパスワードを決める画面が出ます。";
+});
+if (sb) sb.auth.onAuthStateChange((event) => {
+  if (event === "PASSWORD_RECOVERY") { $("resetError").textContent = ""; $("reset").showModal(); }
+});
+$("resetForm").addEventListener("submit", async (e) => {
+  e.preventDefault();
+  $("resetError").textContent = "保存しています…";
+  const { error } = await sb.auth.updateUser({ password: $("newPassword").value });
+  if (error) { $("resetError").textContent = `保存できませんでした：${error.message}`; return; }
+  $("reset").close();
+  history.replaceState(null, "", location.pathname);
+  alert("新しいパスワードを保存しました。ログインしたままになっています。");
+  loadBookmarks();
+});
 $("loginForm").addEventListener("submit", async (e) => {
   e.preventDefault();
   $("loginError").textContent = "ログインしています…";
