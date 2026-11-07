@@ -57,7 +57,15 @@ description: 集めた外国語（英語・中国語・韓国語など）の記�
    ```sql
    select id, item_id, title, link, source, lang, title_ja from info_bookmarks where translated_at is null order by created_at limit 10;
    ```
-2. 1件ずつ、記事の本文を読む（WebFetch。使えなければ web-fetch エージェントに「本文をそのまま抜き出して」と頼む）
+2. 1件ずつ、記事の本文を読む。WebFetch や web-fetch エージェントは多くのサイトに接続できないので、**curl で取ってきて、本文だけを取り出す**
+   ```sh
+   P=（スクラッチパッドの中の、新しい空のフォルダー）
+   curl -sSL -m 30 -o "$P/page.html" -w '%{http_code}\n' '記事のURL'
+   python3 -I collector/article_text.py "$P/page.html" 20000
+   ```
+   - リンクが `news.google.com` のとき：そのままでは元の記事に飛べないので、記事のタイトルで WebSearch して元のサイトの URL を見つけ、その URL を curl で取る。見つからなければ「元の記事のページを見つけられず…」
+   - Reddit（reddit.com）は自動での読み取りを断っているので、取りに行かない。タイトルだけ訳し、translation_note に「Reddit は自動での読み取りを断っているため、本文を読めませんでした」
+   - ブラウザのふりをする（User-Agent を偽る）など、サイトの読み取り制限をすり抜けることはしない
 3. 本文を日本語に訳す
    - 見出し・段落の区切りを保ち、段落の間は空行にする。広告・関連記事・コメント欄などは除く
    - 長い記事（目安：日本語で6,000字を超える）は、要点を落とさずに縮めた抄訳にしてよい。その場合は translation_note に「長い記事のため抄訳です」と書く
