@@ -133,6 +133,7 @@ details li.ng { color: var(--new); }
 <dialog id="login"><form id="loginForm">
   <h3>ログイン</h3>
   <p>ブックマークは、講義管理アプリと同じメールアドレスとパスワードで保存します。</p>
+  <p>一度ログインすると、この端末では次から自動でログインします。</p>
   <input type="email" id="loginEmail" placeholder="メールアドレス" autocomplete="username" required>
   <input type="password" id="loginPassword" placeholder="パスワード" autocomplete="current-password" required>
   <p id="loginError"></p>
@@ -314,6 +315,16 @@ let signedIn = false;
 let bookmarks = new Map();  // 記事の id → info_bookmarks の行
 let pendingBookmark = null;  // ログインの後に登録する記事の id
 
+// 端末の鍵：一度ログインした端末を覚えておく。ほかのアプリでログアウトしても、この端末ではログインしたままになる
+const DEVICE_KEY = "info-device-key";
+function deviceToken() { try { return localStorage.getItem(DEVICE_KEY); } catch (e) { return null; } }
+function setDeviceToken(t) { try { t ? localStorage.setItem(DEVICE_KEY, t) : localStorage.removeItem(DEVICE_KEY); } catch (e) {} }
+async function rememberDevice() {
+  if (deviceToken()) return;
+  const { data, error } = await sb.rpc("info_register_device", { p_label: navigator.userAgent.slice(0, 120) });
+  if (!error && data) setDeviceToken(data);
+}
+
 function star(id) {
   const on = bookmarks.has(id);
   return `<button class="star${on ? " on" : ""}" data-bm="${esc(id)}" title="${on ? "ブックマークを外す" : "ブックマークする"}">${on ? "★" : "☆"}</button>`;
@@ -321,9 +332,16 @@ function star(id) {
 
 async function loadBookmarks() {
   if (!sb) return;
+  const tok = deviceToken();
+  if (tok) {
+    const { data, error } = await sb.rpc("info_device_bookmarks", { p_token: tok });
+    if (!error) { signedIn = true; bookmarks = new Map(data.map((r) => [r.item_id, r])); return render(); }
+    if (/invalid device/.test(error.message)) setDeviceToken(null);
+  }
   const { data: { session } } = await sb.auth.getSession();
   signedIn = !!session;
   if (!signedIn) { bookmarks = new Map(); return render(); }
+  await rememberDevice();
   const { data, error } = await sb.from("info_bookmarks").select("*").order("created_at", { ascending: false });
   if (!error) bookmarks = new Map(data.map((r) => [r.item_id, r]));
   render();
@@ -332,15 +350,20 @@ async function loadBookmarks() {
 async function toggleBookmark(id) {
   if (!sb) return alert("ブックマーク機能を読み込めませんでした。通信状態を確かめて、ページを更新してください。");
   if (!signedIn) { pendingBookmark = id; $("loginError").textContent = ""; return $("login").showModal(); }
+  const tok = deviceToken();
   if (bookmarks.has(id)) {
-    const { error } = await sb.from("info_bookmarks").delete().eq("item_id", id);
+    const { error } = tok
+      ? await sb.rpc("info_device_remove", { p_token: tok, p_item_id: id })
+      : await sb.from("info_bookmarks").delete().eq("item_id", id);
     if (error) return alert(`ブックマークを外せませんでした：${error.message}`);
     bookmarks.delete(id);
   } else {
     const i = DATA.items.find((x) => x.id === id) || (DATA.curated && DATA.curated.tech || []).find((x) => x.id === id);
     if (!i) return;
     const row = { item_id: id, title: i.title, link: i.link, source: i.publisher || i.source, lang: i.lang, title_ja: i.title_ja || null };
-    const { data, error } = await sb.from("info_bookmarks").insert(row).select().single();
+    const { data, error } = tok
+      ? await sb.rpc("info_device_add", { p_token: tok, p_item_id: row.item_id, p_title: row.title, p_link: row.link, p_source: row.source, p_lang: row.lang, p_title_ja: row.title_ja })
+      : await sb.from("info_bookmarks").insert(row).select().single();
     if (error) return alert(`ブックマークできませんでした：${error.message}`);
     bookmarks.set(id, data);
   }
@@ -391,8 +414,16 @@ $("list").addEventListener("click", (e) => {
   const b = e.target.closest("[data-bm]");
   if (b) return toggleBookmark(b.dataset.bm);
   if (e.target.id === "openLogin") { pendingBookmark = null; $("loginError").textContent = ""; $("login").showModal(); }
-  if (e.target.id === "logout" && sb) sb.auth.signOut().then(loadBookmarks);
+  if (e.target.id === "logout" && sb) logout();
 });
+// ログアウト：この端末の鍵を消し、このページのログインだけを終える（ほかのアプリはログアウトしない）
+async function logout() {
+  const tok = deviceToken();
+  if (tok) await sb.rpc("info_device_forget", { p_token: tok });
+  setDeviceToken(null);
+  await sb.auth.signOut({ scope: "local" });
+  loadBookmarks();
+}
 $("loginCancel").addEventListener("click", () => $("login").close());
 // パスワードを忘れたとき：メールで届くリンクからこのページに戻り、新しいパスワードを決める
 $("forgot").addEventListener("click", async () => {
@@ -421,6 +452,7 @@ $("loginForm").addEventListener("submit", async (e) => {
   const { error } = await sb.auth.signInWithPassword({ email: $("loginEmail").value.trim(), password: $("loginPassword").value });
   if (error) { $("loginError").textContent = "メールアドレスかパスワードが違います。"; return; }
   $("login").close();
+  await rememberDevice();
   await loadBookmarks();
   if (pendingBookmark && !bookmarks.has(pendingBookmark)) toggleBookmark(pendingBookmark);
   pendingBookmark = null;
