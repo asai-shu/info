@@ -1,0 +1,55 @@
+{
+ "since": "2026-11-05",
+ "drive": {
+  "root": "1eQjWNAYg44oCUjiOZIrMHq1zTc8SZ-MF",
+  "practical-ai": "1f4nfKgIK0P63wf6nFQCPr0qQalVUb09X",
+  "latent-space": "1bYlBwVL-j9tN_H2VGsi3QrBC5crOegcf"
+ },
+ "episodes": {
+  "0d648e5f4636": {
+   "show": "practical-ai",
+   "show_name": "Practical AI",
+   "title": "Abundant Intelligence at the Midwest AI Summit Part 2",
+   "published": "2026-11-05T10:00Z",
+   "minutes": 48,
+   "link": "https://share.transistor.fm/s/1b301bdc",
+   "transcript_url": "https://share.transistor.fm/s/1b301bdc/transcription.vtt",
+   "status": "active",
+   "parts_total": 3,
+   "parts_done": 1,
+   "spotify_url": "https://open.spotify.com/episode/26emWeQ2txPX0J5Ch8MF00",
+   "drive_folder_id": "11BQlkhJIWnUiIAJZ61uDoVECM3g3RKrM",
+   "note": ""
+  },
+  "cfa6740a61b1": {
+   "show": "latent-space",
+   "show_name": "Latent Space",
+   "title": "Controlling Biology - Fabian Theis, Helmholtz Munich",
+   "published": "2026-11-06T14:48Z",
+   "minutes": 51,
+   "link": "https://lspace.beehiiv.com/podcast/s/latent_space_the_ai_engineer_podcast/controlling_biology_-_fabian_theis_helmholtz_munich_1",
+   "transcript_url": "https://rss.beehiiv.com/podcasts/transcriptions/01a1b156-6294-7f46-839f-a95ec4291ae4.vtt",
+   "status": "new",
+   "parts_total": 4,
+   "parts_done": 0,
+   "spotify_url": "https://open.spotify.com/episode/02ZY2JXYxU4W1MBK4safqc",
+   "drive_folder_id": "",
+   "note": ""
+  },
+  "7fd8886383a6": {
+   "show": "latent-space",
+   "show_name": "Latent Space",
+   "title": "Deep Dive: Anthropic S-1 Myths and Mythos — Jamin Ball, Altimeter",
+   "published": "2026-11-07T02:49Z",
+   "minutes": 102,
+   "link": "https://www.youtube.com/watch?v=P735f1xlpL0",
+   "transcript_url": "",
+   "status": "new",
+   "parts_total": null,
+   "parts_done": 0,
+   "spotify_url": "",
+   "drive_folder_id": "",
+   "note": ""
+  }
+ }
+}
