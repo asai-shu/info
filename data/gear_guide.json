@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-08",
+  "updated": "2026-11-12",
   "note": "価格は2026年10月下旬に確認した目安です（メーカー直販・量販店・価格.comの最安値などが混在します）。セール・値上げ・在庫で大きく変わるので、買う前に公式サイトや価格比較サイトで必ず確認してください。",
   "tiers": {
     "flagship": {
@@ -1085,6 +1085,22 @@
     {
       "tier": "student",
       "category": "面白ITグッズ",
+      "name": "Google Pixel Tag",
+      "price": "5,010円（4個セットは1万6,940円）",
+      "why": "Google 初の紛失防止タグです。10億台以上の Android でできた「Find Hub」のネットワークと UWB の技術で、なくした物の場所を正確に探せます。置き忘れも知らせてくれます。",
+      "for": "鍵や財布をよくなくす人（Androidユーザー）",
+      "caution": "日本では11月発売です。iPhone の人は AirTag を選んでください。",
+      "sources": [
+        {
+          "title": "「Google Pixel Tag」登場（ITmedia Mobile）",
+          "url": "https://www.itmedia.co.jp/mobile/articles/2611/11/news068.html"
+        }
+      ],
+      "section": "gadget"
+    },
+    {
+      "tier": "student",
+      "category": "面白ITグッズ",
       "name": "エレコム 自立するガジェットポーチ",
       "price": "1,680円",
       "why": "マウス・ケーブル・小型充電器・イヤホンなどをまとめて入れられ、立てて置けるので出し入れしやすいポーチです。",
@@ -1897,5 +1913,5 @@
       }
     }
   },
-  "checked": {"at": "2026-11-11T00:23:04+09:00", "result": "変更なし"}
+  "checked": {"at": "2026-11-12T10:24:31+09:00", "result": "更新あり"}
 }
