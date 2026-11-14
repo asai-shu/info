@@ -415,7 +415,11 @@ def main() -> int:
     for i in kept:
         i["category"] = feeds_by_name[i["source"]]["category"]
     kept.sort(key=lambda i: (i["date"], i["id"]), reverse=True)
-    kept = kept[: settings.get("max_items", 3000)]
+    # 公式発表は件数が少なく更新もまばらなので、件数の上限で押し出さずに keep_days のあいだ残す
+    official = [i for i in kept if i["category"] == "公式発表"]
+    others = [i for i in kept if i["category"] != "公式発表"]
+    kept = official + others[: max(0, settings.get("max_items", 3000) - len(official))]
+    kept.sort(key=lambda i: (i["date"], i["id"]), reverse=True)
 
     DATA_PATH.parent.mkdir(parents=True, exist_ok=True)
     DATA_PATH.write_text(dump_data(now, statuses, kept), encoding="utf-8")
