@@ -117,6 +117,45 @@ exclude = ["小説", "フィクション", "ショートショート", "短編",
 # ================= AI企業・研究機関の公式発表 =================
 
 [[feeds]]
+name = "Anthropic（ニュース）"
+url = "https://www.anthropic.com/news"
+format = "anthropic"
+category = "公式発表"
+lang = "en"
+limit = 30
+
+[[feeds]]
+name = "Anthropic（研究）"
+url = "https://www.anthropic.com/research"
+format = "anthropic"
+category = "公式発表"
+lang = "en"
+limit = 30
+
+[[feeds]]
+name = "Anthropic（エンジニアリング）"
+url = "https://www.anthropic.com/engineering"
+format = "anthropic"
+category = "公式発表"
+lang = "en"
+limit = 20
+
+[[feeds]]
+name = "Claude ブログ"
+url = "https://claude.com/blog"
+format = "claude_blog"
+category = "公式発表"
+lang = "en"
+limit = 30
+
+[[feeds]]
+name = "Claude Code リリース"
+url = "https://github.com/anthropics/claude-code/releases.atom"
+category = "公式発表"
+lang = "en"
+limit = 10
+
+[[feeds]]
 name = "OpenAI"
 url = "https://openai.com/news/rss.xml"
 category = "公式発表"
