@@ -415,7 +415,7 @@ def main() -> int:
     for i in kept:
         i["category"] = feeds_by_name[i["source"]]["category"]
     kept.sort(key=lambda i: (i["date"], i["id"]), reverse=True)
-    # 公式発表は件数が少なく更新もまばらなので、件数の上限で押し出さずに keep_days のあいだ残す
+    # 公式発表は件数が少なく更新もまばらなので、件数の上限で押し出さずに keep_days（3日）のあいだ残す
     official = [i for i in kept if i["category"] == "公式発表"]
     others = [i for i in kept if i["category"] != "公式発表"]
     kept = official + others[: max(0, settings.get("max_items", 3000) - len(official))]

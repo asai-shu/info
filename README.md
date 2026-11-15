@@ -96,7 +96,7 @@ AIに関する最新情報を、日本と海外の約70か所から自動で集�
 
 - `collector/collect.py`：収集プログラム（Python 3.11 以上、標準ライブラリのみ）。`python3 collector/collect.py` で `docs/index.html` が生成されます
 - `collector/template.html`：ページのデザイン
-- `data/items.json`：集めた記事（直近14日分）。自動実行のたびに更新されてコミットされます
+- `data/items.json`：集めた記事（直近3日分）。自動実行のたびに更新されてコミットされます
 - `data/gear_guide.json`：機材・ソフトガイドのページのデータ。Claude Code（`/gear-guide`）が Web 検索で価格を確認して更新し、`collector/gear_template.html` から区分ごとに `docs/gear-pc.html` などが作られます
 - `data/demand.json`：需要リサーチページのデータ。Claude Code（`/demand`）が Web 検索と分類「需要の種」の記事をもとに更新し、`collector/demand_template.html` から `docs/demand.html` が作られます。書式チェックは `python3 collector/curation.py check-demand`
 - `data/curated.json`：Claude Code（`/curate`）が選んだ注目記事と日本語要約。`collector/curation.py` で候補の一覧化（1つの取得元から最大8件）と書式チェックを行います
