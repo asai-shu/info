@@ -14,13 +14,14 @@ AIに関する最新情報を、日本と海外の約70か所から自動で集�
 | 論文 | arXiv（AI・言語モデル・画像・機械学習・ロボット）、Hugging Face Daily Papers |
 | 専門家 | Simon Willison、Ethan Mollick、Latent Space、Import AI、Interconnects、Ahead of AI など |
 | 技術記事 | Zenn、Qiita、note |
+| 収益化（需要リサーチ用） | Zenn・Qiita（個人開発）、Show HN、Reddit r/SideProject、AI副業のニュース |
 | ニュース | Publickey、MIT Technology Review（まとめサイトは使っていません） |
 | 話題 | Hacker News、Lobsters |
 | ツール | Product Hunt、GitHub で人気のプロジェクト |
-| 新製品 | The Verge、Engadget、9to5Google、9to5Mac、Chrome・Firefoxの公式ブログ、ITmedia Mobile・PC USER（件数は少なめ） |
+| 新製品（機材・ソフトガイド用） | The Verge、Engadget、9to5Google、9to5Mac、Chrome・Firefoxの公式ブログ、ITmedia Mobile・PC USER、ギズモード、家電Watch、AV Watch、GetNavi web、ROOMIE、Yanko Design、Googleニュース（ガジェット・AIブラウザ・クラファン） |
 | コネクタ・プラグイン | Claude・ChatGPT・Gemini のコネクタ（外部サービスとの連携）やプラグインのニュース |
 | MCP | MCP（AIと外部ツールをつなぐ仕組み）の仕様のリリース、公式ブログ、Zenn・Qiita、ニュース |
-| 需要の種 | Reddit（需要を探す用途だけに使用。r/SomebodyMakeThis・r/smallbusiness・r/Entrepreneur・r/SaaS）、Ask HN、Googleニュース（中小企業の困りごと）、note（個人開発） |
+| 需要の種 | Reddit（需要を探す用途だけに使用。r/SomebodyMakeThis・r/smallbusiness・r/Entrepreneur・r/SaaS）、Ask HN、Googleニュース（中小企業の困りごと・人手不足・個人開発の売上）、note（個人開発） |
 
 ## ページの見方
 
