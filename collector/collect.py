@@ -162,6 +162,62 @@ def parse_feed(xml_bytes: bytes) -> list[dict]:
     return results
 
 
+def parse_anthropic(page: bytes, base: str = "https://www.anthropic.com") -> list[dict]:
+    """anthropic.com の一覧ページ（news・research・engineering）に埋め込まれたデータから記事を取り出す（RSS が無いため）。"""
+    text = page.decode("utf-8", errors="replace").replace('\\"', '"')
+    results, seen = [], set()
+    for m in re.finditer(r'"slug":\{"current":"([a-z0-9-]+)"\}', text):
+        window = text[max(0, m.start() - 1500): m.end() + 1500]
+        near = lambda key: min(
+            (x for x in re.finditer(rf'"{key}":"((?:[^"\\\\]|\\\\.)*)"', window)),
+            key=lambda x: abs(x.start() - (m.start() - max(0, m.start() - 1500))), default=None)
+        kind, day, title = near("articleType"), near("publishedOn"), near("title")
+        if not (kind and day and title) or kind.group(1) not in ("news", "research", "engineering"):
+            continue
+        link = f"{base}/{kind.group(1)}/{m.group(1)}"
+        if link in seen:
+            continue
+        seen.add(link)
+        summary = near("summary")
+        results.append({
+            "title": clean_text(title.group(1)),
+            "link": link,
+            "summary": clean_text(summary.group(1)) if summary else "",
+            "date": parse_date(day.group(1) + "T00:00:00+00:00"),
+            "publisher": "",
+        })
+    return sorted(results, key=lambda r: r["date"], reverse=True)
+
+
+def parse_claude_blog(page: bytes, base: str = "https://claude.com") -> list[dict]:
+    """claude.com/blog の記事カード（日付・題名・抜粋）から記事を取り出す（RSS が無いため）。"""
+    text = page.decode("utf-8", errors="replace")
+    results, seen = [], set()
+    for m in re.finditer(r'<a href="(/[^"]+)" class="ResourceCard[^"]*__card[^"]*"', text):
+        block = text[m.end(): m.end() + 6000]
+        end = block.find("</a>")
+        block = block[: end if end > 0 else len(block)]
+        day = re.search(r'__meta">([A-Z][a-z]{2} \d{1,2}, \d{4})<', block)
+        title = re.search(r"<h3[^>]*>(.*?)</h3>", block, re.S)
+        excerpt = re.search(r'__excerpt[^"]*">(.*?)</p>', block, re.S)
+        link = base + m.group(1)
+        if not (day and title) or link in seen:
+            continue
+        seen.add(link)
+        date = datetime.strptime(day.group(1), "%b %d, %Y").replace(tzinfo=timezone.utc)
+        results.append({
+            "title": clean_text(title.group(1)),
+            "link": link,
+            "summary": clean_text(excerpt.group(1)) if excerpt else "",
+            "date": date,
+            "publisher": "",
+        })
+    return sorted(results, key=lambda r: r["date"], reverse=True)
+
+
+PAGE_PARSERS = {"anthropic": parse_anthropic, "claude_blog": parse_claude_blog}
+
+
 def is_ai_related(item: dict) -> bool:
     text = f"{item['title']} {item['summary']}"
     return bool(KEYWORD_RE.search(text) or AI_WORD_RE.search(text))
@@ -211,7 +267,8 @@ def passes_filter(item: dict, feed: dict) -> bool:
 def collect_feed(feed: dict, now: datetime) -> tuple[list[dict], str | None]:
     url = urllib.parse.quote(feed["url"], safe=":/?&=%+")
     try:
-        entries = parse_feed(fetch(url))
+        page = fetch(url)
+        entries = PAGE_PARSERS[feed["format"]](page) if feed.get("format") else parse_feed(page)
     except Exception as exc:  # 1つのフィードが失敗しても全体は止めない
         return [], f"{type(exc).__name__}: {exc}"
 
@@ -358,7 +415,11 @@ def main() -> int:
     for i in kept:
         i["category"] = feeds_by_name[i["source"]]["category"]
     kept.sort(key=lambda i: (i["date"], i["id"]), reverse=True)
-    kept = kept[: settings.get("max_items", 3000)]
+    # 公式発表は件数が少なく更新もまばらなので、件数の上限で押し出さずに keep_days（3日）のあいだ残す
+    official = [i for i in kept if i["category"] == "公式発表"]
+    others = [i for i in kept if i["category"] != "公式発表"]
+    kept = official + others[: max(0, settings.get("max_items", 3000) - len(official))]
+    kept.sort(key=lambda i: (i["date"], i["id"]), reverse=True)
 
     DATA_PATH.parent.mkdir(parents=True, exist_ok=True)
     DATA_PATH.write_text(dump_data(now, statuses, kept), encoding="utf-8")
