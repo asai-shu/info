@@ -589,8 +589,6 @@
 "a74ba30940abc8e6": {"title": "根拠の検索と活用を組み合わせ、科学文書の推論を自己改良する", "summary": ""},
 "69134364149afa75": {"title": "njuko、参加登録の作業で MCP に対応", "summary": ""},
 "8394af200376dc26": {"title": "Kolibri：色で場所を見つけ、精緻化で姿勢を決める RGB-D の位置推定", "summary": ""},
-"b198e88d7ab77bde": {"title": "Ian Buck が SC26 で NVIDIA の週を開幕、科学はエージェントの時代へ", "summary": ""},
-"7542f4bb1743be7f": {"title": "Kaseya、LLMから Autotask と Datto RMM を使える MCP サーバーを公開", "summary": ""},
 "565b48f61354413a": {"title": "Meta、AIデバイス「Muse Charm」を300ドルで販売し補助も", "summary": ""},
 "c74fd55d945b0a58": {"title": "iPhone Air 2 のダミー機、新しいデュアルカメラのデザインを披露", "summary": ""},
 "8d9b1450999e4f64": {"title": "Google、Mac アプリの Gemini で「繰り返しの作業」をこなす力を強化", "summary": ""},
@@ -943,9 +941,6 @@
 "da0d85edeed76aa4": {"title": "Productiv-icky", "summary": ""},
 "daf92c8e7ba47ebe": {"title": "dusk bot", "summary": ""},
 "a601907a983a3ddd": {"title": "大手サイトが改ざんされ、iPhone 利用者の暗号資産が盗まれる", "summary": ""},
-"17dc3d60371c482c": {"title": "XREAL Aura の第一印象レビュー：Android XR をヘッドセットの外へ、でも誰向け？", "summary": ""},
-"2f80f9ef057d990b": {"title": "Microsoft に不満がある？ Firefox が Microsoft Ignite で苦情窓口を開設", "summary": ""},
-"50b806cf0a50905b": {"title": "NexSight：エージェントによる長い動画の細かい理解のための検証できる課題", "summary": ""},
 "211fbe8009a45ecd": {"title": "ハーネスアダプターを発表：好きなモデルを使い慣れた仕組みに合わせ、性能と費用を改善", "summary": ""},
 "9d78b110823a2ec2": {"title": "拡散トランスフォーマーの強化学習による追加学習は、内部の働きの誘導と同じ", "summary": ""},
 "1d2054b70bfd5940": {"title": "体系的整理：ソフトウェアの脆弱性研究でのLLMの能力の変化を評価", "summary": ""},
@@ -996,6 +991,10 @@
 "b2536d8729bb10be": {"title": "保護された状態の時間変化", "summary": ""},
 "bb3533fe27832d3c": {"title": "カテゴリー単位の物体の6D姿勢推定のための、メッシュなしの特徴点学習", "summary": ""},
 "a4c4666ff32be784": {"title": "SegAnyFruit：端末で動く、さまざまな果物を見分けて切り出すモデルを大規模に学習", "summary": ""},
-"b9ca92b65dfd3036": {"title": "使われている脳波デコーダーはいつ適応すべきか：資源の値段を付けた段階づけ", "summary": ""}
+"b9ca92b65dfd3036": {"title": "使われている脳波デコーダーはいつ適応すべきか：資源の値段を付けた段階づけ", "summary": ""},
+"14832d8209b1a065": {"title": "google-research/paper-orchestra（論文作成を手伝う仕組み）", "summary": ""},
+"01e478ba125afa0c": {"title": "mvanhorn/last30days-skill（直近30日の情報を調べるスキル）", "summary": ""},
+"e535a2f5bfb49c1d": {"title": "superdesigndev/treg", "summary": ""},
+"ced3a05ffc9dbde3": {"title": "Moto Tag 2 が過去最安の18.99ドルに、Pixel Tag より安く", "summary": ""}
 }
 }
