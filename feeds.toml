@@ -191,7 +191,6 @@ category = "新製品"
 lang = "en"
 filter = "gear"
 theme = "gear"
-limit = 10
 
 [[feeds]]
 name = "Simon Willison"
@@ -351,7 +350,7 @@ url = "https://news.google.com/rss/search?q=(新製品+OR+発表+OR+発売)+(ス
 category = "新製品"
 lang = "ja"
 theme = "gear"
-limit = 15
+limit = 30
 
 [[feeds]]
 name = "The Verge（Tech）"
@@ -360,7 +359,6 @@ category = "新製品"
 lang = "en"
 theme = "gear"
 filter = "gear"
-limit = 10
 
 [[feeds]]
 name = "9to5Google"
@@ -369,7 +367,6 @@ category = "新製品"
 lang = "en"
 theme = "gear"
 filter = "gear"
-limit = 10
 
 [[feeds]]
 name = "9to5Mac"
@@ -378,7 +375,6 @@ category = "新製品"
 lang = "en"
 theme = "gear"
 filter = "gear"
-limit = 10
 
 [[feeds]]
 name = "Google Chrome Blog"
@@ -401,7 +397,6 @@ category = "新製品"
 lang = "ja"
 theme = "gear"
 filter = "gear"
-limit = 10
 
 [[feeds]]
 name = "ITmedia PC USER"
@@ -410,7 +405,6 @@ category = "新製品"
 lang = "ja"
 theme = "gear"
 filter = "gear"
-limit = 10
 
 [[feeds]]
 name = "Reddit r/SomebodyMakeThis"
@@ -587,3 +581,160 @@ category = "公式発表"
 lang = "en"
 limit = 15
 
+
+[[feeds]]
+name = "Googleニュース（AI副業）"
+url = "https://news.google.com/rss/search?q=AI+副業+OR+生成AI+稼ぐ+OR+ChatGPT+副業+when:7d&hl=ja&gl=JP&ceid=JP:ja"
+category = "収益化"
+lang = "ja"
+theme = "money"
+limit = 40
+
+[[feeds]]
+name = "note（AI副業）"
+url = "https://note.com/hashtag/AI副業/rss"
+category = "収益化"
+lang = "ja"
+exclude = ["小説", "フィクション", "ショートショート", "短編", "ポエム", "詩集"]
+theme = "money"
+
+[[feeds]]
+name = "Google News（AI Side Hustle）"
+url = "https://news.google.com/rss/search?q=%22AI+side+hustle%22+OR+%22make+money+with+AI%22+OR+%22AI+freelance%22+when:7d&hl=en-US&gl=US&ceid=US:en"
+category = "収益化"
+lang = "en"
+theme = "money"
+limit = 30
+
+[[feeds]]
+name = "Googleニュース（AIブラウザ・新アプリ）"
+url = "https://news.google.com/rss/search?q=AIブラウザ+OR+新ブラウザ+OR+AIアプリ+OR+AIデバイス+when:3d&hl=ja&gl=JP&ceid=JP:ja"
+category = "新製品"
+lang = "ja"
+theme = "gear"
+limit = 40
+
+[[feeds]]
+name = "Google News（AI Browser）"
+url = "https://news.google.com/rss/search?q=%22AI+browser%22+OR+%22agentic+browser%22+OR+%22browser+agent%22+when:7d&hl=en-US&gl=US&ceid=US:en"
+category = "新製品"
+lang = "en"
+filter = true
+theme = "gear"
+limit = 30
+
+[[feeds]]
+name = "Google News（AI Gadgets）"
+url = "https://news.google.com/rss/search?q=%22AI+device%22+OR+%22AI+glasses%22+OR+%22AI+PC%22+OR+%22AI+phone%22+when:3d&hl=en-US&gl=US&ceid=US:en"
+category = "新製品"
+lang = "en"
+theme = "gear"
+limit = 30
+
+[[feeds]]
+name = "ギズモード・ジャパン"
+url = "https://www.gizmodo.jp/index.xml"
+category = "新製品"
+lang = "ja"
+theme = "gear"
+filter = "gear"
+
+[[feeds]]
+name = "Google News（Gadgets）"
+url = "https://news.google.com/rss/search?q=%22new+gadget%22+OR+%22gadget+review%22+OR+%22tech+review%22+when:2d&hl=en-US&gl=US&ceid=US:en"
+category = "新製品"
+lang = "en"
+theme = "gear"
+limit = 30
+
+[[feeds]]
+name = "家電Watch"
+url = "https://kaden.watch.impress.co.jp/data/rss/1.0/kdw/feed.rdf"
+category = "新製品"
+lang = "ja"
+theme = "gear"
+filter = "gear"
+
+[[feeds]]
+name = "AV Watch"
+url = "https://av.watch.impress.co.jp/data/rss/1.0/avw/feed.rdf"
+category = "新製品"
+lang = "ja"
+theme = "gear"
+filter = "gear"
+
+# ----- 面白ITグッズ・クラウドファンディング（あると便利な変わり種ガジェット） -----
+
+[[feeds]]
+name = "Googleニュース（クラファン・面白ガジェット）"
+url = "https://news.google.com/rss/search?q=(Makuake+OR+クラファン+OR+クラウドファンディング+OR+GREEN+FUNDING)+(ガジェット+OR+USB+OR+AI+OR+スマホ+OR+PC+OR+充電)+when:7d&hl=ja&gl=JP&ceid=JP:ja"
+category = "新製品"
+lang = "ja"
+theme = "gear"
+limit = 30
+filter = "gear"
+
+[[feeds]]
+name = "Googleニュース（便利ITグッズ）"
+url = "https://news.google.com/rss/search?q=(便利グッズ+OR+便利ガジェット+OR+面白ガジェット+OR+デスク周り)+(PC+OR+スマホ+OR+USB+OR+AI)+when:7d&hl=ja&gl=JP&ceid=JP:ja"
+category = "新製品"
+lang = "ja"
+theme = "gear"
+limit = 25
+filter = "gear"
+
+[[feeds]]
+name = "Google News（Crowdfunding Gadgets）"
+url = "https://news.google.com/rss/search?q=(Kickstarter+OR+Indiegogo)+(gadget+OR+tech+OR+AI)+when:7d&hl=en-US&gl=US&ceid=US:en"
+category = "新製品"
+lang = "en"
+theme = "gear"
+limit = 25
+filter = "gear"
+
+[[feeds]]
+name = "Yanko Design"
+url = "https://www.yankodesign.com/feed/"
+category = "新製品"
+lang = "en"
+theme = "gear"
+filter = "gear"
+
+[[feeds]]
+name = "ROOMIE"
+url = "https://www.roomie.jp/feed/"
+category = "新製品"
+lang = "ja"
+theme = "gear"
+filter = "gear"
+
+[[feeds]]
+name = "GetNavi web"
+url = "https://getnavi.jp/feed/"
+category = "新製品"
+lang = "ja"
+theme = "gear"
+filter = "gear"
+
+# ================= 需要の種（困りごと・「こんなツールがほしい」の声。/demand が需要リサーチに使う） =================
+
+[[feeds]]
+name = "Googleニュース（人手不足・業務効率化）"
+url = "https://news.google.com/rss/search?q=人手不足+効率化+OR+省力化+when:7d&hl=ja&gl=JP&ceid=JP:ja"
+category = "需要の種"
+lang = "ja"
+limit = 30
+
+[[feeds]]
+name = "Googleニュース（個人開発の売上）"
+url = "https://news.google.com/rss/search?q=個人開発+売上+OR+収益+OR+月収+when:7d&hl=ja&gl=JP&ceid=JP:ja"
+category = "需要の種"
+lang = "ja"
+limit = 20
+
+[[feeds]]
+name = "Google News（Bootstrapped SaaS・Indie Hacker）"
+url = "https://news.google.com/rss/search?q=bootstrapped+SaaS+OR+%22indie+hacker%22+OR+%22micro+SaaS%22+when:30d&hl=en-US&gl=US&ceid=US:en"
+category = "需要の種"
+lang = "en"
+limit = 20
