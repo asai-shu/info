@@ -242,12 +242,12 @@ function card(i, mode) {
       <p class="digest">${esc(i.summary_ja)}</p>
       <p class="point"><b>ポイント</b>${esc(i.point)}</p>`;
   } else if (mode === "theme") {
-    const digest = ja ? i.summary_ja : i.digest;
+    const digest = (ja && i.summary_ja) || i.digest;
     body = `${title}
       ${digest ? `<p class="digest">${esc(digest)}</p>` : ""}
       <div class="reasons">${i.themes[tab].reasons.map((r) => `<span class="reason">${esc(r)}</span>`).join("")}</div>`;
   } else {
-    const summary = ja ? i.summary_ja : i.summary;
+    const summary = (ja && i.summary_ja) || i.summary;
     body = `${title}
       ${summary ? `<p>${esc(summary)}</p>` : ""}`;
   }
