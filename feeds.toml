@@ -251,30 +251,6 @@ category = "話題"
 lang = "en"
 
 [[feeds]]
-name = "Reddit r/LocalLLaMA"
-url = "https://www.reddit.com/r/LocalLLaMA/top/.rss?t=day"
-category = "話題"
-lang = "en"
-
-[[feeds]]
-name = "Reddit r/MachineLearning"
-url = "https://www.reddit.com/r/MachineLearning/top/.rss?t=day"
-category = "話題"
-lang = "en"
-
-[[feeds]]
-name = "Reddit r/OpenAI"
-url = "https://www.reddit.com/r/OpenAI/top/.rss?t=day"
-category = "話題"
-lang = "en"
-
-[[feeds]]
-name = "Reddit r/ClaudeAI"
-url = "https://www.reddit.com/r/ClaudeAI/top/.rss?t=day"
-category = "話題"
-lang = "en"
-
-[[feeds]]
 name = "Product Hunt"
 url = "https://www.producthunt.com/feed"
 category = "ツール"
@@ -545,13 +521,6 @@ theme = "tech"
 [[feeds]]
 name = "MCP Blog"
 url = "https://blog.modelcontextprotocol.io/index.xml"
-category = "MCP"
-lang = "en"
-theme = "tech"
-
-[[feeds]]
-name = "Reddit r/mcp"
-url = "https://www.reddit.com/r/mcp/top/.rss?t=day"
 category = "MCP"
 lang = "en"
 theme = "tech"
