@@ -10,21 +10,17 @@ AIに関する最新情報を、日本と海外の約70か所から自動で集�
 
 | 分類 | 主な取得元 |
 | --- | --- |
-| ニュース（日本） | Googleニュース、ITmedia AI+、GIGAZINE、Publickey、AINOW |
-| ニュース（海外） | Google News（米国・英国）、TechCrunch、The Verge、WIRED、Ars Technica、MIT Technology Review など |
-| ニュース（その他の国） | 台湾、中国、韓国、ドイツ、フランス、中南米のニュース |
-| 公式発表 | OpenAI、Google、DeepMind、Microsoft、NVIDIA、AWS、Apple、Hugging Face |
-| 専門家 | Simon Willison、Ethan Mollick、Latent Space、Import AI など |
+| 公式発表（中心） | Anthropic・Claude ブログ・Claude Code、OpenAI、Google（AI Blog・DeepMind・Research・Developers）、Microsoft、NVIDIA、AWS、Apple、Hugging Face、GitHub、Qwen、Together AI、Ai2、MIT、Berkeley AI Research |
+| 論文 | arXiv（AI・言語モデル・画像・機械学習・ロボット）、Hugging Face Daily Papers |
+| 専門家 | Simon Willison、Ethan Mollick、Latent Space、Import AI、Interconnects、Ahead of AI など |
 | 技術記事 | Zenn、Qiita、note |
-| 話題 | はてなブックマーク、Hacker News、Reddit、Lobsters |
-| ビジネス | AIスタートアップ・資金調達のニュース |
+| ニュース | Publickey、MIT Technology Review（まとめサイトは使っていません） |
+| 話題 | Hacker News、Reddit、Lobsters |
 | ツール | Product Hunt、GitHub で人気のプロジェクト |
-| 新製品 | Googleニュース（AIブラウザ・ガジェット）、The Verge、Engadget、9to5Google、9to5Mac、Chrome・Firefoxの公式ブログ、ギズモード・ジャパン、ITmedia Mobile・PC USER、家電Watch、AV Watch、GetNavi web、ROOMIE、Yanko Design |
-| 面白ITグッズ | クラウドファンディング（Makuake・Kickstarter など）や便利グッズのニュース |
+| 新製品 | The Verge、Engadget、9to5Google、9to5Mac、Chrome・Firefoxの公式ブログ、ITmedia Mobile・PC USER（件数は少なめ） |
 | コネクタ・プラグイン | Claude・ChatGPT・Gemini のコネクタ（外部サービスとの連携）やプラグインのニュース |
 | MCP | MCP（AIと外部ツールをつなぐ仕組み）の仕様のリリース、公式ブログ、Zenn・Qiita・Reddit、ニュース |
-| 論文 | arXiv、Hugging Face Daily Papers |
-| 需要の種 | Reddit（r/SomebodyMakeThis・r/smallbusiness・r/Entrepreneur・r/SaaS）、Ask HN、Googleニュース（人手不足・中小企業の困りごと・個人開発の売上）、note（個人開発） |
+| 需要の種 | Reddit（r/SomebodyMakeThis・r/smallbusiness・r/Entrepreneur・r/SaaS）、Ask HN、Googleニュース（中小企業の困りごと）、note（個人開発） |
 
 ## ページの見方
 

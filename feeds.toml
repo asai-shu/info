@@ -18,56 +18,9 @@ max_items = 5000     # 保存する最大件数
 # ================= 日本 =================
 
 [[feeds]]
-name = "Googleニュース（生成AI）"
-url = "https://news.google.com/rss/search?q=生成AI+when:2d&hl=ja&gl=JP&ceid=JP:ja"
-category = "ニュース"
-lang = "ja"
-limit = 60
-
-[[feeds]]
-name = "Googleニュース（ChatGPT・Claude・Gemini）"
-url = "https://news.google.com/rss/search?q=ChatGPT+OR+Claude+OR+Gemini+OR+LLM+when:2d&hl=ja&gl=JP&ceid=JP:ja"
-category = "ニュース"
-lang = "ja"
-limit = 60
-
-[[feeds]]
-name = "ITmedia AI+"
-url = "https://rss.itmedia.co.jp/rss/2.0/aiplus.xml"
-category = "ニュース"
-lang = "ja"
-
-[[feeds]]
-name = "GIGAZINE"
-url = "https://gigazine.net/news/rss_2.0/"
-category = "ニュース"
-lang = "ja"
-filter = "gear"
-
-[[feeds]]
 name = "Publickey"
 url = "https://www.publickey1.jp/atom.xml"
 category = "ニュース"
-lang = "ja"
-filter = true
-
-[[feeds]]
-name = "AINOW"
-url = "https://ainow.ai/feed/"
-category = "ニュース"
-lang = "ja"
-
-[[feeds]]
-name = "はてなブックマーク IT人気"
-url = "https://b.hatena.ne.jp/hotentry/it.rss"
-category = "話題"
-lang = "ja"
-filter = true
-
-[[feeds]]
-name = "はてなブックマーク IT新着"
-url = "https://b.hatena.ne.jp/entrylist/it.rss"
-category = "話題"
 lang = "ja"
 filter = true
 
@@ -226,60 +179,8 @@ lang = "en"
 # ================= 海外ニュース（英語） =================
 
 [[feeds]]
-name = "Google News（Generative AI）"
-url = "https://news.google.com/rss/search?q=%22generative+AI%22+OR+LLM+OR+%22AI+model%22+when:1d&hl=en-US&gl=US&ceid=US:en"
-category = "ニュース"
-lang = "en"
-limit = 60
-
-[[feeds]]
-name = "Google News（OpenAI・Anthropic・Google）"
-url = "https://news.google.com/rss/search?q=OpenAI+OR+Anthropic+OR+%22Google+Gemini%22+OR+%22Meta+AI%22+when:1d&hl=en-US&gl=US&ceid=US:en"
-category = "ニュース"
-lang = "en"
-limit = 60
-
-[[feeds]]
-name = "Google News（AI Startups）"
-url = "https://news.google.com/rss/search?q=%22AI+startup%22+OR+%22AI+funding%22+when:2d&hl=en-US&gl=US&ceid=US:en"
-category = "ビジネス"
-lang = "en"
-limit = 40
-
-[[feeds]]
-name = "Google News UK（AI）"
-url = "https://news.google.com/rss/search?q=%22artificial+intelligence%22+when:1d&hl=en-GB&gl=GB&ceid=GB:en"
-category = "ニュース"
-lang = "en"
-limit = 40
-
-[[feeds]]
-name = "TechCrunch AI"
-url = "https://techcrunch.com/category/artificial-intelligence/feed/"
-category = "ニュース"
-lang = "en"
-
-[[feeds]]
-name = "The Verge AI"
-url = "https://www.theverge.com/rss/ai-artificial-intelligence/index.xml"
-category = "ニュース"
-lang = "en"
-
-[[feeds]]
 name = "MIT Technology Review AI"
 url = "https://www.technologyreview.com/topic/artificial-intelligence/feed"
-category = "ニュース"
-lang = "en"
-
-[[feeds]]
-name = "Ars Technica AI"
-url = "https://arstechnica.com/ai/feed/"
-category = "ニュース"
-lang = "en"
-
-[[feeds]]
-name = "WIRED AI"
-url = "https://www.wired.com/feed/tag/ai/latest/rss"
 category = "ニュース"
 lang = "en"
 
@@ -290,26 +191,7 @@ category = "新製品"
 lang = "en"
 filter = "gear"
 theme = "gear"
-
-[[feeds]]
-name = "The Decoder"
-url = "https://the-decoder.com/feed/"
-category = "ニュース"
-lang = "en"
-
-[[feeds]]
-name = "MarkTechPost"
-url = "https://www.marktechpost.com/feed/"
-category = "ニュース"
-lang = "en"
-
-[[feeds]]
-name = "SiliconANGLE AI"
-url = "https://siliconangle.com/category/ai/feed/"
-category = "ビジネス"
-lang = "en"
-
-# ================= 海外の専門家ブログ・ニュースレター =================
+limit = 10
 
 [[feeds]]
 name = "Simon Willison"
@@ -375,12 +257,6 @@ category = "話題"
 lang = "en"
 
 [[feeds]]
-name = "Reddit r/singularity"
-url = "https://www.reddit.com/r/singularity/top/.rss?t=day"
-category = "話題"
-lang = "en"
-
-[[feeds]]
 name = "Reddit r/MachineLearning"
 url = "https://www.reddit.com/r/MachineLearning/top/.rss?t=day"
 category = "話題"
@@ -397,14 +273,6 @@ name = "Reddit r/ClaudeAI"
 url = "https://www.reddit.com/r/ClaudeAI/top/.rss?t=day"
 category = "話題"
 lang = "en"
-
-[[feeds]]
-name = "Reddit r/StableDiffusion"
-url = "https://www.reddit.com/r/StableDiffusion/top/.rss?t=day"
-category = "話題"
-lang = "en"
-
-# ================= 新しいツール・サービス =================
 
 [[feeds]]
 name = "Product Hunt"
@@ -429,49 +297,6 @@ lang = "en"
 filter = true
 
 # ================= その他の国・地域 =================
-
-[[feeds]]
-name = "Google新聞（台湾・生成式AI）"
-url = "https://news.google.com/rss/search?q=生成式AI+OR+人工智慧+when:2d&hl=zh-TW&gl=TW&ceid=TW:zh-Hant"
-category = "ニュース"
-lang = "zh"
-limit = 40
-
-[[feeds]]
-name = "量子位（中国）"
-url = "https://www.qbitai.com/feed"
-category = "ニュース"
-lang = "zh"
-
-[[feeds]]
-name = "Google 뉴스（韓国・생성형 AI）"
-url = "https://news.google.com/rss/search?q=생성형+AI+OR+인공지능+when:2d&hl=ko&gl=KR&ceid=KR:ko"
-category = "ニュース"
-lang = "ko"
-limit = 40
-
-[[feeds]]
-name = "Google News（ドイツ・KI）"
-url = "https://news.google.com/rss/search?q=%22K%C3%BCnstliche+Intelligenz%22+OR+%22generative+KI%22+when:2d&hl=de&gl=DE&ceid=DE:de"
-category = "ニュース"
-lang = "de"
-limit = 30
-
-[[feeds]]
-name = "Google Actualités（フランス・IA）"
-url = "https://news.google.com/rss/search?q=%22intelligence+artificielle%22+OR+%22IA+g%C3%A9n%C3%A9rative%22+when:2d&hl=fr&gl=FR&ceid=FR:fr"
-category = "ニュース"
-lang = "fr"
-limit = 30
-
-[[feeds]]
-name = "Google Noticias（スペイン語・IA）"
-url = "https://news.google.com/rss/search?q=%22inteligencia+artificial%22+when:2d&hl=es-419&gl=MX&ceid=MX:es-419"
-category = "ニュース"
-lang = "es"
-limit = 30
-
-# ================= 研究論文 =================
 
 [[feeds]]
 name = "Hugging Face Daily Papers"
@@ -503,28 +328,12 @@ limit = 30
 # ================= 収益化のヒント（theme = "money" は「収益化のヒント」に載りやすくなる） =================
 
 [[feeds]]
-name = "Googleニュース（AI副業）"
-url = "https://news.google.com/rss/search?q=AI+副業+OR+生成AI+稼ぐ+OR+ChatGPT+副業+when:7d&hl=ja&gl=JP&ceid=JP:ja"
-category = "収益化"
-lang = "ja"
-theme = "money"
-limit = 40
-
-[[feeds]]
 name = "Googleニュース（学生・ハッカソン）"
 url = "https://news.google.com/rss/search?q=生成AI+(学生+OR+大学生)+(ハッカソン+OR+コンテスト+OR+賞金+OR+起業)+when:14d&hl=ja&gl=JP&ceid=JP:ja"
 category = "収益化"
 lang = "ja"
 theme = "money"
 limit = 30
-
-[[feeds]]
-name = "note（AI副業）"
-url = "https://note.com/hashtag/AI副業/rss"
-category = "収益化"
-lang = "ja"
-exclude = ["小説", "フィクション", "ショートショート", "短編", "ポエム", "詩集"]
-theme = "money"
 
 [[feeds]]
 name = "Zenn（個人開発）"
@@ -541,14 +350,6 @@ category = "収益化"
 lang = "ja"
 theme = "money"
 filter = true
-
-[[feeds]]
-name = "Google News（AI Side Hustle）"
-url = "https://news.google.com/rss/search?q=%22AI+side+hustle%22+OR+%22make+money+with+AI%22+OR+%22AI+freelance%22+when:7d&hl=en-US&gl=US&ceid=US:en"
-category = "収益化"
-lang = "en"
-theme = "money"
-limit = 30
 
 [[feeds]]
 name = "Hacker News（Show HN）"
@@ -569,37 +370,12 @@ filter = true
 # ================= ツール・ガジェット（ブラウザ・AIサービス・ハードウェア・ガジェット・アプリ） =================
 
 [[feeds]]
-name = "Googleニュース（AIブラウザ・新アプリ）"
-url = "https://news.google.com/rss/search?q=AIブラウザ+OR+新ブラウザ+OR+AIアプリ+OR+AIデバイス+when:3d&hl=ja&gl=JP&ceid=JP:ja"
-category = "新製品"
-lang = "ja"
-theme = "gear"
-limit = 40
-
-[[feeds]]
 name = "Googleニュース（新製品・ガジェット）"
 url = "https://news.google.com/rss/search?q=(新製品+OR+発表+OR+発売)+(スマホ+OR+ノートPC+OR+ガジェット+OR+ウェアラブル+OR+イヤホン+OR+カメラ)+when:2d&hl=ja&gl=JP&ceid=JP:ja"
 category = "新製品"
 lang = "ja"
 theme = "gear"
-limit = 30
-
-[[feeds]]
-name = "Google News（AI Browser）"
-url = "https://news.google.com/rss/search?q=%22AI+browser%22+OR+%22agentic+browser%22+OR+%22browser+agent%22+when:7d&hl=en-US&gl=US&ceid=US:en"
-category = "新製品"
-lang = "en"
-filter = true
-theme = "gear"
-limit = 30
-
-[[feeds]]
-name = "Google News（AI Gadgets）"
-url = "https://news.google.com/rss/search?q=%22AI+device%22+OR+%22AI+glasses%22+OR+%22AI+PC%22+OR+%22AI+phone%22+when:3d&hl=en-US&gl=US&ceid=US:en"
-category = "新製品"
-lang = "en"
-theme = "gear"
-limit = 30
+limit = 15
 
 [[feeds]]
 name = "The Verge（Tech）"
@@ -608,6 +384,7 @@ category = "新製品"
 lang = "en"
 theme = "gear"
 filter = "gear"
+limit = 10
 
 [[feeds]]
 name = "9to5Google"
@@ -616,6 +393,7 @@ category = "新製品"
 lang = "en"
 theme = "gear"
 filter = "gear"
+limit = 10
 
 [[feeds]]
 name = "9to5Mac"
@@ -624,6 +402,7 @@ category = "新製品"
 lang = "en"
 theme = "gear"
 filter = "gear"
+limit = 10
 
 [[feeds]]
 name = "Google Chrome Blog"
@@ -640,20 +419,13 @@ lang = "en"
 theme = "gear"
 
 [[feeds]]
-name = "ギズモード・ジャパン"
-url = "https://www.gizmodo.jp/index.xml"
-category = "新製品"
-lang = "ja"
-theme = "gear"
-filter = "gear"
-
-[[feeds]]
 name = "ITmedia Mobile"
 url = "https://rss.itmedia.co.jp/rss/2.0/mobile.xml"
 category = "新製品"
 lang = "ja"
 theme = "gear"
 filter = "gear"
+limit = 10
 
 [[feeds]]
 name = "ITmedia PC USER"
@@ -662,86 +434,7 @@ category = "新製品"
 lang = "ja"
 theme = "gear"
 filter = "gear"
-
-[[feeds]]
-name = "Google News（Gadgets）"
-url = "https://news.google.com/rss/search?q=%22new+gadget%22+OR+%22gadget+review%22+OR+%22tech+review%22+when:2d&hl=en-US&gl=US&ceid=US:en"
-category = "新製品"
-lang = "en"
-theme = "gear"
-limit = 30
-
-
-[[feeds]]
-name = "家電Watch"
-url = "https://kaden.watch.impress.co.jp/data/rss/1.0/kdw/feed.rdf"
-category = "新製品"
-lang = "ja"
-theme = "gear"
-filter = "gear"
-
-[[feeds]]
-name = "AV Watch"
-url = "https://av.watch.impress.co.jp/data/rss/1.0/avw/feed.rdf"
-category = "新製品"
-lang = "ja"
-theme = "gear"
-filter = "gear"
-
-# ----- 面白ITグッズ・クラウドファンディング（あると便利な変わり種ガジェット） -----
-
-[[feeds]]
-name = "Googleニュース（クラファン・面白ガジェット）"
-url = "https://news.google.com/rss/search?q=(Makuake+OR+クラファン+OR+クラウドファンディング+OR+GREEN+FUNDING)+(ガジェット+OR+USB+OR+AI+OR+スマホ+OR+PC+OR+充電)+when:7d&hl=ja&gl=JP&ceid=JP:ja"
-category = "新製品"
-lang = "ja"
-theme = "gear"
-limit = 30
-filter = "gear"
-
-[[feeds]]
-name = "Googleニュース（便利ITグッズ）"
-url = "https://news.google.com/rss/search?q=(便利グッズ+OR+便利ガジェット+OR+面白ガジェット+OR+デスク周り)+(PC+OR+スマホ+OR+USB+OR+AI)+when:7d&hl=ja&gl=JP&ceid=JP:ja"
-category = "新製品"
-lang = "ja"
-theme = "gear"
-limit = 25
-filter = "gear"
-
-[[feeds]]
-name = "Google News（Crowdfunding Gadgets）"
-url = "https://news.google.com/rss/search?q=(Kickstarter+OR+Indiegogo)+(gadget+OR+tech+OR+AI)+when:7d&hl=en-US&gl=US&ceid=US:en"
-category = "新製品"
-lang = "en"
-theme = "gear"
-limit = 25
-filter = "gear"
-
-[[feeds]]
-name = "Yanko Design"
-url = "https://www.yankodesign.com/feed/"
-category = "新製品"
-lang = "en"
-theme = "gear"
-filter = "gear"
-
-[[feeds]]
-name = "ROOMIE"
-url = "https://www.roomie.jp/feed/"
-category = "新製品"
-lang = "ja"
-theme = "gear"
-filter = "gear"
-
-[[feeds]]
-name = "GetNavi web"
-url = "https://getnavi.jp/feed/"
-category = "新製品"
-lang = "ja"
-theme = "gear"
-filter = "gear"
-
-# ================= 需要の種（困りごと・「こんなツールがほしい」の声。/demand が需要リサーチに使う） =================
+limit = 10
 
 [[feeds]]
 name = "Reddit r/SomebodyMakeThis"
@@ -778,32 +471,11 @@ category = "需要の種"
 lang = "en"
 
 [[feeds]]
-name = "Googleニュース（人手不足・業務効率化）"
-url = "https://news.google.com/rss/search?q=人手不足+効率化+OR+省力化+when:7d&hl=ja&gl=JP&ceid=JP:ja"
-category = "需要の種"
-lang = "ja"
-limit = 30
-
-[[feeds]]
 name = "Googleニュース（中小企業の困りごと）"
 url = "https://news.google.com/rss/search?q=中小企業+課題+OR+悩み+DX+OR+デジタル化+when:7d&hl=ja&gl=JP&ceid=JP:ja"
 category = "需要の種"
 lang = "ja"
 limit = 30
-
-[[feeds]]
-name = "Googleニュース（個人開発の売上）"
-url = "https://news.google.com/rss/search?q=個人開発+売上+OR+収益+OR+月収+when:7d&hl=ja&gl=JP&ceid=JP:ja"
-category = "需要の種"
-lang = "ja"
-limit = 20
-
-[[feeds]]
-name = "Google News（Bootstrapped SaaS・Indie Hacker）"
-url = "https://news.google.com/rss/search?q=bootstrapped+SaaS+OR+%22indie+hacker%22+OR+%22micro+SaaS%22+when:30d&hl=en-US&gl=US&ceid=US:en"
-category = "需要の種"
-lang = "en"
-limit = 20
 
 [[feeds]]
 name = "note（個人開発）"
@@ -883,3 +555,66 @@ url = "https://www.reddit.com/r/mcp/top/.rss?t=day"
 category = "MCP"
 lang = "en"
 theme = "tech"
+
+[[feeds]]
+name = "arXiv cs.LG（機械学習）"
+url = "https://rss.arxiv.org/rss/cs.LG"
+category = "論文"
+lang = "en"
+limit = 40
+
+[[feeds]]
+name = "arXiv cs.RO（ロボット）"
+url = "https://rss.arxiv.org/rss/cs.RO"
+category = "論文"
+lang = "en"
+limit = 15
+
+[[feeds]]
+name = "NVIDIA Technical Blog"
+url = "https://developer.nvidia.com/blog/feed"
+category = "公式発表"
+lang = "en"
+limit = 20
+
+[[feeds]]
+name = "Google Developers Blog"
+url = "https://developers.googleblog.com/feeds/posts/default"
+category = "公式発表"
+lang = "en"
+filter = true
+
+[[feeds]]
+name = "GitHub Blog（AI・機械学習）"
+url = "https://github.blog/ai-and-ml/feed/"
+category = "公式発表"
+lang = "en"
+
+[[feeds]]
+name = "Qwen ブログ"
+url = "https://qwenlm.github.io/blog/index.xml"
+category = "公式発表"
+lang = "en"
+limit = 10
+
+[[feeds]]
+name = "Together AI ブログ"
+url = "https://www.together.ai/blog/rss.xml"
+category = "公式発表"
+lang = "en"
+limit = 10
+
+[[feeds]]
+name = "Ai2（Allen Institute for AI）"
+url = "https://allenai.org/rss.xml"
+category = "公式発表"
+lang = "en"
+limit = 10
+
+[[feeds]]
+name = "MIT News（AI）"
+url = "https://news.mit.edu/topic/mitartificial-intelligence2-rss.xml"
+category = "公式発表"
+lang = "en"
+limit = 15
+
